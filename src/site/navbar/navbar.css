@@ -1,0 +1,264 @@
+/* Main navbar container - Fixed position at top of screen with blur effect */
+.navbar {
+  display: flex;
+  /* Changed from space-between to flex-start to align items to the left side
+     This allows us to have empty space on the right for future content */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 1.5rem; /* Reduced padding for compact design */
+
+ /* add a blur effect to the background */
+      backdrop-filter: blur(10px); /* Creates frosted glass effect */
+      -webkit-backdrop-filter: blur(10px); /* Safari support for blur effect */
+      -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
+  
+      /* Fixed positioning to keep navbar at top of screen */
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure navbar stays above other content */
+  border-bottom: 1px solid #bfc2c43d; /* Subtle border for visual separation */
+}
+
+/* Logo and hamburger menu container - Aligns logo and menu icon */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; /* Space between logo and hamburger icon */
+  /* Significant right margin to create separation between logo and navigation links
+     This creates a visual hierarchy and improves readability */
+  margin-right: 1.5rem; /* Creates separation between brand and navigation links */
+}
+
+/* Logo styling - Main site identifier */
+.navbar-logo {
+  font-size: 1.4rem; /* Reduced font size */
+  font-weight: bold;
+  /* Light color for contrast against dark background */
+  color: #e4e9ee;
+  text-decoration: none;
+}
+
+/* Navigation links container - Horizontal menu items */
+.navbar-links {
+  display: flex;
+  gap: 2rem; /* Consistent spacing between navigation items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* Prevents the navigation links from expanding and taking up all available space
+     This helps maintain the desired layout with space on the right */
+  flex-grow: 0; /* Prevents links from expanding to fill space */
+}
+
+/* Individual navigation link styling */
+.navbar-links li a {
+  /* Lighter grey color for navigation links - provides good contrast while being softer than pure white */
+  color: #bfc2c4; /* Subtle grey for better contrast */
+
+
+  /* Ensures links only take up as much space as their content needs
+     Prevents any unwanted stretching or alignment issues */
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: 540;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem; /* Reduced font size */
+}
+
+/* Hover effect for navigation links - Blue highlight */
+.navbar-links li a:hover {
+  color: #2995dd;
+}
+
+/* Hamburger menu button - Mobile navigation toggle */
+.hamburger {
+  display: none; /* Hidden on desktop, shown on mobile */
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+
+/* Individual lines in hamburger icon */
+.hamburger-line {
+  width: 24px;
+  height: 2px;
+
+  /* Updated hamburger line color to match the light theme of other elements
+     This ensures consistency in the design */
+  background-color: #bfc2c4; /* Matches navigation link color */
+  transition: all 0.3s ease; /* Smooth animation for menu toggle */
+}
+
+/* Right corner buttons container - Contact and Sign in */
+.right-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto; /* Pushes buttons to the right */
+}
+
+/* Contact Us button styling */
+.contact-btn {
+  color: #bfc2c4;
+  text-decoration: none;
+  font-weight: 550;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem; /* Reduced font size */
+  transition: color 0.3s ease;
+}
+
+/* Contact button hover effect */
+.contact-btn:hover {
+  color: #3498db;
+}
+
+/* Sign in button styling - Primary action button */
+.sign-in-btn {
+  background-color: #000000;
+  color: white;
+  padding: 0.4rem 1rem; /* Reduced padding */
+  border-radius: 4px;
+  border: 2px solid #3498db; /* Blue border for emphasis */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem; /* Reduced font size */
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.2); /* Subtle glow effect */
+}
+
+/* Sign in button hover effect */
+.sign-in-btn:hover {
+  background-color: #3498db;
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .navbar-links {
+    gap: 1.5rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.3rem;
+  }
+  
+  .right-buttons {
+    gap: 0.8rem;
+  }
+}
+
+/* Mobile responsive styles - Breakpoint at 768px */
+@media (max-width: 768px) {
+  /* Adjust layout for mobile view */
+  
+  .navbar {
+    /* Switch back to space-between for mobile to properly position hamburger menu
+       This ensures good spacing in the mobile layout */
+    justify-content: space-between;
+  }
+
+  /* Show hamburger menu on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Mobile navigation menu - Dropdown style */
+  .navbar-links {
+    display: none; /* Hidden by default on mobile */
+    position: absolute;
+    top: 100%; /* Position below navbar */
+    left: 0;
+    right: 0;
+    flex-direction: column; /* Stack links vertically */
+    /* Match the dark theme of the navbar for consistency */
+    background-color: #111111;
+    padding: 1rem;
+    /* Enhanced shadow for better depth perception in dark theme */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    gap: 1rem;
+  }
+
+  /* Show navigation links when menu is active */
+  .navbar-links.active {
+    display: flex;
+  }
+
+  /* Hamburger icon animation - Transform to X */
+  .hamburger-line.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* First line rotation */
+  }
+
+  /* Hide middle line */
+  .hamburger-line.open:nth-child(2) {
+    opacity: 0; /* Hide middle line */
+  }
+
+  /* Rotate last line to form 'X' */
+  .hamburger-line.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Last line rotation */
+  }
+
+  .right-buttons {
+    display: none; /* Hide on mobile */
+  }
+
+  .navbar-links.active .right-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .contact-btn {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .sign-in-btn {
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.4rem 1rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+  
+  .navbar-brand {
+    gap: 0.5rem;
+  }
+  
+  .hamburger-line {
+    width: 22px;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 320px) {
+  .navbar {
+    padding: 0.3rem 0.8rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.1rem;
+  }
+} 

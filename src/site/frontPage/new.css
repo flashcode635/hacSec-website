@@ -1,0 +1,155 @@
+/* Main background container - Hero section with background image */
+.background-container {
+   height: 80%; /* Takes up 70% of viewport height */
+   width: 50%;
+   background-image: url('../../images/background.jpg');
+   left: 50%; /* Positions container slightly to the right */
+   position: absolute; /* Removes from normal document flow */
+}
+
+/* Text content container - Overlays on background */
+.text-container {
+   position: absolute; /* Positions over background */
+   font-size: 13px;
+   padding-top: 80px;
+   margin-bottom: 40px;
+   color: rgb(204, 208, 208); /* Light gray color for text */
+   font-family: 'Poppins', sans-serif; /* Consistent font with navbar */
+}
+
+/* Main heading styles */
+h1 {
+   font-size: 55px;
+   font-weight: 300;
+   background: -webkit-linear-gradient(#023b9d, #efeded);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/* Tagline section styling */
+.tagline {
+   margin-top: 10px; 
+   width: 35%; /* Takes up quarter of container width */
+   padding-top: 80px;
+}
+
+.description {
+   /* background-color: rgb(13, 14, 14); */
+   height: 100px;
+   width: 36%;
+}
+
+h3 {
+   font-size: 15px;
+   /* background-color: #032661; */
+   color: #bab8b8;
+   padding-top: 10px;
+   font-weight: 100;
+}
+
+/* Get Started Button styles */
+.button {
+   background-color: #08080a; 
+   color: rgb(240, 234, 234); /* White text */
+   padding: 10px 20px; /* Padding for button */
+   cursor: pointer; /* Pointer cursor on hover */
+   font-size: 16px; /* Font size */
+   font-family: 'Poppins', sans-serif; /* Consistent font with navbar */
+   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.sponsors {
+   width: 100%;
+   margin-top: 100px;
+   left:50%;
+   right:50%;
+   color: rgb(147, 144, 144); /* White text */
+   cursor: pointer; /* Pointer cursor on hover */
+}
+
+.sponsors, span {
+   align-items: center;
+   justify-content: center;
+   margin-left: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+   h1 {
+      font-size: 2.5rem;
+   }
+   
+   .tagline, .description {
+      width: 90%;
+      max-width: none;
+   }
+   
+   .text-container {
+      padding-top: 60px;
+   }
+
+   .main-container {
+      padding: 0 15px;
+   }
+
+   .secondary-content {
+      margin: 60px auto;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   h1 {
+      font-size: 2rem;
+   }
+   
+   .text-container {
+      padding-top: 40px;
+   }
+   
+   .sponsors {
+      margin-top: 60px;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .hero-content {
+      padding-top: 60px;
+   }
+
+   .secondary-content {
+      margin: 40px auto;
+   }
+}
+
+/* Main container for the entire page */
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 20px 0 90px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Hero content section */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+}
+
+/* Welcome text styling */
+.welcome-text {
+  font-weight: 150;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+/* Secondary content section */
+.secondary-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: center;
+}
+
