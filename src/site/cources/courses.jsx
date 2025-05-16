@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './courses.css';
+import './preview.css';
 
 import coursesList from './courseList'; // Import the coursesList
 
 
 const Courses = () => {
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const openPreview = (course) => {
+    setSelectedCourse(course);
+    setShowModal(true);
+  };
+
+  const closePreview = () => {
+    setShowModal(false);
+  };
 
   return (
     <div className="courses-page">
@@ -34,13 +46,40 @@ const Courses = () => {
                 <div className="course-meta">
                   <span className="duration">Duration: {course.duration}</span>
                 </div>
-                <button className="enroll-button" >Enroll Now</button>
+                <button className="enroll-button" onClick={() => openPreview(course)}>Enroll Now</button>
               </div>
             </div>
           ))
           }
         </div>
       </div>
+      
+      {showModal && selectedCourse && (
+        <div className="course-preview-modal">
+          <div className="modal-overlay" onClick={closePreview}></div>
+          <div className="modal-content">
+            <button className="close-modal" onClick={closePreview}>×</button>
+            <div className="preview-image" style={{ backgroundImage: `url(${selectedCourse.image})` }}></div>
+            <div className="preview-details">
+              <h2>{selectedCourse.title}</h2>
+              <div className="course-level-badge">{selectedCourse.level}</div>
+              <div className="course-duration">
+                <span>Duration:</span> {selectedCourse.duration}
+              </div>
+              <div className="course-description">
+                <h3>About This Course</h3>
+                <p>{selectedCourse.details || selectedCourse.description}</p>
+              </div>
+              <div className="course-pricing">
+                <h3>Pricing</h3>
+                <div className="price">{selectedCourse.price}</div>
+                <div className="price-info">One-time payment, lifetime access</div>
+              </div>
+              <button className="buy-now-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      )}
       
       <div className="courses-cta">
         <div className="cta-content">

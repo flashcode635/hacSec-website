@@ -4,7 +4,8 @@
    width: 50%;
    background-image: url('../../images/background.jpg');
    left: 50%; /* Positions container slightly to the right */
-   position: absolute; /* Removes from normal document flow */
+   position: absolute;
+   /* Removes from normal document flow  */
 }
 
 /* Text content container - Overlays on background */
@@ -69,9 +70,7 @@ h3 {
 }
 
 .sponsors, span {
-   align-items: center;
-   justify-content: center;
-   margin-left: 10px;
+   margin-left: 8px;
 }
 
 /* Media Queries for Responsiveness */

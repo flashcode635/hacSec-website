@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import './navbar.css';
 
 /**
@@ -18,11 +18,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <> 
       {/* Logo and hamburger menu container */}
       <div className="navbar-brand">
         {/* Site logo/home link */}
         <Link to="/" className="navbar-logo">
-          HackSec
+          HackSecure
         </Link>
         {/* Hamburger menu button - only visible on mobile */}
         <button className="hamburger" onClick={toggleMenu}>
@@ -49,6 +50,7 @@ const Navbar = () => {
         <Link to="/contact" className="contact-btn">Contact Us</Link>
         <Link to="/signin" className="sign-in-btn">Sign In</Link>
       </div>
+    </>
     </nav>
   );
 };
