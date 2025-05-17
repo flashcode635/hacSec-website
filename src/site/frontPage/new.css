@@ -51,7 +51,8 @@ h3 {
 
 /* Get Started Button styles */
 .button {
-   background-color: #08080a; 
+   background-color: #111114; 
+   border: 1px solid #111114;
    color: rgb(240, 234, 234); /* White text */
    padding: 10px 20px; /* Padding for button */
    cursor: pointer; /* Pointer cursor on hover */

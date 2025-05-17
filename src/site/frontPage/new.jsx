@@ -1,8 +1,10 @@
 import React from 'react';
 import './new.css';
-
-import Product from './Services/product';
+import Review from './midSection/review';
+import Footer from './midSection/footer';
+import MidSection from './midSection/mid-section';
 import background from '../../images/background.jpg';
+
 const New = () => {
   return (
     <> 
@@ -64,8 +66,13 @@ const New = () => {
                         </div>
                 </div>
           </div>
-        <Product> </Product>    
+        <MidSection/>  
     </div>
+    <div  style={{marginTop:'70%'}} > 
+    <Review/>     
+          
+    </div>
+    <Footer/>
     </>
   )
 };

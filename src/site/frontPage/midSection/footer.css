@@ -1,0 +1,53 @@
+/* parent div - footer - sub div - logo+moto */
+.footer{
+  height: 50vh;
+  width: 100vw;
+  padding-top: 20px;
+  background-color: rgb(20, 19, 20);
+  border: 1px solid #111114;
+  display: flex;
+}
+
+/* logo+moto  - parent ; sub div- main */
+.hero {
+    font-size: 1.6rem; /* Reduced font size */
+    font-weight: bold;
+    /* Light color for contrast against dark background */
+    color: #e4e9ee;
+    text-decoration: none;
+  }
+
+  /*  child - hacksec logo */
+  .main{
+    background: -webkit-linear-gradient(#4e89f0, #bebaba);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .footer-links{
+    width: 10vw;
+    height: auto;
+    font-size: 1.2rem;
+    color: #e4e9ee;
+    text-decoration: none;
+    font-weight: bold;
+}
+    
+p{
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+
+/* footer-content and links - ul */
+.footer-links ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #b8b9ba;
+}
+
+

@@ -1,0 +1,373 @@
+/* Main container for the internship page */
+.internship-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 20px 50px 90px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Hero section */
+.internship-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.internship-content {
+  width: 50%;
+  z-index: 2;
+}
+
+.internship-welcome {
+  font-weight: 150;
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: rgb(204, 208, 208);
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.9;
+}
+
+.internship-title {
+  font-size: 55px;
+  font-weight: 300;
+  background: -webkit-linear-gradient(#023b9d, #efeded);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.internship-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.internship-description {
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.internship-description.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.internship-description p {
+  font-size: 15px;
+  color: #bab8b8;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.internship-apply-btn {
+  display: inline-block;
+  background-color: #111114;
+  border: 1px solid #3498db;
+  color: rgb(240, 234, 234);
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.internship-apply-btn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.internship-apply-btn:hover {
+  background-color: #3498db;
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Graphics elements */
+.internship-graphics {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic-element {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: float 8s infinite ease-in-out;
+}
+
+.graphic-element:nth-child(1) {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, #023b9d 0%, rgba(2, 59, 157, 0) 70%);
+  top: 10%;
+  right: 20%;
+  animation-delay: 0s;
+}
+
+.graphic-element:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #3498db 0%, rgba(52, 152, 219, 0) 70%);
+  top: 40%;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+.graphic-element:nth-child(3) {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #efeded 0%, rgba(239, 237, 237, 0) 70%);
+  top: 60%;
+  right: 30%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+/* Benefits section */
+.benefits-container {
+  margin: 100px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.benefits-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.benefits-title {
+  font-size: 35px;
+  font-weight: 300;
+  background: -webkit-linear-gradient(#023b9d, #efeded);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background-color: rgba(17, 17, 20, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+  border-color: rgba(52, 152, 219, 0.3);
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-color: rgba(52, 152, 219, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  background-color: rgba(52, 152, 219, 0.3);
+}
+
+.benefit-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  font-size: 14px;
+  color: #bab8b8;
+  line-height: 1.6;
+}
+
+/* Testimonials section */
+.testimonials-container {
+  margin: 100px 0;
+}
+
+.testimonials-title {
+  font-size: 38px;
+  font-weight: 300;
+  background: -webkit-linear-gradient(#023b9d, #efeded);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: rgba(17, 17, 20, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: #bab8b8;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  color: #3498db;
+  font-weight: 600;
+}
+
+/* CTA section */
+.cta-container {
+  margin: 100px 0 50px;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(17, 17, 20, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+}
+
+.cta-container h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.4);
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(52, 152, 219, 0.6);
+}
+
+/* Responsive design */
+@media screen and (max-width: 992px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .internship-container {
+    padding: 100px 20px 50px 20px;
+  }
+  
+  .internship-hero {
+    flex-direction: column;
+  }
+  
+  .internship-content {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .internship-title {
+    font-size: 40px;
+  }
+  
+  .internship-description {
+    width: 100%;
+  }
+  
+  .internship-graphics {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+  }
+  
+  .benefits-grid, .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .internship-title {
+    font-size: 32px;
+  }
+  
+  .benefit-card, .testimonial-card {
+    padding: 20px;
+  }
+  
+  .cta-container {
+    padding: 40px 15px;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+} 

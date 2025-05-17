@@ -3,7 +3,10 @@ import Navbar from './site/navbar/navbar';
 import New from './site/frontPage/new';
 import Courses from './site/cources/courses';
 
+
 import './App.css';
+import InternshipsPage from './site/internship-page/internshipPage';
+import InternshipList from './site/internship-page/internListCard';
 
 export default function App() {
   return (
@@ -13,6 +16,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<New />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/internship" element={<InternshipsPage />} />
+          <Route path="/internship/list" element={<InternshipList />} />
         </Routes>
       </div>
     </BrowserRouter>
