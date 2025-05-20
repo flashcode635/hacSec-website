@@ -1,0 +1,385 @@
+.partners-page {
+  width: 100%;
+  background-color: #111114;
+  color: #e4e9ee;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.partners-hero {
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  background-color: rgb(20, 19, 20);
+  border-bottom: 1px solid rgba(52, 152, 219, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background-image: linear-gradient(to right, rgba(17, 17, 20, 0.9), rgba(17, 17, 20, 0.7)), url('');
+  background-size: cover;
+  background-position: center;
+}
+
+.partners-hero-content {
+  max-width: 800px;
+}
+
+.partners-title {
+  font-size: 42px;
+  font-weight: 300;
+  background: -webkit-linear-gradient(#023b9d, #efeded);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.partners-subtitle {
+  font-size: 18px;
+  color: #bab8b8;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.partners-cta-button {
+  background-color: #023b9d;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.partners-cta-button:hover {
+  background-color: #0346c2;
+  transform: translateY(-3px);
+}
+
+/* Benefits Section */
+.partners-benefits-section {
+  padding: 80px 10%;
+  background-color: #111114;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 300;
+  background: -webkit-linear-gradient(#023b9d, #efeded);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-item {
+  background-color: rgba(5, 5, 29, 0.8);
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(47, 142, 205, 0.3);
+}
+
+.benefit-icon {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.benefit-item h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.benefit-item p {
+  font-size: 16px;
+  color: #bab8b8;
+  line-height: 1.5;
+}
+
+/* Program Tiers Section */
+.partners-program-tiers {
+  padding: 80px 10%;
+  background-color: rgb(20, 19, 20);
+  border-top: 1px solid rgba(52, 152, 219, 0.1);
+  border-bottom: 1px solid rgba(52, 152, 219, 0.1);
+}
+
+.tiers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tier-card {
+  background-color: rgba(17, 17, 20, 0.8);
+  border-radius: 12px;
+  padding: 40px 30px;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.tier-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #023b9d, #3498db);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.tier-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  border-color: rgba(52, 152, 219, 0.3);
+}
+
+.tier-card:hover::before {
+  transform: scaleX(1);
+}
+
+.tier-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.tier-description {
+  font-size: 16px;
+  color: #bab8b8;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tier-benefits {
+  margin-bottom: 30px;
+}
+
+.tier-benefits h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.tier-benefits ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tier-benefits li {
+  font-size: 15px;
+  color: #bab8b8;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.tier-benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #3498db;
+}
+
+.tier-apply-button {
+  background-color: transparent;
+  border: 1px solid #3498db;
+  color: #3498db;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+  align-self: center;
+}
+
+.tier-apply-button:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Testimonials Section */
+.partners-testimonials {
+  padding: 80px 10%;
+  background-color: #111114;
+}
+
+.testimonial-card {
+  background-color: rgba(17, 17, 20, 0.8);
+  border-radius: 12px;
+  padding: 40px;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+  font-family: Georgia, serif;
+  color: rgba(52, 152, 219, 0.2);
+  line-height: 0;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #e4e9ee;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  text-align: right;
+  color: #bab8b8;
+}
+
+.testimonial-author p {
+  margin: 5px 0;
+}
+
+/* Contact Section */
+.partners-contact {
+  padding: 80px 10%;
+  background-color: rgb(20, 19, 20);
+  text-align: center;
+  border-top: 1px solid rgba(52, 152, 219, 0.1);
+}
+
+.contact-description {
+  font-size: 18px;
+  color: #bab8b8;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-button.primary {
+  background-color: #023b9d;
+  color: white;
+  border: none;
+}
+
+.contact-button.primary:hover {
+  background-color: #0346c2;
+  transform: translateY(-3px);
+}
+
+.contact-button.secondary {
+  background-color: transparent;
+  border: 1px solid #3498db;
+  color: #3498db;
+}
+
+.contact-button.secondary:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .partners-hero {
+    padding: 80px 5%;
+  }
+  
+  .partners-title {
+    font-size: 32px;
+  }
+  
+  .partners-subtitle {
+    font-size: 16px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .partners-benefits-section,
+  .partners-program-tiers,
+  .partners-testimonials,
+  .partners-contact {
+    padding: 60px 5%;
+  }
+  
+  .tiers-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partners-title {
+    font-size: 28px;
+  }
+  
+  .partners-subtitle,
+  .benefit-item p,
+  .tier-description,
+  .testimonial-text,
+  .contact-description {
+    font-size: 14px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+} 

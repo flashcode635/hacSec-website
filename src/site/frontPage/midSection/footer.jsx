@@ -12,7 +12,7 @@ const footer= ()=>{
         <div style={{display: "flex", flexDirection: "row", gap: "50px", marginLeft: "7%",width: "80vw"}}> 
 
             <div className="footer-links"> <p>Companys</p> 
-                <ul style={{listStyleType: "none"}}>
+                <ul style={{listStyleType: "none", padding: 0, margin: 0, fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>About Us</li>
                     <li>Our Team</li>
                     <li>Careers</li>
@@ -22,7 +22,7 @@ const footer= ()=>{
             </div> 
 
             <div className="footer-links"> <p>Resources</p> 
-                <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
+                <ul style={{listStyleType: "none", padding: 0, margin: 0, fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>Training</li>
                     <li>Certifications</li>
                     <li>Blog</li>
@@ -32,7 +32,7 @@ const footer= ()=>{
             </div> 
 
             <div className="footer-links"> <p>Partners</p> 
-                <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
+                <ul style={{listStyleType: "none", padding: 0, margin: 0, fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>Partner Program</li>
                     <li>MSSP and MDR Partner Program</li>
                     <li>Technology Partners</li>
@@ -41,7 +41,7 @@ const footer= ()=>{
             </div> 
 
             <div className="footer-links"> <p>Support</p> 
-                <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
+                <ul style={{listStyleType: "none", padding: 0, margin: 0, fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>FAQ</li>
                     <li>Terms</li>
                     <li>Privacy</li>
@@ -49,7 +49,7 @@ const footer= ()=>{
                 </ul> 
             </div> 
             <div className="footer-links"> <p>Contact</p> 
-                <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
+                <ul style={{listStyleType: "none", padding: 0, margin: 0, fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>Company</li>
                     <li>Resources</li>
                     <li>Partners</li>

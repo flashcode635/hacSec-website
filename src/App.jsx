@@ -7,6 +7,8 @@ import Courses from './site/cources/courses';
 import './App.css';
 import InternshipsPage from './site/internship-page/internshipPage';
 import InternshipList from './site/internship-page/internListCard';
+import ServicesPage from './site/services-page/servicesPage';
+import PartnersPage from './site/partners-page/PartnersPage';
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<New />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/partners" element={<PartnersPage />} />
           <Route path="/internship" element={<InternshipsPage />} />
           <Route path="/internship/list" element={<InternshipList />} />
         </Routes>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import './navbar.css';
-
 /**
  * Navbar Component
  * Includes a logo, navigation links, and a hamburger menu for mobile devices.

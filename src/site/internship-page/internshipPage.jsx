@@ -70,7 +70,7 @@ const InternshipsPage = () => {
       <div className="benefits-container">
         <h2 className="benefits-title">Benefits of Our Internship Program</h2>
         
-        <div className="benefits-grid">
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px'}}>
 
           {/* Hands-on Experience */}
 
@@ -92,22 +92,27 @@ const InternshipsPage = () => {
           image={Benefit} 
           heading ={"Skill Development"} 
           description={"Build technical and soft skills that will make you competitive in the job market"} />
+        </div>
 
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px'}}> 
         {/* Network Building */}
           <BenefitCard 
           image={Benefit} 
           heading ={"Network Building"} 
           description={"Connect with professionals and fellow interns in the cybersecurity industry"} />
 
-          <BenefitCard 
-          image={Benefit} 
-          heading ={"Certification Support"} 
-          description={"Receive guidance for industry-recognized certifications to boost your resume"} />
+                  {/* Certification Support */}
+                <BenefitCard 
+                image={Benefit} 
+                heading ={"Certification Support"} 
+                description={"Receive guidance for industry-recognized certifications to boost your resume"} />
 
-          <BenefitCard 
-          image={Benefit} 
-          heading ={"Career Opportunities"} 
-          description={"Top-performing interns may receive job offers to join our team full-time"} />
+              {/* Career Opportunities */}
+              <BenefitCard 
+              image={Benefit} 
+              heading ={"Career Opportunities"} 
+              description={"Top-performing interns may receive job offers to join our team full-time"} />
+
         </div>
       </div>
 

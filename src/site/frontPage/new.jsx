@@ -7,8 +7,8 @@ import background from '../../images/background.jpg';
 
 const New = () => {
   return (
-    <> 
-    <div style={{height: '100vh', width: '100%', paddingLeft: '90px', }}>
+    <div className="page-container"> 
+      <div className="hero-section" style={{minHeight: '100vh', width: '100%', paddingLeft: '90px'}}>
           {/* has a background image in corner  */}
           <div>  
             <img src={background} alt='background' className="background-container"/>
@@ -66,14 +66,21 @@ const New = () => {
                         </div>
                 </div>
           </div>
+      </div>
+
+      {/* Middle section with tabs */}
+      <div className="mid-section-container-wrapper">
         <MidSection/>  
+      </div>
+
+      {/* Review section */}
+      <div className="review-section-wrapper"> 
+        <Review/>     
+      </div>
+
+      {/* Footer */}
+      <Footer/>
     </div>
-    <div  style={{marginTop:'70%'}} > 
-    <Review/>     
-          
-    </div>
-    <Footer/>
-    </>
   )
 };
 

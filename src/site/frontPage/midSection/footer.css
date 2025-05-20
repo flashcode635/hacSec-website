@@ -1,11 +1,15 @@
 /* parent div - footer - sub div - logo+moto */
 .footer{
-  height: 50vh;
-  width: 100vw;
+  min-height: 50vh;
+  width: 100%;
   padding-top: 20px;
   background-color: rgb(20, 19, 20);
   border: 1px solid #111114;
   display: flex;
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+  clear: both;
 }
 
 /* logo+moto  - parent ; sub div- main */
@@ -48,6 +52,16 @@ p{
   margin: 0;
   font-size: 1rem;
   color: #b8b9ba;
+}
+
+.footer-links li {
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #ffffff;
 }
 
 
