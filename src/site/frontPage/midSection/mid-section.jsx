@@ -3,7 +3,7 @@ import './mid-section.css'
 import Prod from './prod.png'
 
 // Card component for displaying products/services with icon and description
-function Card3({photo, name, description}){
+function Card3({photo, description}){
     return(
       <div className="product-card">
         <div style={{display:'flex'}}>

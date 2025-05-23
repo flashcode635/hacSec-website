@@ -1,4 +1,6 @@
 import React from "react";
+import SocialLinks from "./social";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import './footer.css';
 const footer= ()=>{
     return(
@@ -6,8 +8,9 @@ const footer= ()=>{
     <footer className="footer">
         <div className="hero" style={{marginLeft: "20px"}}> 
             <h1 className="main"> HackSecure </h1>
-            <p style={{fontSize: "1.2rem", color: "#aea9a9"}}>Learn Secure Grow</p>
-            <p style={{fontSize: "1.2rem", color: "#aea9a9"}}>© 2025 HackSecure. All rights reserved.</p>
+            <p style={{fontSize: "1.2rem", color: "white"}}>Learn Secure Grow</p>
+           <SocialLinks />
+            <p style={{fontSize: "1.1rem", color: "#aea9a9", marginTop: "10px",fontFamily:'Poppins', fontWeight:'lighter'}}>© 2025 HackSecure. All rights reserved.</p>
         </div>
         <div style={{display: "flex", flexDirection: "row", gap: "50px", marginLeft: "7%",width: "80vw"}}> 
 

@@ -1,4 +1,0 @@
- <div> <p>Resources</p> </div>
-            <div> <p>Partners</p> </div>
-            <div> <p>Support</p> </div>
-            <div> <p>Contact</p> </div>

@@ -22,75 +22,76 @@ const ServicesPage = () => {
             helping you identify threats, remediate vulnerabilities, and prevent attacks before they happen.
           </p>
           
-          <div className="services-grid">
-            {/* Service Card 1 */}
-            <div className="service-card">
-              <div className="service-icon">
-                <img src="https://img.icons8.com/ios/50/3498db/security-checked.png" alt="Offensive Security" />
+          <div className="services-grid">  {/* Service Cards Grid - has all 4 service cards  */}
+            
+              {/* Service Card 1 */}
+              <div className="service-card">
+                <div className="service-icon">
+                  <img src="https://img.icons8.com/ios/50/3498db/security-checked.png" alt="Offensive Security" />
+                </div>
+                <h3>Offensive Security</h3>
+                <p>Identify vulnerabilities in your systems before attackers do with our penetration testing and red team operations.</p>
+                <ul className="service-features">
+                  <li>Web Application Testing</li>
+                  <li>Network Infrastructure Testing</li>
+                  <li>Mobile Application Testing</li>
+                  <li>Cloud Security Assessment</li>
+                </ul>
+                <a href="#offensive" className="service-link">Learn More →</a>
               </div>
-              <h3>Offensive Security</h3>
-              <p>Identify vulnerabilities in your systems before attackers do with our penetration testing and red team operations.</p>
-              <ul className="service-features">
-                <li>Web Application Testing</li>
-                <li>Network Infrastructure Testing</li>
-                <li>Mobile Application Testing</li>
-                <li>Cloud Security Assessment</li>
-              </ul>
-              <a href="#offensive" className="service-link">Learn More →</a>
-            </div>
 
-            {/* Service Card 2 */}
-            <div className="service-card">
-              <div className="service-icon">
-                <img src="https://img.icons8.com/ios/50/3498db/shield.png" alt="Defensive Security" />
+              {/* Service Card 2 */}
+              <div className="service-card">
+                <div className="service-icon">
+                  <img src="https://img.icons8.com/ios/50/3498db/shield.png" alt="Defensive Security" />
+                </div>
+                <h3>Defensive Security</h3>
+                <p>Strengthen your security posture with our defensive security services and proactive threat monitoring.</p>
+                <ul className="service-features">
+                  <li>Security Architecture Review</li>
+                  <li>Threat Detection & Response</li>
+                  <li>Security Monitoring</li>
+                  <li>Incident Response Planning</li>
+                </ul>
+                <a href="#defensive" className="service-link">Learn More →</a>
               </div>
-              <h3>Defensive Security</h3>
-              <p>Strengthen your security posture with our defensive security services and proactive threat monitoring.</p>
-              <ul className="service-features">
-                <li>Security Architecture Review</li>
-                <li>Threat Detection & Response</li>
-                <li>Security Monitoring</li>
-                <li>Incident Response Planning</li>
-              </ul>
-              <a href="#defensive" className="service-link">Learn More →</a>
-            </div>
 
-            {/* Service Card 3 */}
-            <div className="service-card">
-              <div className="service-icon">
-                <img src="https://img.icons8.com/ios/50/3498db/artificial-intelligence.png" alt="Threat Intelligence" />
+              {/* Service Card 3 */}
+              <div className="service-card">
+                <div className="service-icon">
+                  <img src="https://img.icons8.com/ios/50/3498db/artificial-intelligence.png" alt="Threat Intelligence" />
+                </div>
+                <h3>Threat Intelligence</h3>
+                <p>Stay ahead of emerging threats with actionable intelligence tailored to your industry and business.</p>
+                <ul className="service-features">
+                  <li>Threat Landscape Analysis</li>
+                  <li>Targeted Attack Intelligence</li>
+                  <li>Dark Web Monitoring</li>
+                  <li>Strategic Intelligence Reports</li>
+                </ul>
+                <a href="#intelligence" className="service-link">Learn More →</a>
               </div>
-              <h3>Threat Intelligence</h3>
-              <p>Stay ahead of emerging threats with actionable intelligence tailored to your industry and business.</p>
-              <ul className="service-features">
-                <li>Threat Landscape Analysis</li>
-                <li>Targeted Attack Intelligence</li>
-                <li>Dark Web Monitoring</li>
-                <li>Strategic Intelligence Reports</li>
-              </ul>
-              <a href="#intelligence" className="service-link">Learn More →</a>
-            </div>
 
-            {/* Service Card 4 */}
-            <div className="service-card">
-              <div className="service-icon">
-                <img src="https://img.icons8.com/ios/50/3498db/training.png" alt="Security Training" />
+              {/* Service Card 4 */}
+              <div className="service-card">
+                <div className="service-icon">
+                  <img src="https://img.icons8.com/ios/50/3498db/training.png" alt="Security Training" />
+                </div>
+                <h3>Security Training</h3>
+                <p>Empower your team with the knowledge to recognize and respond to security threats effectively.</p>
+                <ul className="service-features">
+                  <li>Security Awareness Training</li>
+                  <li>Phishing Simulation</li>
+                  <li>Technical Security Training</li>
+                  <li>Executive Security Briefings</li>
+                </ul>
+                <a href="#training" className="service-link">Learn More →</a>
               </div>
-              <h3>Security Training</h3>
-              <p>Empower your team with the knowledge to recognize and respond to security threats effectively.</p>
-              <ul className="service-features">
-                <li>Security Awareness Training</li>
-                <li>Phishing Simulation</li>
-                <li>Technical Security Training</li>
-                <li>Executive Security Briefings</li>
-              </ul>
-              <a href="#training" className="service-link">Learn More →</a>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Detailed Services Sections */}
+      {/* Detaile Sections- have  all the details needed for each service */}
       <section id="offensive" className="service-detail-section">
         <div className="container">
           <div className="service-detail">

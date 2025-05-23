@@ -1,0 +1,10 @@
+src
+├── components
+│   └── Certifications
+│       ├── CertificationCard.jsx
+│       ├── CertificationList.jsx
+│       └── cert.jsx
+├── styles
+│   └── certifications.css
+└── assets
+    └── certifications
