@@ -1,0 +1,46 @@
+/* components/CompanyMenu.css */
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 0;
+  font-size: 14px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  padding: 12px 0;
+  border-radius: 4px;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.company-menu:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #222;
+}

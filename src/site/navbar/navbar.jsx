@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import './navbar.css';
+import CompanyMenu from './companyTag';
 /**
  * Navbar Component
  * Includes a logo, navigation links, and a hamburger menu for mobile devices.
@@ -41,6 +42,9 @@ const Navbar = () => {
         <li><Link to="/blog">       Blog</Link></li>
         <li><Link to="/internship">Internship</Link></li>
         <li><Link to="/certification">Certification</Link></li>
+        {/* <li><Link to="/contact"> Company </Link></li> */}
+        {/* Company menu dropdown */}
+       <CompanyMenu></CompanyMenu>
       </ul>
 
       {/* Right corner buttons */}
