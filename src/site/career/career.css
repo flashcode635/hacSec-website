@@ -1,0 +1,123 @@
+.career-page{
+     background: linear-gradient(to right, rgba(2, 2, 2, 0.11),
+      rgba(2, 2, 2, 0.6)), 
+      url(https://www.group-ib.com/wp-content/uploads/1024-4.jpg);
+      height: 100vh;
+}
+
+.career-page{
+    padding-left:22%;
+    padding-right:20%;
+    padding-top: 12%;
+    
+}
+
+p{
+    padding-top: 3%;
+    color: grey;
+    font-size: medium;
+}
+
+.hero-cta-button {
+  background-color: #023b9d;
+  
+  color: white;
+  border: none;
+  margin-right: 2%;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-cta-button:hover {
+  background-color: #0143b5;
+  color: rgb(238, 239, 245);
+}
+ul li{
+    text-decoration: none;
+
+}
+.navbar-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  list-style-type: none;
+}
+.resource-detail-cta {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px ;
+    padding-right: 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.resource-detail-cta:hover {
+    background-color: #0458b25c;
+    color: bisque;
+}
+
+.resource-detail-cta:hover::after {
+    content: "Click to check internship opportunities";
+    position: absolute;
+    bottom: -30px; 
+    left: 50%;
+     transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(17, 17, 20, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgba(52, 152, 219, 0.1);
+  margin-top: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  font-size: 16px;
+  color: #bab8b8;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+.contact-buttons {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #3498db6c;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.contact-button:hover {
+  background-color: #3498dbc0;
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
+}

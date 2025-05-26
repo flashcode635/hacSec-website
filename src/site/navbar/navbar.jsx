@@ -36,15 +36,12 @@ const Navbar = () => {
 
       {/* Navigation links - will collapse on mobile */}
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
-        <li><Link to="/courses">Courses</Link></li>
         <li><Link to="/services">Services</Link></li>
         <li><Link to="/partners">Partners</Link></li>
-        <li><Link to="/blog">       Blog</Link></li>
-        <li><Link to="/internship">Internship</Link></li>
-        <li><Link to="/certification">Certification</Link></li>
-        {/* <li><Link to="/contact"> Company </Link></li> */}
+        <li><Link to="/resources"> Resources</Link></li>
+        <li><Link to="/subscription"> Subscription </Link></li>
+        <CompanyMenu></CompanyMenu>        
         {/* Company menu dropdown */}
-       <CompanyMenu></CompanyMenu>
       </ul>
 
       {/* Right corner buttons */}

@@ -137,10 +137,10 @@ const InternshipList = () => {
         <h2>No internship positions available at the moment</h2>
         <p>Please check back later or subscribe to our newsletter to be notified when new positions open up</p>
       </div>
-      
-      <div className={`contact-section ${animate ? 'visible' : ''}`}>
+      {/* Contact section for submitting resumes */}
+        <div className={`contact-section ${animate ? 'visible' : ''}`}>
         <h2>Didn't Find What You're Looking For?</h2>
-        <p>We're always looking for talented individuals to join our team. Submit your resume for future opportunities.</p>
+        <p>If you didn't find a suitable position, feel free to submit your resume for future opportunities.</p>
         <button className="contact-button">Contact Recruitment Team</button>
       </div>
     </div>

@@ -1,0 +1,19 @@
+.team-page{
+     background: linear-gradient(to right, rgba(2, 2, 2, 0.11),
+      rgba(2, 2, 2, 0.6)), 
+      url(https://www.group-ib.com/wp-content/uploads/1024-4.jpg);
+      height: 100vh;
+}
+
+.team-page{
+    padding-left:30%;
+    padding-right:28%;
+    padding-top: 12%;
+    
+}
+
+p{
+    padding-top: 3%;
+    color: grey;
+    font-size: medium;
+}

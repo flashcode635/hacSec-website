@@ -13,6 +13,7 @@ const coursesList = [
     description: "Learn the basics of ethical hacking and penetration testing methodologies.",
     duration: "8 weeks",
     level: "Beginner",
+    modules:10,
     image: ethicalHackingImg,
     details: "This course is designed for beginners who want to learn the basics of ethical hacking and penetration testing. It covers the fundamentals of network security, web application security, and cryptography. The course includes practical exercises and real-world examples to help students understand the concepts and apply them in a safe and legal environment.",
     price: "$39"
@@ -20,9 +21,10 @@ const coursesList = [
   {
     id: 2,
     title: "Advanced Network Security",
-    description: "Master advanced techniques for securing networks against threats.",
+    description: "Master advanced techniques for securing networks against modern threats.",
     duration: "10 weeks",
     level: "Intermediate",
+    modules:10,
     image: networkSecurityImg,
     details: "This course is designed for intermediate-level students who want to master advanced network security techniques. It covers topics such as network architecture, firewalls, intrusion detection systems, and secure network design. The course includes practical exercises and real-world examples to help students understand the concepts and apply them in a safe and legal environment.",
     price: "$49"
@@ -33,6 +35,7 @@ const coursesList = [
     description: "Develop skills to analyze and reverse engineer malicious software.",
     duration: "12 weeks",
     level: "Advanced",
+    modules:20,
     image: malwareAnalysisImg,
     details: "This course is designed for advanced-level students who want to develop skills in malware analysis and reverse engineering. It covers topics such as malware analysis, reverse engineering, and digital forensics. The course includes practical exercises and real-world examples to help students understand the concepts and apply them in a safe and legal environment.",
     price: "$99"
@@ -43,6 +46,7 @@ const coursesList = [
     description: "Develop the expertise to to secure cloud infrastructure and applications against modern threats and vulnerabilities.",
     duration: "8 weeks",
     level: "Intermediate",
+    modules:12,
     image: cloudSecurityImg,
     details: "This course is designed for intermediate-level students who want to develop skills in cloud security. It covers topics such as cloud security, cloud architecture, and cloud security tools. The course includes practical exercises and real-world examples to help students understand the concepts and apply them in a safe and legal environment.",
     price: "$79"     
@@ -53,6 +57,8 @@ const coursesList = [
     description: "Master the skills needed to investigate cybersecurity incidents and collect digital evidence.Learn how cyber laws and regulations impact digital forensics.",
     duration: "9 weeks",
     level: "Intermediate",
+    modules:12,
+
     image: digitalForensicsImg,
     details: "This course is designed for intermediate-level students who want to develop skills in digital forensics and incident response. It covers topics such as digital forensics, incident response, and cybercrime investigation. The course includes practical exercises and real-world examples to help students understand the concepts and apply them in a safe and legal environment.",
     price: "$199"
@@ -63,6 +69,8 @@ const coursesList = [
     description: "Learn essential skills for monitoring, detecting, and responding to security threats.",
     duration: "6 weeks",
     level: "Intermediate",
+    modules:12,
+
     image: socAnalystImg,
     details: "This course is designed for intermediate-level students who want to develop skills in security operations center (SOC) analysis. It covers topics such as incident detection, incident response, and cybercrime investigation. The course includes practical exercises and real-world examples to help students understand the concepts and apply them in a safe and legal environment.",
     price: "$65"

@@ -281,7 +281,7 @@
 .contact-button {
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid #3498db;
+  border: 2px solid #3498db5f;
   padding: 12px 25px;
   border-radius: 5px;
   cursor: pointer;

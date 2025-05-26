@@ -52,6 +52,7 @@ const PartnersPage = () => {
         </div>
       </div>
 
+{/* Benefits of Partnering */}
       <div className="partners-benefits-section">
         <h2 className="section-title">Why Partner With HackSecure</h2>
         <div className="benefits-grid">
@@ -77,7 +78,7 @@ const PartnersPage = () => {
           </div>
         </div>
       </div>
-
+{/* Partner Program Tiers -different plans */}
       <div className="partners-program-tiers">
         <h2 className="section-title">Partner Program Tiers</h2>
         <div className="tiers-container">
