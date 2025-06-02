@@ -1,3 +1,35 @@
+# HackSecure Web Platform
+
+A modern cybersecurity education and services platform built with **React** and **Vite**. This project provides resources, courses, certifications, internships, and more to empower learners and professionals in the cybersecurity domain.
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Tech Stack](#tech-stack)
+- [Folder Overview](#folder-overview)
+- [License](#license)
+
+---
+
+## Features
+
+- **Modern React UI**: Built with React and Vite for fast development and HMR.
+- **Cybersecurity Courses**: Browse and preview a range of cybersecurity courses.
+- **Certifications**: Explore industry-recognized certifications.
+- **Internship Listings**: Find and apply for cybersecurity internships.
+- **Blogs & Resources**: Access curated blogs, resources, and learning materials.
+- **Contact & Support**: Contact form for inquiries and support.
+- **Responsive Design**: Fully responsive and mobile-friendly.
+- **Custom Styling**: Modular CSS for each section and feature.
+
+---
+
+## Project Structure
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
