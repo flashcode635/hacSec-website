@@ -1,7 +1,7 @@
 // components/CompanyMenu.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Company.css'; // Custom styles
+import './company.css'; // Custom styles
 
 const CompanyMenu = () => {
   return (
