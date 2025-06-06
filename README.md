@@ -108,8 +108,8 @@ cursor-hacksec-prv-ltd/
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/cursor-hacksec-prv-ltd.git
-   cd cursor-hacksec-prv-ltd
+   git clone https://github.com/flashcode635/hacksec-prv-ltd.git
+   
 
 
 ---
