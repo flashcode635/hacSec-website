@@ -31,11 +31,7 @@ A modern cybersecurity education and services platform built with **React** and 
 
 ## Project Structure
 
-cursor-hacksec-prv-ltd/
-├── public/
-│   └── vite.svg
-├── src/
-│   ├── App.jsx
+
 ```
 cursor-hacksec-prv-ltd/
 ├── public/
@@ -70,32 +66,8 @@ cursor-hacksec-prv-ltd/
 ├── LICENSE
 └── README.md
 ```
-│   ├── index.css
-│   ├── assets/
-│   │   └── react.svg
-│   ├── images/
-│   │   ├── background.jpg
-│   │   ├── worldmap.png
-│   │   └── cource-images/
-│   └── site/
-│       ├── Blogs/
-│       ├── career/
-│       ├── Certifications/
-│       ├── ContactUs/
-│       ├── cources/
-│       ├── frontPage/
-│       ├── internship-page/
-│       ├── navbar/
-│       ├── partners-page/
-│       ├── Resources/
-│       ├── services-page/
-│       ├── Subscription/
-│       └── team/
-├── index.html
-├── package.json
-├── vite.config.js
-├── LICENSE
-└── README.md
+
+
 
 ## Getting Started
 
