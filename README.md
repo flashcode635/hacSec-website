@@ -9,10 +9,8 @@ A modern cybersecurity education and services platform built with **React** and 
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
 - [Tech Stack](#tech-stack)
 - [Folder Overview](#folder-overview)
-- [License](#license)
 
 ---
 
@@ -29,16 +27,129 @@ A modern cybersecurity education and services platform built with **React** and 
 
 ---
 
+---
+
 ## Project Structure
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+cursor-hacksec-prv-ltd/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── App.jsx
+```
+cursor-hacksec-prv-ltd/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   ├── assets/
+│   │   └── react.svg
+│   ├── images/
+│   │   ├── background.jpg
+│   │   ├── worldmap.png
+│   │   └── cource-images/
+│   └── site/
+│       ├── Blogs/
+│       ├── career/
+│       ├── Certifications/
+│       ├── ContactUs/
+│       ├── cources/
+│       ├── frontPage/
+│       ├── internship-page/
+│       ├── navbar/
+│       ├── partners-page/
+│       ├── Resources/
+│       ├── services-page/
+│       ├── Subscription/
+│       └── team/
+├── index.html
+├── package.json
+├── vite.config.js
+├── LICENSE
+└── README.md
+```
+│   ├── index.css
+│   ├── assets/
+│   │   └── react.svg
+│   ├── images/
+│   │   ├── background.jpg
+│   │   ├── worldmap.png
+│   │   └── cource-images/
+│   └── site/
+│       ├── Blogs/
+│       ├── career/
+│       ├── Certifications/
+│       ├── ContactUs/
+│       ├── cources/
+│       ├── frontPage/
+│       ├── internship-page/
+│       ├── navbar/
+│       ├── partners-page/
+│       ├── Resources/
+│       ├── services-page/
+│       ├── Subscription/
+│       └── team/
+├── index.html
+├── package.json
+├── vite.config.js
+├── LICENSE
+└── README.md
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/cursor-hacksec-prv-ltd.git
+   cd cursor-hacksec-prv-ltd
+
+
+---
+
+## Tech Stack
+
+- **Frontend Framework:** React
+- **Build Tool:** Vite
+- **Styling:** CSS Modules, Custom CSS
+- **Routing:** React Router (if used)
+- **Icons:** FontAwesome, Icons8
+- **Linting:** ESLint
+- **Other:** Hot Module Replacement (HMR), Modular Project Structure
+
+---
+
+## Folder Overview
+
+- **public/** — Static assets served directly (e.g., vite.svg).
+- **src/App.jsx** — Main React application component.
+- **src/main.jsx** — Entry point for React and Vite.
+- **src/index.css** — Global styles.
+- **src/assets/** — Static assets (e.g., react.svg).
+- **src/images/** — Image files (backgrounds, world maps, course images).
+- **src/site/Blogs/** — Blog-related components and pages.
+- **src/site/career/** — Career and team-related components.
+- **src/site/Certifications/** — Certification cards and lists.
+- **src/site/ContactUs/** — Contact form and related components.
+- **src/site/cources/** — Course listings and details.
+- **src/site/frontPage/** — Landing page, hero, footer, and reviews.
+- **src/site/internship-page/** — Internship program and testimonials.
+- **src/site/navbar/** — Navigation bar components.
+- **src/site/partners-page/** — Partners and affiliations.
+- **src/site/Resources/** — Resource listings and details.
+- **src/site/services-page/** — Services offered.
+- **src/site/Subscription/** — Subscription and newsletter components.
+- **src/site/team/** — Team member profiles.
+- **index.html** — Main HTML file.
+- **package.json** — Project metadata and scripts.
+- **vite.config.js** — Vite configuration.
+- **LICENSE** — Project license.
+- **README.md** — Project documentation.
+

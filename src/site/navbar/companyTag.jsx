@@ -9,7 +9,7 @@ const CompanyMenu = () => {
         <li><Link to="/contact"> Company </Link></li>
       {/* <button className="nav-link">Company</button> */}
       <div className="dropdown-menu">
-        <Link to="/" className="dropdown-item">About Group-IB</Link>
+        <Link to="/" className="dropdown-item">About Us </Link>
         <Link to="/team" className="dropdown-item">Team</Link>
         <Link to="/certification" className="dropdown-item">Certifications</Link>
         <Link to="/careers" className="dropdown-item">Careers</Link>

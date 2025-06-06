@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="navbar-brand">
         {/* Site logo/home link */}
         <Link to="/" className="navbar-logo">
-          HackSecure
+          Hack Secure
         </Link>
         {/* Hamburger menu button - only visible on mobile */}
         <button className="hamburger" onClick={toggleMenu}>

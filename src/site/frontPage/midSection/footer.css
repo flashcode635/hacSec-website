@@ -14,7 +14,7 @@
 
 /* logo+moto  - parent ; sub div- main */
 .hero {
-    font-size: 1.6rem; /* Reduced font size */
+    font-size: 1.0rem; /* Reduced font size */
     font-weight: bold;
     /* Light color for contrast against dark background */
     color: #e4e9ee;
@@ -23,6 +23,8 @@
 
   /*  child - hacksec logo */
   .main{
+    font-size: 2.7rem;
+    width:auto;
     background: -webkit-linear-gradient(#4e89f0, #bebaba);
     background-clip: text;
     -webkit-background-clip: text;

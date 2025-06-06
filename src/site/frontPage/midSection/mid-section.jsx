@@ -152,6 +152,7 @@ export default function MidSection(){
     return(
         <div className="mid-section-container"> 
             <div style={{
+                marginLeft:'50px',
                 display: 'flex',
                 justifyContent: 'center', 
                 alignItems: 'center'

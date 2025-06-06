@@ -50,7 +50,7 @@ const New = () => {
         <br></br>
       <div style={{height:'auto', width:'100%'}}> 
 
-                <div style={{width:'100%', left:'40%', right:'40%', marginLeft:'25%', marginRight:'20%',textAlign:'center', marginBottom:'2%'}} > 
+                <div style={{width:'100%', left:'40%', right:'40%', marginLeft:'24%', textAlign:'center', marginBottom:'2%'}} > 
                         
                       <div style={{width:"100vw", height:"auto"}}> 
                           <div className='tagline' style={{width:'45%'}}> 
