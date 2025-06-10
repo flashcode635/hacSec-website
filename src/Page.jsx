@@ -27,7 +27,7 @@ export default function Page() {
               <Route path="/" element={<New />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/partners" element={<PartnersPage />} />
-              <Route path="/resources" element={<ResourcePage />} />
+              <Route path="/Learn_X" element={<ResourcePage />} />
               <Route path="/subscription" element={<SubscriptionPage />} />
               <Route path="/courses" element={<Courses />} />
               <Route path="/blog" element={<BlogPage />} />

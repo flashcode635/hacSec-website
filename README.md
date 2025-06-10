@@ -27,9 +27,7 @@ A modern cybersecurity education and services platform built with **React** and 
 
 ---
 
-
 ## Project Structure
-
 
 ```
 cursor-hacksec-prv-ltd/
@@ -66,8 +64,6 @@ cursor-hacksec-prv-ltd/
 └── README.md
 ```
 
-
-
 ## Getting Started
 
 ### Prerequisites
@@ -80,8 +76,8 @@ cursor-hacksec-prv-ltd/
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/flashcode635/hacksec-prv-ltd.git
-   
 
+   ```
 
 ---
 
@@ -114,7 +110,7 @@ cursor-hacksec-prv-ltd/
 - **src/site/internship-page/** — Internship program and testimonials.
 - **src/site/navbar/** — Navigation bar components.
 - **src/site/partners-page/** — Partners and affiliations.
-- **src/site/Resources/** — Resource listings and details.
+- **src/site/Learn_X/** — Resource listings and details.
 - **src/site/services-page/** — Services offered.
 - **src/site/Subscription/** — Subscription and newsletter components.
 - **src/site/team/** — Team member profiles.
@@ -123,4 +119,3 @@ cursor-hacksec-prv-ltd/
 - **vite.config.js** — Vite configuration.
 - **LICENSE** — Project license.
 - **README.md** — Project documentation.
-

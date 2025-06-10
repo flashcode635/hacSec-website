@@ -11,7 +11,8 @@ const New = () => {
     <div style={{ minHeight: 'auto', width: '100vw' }}>
         <div className="hero-container">
           <div className="text-container">
-            <div> 
+            {/* wrapper div :-          */}
+            <div style={{textAlign:'left', paddingLeft:'2%'}}> 
             <h2 className="welcome-text">Welcome to the Future of Security</h2>
 
             <div className="tagline">

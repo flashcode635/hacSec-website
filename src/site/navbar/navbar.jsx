@@ -38,17 +38,17 @@ const Navbar = () => {
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
         <li><Link to="/services" >Services</Link></li>
         <li><Link to="/partners" >Partners</Link></li>
-        <li><a href="/resources" > LearnX</a></li>
+        <li><a href="/Learn_X" > LearnX</a></li>
         <li><Link to="/subscription" > Subscription </Link></li>
         <CompanyMenu></CompanyMenu>        
         {/* Company menu dropdown */}
       </ul>
 
       {/* Right corner buttons */}
-      <div className="right-buttons">
+      {/* <div className="right-buttons">
         <Link to="/contact" className="contact-btn">Contact Us</Link>
         <Link to="/signin" className="sign-in-btn">Sign In</Link>
-      </div>
+      </div> */}
     </>
     </nav>
   );

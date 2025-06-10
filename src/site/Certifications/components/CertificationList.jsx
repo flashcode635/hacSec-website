@@ -17,16 +17,16 @@ const certifications = [
     level: "Intermediate",
     description: "Apply behavioral analytics to networks to improve overall IT security",
     duration: "6 months",
-    prerequisites: "Security+ recommended",
+    prerequisites: "Security+ ",
     icon: certification
   },
   {
     id: 3,
     title: "CompTIA CASP+",
     level: "Advanced",
-    description: "Advanced security practitioner certification for enterprise security",
+    description: "Advanced security practitioner certification for the enterprise security",
     duration: "12 months",
-    prerequisites: "5 years experience recommended",
+    prerequisites: "5 years+",
     icon: certification
   }
 ];
