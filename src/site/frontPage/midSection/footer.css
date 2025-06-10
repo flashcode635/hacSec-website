@@ -24,9 +24,10 @@
 
   /*  child - hacksec logo */
   .main{
-    font-size: 2.7rem;
+    font-size: 2.3rem;
+    font-weight:normal;
     width:auto;
-    background: -webkit-linear-gradient(#0b43a3, #bebaba);
+    background: -webkit-linear-gradient(#0c52cb, #bebaba);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

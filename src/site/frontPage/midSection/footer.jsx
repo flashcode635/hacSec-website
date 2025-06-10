@@ -8,11 +8,16 @@ const Footer= ()=>{
         <>
     <footer className="footer">
 <div style={{display: "flex", gap: "20px", width: "100vw", alighnItems: "center", justifyContent: "space-between", padding: "20px 50px", color: "white"}}>
+
         <div className="hero" style={{marginLeft: "2px"}}> 
-            <h1 className="main"> Hack Secure </h1>
-            <p style={{fontSize: "1.2rem", color: "white",marginBottom:'16px'}}>Learn Secure Lead</p>
+
+            <p className="main"> Hack Secure </p>
+
+            <p style={{fontSize: "1.2rem",fontWeight: "lighter", color: "white",marginBottom:'16px'}}>
+                Learn Secure Lead
+                </p>
            <SocialLinks />
-            <p style={{fontSize: "1.1rem", color: "#aea9a9", marginTop: "10px",fontFamily:'Poppins', fontWeight:'lighter'}}> © 2025 HackSecure. All rights reserved.</p>
+            <p style={{fontSize: "1.0rem", color: "#aea9a9", marginTop: "10px",fontFamily:'Poppins', fontWeight:'lighter'}}> © 2025 HackSecure. All rights reserved.</p>
         </div> 
  
         
