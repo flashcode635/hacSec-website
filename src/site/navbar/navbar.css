@@ -56,7 +56,7 @@
 /* Individual navigation link styling */
 .navbar-links li a {
   /* Lighter grey color for navigation links - provides good contrast while being softer than pure white */
-  color: #bfc2c4; /* Subtle grey for better contrast */
+  color: #d8dadb; /* Subtle grey for better contrast */
 
 
   /* Ensures links only take up as much space as their content needs
@@ -64,10 +64,10 @@
   height: fit-content;
   width: fit-content;
   text-decoration: none;
-  font-weight: 540;
+  font-weight: normal;
   transition: color 0.3s ease; /* Smooth color transition on hover */
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem; /* Reduced font size */
+  font-family: "G-font", sans-serif;
+  font-size: 0.8rem; /* Reduced font size */
 }
 
 /* Hover effect for navigation links - Blue highlight */

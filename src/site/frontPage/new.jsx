@@ -29,7 +29,7 @@ const New = () => {
             </div>
         <button className="button">
                   <div className="blob1"></div>
-                  <div class="blob2"></div>
+                  <div className="blob2"></div>
                   <div className="inner">Get Started</div>
         </button> 
           </div>
@@ -57,9 +57,12 @@ const New = () => {
                         
                       <span  style={{ height:"auto"}}> 
                           <span className='tagline' style={{width:'45%'}}> 
-                                <h1>Train Cyber Warriors: Hack Secure's Unified Learning Platform
+                            <div style={{ marginLeft:'22%'}}> 
+                              <h1>Train Cyber Warriors: Hack Secure's Unified Learning Platform
 
                                 </h1>
+                            </div>
+                                
                           </span>
 
                       </span>
