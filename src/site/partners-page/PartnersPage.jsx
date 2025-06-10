@@ -121,7 +121,7 @@ const PartnersPage = () => {
           Contact our partnership team today to learn more about how we can help 
           your organization grow while providing enhanced security solutions.
         </p>
-        <div className="contact-buttons">
+        <div className="contact-btns">
           <button className="contact-button primary">Become a Partner</button>
           <button className="contact-button secondary">Contact Us</button>
         </div>

@@ -9,23 +9,23 @@ const InternshipList = () => {
   const internships = [
     {
       id: 1,
-      title: "Cybersecurity Analyst Intern",
+      title: "Front End Developer Intern",
       department: "Security Operations",
       duration: "3 months",
       type: "Full-time",
       location: "Remote / On-site",
-      description: "Join our security operations team to help monitor and analyze security threats. Learn to use SIEM tools, analyze logs, and respond to security incidents.",
+      description: "Join our front-end development team to help build and enhance user-facing features. Use modern frameworks, optimize user interfaces, and ensure a seamless and responsive user experience and collaborate with designers and back-end developers to deliver high-quality web applications.",
       requirements: [
         "Currently pursuing a degree in Computer Science, Cybersecurity or related field",
         "Basic understanding of networking and security concepts",
         "Problem-solving skills and attention to detail",
-        "Familiarity with Linux operating systems is a plus.",
+        "Familiarity with UI library is a plus.",
         "Good communication skills"
       ]
     },
     {
       id: 2,
-      title: "Penetration Testing Intern",
+      title: "Design Intern",
       department: "Offensive Security",
       duration: "4 months",
       type: "Full-time",
@@ -40,7 +40,7 @@ const InternshipList = () => {
     },
     {
       id: 3,
-      title: "Security DevOps Intern",
+      title: "Community Manager Intern",
       department: "Cloud Security",
       duration: "6 months",
       type: "Full-time",
@@ -56,7 +56,7 @@ const InternshipList = () => {
     },
     {
       id: 4,
-      title: "Security Research Intern",
+      title: "Back-end  Intern",
       department: "Research & Development",
       duration: "3-6 months",
       type: "Part-time/Full-time",

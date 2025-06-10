@@ -6,14 +6,15 @@ import './company.css'; // Custom styles
 const CompanyMenu = () => {
   return (
     <div className="nav-item company-menu">
-        <li><Link to="/contact"> Company </Link></li>
-      {/* <button className="nav-link">Company</button> */}
+      {/* Company option should not be clickable.. just hover */}
+        <li><Link > Company </Link></li> 
       <div className="dropdown-menu">
         <Link to="/" className="dropdown-item">About Us </Link>
         <Link to="/team" className="dropdown-item">Team</Link>
         <Link to="/certification" className="dropdown-item">Certifications</Link>
         <Link to="/careers" className="dropdown-item">Careers</Link>
         <Link to="/internship" className="dropdown-item">Internship</Link>
+        <Link  className="dropdown-item">Brand-kit</Link>
         <Link to="/contact" className="dropdown-item">Contact</Link>
       </div>
     </div>

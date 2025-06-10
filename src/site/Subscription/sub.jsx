@@ -4,7 +4,7 @@ const SubscriptionPage = () => {
     const SubscriptionTiers = [
         // Subscription tiers with benefits
     {
-      name: "EXPLORER",
+      name: "Free",
       description: "Learn hacking basics with rotating labs, beginner paths, and community access. Perfect for newcomers exploring cybersecurity fundamentals.",
       benefits: [
         "Free tier",
@@ -17,7 +17,7 @@ const SubscriptionPage = () => {
     },
     // intermediate tier
     {
-      name: "OPERATOR",
+      name: "Pro",
       description: "Unlock full labs, advanced paths, cloud hacking, and certificates. Ideal for serious learners preparing for cybersecurity careers.",
       benefits: [
         "Pro tier with full lab access",
@@ -30,7 +30,22 @@ const SubscriptionPage = () => {
     },
     // elite tier
     {
-      name: "REDTEAMER",
+      name: "Elite",
+      description: "Access pro labs, red vs blue, exclusive CTFs, expert sessions, and job tools. For elite cyber professionals.",
+      benefits: [
+        "Elite tier with all Operator benefits",
+        "Exclusive Red vs Blue team-based simulation exercises",
+        "Early access to zero-day simulation content",
+        "Access to private leaderboards and exclusive competitions",
+        "Priority lab access & faster machine resets",
+        "Extended Pwnbox time & custom VPN slots",
+        "Monthly live workshops with industry experts",
+        ]
+    },
+
+     // Custom tier
+    {
+      name: "Custom",
       description: "Access pro labs, red vs blue, exclusive CTFs, expert sessions, and job tools. For elite cyber professionals.",
       benefits: [
         "Elite tier with all Operator benefits",
@@ -46,7 +61,8 @@ const SubscriptionPage = () => {
   return (
      <div className="subscription-page">
          <div className="subscription-program-tiers">
-        <h2 className="section-title">Subscription Tiers </h2>
+        
+          <div style={{marginBottom:"65px"}}>  <h2 className="section-title">Subscription Tiers </h2> </div>
         <div className="tiers-container">
           {SubscriptionTiers.map((tier, index) => (
             <div key={index} className="tier-card">

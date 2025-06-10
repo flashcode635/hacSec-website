@@ -29,7 +29,7 @@ const ResourcePage = () => {
         {/* Hero Section */}
         <section className="resource-hero">
           <div className="resource-hero-content">
-            <h1>Cybersecurity Resource</h1>
+            <h1>Learn X </h1>
             <p>Everything you need—tools, internships, Certifications, and smarts—to lock down your digital assets like a pro.</p>
             <button className="hero-cta-button">Request a Consultation</button>
           </div>

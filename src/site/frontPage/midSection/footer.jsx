@@ -2,18 +2,22 @@ import React from "react";
 import SocialLinks from "./social";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import './footer.css';
-const footer= ()=>{
+
+const Footer= ()=>{
     return(
         <>
     <footer className="footer">
-        <div className="hero" style={{marginLeft: "20px"}}> 
+<div style={{display: "flex", gap: "20px", width: "100vw", alighnItems: "center", justifyContent: "space-between", padding: "20px 50px", color: "white"}}>
+        <div className="hero" style={{marginLeft: "2px"}}> 
             <h1 className="main"> Hack Secure </h1>
             <p style={{fontSize: "1.2rem", color: "white",marginBottom:'16px'}}>Learn Secure Lead</p>
            <SocialLinks />
-            <p style={{fontSize: "1.1rem", color: "#aea9a9", marginTop: "10px",fontFamily:'Poppins', fontWeight:'lighter'}}>© 2025 HackSecure. All rights reserved.</p>
-        </div>
-        <div style={{display: "flex", flexDirection: "row", gap: "50px", marginLeft: "5%",width: "80vw"}}> 
+            <p style={{fontSize: "1.1rem", color: "#aea9a9", marginTop: "10px",fontFamily:'Poppins', fontWeight:'lighter'}}> © 2025 HackSecure. All rights reserved.</p>
+        </div> 
+ 
+        
 
+                    {/* company */}
             <div className="footer-links"> <p>Companys</p> 
                 <ul style={{listStyleType: "none", padding: 0,marginTop:'12px' ,fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>About Us</li>
@@ -23,7 +27,9 @@ const footer= ()=>{
                     <li>Contact Us</li>
                 </ul> 
             </div> 
-
+         
+         
+                        {/* Resources */}
             <div className="footer-links"> <p>Resources</p> 
                 <ul style={{listStyleType: "none", padding: 0, marginTop:'12px',fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>Training</li>
@@ -33,16 +39,21 @@ const footer= ()=>{
                     <li>News</li>
                 </ul> 
             </div> 
+        
 
+         
+                        {/* Partners */}
             <div className="footer-links"> <p>Partners</p> 
                 <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>Partner Program</li>
                     <li>MSSP and MDR Partner Program</li>
                     <li>Technology Partners</li>
-                    <li>Partner Locator</li>
                 </ul> 
             </div> 
+            
 
+         
+                        {/* Support */}
             <div className="footer-links"> <p>Support</p> 
                 <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>FAQ Section</li>
@@ -51,6 +62,9 @@ const footer= ()=>{
                     
                 </ul> 
             </div> 
+
+         
+                        {/* Contact */}
             <div className="footer-links"> <p>Contact</p> 
                 <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Poppins', fontWeight:'lighter'}}>
                     <li>Company</li>
@@ -60,10 +74,10 @@ const footer= ()=>{
                     <li>Contact</li>
                 </ul> 
             </div> 
-        </div>
-        
+            
+</div>
     </footer> 
         </>
     )
 }
- export default footer;
+ export default Footer;

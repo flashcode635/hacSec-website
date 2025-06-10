@@ -2,20 +2,6 @@ import React, { useState } from "react";
 import './mid-section.css'
 import Prod from './prod.png'
 
-// Card component for displaying products/services with icon and description
-function Card3({photo, description}){
-    return(
-      <div className="product-card">
-        <div style={{display:'flex'}}>
-          <div>
-            <img src={photo} className="product-icon" alt="product"/>
-          </div>
-        </div>
-        <p>{description}</p>
-      </div>
-    )
-} 
-
 // Products section component displaying different offerings
 function Products() {
     const productItems = [
@@ -26,26 +12,23 @@ function Products() {
     ];
 
     return(
-        <div className="section-content" style={{paddingLeft:'50px'}}> 
-            <div style={{
-                width:'100vw', 
-                backgroundColor: 'black', 
-                color: 'white', 
-                display:"flex", 
-                maxHeight:'30', 
-                paddingTop:'20px',
-                marginBottom:'40px'
-            }}>
+        <div className="section-content solutions-section">
+            <div className="solutions-header">
+                <h2 className="solutions-title">Our Products</h2>
+                <p className="solutions-subtitle">Advanced cybersecurity products for comprehensive protection</p>
+            </div>
+            
+            <div className="solutions-grid">
                 {productItems.map((item, index) => (
-                    <div key={index} style={{
-                        paddingRight:'40px', 
-                        marginTop:'10px', 
-                        maxHeight:'30'
-                    }}>
-                        <Card3 
-                            photo={Prod} 
-                            description={item.description}
-                        />
+                    <div key={index} className="solution-card-wrapper">
+                        <div className="solution-card">
+                            <div className="solution-icon-container">
+                                <img src={Prod} className="solution-icon" alt="solution icon" />
+                            </div>
+                            <h3 className="solution-name">{item.description}</h3>
+                            <p className="solution-description">{item.details}</p>
+                            <button className="solution-learn-more">Learn More</button>
+                        </div>
                     </div>
                 ))}
             </div>
@@ -75,22 +58,22 @@ function Services() {
     ];
 
     return(
-        <div className="section-content services-section">
-            <div className="services-header">
-                <h2 className="services-title">Our Services</h2>
-                <p className="services-subtitle">Comprehensive cybersecurity solutions for businesses of all sizes</p>
+        <div className="section-content solutions-section">
+            <div className="solutions-header">
+                <h2 className="solutions-title">Our Services</h2>
+                <p className="solutions-subtitle">Advanced cybersecurity products for comprehensive protection</p>
             </div>
             
-            <div className="services-grid">
+            <div className="solutions-grid">
                 {serviceItems.map((item, index) => (
-                    <div key={index} className="service-card-wrapper">
-                        <div className="service-card">
-                            <div className="service-icon-container">
-                                <img src={Prod} className="service-icon" alt="service icon" />
+                    <div key={index} className="solution-card-wrapper">
+                        <div className="solution-card">
+                            <div className="solution-icon-container">
+                                <img src={Prod} className="solution-icon" alt="solution icon" />
                             </div>
-                            <h3 className="service-name">{item.description}</h3>
-                            <p className="service-description">{item.details}</p>
-                            <button className="service-learn-more">Learn More</button>
+                            <h3 className="solution-name">{item.description}</h3>
+                            <p className="solution-description">{item.details}</p>
+                            <button className="solution-learn-more">Learn More</button>
                         </div>
                     </div>
                 ))}

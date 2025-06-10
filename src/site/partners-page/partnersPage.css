@@ -1,6 +1,6 @@
 .partners-page {
   width: 100%;
-  background-color: #111114;
+  background-color: #000007;
   color: #e4e9ee;
   font-family: 'Poppins', sans-serif;
 }
@@ -10,12 +10,12 @@
   position: relative;
   min-height: 500px;
   width: 100%;
-  background-color: rgb(20, 19, 20);
+  background-color: rgb(0, 0, 8);
   border-bottom: 1px solid rgba(52, 152, 219, 0.1);
   display: flex;
   align-items: center;
   padding: 0 10%;
-  background-image: linear-gradient(to right, rgba(17, 17, 20, 0.9), rgba(17, 17, 20, 0.7)), url('');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(1, 1, 1, 0.7)), url('');
   background-size: cover;
   background-position: center;
 }
@@ -62,7 +62,7 @@
 /* Benefits Section */
 .partners-benefits-section {
   padding: 80px 10%;
-  background-color: #111114;
+  background-color: #040305;
 }
 
 .section-title {
@@ -85,7 +85,7 @@
 }
 
 .benefit-item {
-  background-color: rgba(5, 5, 29, 0.8);
+  background-color: rgba(5, 11, 24, 0.8);
   border-radius: 10px;
   padding: 30px;
   border: 1px solid rgba(52, 152, 219, 0.1);
@@ -120,7 +120,7 @@
 /* Program Tiers Section */
 .partners-program-tiers {
   padding: 80px 10%;
-  background-color: rgb(20, 19, 20);
+  background-color: rgb(0, 0, 0);
   border-top: 1px solid rgba(52, 152, 219, 0.1);
   border-bottom: 1px solid rgba(52, 152, 219, 0.1);
 }
@@ -238,7 +238,7 @@
 /* Testimonials Section */
 .partners-testimonials {
   padding: 80px 10%;
-  background-color: #111114;
+  background-color: #050208;
 }
 
 .testimonial-card {
@@ -282,7 +282,7 @@
 /* Contact Section */
 .partners-contact {
   padding: 80px 10%;
-  background-color: rgb(20, 19, 20);
+  
   text-align: center;
   border-top: 1px solid rgba(52, 152, 219, 0.1);
 }
@@ -295,7 +295,7 @@
   margin: 0 auto 40px;
 }
 
-.contact-buttons {
+.contact-btns {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -360,7 +360,7 @@
     grid-template-columns: 1fr;
   }
   
-  .contact-buttons {
+  .contact-btns {
     flex-direction: column;
     gap: 15px;
   }
