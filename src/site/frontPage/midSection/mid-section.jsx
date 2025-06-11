@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './mid-section.css'
 import Prod from './prod.png'
+import Button from "./mid-button";
 
 // Products section component displaying different offerings
 function Products() {
@@ -135,19 +136,19 @@ export default function MidSection(){
     return(
         <div className="mid-section-container"> 
             <div style={{
-                marginLeft:'50px',
+                marginLeft:'0px',
                 display: 'flex',
                 justifyContent: 'center', 
                 alignItems: 'center'
             }}>
                 <button className="mid" onClick={() => setSelect('Products')}>
-                    Products
+                    <Button name="Products"></Button>
                 </button>
                 <button className="mid" onClick={() => setSelect('Services')}>
-                    Services
+                    <Button name="Services"></Button>
                 </button>
                 <button className="mid" onClick={() => setSelect('Solutions')}>
-                    Solutions
+                    <Button name="Solutions"></Button>
                 </button>
             </div>
 
