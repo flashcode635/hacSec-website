@@ -1,0 +1,51 @@
+.gradient-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #161626; /* Black background */
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 17px; /* Always rounded corners */
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.2s;
+}
+
+.gradient-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* Border thickness */
+  border-radius: 17px; /* Match button radius */
+  background: linear-gradient(90deg, #7f5cff, #00e6f6);
+-webkit-mask: linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+mask: linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  opacity: 0;
+  z-index: 2;
+}
+
+.gradient-btn:hover::before {
+  opacity: 1;
+}
+
+.gradient-btn-text {
+  position: relative;
+  z-index: 3;
+}
+
+.gradient-btn-arrow {
+  position: relative;
+  z-index: 3;
+  font-weight: bold;
+}

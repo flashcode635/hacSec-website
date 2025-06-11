@@ -15,6 +15,7 @@ const CompanyMenu = () => {
         <Link to="/careers" className="dropdown-item">Careers</Link>
         <Link to="/internship" className="dropdown-item">Internship</Link>
         <Link  className="dropdown-item">Brand-kit</Link>
+        <Link  className="dropdown-item">Legal</Link>
         <Link to="/contact" className="dropdown-item">Contact</Link>
       </div>
     </div>

@@ -5,15 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Tooltip = () => {
   return (
-    <div className="container">
-      <div className="hacker-container">
+    <div className="holder">
+      <div className="hacker-holder">
         <Link to="/Learn_X" className="hacker-btn">
           LearnX
         </Link>
-
-        <div data-text="SYSTEM OVERRIDE" className="hacker-tooltip">
-          <span>SYSTEM OVERRIDE</span>
-        </div>
       </div>
     </div>
   );

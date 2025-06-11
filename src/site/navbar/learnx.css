@@ -1,5 +1,5 @@
-/* Base container styling */
-.container {
+/* Base holder styling */
+.holder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.container::before {
+.holder::before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@
   animation: data-stream 4s infinite linear;
 }
 
-.hacker-container {
+.hacker-holder {
   position: relative;
   z-index: 1;
 }

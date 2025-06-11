@@ -1,5 +1,6 @@
 import React from 'react';
 import './partnersPage.css';
+import GradientButton from '../Components/resource-btn';
 
 const PartnersPage = () => {
   // Partner program tiers
@@ -48,7 +49,7 @@ const PartnersPage = () => {
             Join forces with HackSecure to build stronger security services and expand your business.
             Our partner program empowers MSSPs and MDR providers with cutting-edge technologies and comprehensive support.
           </p>
-          <button className="partners-cta-button">Become a Partner</button>
+          <GradientButton name="Become a Partner" />
         </div>
       </div>
 

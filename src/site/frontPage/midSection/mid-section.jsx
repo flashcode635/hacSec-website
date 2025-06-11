@@ -41,15 +41,15 @@ function Products() {
 function Services() {
     const serviceItems = [
         { 
-            description: 'Penetration Testing',
+            description: 'Workshops ',
             details: 'Comprehensive security assessments to identify vulnerabilities in your systems before attackers do.'
         },
         { 
-            description: 'Security Consulting',
+            description:  'Sessions',
             details: 'Expert guidance on implementing robust security strategies tailored to your organization.'
         },
         { 
-            description: 'Incident Response',
+            description: 'Webinars',
             details: 'Rapid and effective response to security breaches to minimize damage and recovery time.'
         },
         { 

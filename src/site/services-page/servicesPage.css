@@ -88,6 +88,7 @@
 }
 
 .services-grid {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
@@ -303,6 +304,7 @@
 }
 
 .cta-buttons {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   gap: 20px;
