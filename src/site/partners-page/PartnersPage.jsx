@@ -6,7 +6,7 @@ const PartnersPage = () => {
   // Partner program tiers
   const partnerTiers = [
     {
-      name: "ELITE",
+      name: "International Partners",
       description: "For organizations with advanced cybersecurity expertise seeking the highest level of partnership",
       benefits: [
         "Priority access to new threat intelligence",
@@ -17,8 +17,8 @@ const PartnersPage = () => {
       ]
     },
     {
-      name: "PROFESSIONAL",
-      description: "For established security service providers looking to expand their offerings",
+      name: "Brand Ambassadors",
+      description: "For security professionals and influencers who want to promote HackSecure",
       benefits: [
         "Specialized product training",
         "Regular threat intelligence updates",
@@ -28,7 +28,7 @@ const PartnersPage = () => {
       ]
     },
     {
-      name: "ASSOCIATE",
+      name: "Community Partners",
       description: "Entry-level partnership for growing security providers",
       benefits: [
         "Basic product training",
@@ -36,6 +36,39 @@ const PartnersPage = () => {
         "Partner portal access",
         "Sales enablement tools",
         "Standard margins"
+      ]
+    },
+    {
+      name: "Academic Partners",
+      description: "Partnerships with educational institutions to enhance cybersecurity training and research.",
+      benefits: [
+        "Access to exclusive training materials and resources",
+        "Collaboration on educational programs",
+        "Opportunities for student internships",
+        "Discounted services for educational purposes",
+        "Joint marketing initiatives"
+      ]
+    },
+    {
+      name: "Event Partners and Sponsors",
+      description: "For organizations looking to co-host cybersecurity events and workshops",
+      benefits: [
+        "Event sponsorship opportunities",
+        "Co-branded marketing materials",
+        "Access to HackSecure's network of experts",
+        "Joint webinars and training sessions",
+        "Lead generation support"
+      ]
+    },
+    {
+      name: "Corporate Partners",
+      description: "Partnerships with corporate entities to enhance cybersecurity offerings.",
+      benefits: [
+        "Access to exclusive research and resources",
+        "Collaboration on training programs",
+        "Opportunities for employee internships",
+        "Discounted services for corporate purposes",
+        "Joint marketing initiatives"
       ]
     }
   ];
@@ -82,6 +115,9 @@ const PartnersPage = () => {
 {/* Partner Program Tiers -different plans */}
       <div className="partners-program-tiers">
         <h2 className="section-title">Partner Program Tiers</h2>
+        <p className="section-subtitle">
+          Choose the partnership tier that best fits your organization's needs and goals.
+        </p>
         <div className="tiers-container">
           {partnerTiers.map((tier, index) => (
             <div key={index} className="tier-card">
