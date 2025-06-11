@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import './navbar.css';
 import CompanyMenu from './companyTag';
+import Tooltip from './learnx';
 /**
  * Navbar Component
  * Includes a logo, navigation links, and a hamburger menu for mobile devices.
@@ -38,10 +39,14 @@ const Navbar = () => {
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
         <li><Link to="/services" >Services</Link></li>
         <li><Link to="/partners" >Partners</Link></li>
-        <li><a href="/Learn_X" > LearnX</a></li>
         <li><Link to="/subscription" > Subscription </Link></li>
-        <CompanyMenu></CompanyMenu>        
+
+          <Tooltip></Tooltip>
+
+        {/* <li><a href="/Learn_X" > LearnX</a></li> */}
+        <CompanyMenu></CompanyMenu>
         {/* Company menu dropdown */}
+
       </ul>
 
       {/* Right corner buttons */}

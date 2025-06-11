@@ -9,7 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "react-scripts start --host 0.0.0.0"
-
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
@@ -19,6 +18,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.3",
+    "styled-components": "^6.1.18",
     "tailwind": "^2.3.1"
   },
   "devDependencies": {
