@@ -2,14 +2,12 @@
 .resource-page {
   width: 100%;
   color: #fff;
-  margin-top: 58px;
   overflow-x: hidden;
   background-color: #020202;
 }
 
 /* Container for sections */
 .container {
-  padding-top: 30px;
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -370,7 +368,6 @@
 
 @media screen and (max-width: 768px) {
   .resource-hero {
-    padding: 0 20px;
     height: 60vh;
   }
   

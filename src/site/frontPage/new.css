@@ -7,7 +7,7 @@
   text-align: center;
   flex-direction: row;
   position: relative;
-   background: linear-gradient(to right, rgba(2, 2, 2, 0.736), rgba(2, 2, 2, 0.434)), 
+   background: linear-gradient(to right,rgb(0 0 0 / 75%), rgb(2 2 2 / 38%)), 
               url('https://img.freepik.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg?semt=ais_hybrid&w=740');
 }
 

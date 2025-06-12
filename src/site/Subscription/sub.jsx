@@ -1,5 +1,7 @@
 import React from 'react';
 import './subscription.css';
+
+import PricingTable from './priceTable'; // Adjust the import path as necessary
 const SubscriptionPage = () => {
     const SubscriptionTiers = [
         // Subscription tiers with benefits
@@ -79,7 +81,7 @@ const SubscriptionPage = () => {
             Hack Secure provides a range of subscription tiers to suit different learning needs. Choose the subscription tier that best fits your learning needs and goals.
           </p>
           </div>
-        <div className="tiers-container">
+        {/* <div className="tiers-container">
           {SubscriptionTiers.map((tier, index) => (
             <div key={index} className="tier-card">
               <h3 className="tier-name">{tier.name}</h3>
@@ -95,6 +97,24 @@ const SubscriptionPage = () => {
               <button className="tier-apply-button">Buy Now</button>
             </div>
           ))}
+        </div> */}
+        <PricingTable />
+        {/* Custom Plan Option */}
+        <div className="custom-plan-option">
+            <h2 id='custom-plan-title'>
+              Need a Custom Plan?
+            </h2>
+
+            <p id='paragraph'>
+                Contact us for a tailored solution that fits your organization's needs.
+            </p>
+            <button
+                className="custom-plan-button"
+                onMouseOver={e => (e.currentTarget.style.background = "#1e40af")}
+                onMouseOut={e => (e.currentTarget.style.background = "#2563eb")}
+            >
+                Contact Sales
+            </button>
         </div>
       </div>
     </div>

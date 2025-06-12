@@ -13,14 +13,14 @@ import CertificationPage from './site/Certifications/components/cert';
 import SubscriptionPage from './site/Subscription/sub';
 import ResourcePage from './site/Resources/resource';
 import CareerPage from './site/career/career';
-import ScrollToTop from './scrolling';
+import ScrollTop from './scrolling';
 import Teams from './site/team/team';
 import Footer from './site/frontPage/midSection/footer';
 
 export default function Page() {
   return (
     <BrowserRouter>
-    < ScrollToTop />
+      <ScrollTop />
       <div className="App">
         <Navbar />
         <Routes> 

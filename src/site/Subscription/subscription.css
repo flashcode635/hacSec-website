@@ -1,5 +1,4 @@
 .subscription-page {
- 
   width: 100%;
   background-color: #00000c;
   color: #e4e9ee;
@@ -56,6 +55,7 @@
   transform: scaleX(1);
 }
 
+
 .tier-name {
   font-size: 24px;
   font-weight: 600;
@@ -103,4 +103,39 @@
   position: absolute;
   left: 0;
   color: #3498db;
+}
+
+
+.custom-plan-option {
+  margin-top: 2.5rem;
+  text-align: center;
+  background: #040011e4;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 8px rgba(215, 212, 212, 0.06);
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.custom-plan-button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(37,99,235,0.08);
+    transition: background 0.2s ease;
+}
+#paragraph{
+  margin-bottom: 1.2rem;
+  color: #475f8d;
+  font-size: 1.05rem;
+}
+
+#custom-plan-title{
+  margin-bottom: 0.5rem;
+  color: #8daded;
 }

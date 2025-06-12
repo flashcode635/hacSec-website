@@ -3,20 +3,14 @@ import './courses.css';
 import './preview.css';
 
 import coursesList from './courseList'; // Import the coursesList
+import { useNavigate } from 'react-router-dom';
 
 
 const Courses = () => {
-  const [selectedCourse, setSelectedCourse] = useState(null);
-  const [showModal, setShowModal] = useState(false);
 
-  const openPreview = (course) => {
-    setSelectedCourse(course);
-    setShowModal(true);
-  };
+  // Import useNavigate from react-router-dom
 
-  const closePreview = () => {
-    setShowModal(false);
-  };
+  const navigate = useNavigate();
 
   return (
     <div className="courses-page">
@@ -73,7 +67,15 @@ const Courses = () => {
                 
 
                 <div style={{marginTop: '10px'}}>
-                  <button className="enroll-button" onClick={() => openPreview(course)}>Enroll Now</button>
+                  <button
+                    className="enroll-button"
+                    onClick={() => {
+                      const courseName = course.title.toLowerCase().replace(/\s+/g, '');
+                      navigate(`/${courseName}`);
+                    }}
+                  >
+                    Enroll Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -82,55 +84,7 @@ const Courses = () => {
         </div>
       </div>
       
-      {showModal && selectedCourse && (
-        <div className="course-preview-modal">
-          <div className="modal-overlay" onClick={closePreview}></div>
-          <div className="modal-content">
-            <button className="close-modal" onClick={closePreview}>×</button>
-            <div className="preview-image" style={{ backgroundImage: `url(${selectedCourse.image})` }}></div>
-            <div className="preview-details">
-              <h2>{selectedCourse.title}</h2>
-              <div className="course-duration">
-                <span>Duration:</span> {selectedCourse.duration}
-              </div>
-             <div style={{display:"flex"}}>
-                 {/* Level Box with green transparent background in modal */}
-                <div
-                  className="course-level-badge"
-                  style={{
-                    background: 'rgba(0, 128, 0, 0.2)',
-                    color: '#006400',
-                    padding: '6px 14px',
-                    borderRadius: '8px',
-                    display: 'inline-block',
-                    fontWeight: 'bold',
-                    fontSize: '1rem',
-                    margin: '8px 0',
-                  }}> {selectedCourse.level} 
-                </div>
-
-                  {/* modules */}
-                  <div style={{display:'flex',alignItems:'center', marginLeft: '10px'}}>
-                        <div style={{paddingTop:'4px', background:"url(https://academy.hackthebox.com/images/pages/front/ic-sections.png) no-repeat center center", backgroundSize: 'contain', width: '20px', height: '20px', marginRight: '5px'}}>                
-                        </div>
-                        <div> {selectedCourse.modules} Modules</div>
-                  </div>
-                </div> 
-              
-              <div className="course-description">
-                <h3>About This Course</h3>
-                <p>{selectedCourse.details || selectedCourse.description}</p>
-              </div>
-              <div className="course-pricing">
-                <h3>Pricing</h3>
-                <div className="price">{selectedCourse.price}</div>
-                <div className="price-info">One-time payment, lifetime access</div>
-              </div>
-              <button className="buy-now-button">Buy Now</button>
-            </div>
-          </div>
-        </div>
-      )}
+      
       
       <div className="courses-cta">
         <div className="cta-content">

@@ -40,8 +40,7 @@ const Navbar = () => {
         <li><Link to="/services" >Services</Link></li>
         <li><Link to="/partners" >Partners</Link></li>
         <li><Link to="/subscription" > Subscription </Link></li>
-
-          <Tooltip></Tooltip>
+        <li><Link to="/Learn_X" > LearnX</Link></li>
 
         {/* <li><a href="/Learn_X" > LearnX</a></li> */}
         <CompanyMenu></CompanyMenu>

@@ -1,0 +1,64 @@
+/* PricingTable.css */
+.pricing-table-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #1d1d1f;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  padding: 32px 20px;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.pricing-table th,
+.pricing-table td {
+  text-align: center;
+  padding: 18px 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.pricing-table th {
+  background: #15132e26;
+  color: #1e93fa;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.pricing-table td:first-child,
+.pricing-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 1.4em;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px 8px;
+  border-radius: 50%;
+}
+
+.tick {
+  color: #05d4b9;
+  background: #ebfbf5;
+}
+
+.cross {
+  color: #e74c3c;
+  background: #ffeaea;
+}
+
+@media (max-width: 700px) {
+  .pricing-table-container {
+    padding: 12px 2px;
+  }
+  .pricing-table th,
+  .pricing-table td {
+    padding: 10px 2px;
+    font-size: 0.98em;
+  }
+}
