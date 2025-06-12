@@ -232,7 +232,7 @@ const ResourcePage = () => {
               <h2>Blog</h2>
               <p>Our blog delivers insights to help you spot and fix vulnerabilities before attackers can exploit them.</p>
               <p>Packed with real-world tactics and cutting-edge tools, we break down how cyber threats work—so you can stay one step ahead with practical, expert-backed advice.</p>
-              <Link to="/blog" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/blog" className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image blog-image"></div>
           </div>
@@ -246,7 +246,7 @@ const ResourcePage = () => {
               <h2>Courses</h2>
               <p>Explore our comprehensive courses designed to equip you with the skills and knowledge needed to excel in cybersecurity, from foundational concepts to advanced techniques.</p>
               <p>Our expert instructors guide you through hands-on labs and real-world scenarios, ensuring you gain practical experience and confidence in your abilities.</p>
-              <Link to="/courses" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/courses" className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image defensive-image"></div>
           </div>
@@ -265,7 +265,7 @@ const ResourcePage = () => {
              <p>
               Our expertly crafted programs are tailored to validate and elevate your expertise, empowering you to thrive in today’s fast-paced and ever-changing cybersecurity landscape. Gain practical, in-demand skills recognized by top employers and accelerate your career with confidence.
               </p>
-              <Link to="/certification" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/certification"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image intelligence-image"></div>
           </div>
@@ -283,7 +283,7 @@ const ResourcePage = () => {
               <p>
                 Build practical skills, gain exclusive insights, and make an immediate impact in the cybersecurity field.
               </p>
-                  <Link to="/internship" target="_blank" className="resource-detail-cta"> Check Now </Link>
+                  <Link to="/internship"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image training-image"></div>
           </div>
@@ -298,7 +298,7 @@ const ResourcePage = () => {
               <h2>Quiz</h2>
               <p>Test your cybersecurity knowledge with our interactive quizzes and challenges. Sharpen your skills, learn new concepts, and stay updated on the latest trends in cybersecurity.</p>
               <p>Whether you're a beginner or an experienced professional, our quizzes are designed to enhance your understanding and keep you engaged.</p>
-              <Link to="/quiz" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/quiz"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image defensive-image"></div>
           </div>
@@ -317,7 +317,7 @@ const ResourcePage = () => {
               <p>
                 From penetration testing frameworks to threat intelligence platforms, our tools empower you to tackle real-world challenges.
               </p>
-              <Link to="/tools" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/tools"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image training-image"></div>
           </div>
@@ -332,7 +332,7 @@ const ResourcePage = () => {
               <h2>Pamphlets</h2>
               <p>Download our informative pamphlets to enhance your cybersecurity knowledge. Our pamphlets cover a wide range of topics, providing quick reference guides and best practices to help you stay informed and secure.</p>
               <p>Whether you're looking for tips on threat awareness or best practices for securing your digital assets, our pamphlets are a valuable resource.</p>
-              <Link to="/pamphlets" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/pamphlets"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image intelligence-image"></div>
           </div>
@@ -347,7 +347,7 @@ const ResourcePage = () => {
               <h2>Podcast</h2>
               <p>Listen to our podcast for expert insights and discussions on the latest in cybersecurity. Our podcast features interviews with industry leaders, deep dives into cyber threats, and practical tips to help you stay secure.</p>
               <p>Stay informed and engaged with our regular episodes that cover a wide range of cybersecurity topics.</p>
-              <Link to="/podcast" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/podcast"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image defensive-image"></div>
           </div>
@@ -362,7 +362,7 @@ const ResourcePage = () => {
               <h2>Trainings</h2>
               <p>Enhance your skills with our hands-on training sessions led by industry experts.</p>
               <p>Participate in live workshops, hands-on labs, and real-world scenarios to gain practical experience.</p>
-              <Link to="/trainings" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/trainings"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image training-image"></div>
           </div>
@@ -377,7 +377,7 @@ const ResourcePage = () => {
               <h2>Events</h2>
               <p>Join our live events and webinars to stay updated on the latest trends in cybersecurity.</p>
               <p>Participate in expert panels, hands-on workshops, and networking opportunities to enhance your knowledge and skills.</p>
-              <Link to="/events" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/events"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image training-image"></div>
           </div>
@@ -392,7 +392,7 @@ const ResourcePage = () => {
               <h2>Community Projects</h2>
               <p>Join our vibrant community of cybersecurity enthusiasts and professionals. Share knowledge, ask questions, and collaborate on projects to enhance your skills.</p>
               <p>Participate in discussions, attend meetups, and connect with like-minded individuals who are passionate about cybersecurity.</p>
-              <Link to="/community" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/community"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image blog-image"></div>
           </div>
@@ -409,7 +409,7 @@ const ResourcePage = () => {
               <h2>Cyber Laws and Policies</h2>
               <p>Stay informed about the latest cybersecurity laws and policies that impact your organization.</p>
               <p>Understand compliance guidelines, data protection regulations, and incident reporting requirements to ensure your organization remains secure and compliant.</p>
-              <Link to="/cyber-laws" target="_blank" className="resource-detail-cta"> Check Now </Link>
+              <Link to="/cyber-laws"  className="resource-detail-cta"> Check Now </Link>
             </div>
             <div className="resource-detail-image intelligence-image"></div>
           </div>
