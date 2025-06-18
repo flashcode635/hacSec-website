@@ -6,37 +6,43 @@ import './footer.css';
 const Footer= ()=>{
     return(
         <>
-    <footer className="footer">
-<div style={{display: "flex", gap: "20px", width: "100vw", alighnItems: "center", justifyContent: "space-between", padding: "20px 50px", color: "white"}}>
+    <footer className="footer" >
+<div style={{display: "flex", gap: "20px", width: "100vw", alighnItems: "center", justifyContent: "space-between", padding: "20px 50px", color: "white"}} >
 
         <div className="hero" style={{marginLeft: "2px"}}> 
 
-            <p className="main"> Hack Secure </p>
+            <p className="main"> Hack Secure 
+
+            </p>
 
             <p style={{fontSize: "1.2rem",fontWeight: "lighter", color: "white",marginBottom:'16px'}}>
                 Learn Secure Lead
                 </p>
-           <SocialLinks />
-            <p style={{fontSize: "1.0rem", color: "#aea9a9", marginTop: "10px",fontFamily:'Poppins', fontWeight:'lighter'}}> © 2025 HackSecure. All rights reserved.</p>
+
+                {/* <div style={{height: '175px', width: '280px'}}>
+                    <div id="picture"></div>
+                </div> */}
+
+            <p style={{fontSize: "1.0rem", color: "#aea9a9", marginTop: "10px",fontFamily:'Sans-Serif', fontWeight:'lighter'}}> © 2025 HackSecure. All rights reserved.</p>
         </div> 
  
         
 
                     {/* company */}
-            <div className="footer-links"> <p>Companys</p> 
-                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px' ,fontFamily:'Poppins', fontWeight:'lighter'}}>
+            <div className="footer-links"> <p style={{color:"white",fontWeight:'lighter'}}>Company</p> 
+                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px' ,fontFamily:'Sans-Serif', fontWeight:'lighter',fontSize:'0.8rem'}}>
                     <li>About Us</li>
                     <li>Our Team</li>
                     <li>Careers</li>
-                    <li>Our Clients</li>
+                    <li>Media Center</li>
                     <li>Contact Us</li>
                 </ul> 
             </div> 
          
          
                         {/* Resources */}
-            <div className="footer-links"> <p>Resources</p> 
-                <ul style={{listStyleType: "none", padding: 0, marginTop:'12px',fontFamily:'Poppins', fontWeight:'lighter'}}>
+            <div className="footer-links"> <p style={{color:"white",fontWeight:'lighter'}}>Resources</p> 
+                <ul style={{listStyleType: "none", padding: 0, marginTop:'12px',fontFamily:'Sans-Serif', fontWeight:'lighter',fontSize:'0.8rem'}}>
                     <li>Training</li>
                     <li>Certifications</li>
                     <li>Blogs</li>
@@ -48,40 +54,60 @@ const Footer= ()=>{
 
          
                         {/* Partners */}
-            <div className="footer-links"> <p>Partners</p> 
-                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Poppins', fontWeight:'lighter'}}>
+            {/* <div className="footer-links"> <p>Partners</p> 
+                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Sans-Serif', fontWeight:'lighter',fontSize:'0.8rem'}}>
                     <li>Partner Program</li>
                     <li>MSSP and MDR Partner Program</li>
                     <li>Technology Partners</li>
                 </ul> 
             </div> 
-            
+             */}
 
          
-                        {/* Support */}
-            <div className="footer-links"> <p>Support</p> 
-                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Poppins', fontWeight:'lighter'}}>
-                    <li>FAQ Section</li>
-                    <li>Terms Conditions</li>
+                        {/* Legal */}
+            <div className="footer-links"> <p style={{color:"white",fontWeight:'lighter'}}>Legal Compliance</p> 
+                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Sans-Serif', fontWeight:'lighter',fontSize:'0.8rem'}}>
+                    
+                    <li>Data Privacy Framework</li>
+                    <li>Terms & Conditions</li>
+                    
                     <li>Privacy Policy</li>
+                    
+                </ul> 
+            </div> 
+            <div className="footer-links"> <p style={{color:"white",fontWeight:'lighter'}}>Support </p> 
+                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Sans-Serif', fontWeight:'lighter',fontSize:'0.8rem'}}>
+                    <li>FAQ Section</li>
+                    
+                    <li>Organization</li>
+                    <li>Headquarters & Branches</li>
+                    
                     
                 </ul> 
             </div> 
 
          
                         {/* Contact */}
-            <div className="footer-links"> <p>Contact</p> 
-                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Poppins', fontWeight:'lighter'}}>
+            {/* <div className="footer-links"> <p>Contact</p> 
+                <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Sans-Serif', fontWeight:'lighter',fontSize:'0.8rem'}}>
                     <li>Company</li>
                     <li>Resources</li>
                     <li>Partners</li>
                     <li>Support</li>
                     <li>Contact</li>
                 </ul> 
-            </div> 
+            </div>  */}
             
 </div>
+            
     </footer> 
+    {/* contact  */}
+    <div  style={{width:'100vw', paddingLeft:'45px',paddingTop:'14px'}}>
+        <div style={{fontFamily:'Sans-Serif',color:'white',paddingBottom:'17px'}}>Contact</div>
+        <div > 
+            <SocialLinks />
+        </div>
+    </div>
         </>
     )
 }

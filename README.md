@@ -74,6 +74,7 @@ cursor-hacksec-prv-ltd/
 ### Installation
 
 1. **Clone the repository:**
+
    ```sh
    git clone https://github.com/flashcode635/hacksec-prv-ltd.git
 
@@ -101,7 +102,7 @@ cursor-hacksec-prv-ltd/
 - **src/index.css** — Global styles.
 - **src/assets/** — Static assets (e.g., react.svg).
 - **src/images/** — Image files (backgrounds, world maps, course images).
-- **src/site/Blogs/** — Blog-related components and pages.
+- **src/site//blogs/** — Blog-related components and pages.
 - **src/site/career/** — Career and team-related components.
 - **src/site/Certifications/** — Certification cards and lists.
 - **src/site/ContactUs/** — Contact form and related components.

@@ -1,23 +1,34 @@
 /* section-1 - intro and background image */
 /* Container for image and text */
 .hero-container {
-   margin-top: 20px;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: row;
   position: relative;
-   background: linear-gradient(to right,rgb(0 0 0 / 75%), rgb(2 2 2 / 38%)), 
-              url('https://img.freepik.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg?semt=ais_hybrid&w=740');
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   /* background: radial-gradient(circle 570px  at top, #010137 2%,rgba(0, 0, 0, 0.994) 60%) ; */
+   background: url('mid.png');
+  background-blend-mode: overlay;
+  color: rgb(32, 1, 172);
 }
 
+.company-logo {
+  background: url('logo.png');
+  padding-top: 29%;
+  margin-top: 10px;
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+}
 /* Background Image */
 .background-container {
-  max-width: 90%;
-  height: auto;
-  margin-top: 80px;
-  object-fit: cover;
-  border-radius: 8px;
+  
+  padding: 10px 20px;
+
+  z-index: -1;
 }
 
 .text-container{
@@ -28,17 +39,19 @@
 .welcome-text {
    
   font-weight: 300;
-  font-size: 18px;
+  font-size: 13px;
   color: rgb(204, 208, 208);
   font-family: 'Poppins', sans-serif;
   margin-top: 50px;
 }
-
+h1{
+  margin-top: 17px;
+}
 /* Tagline heading */
 .tagline h1 {
   font-size: 50px;
   font-weight: 300;
-   margin-top: 17px;
+   
   max-width: 600px;
   margin-top: 20px;
   padding-left: auto;
@@ -88,7 +101,7 @@
   }
 
   .welcome-text {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .description h3 {
@@ -104,6 +117,7 @@
 
 /* Get Started Button styles */
 .button {
+  
   cursor: pointer;
   font-size: 1.0rem;
   border-radius: 16px;

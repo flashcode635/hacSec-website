@@ -35,6 +35,9 @@ const SocialLinks = () => {
       <a href="https://chat.whatsapp.com/KBfLSuYb6xP3Ki5yXMe0N9">
         <i className="fab fa-whatsapp" style={iconStyleOthers}></i>
       </a>
+      <a href="mailto:hacksecure.info@gmail.com">
+        <i className="fa fa-envelope" style={iconStyleOthers}></i>
+      </a>
 
     </div>
   );

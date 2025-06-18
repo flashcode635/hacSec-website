@@ -1,64 +1,65 @@
 /* PricingTable.css */
+
 .pricing-table-container {
-  max-width: 900px;
-  margin: 40px auto;
-  background: #1d1d1f;
-  border-radius: 18px;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
-  padding: 32px 20px;
+  color: #e4e9ee; /* Light text color for dark background */
+  background-color: #00050e; /* Dark background for the container */
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
 }
 
 .pricing-table {
   width: 100%;
-  border-collapse: collapse;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  border-collapse: collapse; /* Removes space between cell borders */
+  text-align: center;
 }
 
 .pricing-table th,
 .pricing-table td {
-  text-align: center;
-  padding: 18px 10px;
-  border-bottom: 1px solid #eaeaea;
+  padding: 16px;
+  border-bottom: 1px solid #333; /* Separator line for rows */
 }
 
 .pricing-table th {
-  background: #15132e26;
-  color: #1e93fa;
   font-size: 1.1em;
+  color: #a0a0a0; /* Lighter grey for header text */
   font-weight: 600;
 }
 
-.pricing-table td:first-child,
+/* First header cell ('Features') aligned to the left */
 .pricing-table th:first-child {
   text-align: left;
+  color: #ffffff;
+}
+
+/* First data cell in each row (feature names) aligned to the left */
+.pricing-table td:first-child {
+  text-align: left;
+  color: #c0c0c0; /* Slightly muted color for feature names */
+}
+
+/* Highlighted rows with a slightly different background */
+.highlight-row {
+  background-color: #2c2f33; /* Darker shade for alternating rows */
+}
+
+/* Specific styling for the first row's values */
+.pricing-table tbody tr:first-child td:not(:first-child) span {
+  display: inline-block;
+  background-color: #2c2f33;
+  padding: 8px 12px;
+  border-radius: 5px;
   font-weight: 500;
 }
 
-.icon {
-  font-size: 1.4em;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 2px 8px;
-  border-radius: 50%;
+.icon.tick {
+  color: #4caf50; /* Green color for included features */
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-.tick {
-  color: #05d4b9;
-  background: #ebfbf5;
-}
-
-.cross {
-  color: #e74c3c;
-  background: #ffeaea;
-}
-
-@media (max-width: 700px) {
-  .pricing-table-container {
-    padding: 12px 2px;
-  }
-  .pricing-table th,
-  .pricing-table td {
-    padding: 10px 2px;
-    font-size: 0.98em;
-  }
+.icon.dash {
+  color: #777; /* Grey color for not-included features */
+  font-weight: bold;
+  font-size: 1.2em;
 }

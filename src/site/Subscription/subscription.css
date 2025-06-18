@@ -4,6 +4,15 @@
   color: #e4e9ee;
   font-family: 'Poppins', sans-serif;
 }
+.tier-button{
+font-size: 17px;    
+padding: 8px 16px;
+border: 1px solid #2563eb;
+font-weight:bold;
+border-radius: 4px;
+cursor: pointer;
+font-family: Calibri;
+}
 
 .subscription-program-tiers {
   padding: 80px 10%;
@@ -105,7 +114,17 @@
   color: #3498db;
 }
 
-
+.hero-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+li{
+  color: #a4b7c0;
+  font-family: sans-serif;
+}
 .custom-plan-option {
   margin-top: 2.5rem;
   text-align: center;

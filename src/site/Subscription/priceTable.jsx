@@ -2,96 +2,123 @@
 import React from "react";
 import "./PricingTable.css";
 
-const plans = ["Free", "Premium", "Business"];
+// Data based on the reference image
+const plans = ["Standard", "Pro", "Enterprise"];
 
 const features = [
+  { 
+    name: "Premium Tools Access",
+    values: ["7 Days", "14 Days", "30 Days"],
+  },
   {
-    name: "Personal hackable instances",
+    name: " Official Quizes",
     values: [true, true, true],
   },
   {
-    name: "Hacking challenges",
+    name: "CTFs",
     values: [true, true, true],
   },
   {
-    name: "Learning content",
-    values: ["Free rooms", "All rooms", "All rooms"],
+    name: "Community Access",
+    values: [true, true, true],
   },
   {
-    name: "Full access to learning paths",
+    name: "Community Projects",
+    values: [true, true, true],
+  },
+
+  {
+    name: "Case Studies",
+    values: [true, true, true],
+  },
+  {
+    name: "Audio Books",
+    values: [true, true, true],
+  },
+  {
+    name: "Blogs and Articles",
+    values: [true, true, true],
+  },
+  {
+    name: "Boot Camps",
+    values: [true, true, true],
+  },
+  {
+    name: "Micro Modules",
+    values: [true, true, true],
+  },
+  {
+    name: "Macro Modules",
     values: [false, true, true],
   },
   {
-    name: "Web-based AttackBox & Kali",
-    values: ["1 hour a day", "Unlimited", "Unlimited"],
+    name: "Elite Modules",
+    values: [false, false, true],
   },
   {
-    name: "Access to Networks",
+    name: "Webinars",
     values: [false, true, true],
   },
   {
-    name: "Faster machines",
+    name: "Private VPN",
     values: [false, true, true],
+  },
+  {
+    name: "1 on 1 Mentorship",
+    values: [false, false, true],
+  },
+  {
+    name: "Top Investigations",
+    values: [false, false, true],
+  },
+  {
+    name: "Sessions",
+    values: [false, false, true],
   },
 ];
 
 const Tick = () => (
-  <span className="icon tick" title="Yes">
+  <span className="icon tick" title="Included">
     ✓
   </span>
 );
 
-const Cross = () => (
-  <span className="icon cross" title="No">
-    ✗
+const Dash = () => (
+  <span className="icon dash" title="Not Included">
+    -
   </span>
 );
 
+// Renders the correct symbol or text for each feature value
 function renderValue(value) {
   if (value === true) return <Tick />;
-  if (value === false) return <Cross />;
+  if (value === false) return <Dash />;
   return <span>{value}</span>;
 }
 
-const planPrices = ["Free", "Pro- $9/mo", "Enterprise- $29/mo"];
-
 const PricingTable = () => (
-    <div className="pricing-table-container">
-        <h2>Plan Features</h2>
-        <table className="pricing-table">
-            <thead>
-                <tr>
-                    <th>Plan Features</th>
-                    {plans.map((plan) => (
-                        <th key={plan}>{plan}</th>
-                    ))}
-                </tr>
-            </thead>
-            <tbody>
-                {features.map((feature) => (
-                    <tr key={feature.name}>
-                        <td>{feature.name}</td>
-                        {feature.values.map((value, idx) => (
-                            <td key={plans[idx]}>{renderValue(value)}</td>
-                        ))}
-                    </tr>
-                ))}
-                <tr>
-                    <td></td>
-                    {plans.map((plan, idx) => (
-                        <td key={plan}>
-                            <div className="plan-action">
-                                <a href="/signin">
-                                    <button className="tier-apply-button">Apply Now</button>
-                                </a>
-                            </div>
-                        </td>
-                    ))}
-                </tr>
-            </tbody>
-        </table>
-        
-    </div>
+  <div className="pricing-table-container">
+    <table className="pricing-table">
+      <thead>
+        <tr>
+          <th><p className="section-title" style={{display:'flex',justifyContent:'flex-start', fontSize:'1.5rem'}}>Features</p></th>
+          {plans.map((plan) => (
+            <th key={plan}><p className="section-title" style={{display:'flex',justifyContent:'center', fontSize:'1.5rem'}} >{plan}</p></th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {features.map((feature, index) => (
+          <tr key={feature.name} className={index % 2 !== 0 ? 'highlight-row' : ''}>
+            <td>{feature.name}</td>
+            {feature.values.map((value, idx) => (
+              <td key={plans[idx]}>{renderValue(value)}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
 );
 
 export default PricingTable;

@@ -4,30 +4,29 @@ import Review from './midSection/review';
 import Footer from './midSection/footer';
 import MidSection from './midSection/mid-section';
 import background from '../../images/background.jpg';
-
+import logoImage from './comp_logo.jpg';
 const New = () => {
   return (
     <> 
     <div style={{ minHeight: 'auto', width: '100vw' }}>
         <div className="hero-container">
           <div className="text-container">
+          <div className='background-container'> </div>
             {/* wrapper div :-          */}
             <div style={{textAlign:'left', paddingLeft:'2%'}}> 
-            <h2 className="welcome-text">Welcome to the Future of Security</h2>
+            <h2 className="welcome-text">Welcome to the Hack Secure Ecosystem </h2>
 
             <div className="tagline">
-              <h1>Secure Smarter Lead Stronger</h1>
+              <h1>Learn Secure and Lead!</h1>
             </div>
-
+{/* about text */}
             <div className="description">
               <h3>
-                Unlock your potential to lead with confidence and secure what matters most.
-                This journey empowers you with the skills to protect, influence, and inspire—
-                equipping you to thrive in high-stakes environments and drive meaningful,
-                lasting impact.
+                Join a new era of cybersecurity learning, built for innovation and impact.
+                    Powered by HackSecure.
               </h3>
             </div>
-        <button className="button">
+             <button className="button">
                   <div className="blob1"></div>
                   <div className="blob2"></div>
                   <div className="inner">Get Started</div>
@@ -35,8 +34,12 @@ const New = () => {
           </div>
         
 
-        </div>
-        
+       
+          </div>
+          <span className='company-logo'> 
+            {/* <img src={logoImage} alt="Company Logo" /> */}
+          </span>
+
         </div>
          
         <div className='sponsors' >      
@@ -57,8 +60,8 @@ const New = () => {
                         
                       <span  style={{ height:"auto"}}> 
                           <span className='tagline' style={{width:'45%'}}> 
-                            <div style={{ marginLeft:'22%'}}> 
-                              <h1>Train Cyber Warriors: Hack Secure's Unified Learning Platform
+                            <div style={{ marginLeft:'26%'}}> 
+                              <h1>Hack Secure’s Unified Training Platform
 
                                 </h1>
                             </div>

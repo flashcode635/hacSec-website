@@ -2,7 +2,7 @@ import { BrowserRouter , Routes, Route, ScrollRestoration} from 'react-router-do
 import './App.css';
 import Navbar from './site/navbar/navbar';
 import New from './site/frontPage/new';
-import Courses from './site/cources/courses';
+import Courses  from './site/cources/courses';
 import InternshipsPage from './site/internship-page/internshipPage';
 import InternshipList from './site/internship-page/internListCard';
 import ServicesPage from './site/services-page/servicesPage';
@@ -11,13 +11,16 @@ import BlogPage from './site/Blogs/blog';
 import Contact from './site/ContactUs/contact';
 import CertificationPage from './site/Certifications/components/cert';
 import SubscriptionPage from './site/Subscription/sub';
-import ResourcePage from './site/Resources/resource';
+import LoadableLearnX from './site/Resources/resource';
 import CareerPage from './site/career/career';
 import ScrollTop from './scrolling';
 import Teams from './site/team/team';
 import Footer from './site/frontPage/midSection/footer';
+import Details from './site/cources/CourceDetails/Details'
 
 export default function Page() {
+  const courseName= "Learning Process"; // Replace with the actual course name you want to enroll in
+  console.log(`Enrolled in course: ${courseName}`);
   return (
     <BrowserRouter>
       <ScrollTop />
@@ -27,10 +30,13 @@ export default function Page() {
               <Route path="/" element={<New />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/partners" element={<PartnersPage />} />
-              <Route path="/Learn_X" element={<ResourcePage />} />
+              <Route path="/Learn_X" element={<LoadableLearnX />} />
               <Route path="/subscription" element={<SubscriptionPage />} />
+
               <Route path="/courses" element={<Courses />} />
-              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/courses/:courseName" element={<Details />} />
+              {/* Dynamic route for course details */}
+                            <Route path="/blogs" element={<BlogPage />} />
               <Route path="/internship" element={<InternshipsPage />} />
               <Route path="/internship/list" element={<InternshipList />} />
               <Route path="/certification" element={<CertificationPage />} />
