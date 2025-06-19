@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 import CompanyMenu from './companyTag';
-import Tooltip from './learnx';
 /**
  * Navbar Component
  * Includes a logo, navigation links, and a hamburger menu for mobile devices.
@@ -39,7 +38,7 @@ const Navbar = () => {
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
         <li><Link to="/services" >Services</Link></li>
         <li><Link to="/partners" >Partners</Link></li>
-        <li><Link to="/subscription" > Subscription </Link></li>
+        {/* <li><Link to="/subscription" > Subscription </Link></li> */}
         <li><Link to="/Learn_X" > LearnX</Link></li>
 
         {/* <li><a href="/Learn_X" > LearnX</a></li> */}
@@ -49,10 +48,10 @@ const Navbar = () => {
       </ul>
 
       {/* Right corner buttons */}
-      {/* <div className="right-buttons">
-        <Link to="/contact" className="contact-btn">Contact Us</Link>
-        <Link to="/signin" className="sign-in-btn">Sign In</Link>
-      </div> */}
+      <div className="right-buttons">
+        <Link to="/contact" className="contact-btn" style={{marginRight:'2%', width:'10vw'}}>Contact Us</Link>
+        {/* <Link to="/signin" className="sign-in-btn">Sign In</Link> */}
+      </div>
     </>
     </nav>
   );

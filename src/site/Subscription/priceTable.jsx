@@ -60,10 +60,6 @@ const features = [
     values: [false, true, true],
   },
   {
-    name: "Private VPN",
-    values: [false, true, true],
-  },
-  {
     name: "1 on 1 Mentorship",
     values: [false, false, true],
   },
@@ -79,13 +75,14 @@ const features = [
 
 const Tick = () => (
   <span className="icon tick" title="Included">
-    ✓
+    {/* ✓ */}
+    <img src="https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/gradient-icons/checkmark.svg" alt="" srcset="" />
   </span>
 );
 
 const Dash = () => (
   <span className="icon dash" title="Not Included">
-    -
+    —
   </span>
 );
 
@@ -98,19 +95,20 @@ function renderValue(value) {
 
 const PricingTable = () => (
   <div className="pricing-table-container">
-    <table className="pricing-table">
+    <table className="pricing-table" >
       <thead>
         <tr>
-          <th><p className="section-title" style={{display:'flex',justifyContent:'flex-start', fontSize:'1.5rem'}}>Features</p></th>
+          <th style={{ borderRight: '2px solid rgb(158 167 174)' }}><p className="section-title" style={{display:'flex',justifyContent:'flex-start', fontSize:'1.5rem'}}>Features</p></th>
           {plans.map((plan) => (
             <th key={plan}><p className="section-title" style={{display:'flex',justifyContent:'center', fontSize:'1.5rem'}} >{plan}</p></th>
           ))}
         </tr>
       </thead>
+
       <tbody>
         {features.map((feature, index) => (
           <tr key={feature.name} className={index % 2 !== 0 ? 'highlight-row' : ''}>
-            <td>{feature.name}</td>
+            <td style={{ borderRight: '2px solid rgb(158 167 174)' }}>{feature.name}</td>
             {feature.values.map((value, idx) => (
               <td key={plans[idx]}>{renderValue(value)}</td>
             ))}

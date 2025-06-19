@@ -2,7 +2,7 @@
 
 .pricing-table-container {
   color: #e4e9ee; /* Light text color for dark background */
-  background-color: #00050e; /* Dark background for the container */
+  background-color: #000000; /* Dark background for the container */
   padding: 40px 20px;
   font-family: 'Poppins', sans-serif;
   border-radius: 8px;
@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.pricing-table th,
+.pricing-table th,   
 .pricing-table td {
   padding: 16px;
   border-bottom: 1px solid #333; /* Separator line for rows */
@@ -22,7 +22,7 @@
 
 .pricing-table th {
   font-size: 1.1em;
-  color: #a0a0a0; /* Lighter grey for header text */
+  color: #a0a0a097; /* Lighter grey for header text */
   font-weight: 600;
 }
 
@@ -40,7 +40,7 @@
 
 /* Highlighted rows with a slightly different background */
 .highlight-row {
-  background-color: #2c2f33; /* Darker shade for alternating rows */
+  background-color: #2c2f334d; /* Darker shade for alternating rows */
 }
 
 /* Specific styling for the first row's values */

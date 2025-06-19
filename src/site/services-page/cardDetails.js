@@ -1,12 +1,17 @@
 const cardDetails=[{
   id: 1,
-  title: "Workshop",
-  description: "Identify vulnerabilities in your systems before attackers do with our penetration testing and red team operations.",
-  features: [
-    "Web Application Testing",
-    "Network Infrastructure Testing",
-    "Mobile Application Testing",
-    "Cloud Security Assessment"
+  title: "Webinars",
+  description: "Our webinars are focused on raising cybersecurity awareness, sharing expert knowledge, and delivering strategic insights to audiences across educational institutions, organizations, and communities. Each session is crafted to be informative, interactive, and relevant to today’s Digital Era.",
+
+  topics: [{
+    name:"Webinars List",
+    List:[
+    "CAREER IN CYBER SECURITY",
+    "CYBER LAWS IN INDIA & GLOBAL COMPLIANCES",
+    "BUILDING THE PORTFOLIO AS A CYBER SECURITY STUDENT",
+    "AI vs HACKERS THE FUTURE OF CYBER DEFENSE",
+    "CYBER SECURITY FOR STARTUPS and SMALL BUSINESS"]
+  }
   ],
   icon: "https://img.icons8.com/ios/50/3498db/security-checked.png",
   link: "#offensive"
@@ -14,41 +19,56 @@ const cardDetails=[{
 {
   id: 2,
   title: "Sessions",
-  description: "Strengthen your security posture with our defensive security services and proactive threat monitoring.",
-  features: [
-    "Security Architecture Review",
-    "Threat Detection & Response",
-    "Security Monitoring",
-    "Incident Response Planning"
+  description: "Engage your teams or students with structured cybersecurity sessions focused on building practical skills, improving threat readiness, and aligning with current industry standards.",
+  topics: [
+    {
+      name:"Sessions List",
+      List:[
+              "CYBER HYGENE",
+    "PHISHING AWARENESS",
+    "GET INTO CYBER SECURITY",
+    "SAFE INTERNET USAGE",
+    "CYBER SECURITY CAREER",
+    "WOMEN IN CYBER SECURITY"
+  ]}
+
   ],
   icon: "https://img.icons8.com/ios/50/3498db/play.png",
   link: "#defensive"
 },
 {
   id: 3,
-  title: "Webinars",
-  description: "Stay ahead of emerging threats with actionable intelligence tailored to your industry and business.",
-  features: [
-    "Threat Landscape Analysis",
-    "Targeted Attack Intelligence",
-    "Dark Web Monitoring",
-    "Strategic Intelligence Reports"
+  title: "Workshop",
+  description: "Our workshops are designed to provide high-impact, practical training experiences designed for universities, colleges, organizations, and communities",
+  topics: [
+      {
+        name: "RED TEAM",
+        list:["Intro to EH & Kali Linux",
+        "OWSAP TOP 10",
+        "NETWORK & WIRESHARK BASICS",
+        "Vulnerable Assessment ( ctf )",
+        "SOCIAL ENGERRING TACTIES"]
+      },
+      {
+        name: "BLUE TEAM",
+        list:["DIGIITAL FORENCIS & INCIDENT RESPONSE",
+          "SIEN TOOLS & LOG ANALYSICS",
+          "INCIDER THREAT HUNTING",
+          "MALWAWRE ANALYSIS",
+          "DEFENSIVE STRATEGIES IN SOC",
+          "CYBER SECURITY IN COULD"
+          ]
+      },{
+        name:"OTHER TOPICS",
+        list:["IOT SECURITY",
+          "BLOCKCHAIN",
+          "AI IN CYBER SECURITY"
+          ]
+      }
   ],
   icon: "https://img.icons8.com/ios/50/3498db/artificial-intelligence.png",
   link: "#intelligence"
 },
-{
-  id: 4,
-  title: "Solutions",
-  description: "Empower your team with the knowledge to recognize and respond to security threats effectively.",
-  features: [
-    "Security Awareness Training",
-    "Phishing Simulation",
-    "Incident Response Drills",
-    "Compliance Training"
-  ],
-  icon: "https://img.icons8.com/ios/50/3498db/teaching.png",
-  link: "#solutions"
-}]
+]
 
 export  default cardDetails;

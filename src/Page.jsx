@@ -36,7 +36,7 @@ export default function Page() {
               <Route path="/courses" element={<Courses />} />
               <Route path="/courses/:courseName" element={<Details />} />
               {/* Dynamic route for course details */}
-                            <Route path="/blogs" element={<BlogPage />} />
+              <Route path="/blogs" element={<BlogPage />} />
               <Route path="/internship" element={<InternshipsPage />} />
               <Route path="/internship/list" element={<InternshipList />} />
               <Route path="/certification" element={<CertificationPage />} />

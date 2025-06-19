@@ -254,8 +254,15 @@
 }
 
 /* resource Overview Section */
-/* .resource-overview {
-} */
+.resource-overview {
+  /* background: radial-gradient( circle 500px at top blue 50%, skyblue 50%);
+  width: 100vw;
+  height: 10vh; */
+  background: radial-gradient( circle 500px at top blue 50%, skyblue 50%);
+   width: 100vw;
+  height: 10vh; 
+  margin-bottom: 5%;
+}
 
 .section-title {
   font-size: 2.5rem;
@@ -278,12 +285,12 @@
 
 .resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 4fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
   gap: 30px;
 }
 
 .resource-card {
- width: 17vw;
+    width: 17vw;
     background-color: rgba(17, 17, 20, 0.8);
     border-radius: 12px;
     padding: 10px 0px 0px 10px;

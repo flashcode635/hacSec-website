@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { atom, selector, useRecoilStateLoadable ,useRecoilValueLoadable} from 'recoil';
 import './resource.css';
 import SubscriptionPage from '../Subscription/sub';
 import GradientButton from '../Components/resource-btn';
+import image from './mid2.png'
 // import defensive from './defensive.jpg';
 
 
@@ -15,7 +16,7 @@ const resources = [
                 link: "/blogs"
               },
               {
-                title: "Modules", 
+                title: " Micro Modules", 
                 imageUrl: "https://img.icons8.com/ios/50/3498db/book.png",
                 link: "/courses"
               },
@@ -24,11 +25,11 @@ const resources = [
                 imageUrl: "https://img.icons8.com/ios/50/3498db/training.png",
                 link: "/top-investigations"
               },
-              {
-                title: "Internships",
-                imageUrl: "https://img.icons8.com/ios/50/3498db/artificial-intelligence.png", 
-                link: "/internship"
-              },
+              // {
+              //   title: "Internships",
+              //   imageUrl: "https://img.icons8.com/ios/50/3498db/artificial-intelligence.png", 
+              //   link: "/internship"
+              // },
               {
                 title: "Quiz",
                 imageUrl: "https://img.icons8.com/ios/50/3498db/training.png",
@@ -60,7 +61,7 @@ const resources = [
                 link: "/cyber-laws"
               },
               {
-                title: "Trainings",
+                title: "Trainings Programs",
                 imageUrl: "https://img.icons8.com/ios/50/3498db/training.png",
                 link: "/trainings"
               },
@@ -71,6 +72,10 @@ const resources = [
               }
             ];
 function  ResourceCard({ title,imageUrl, link }) {
+  const nevigate= useNavigate();
+  const pointToEndpoint=()=>{
+    nevigate(link)
+  }
   
   return (  
     <div className="resource-card">
@@ -79,7 +84,10 @@ function  ResourceCard({ title,imageUrl, link }) {
               <img src={imageUrl} alt={title} />
             </div>
             <div style={{marginLeft: '22px', width: '50%'}}>  
-             <a href={link} className="resource-link"><h3>{title}</h3></a>
+             {/* <a href={link} className="resource-link"><h3>{title}</h3></a> */}
+             <button className="resource-link"  style={{background:'transparent', border:'none'}} onClick={pointToEndpoint}>
+              <h3>{title}</h3>
+             </button>
             
             </div>
       </div>
@@ -135,6 +143,7 @@ const LoadableLearnX = () => {
   // Show loading while selector is loading or image is not yet loaded
   if (imageLoadable.state === 'loading' || !imgLoaded) {
     return (
+      // loading screen graphics
       <div style={{display:'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
         <div class="loader">
           <div>
@@ -194,18 +203,23 @@ const ResourcePage = ({ imageUrl }) => {
             <p>LearnX – The next generation cybersecurity e-learning
                 platform. Built for learners, by Hack Secure
             </p>
-            {/* <button className="hero-cta-button">Request a Consultation</button> */}
+    
             <GradientButton name="Let's start" />
           </div>
         </section>
 
       {/* resource Overview Section */}
-      <section className="resource-overview">
+      <section  style={{paddingTop:'70px'}}>
                 {/* heading for cards */}
 
-          <div style={{ textAlign: 'center' }}> 
+          <div style={{ textAlign: 'center', 
+            // background:`url(${image})` 
+            }}> 
 
-                <div style={{display: 'inline-block', width: '50%', height: '5px', backgroundColor: '#3498db'}}> 
+                <div style={{display: 'inline-block', width: '50%', height: '5px', 
+                // backgroundColor: '#3498db'
+
+                }}> 
 
                       <h1 style={{fontSize:'4rem'}}>
                       Platform Feature Matrix
@@ -213,15 +227,18 @@ const ResourcePage = ({ imageUrl }) => {
                 </div> 
               
             </div>
+            
+            
           
-            <p style={{width: '80%', margin: '0 auto', alignContent: 'center', textAlign: 'center', fontSize: '1.2rem', marginBottom: '3%'}}>
+            <p style={{width: '80%', margin: '0 auto', alignContent: 'center', textAlign: 'center', fontSize: '1.2rem',marginBottom: '3%'}}>
               Choose your path: 
             </p>
         <div className="container">
+           <div style={{margin: '0% 10% 0% 10%'}}> 
           <div className="resource-grid">
               {/* Resource Cards */}
             
-
+         
             {resources.map((resource, index) => (
               <ResourceCard
                 key={index}
@@ -231,6 +248,7 @@ const ResourcePage = ({ imageUrl }) => {
               />
             ))}
           </div>
+            </div>
         
         </div>
       </section>

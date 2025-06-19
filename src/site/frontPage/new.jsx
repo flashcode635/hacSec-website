@@ -5,6 +5,7 @@ import Footer from './midSection/footer';
 import MidSection from './midSection/mid-section';
 import background from '../../images/background.jpg';
 import logoImage from './comp_logo.jpg';
+import IntroSection from './midSection/intro-section';
 const New = () => {
   return (
     <> 
@@ -80,7 +81,8 @@ const New = () => {
     </div>
          {/* Middle section with tabs */}
               <div className="mid-section-container-wrapper">
-                <MidSection/>  
+                {/* <MidSection/>   */}
+                <IntroSection/>
               </div>
         
          {/* Review section */}

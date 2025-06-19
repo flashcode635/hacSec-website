@@ -95,10 +95,11 @@
 }
 
 .service-card {
-  background-color: rgba(17, 17, 20, 0.8);
+  cursor: pointer;
+  background-color: rgb(18 18 19 / 3%);
   border-radius: 12px;
-  padding: 30px;
-  border: 1px solid rgba(52, 152, 219, 0.1);
+  padding: 8px;
+  border: 1px solid rgba(4, 132, 216, 0.202);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -150,7 +151,6 @@
 .service-card h3 {
   font-size: 1.3rem;
   font-weight: 500;
-  margin-bottom: 15px;
   color: #ffffff;
 }
 
@@ -275,6 +275,111 @@
 
 .training-image {
   background-image: url('./training.jpg');
+}
+
+/* Investigation Component Styles */
+.investigation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.investigation-section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.investigation-section-subtitle {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.investigation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.investigation-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2a2a2a;
+}
+
+.investigation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.card-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #4CAF50;
+  border-radius: 3px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.feature-item svg {
+  flex-shrink: 0;
+}
+
+.feature-item span {
+  margin-left: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .investigation-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .investigation-section-title {
+    font-size: 2rem;
+  }
+  
+  .investigation-section-subtitle {
+    font-size: 1rem;
+  }
 }
 
 /* CTA Section */
