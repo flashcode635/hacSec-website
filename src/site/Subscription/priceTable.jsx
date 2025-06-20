@@ -110,7 +110,7 @@ const PricingTable = () => (
           <tr key={feature.name} className={index % 2 !== 0 ? 'highlight-row' : ''}>
             <td style={{ borderRight: '2px solid rgb(158 167 174)' }}>{feature.name}</td>
             {feature.values.map((value, idx) => (
-              <td key={plans[idx]}>{renderValue(value)}</td>
+              <td key={plans[idx]} data-label={plans[idx]}>{renderValue(value)}</td>
             ))}
           </tr>
         ))}

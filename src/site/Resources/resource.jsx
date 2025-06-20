@@ -75,14 +75,14 @@ function ResourceCard({ title, imageUrl, link }) {
     }
 
     return (
-        <div className="resource-card">
+        <div className="resource-card" >
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <div className="resource-icon">
                     <img src={imageUrl} alt={title} />
                 </div>
-                <div style={{ marginLeft: '22px', width: '50%' }}>
-                    <button className="resource-link" style={{ background: 'transparent', border: 'none' }} onClick={pointToEndpoint}>
-                        <h3>{title}</h3>
+                <div style={{ marginLeft: '22px', width: '80%', height: '100%' }}>
+                    <button className="resource-link" style={{ background: 'transparent', border: 'none', height: '100%' }} onClick={pointToEndpoint}>
+                        <h3 style={{ fontSize: '1.1rem' }}>{title}</h3>
                     </button>
                 </div>
             </div>
@@ -209,6 +209,7 @@ const ResourcePage = ({ imageUrl }) => {
 
     const secondaryBtnStyle = {
         minWidth: '200px',
+        maxWidth: '200px',
         padding: '12px 30px',
         backgroundColor: 'transparent',
         color: 'white',
@@ -234,10 +235,10 @@ const ResourcePage = ({ imageUrl }) => {
                     </div>
                 </section>
 
-                <section style={{ paddingTop: '70px' }} id="resource">
+                <section style={{ paddingTop: '20px' }} id="resource">
                     <div style={{ textAlign: 'center' }}>
-                        <div style={{ display: 'inline-block', width: '50%', height: '5px' }}>
-                            <h1 style={{ fontSize: '4rem' }}>Platform Feature Matrix</h1>
+                        <div style={{ display: 'inline-block', width: '70%', height: '5px' }}>
+                            <h1 style={{ fontSize: '3.4rem' }}>Platform Feature Matrix</h1>
                         </div>
                     </div>
                     <p style={{ width: '80%', margin: '0 auto', alignContent: 'center', textAlign: 'center', fontSize: '1.2rem', marginBottom: '3%' }}>
