@@ -17,8 +17,13 @@ const resources = [
         link: "/courses"
     },
     {
-        title: "Top Investigations",
+        title: " Internships",
         imageUrl: "https://img.icons8.com/ios/50/3498db/training.png",
+        link: "/Internship"
+    },
+    {
+        title: "Top Investigations",
+        imageUrl: "https://img.icons8.com/ios/50/3498db/artificial-intelligence.png",
         link: "/top-investigations"
     },
     {
