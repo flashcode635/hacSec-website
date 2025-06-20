@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import './intro-section.css';
+import logoImage from './logo.png'; 
 const sectionList=[
     {
         id:1,
@@ -28,11 +29,11 @@ const sectionList=[
     
     {
         id:4,
-        title: "Company",
+        title: "Hack Secure Global",
         description: [" Once the usage limit is reached, Cascade can continue to be used with the Cascade Base model. To continue using premium models, upgrade your plan.",
           "Whether stationed at our mission-critical Digital Crime Resistance Centers (DCRCs) or working remotely, we wholeheartedly support your career path with a range of opportunities on an international scale.",
           "We’re a global company with the agipty and innovation potential of a startup backed by the vision and scale of an industry leader."],
-        image: 'https://www.group-ib.com/wp-content/uploads/group-ib-joiners_01-1.png.webp'
+        image: logoImage
      
     
     }

@@ -10,8 +10,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    /* background: radial-gradient(circle 570px  at top, #010137 2%,rgba(0, 0, 0, 0.994) 60%) ; */
-   background: url('mid.png');
-  background-blend-mode: overlay;
+   background: linear-gradient(to right, rgba(2, 2, 2, 0.9), rgba(2, 2, 2, 0.6)) ,url('front.jpg');
+   background-size: cover;
+  background-position: center;
   color: rgb(32, 1, 172);
 }
 

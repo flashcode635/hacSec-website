@@ -244,17 +244,15 @@ const ResourcePage = ({ imageUrl }) => {
                         Choose your path:
                     </p>
                     <div className="container">
-                        <div style={{ margin: '0% 10% 0% 10%' }}>
-                            <div className="resource-grid">
-                                {resources.map((resource, index) => (
-                                    <ResourceCard
-                                        key={index}
-                                        title={resource.title}
-                                        imageUrl={resource.imageUrl}
-                                        link={resource.link}
-                                    />
-                                ))}
-                            </div>
+                        <div className="resource-grid">
+                            {resources.map((resource, index) => (
+                                <ResourceCard
+                                    key={index}
+                                    title={resource.title}
+                                    imageUrl={resource.imageUrl}
+                                    link={resource.link}
+                                />
+                            ))}
                         </div>
                     </div>
                 </section>

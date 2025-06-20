@@ -3,7 +3,7 @@ import React from "react";
 import "./PricingTable.css";
 
 // Data based on the reference image
-const plans = ["Standard", "Pro", "Enterprise"];
+const plans = ["Human", "Pro", "Elite"];
 
 const features = [
   { 

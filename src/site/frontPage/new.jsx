@@ -34,12 +34,12 @@ const New = () => {
         </button> 
           </div>
         
-
-       
           </div>
-          <span className='company-logo'> 
+
+          {/* company logo */}
+          {/* <span className='company-logo'> 
+          </span> */}
             {/* <img src={logoImage} alt="Company Logo" /> */}
-          </span>
 
         </div>
          
