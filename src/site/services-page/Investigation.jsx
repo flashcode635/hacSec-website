@@ -1,10 +1,10 @@
 import React from "react";
 import "./servicesPage.css";
 
-const Tick = () => {
+export const Tick = () => {
     return (
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '8px' }}>
-            <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#4CAF50" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#055ba6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
     );
 };
@@ -54,7 +54,7 @@ const Investigation = () => {
                 Investigate and respond to digital incidents that impact your organization's
                 finances, data integrity, and reputation through structured intelligence-led analysis.
             </p>
-            <div className="investigation-cards">
+            <div className="investigation-cards" style={{gap:'30px', marginLeft:'2vw', marginRight:'2vw'}}>
                 {cardInfo.map((card) => (
                     <div key={card.id} className="investigation-card">
                         <h3 className="card-title">{card.title}</h3>
@@ -63,7 +63,7 @@ const Investigation = () => {
                                 <li key={index} className="feature-item">
                                     <Tick />
                                     <span>{feature}</span>
-                                    {console.log(index)}
+                                    
                                 </li>
                             ))}
                         </ul>

@@ -4,9 +4,120 @@ import GradientButton from '../Components/resource-btn';
 import cardDetails from './cardDetails';
 import CardStructure from './card-structure';
 import Investigation from './Investigation';
+import {Tick} from './Investigation';
+import ServiceContactForm from './ServiceContactForm';
 
+
+const Webinars = () => {
+  const List = [
+    "Career in Cyber Security",
+    "Cyber Laws in India & Global Compliances",
+    "Building the Portfolio as a Cyber Security Student",
+    "Ai vs Hackers the Future of Cyber Defense",
+    "Cyber Security for Startups and Small Business"
+  ];
+
+  return (
+    <div>
+      <CardStructure data={cardDetails[0]} />
+      <div className="investigation-cards" style={{margin: '10px 5vw 0px 15vw', width:'70%', display:'flex',  alignItems:'center', }}>
+        <div className="investigation-card">
+          <h3 className="card-title">Check out our Webinars</h3>
+          <ul className="features-list">
+            {List.map((item, index) => (
+              <li key={index} className="feature-item">
+                <Tick />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SessionList=[
+    "Cyber Hygiene",
+    "Phishing Awareness",
+    "Get into Cyber Security",
+    "Safe Internet Usage",
+    "Cyber Security Career",
+    "Women in Cyber Security"
+];
+
+const Sessions = () => {
+    return (
+        <div>
+            <CardStructure data={cardDetails[1]}/>
+            <div className="investigation-cards" style={{margin: '10px 5vw 0px 15vw', width:'70%', display:'flex',  alignItems:'center', }}>
+        <div className="investigation-card">
+          <h3 className="card-title">Check out our insightful sessions</h3>
+          <ul className="features-list">
+            {SessionList.map((item, index) => (
+              <li key={index} className="feature-item">
+                <Tick />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+        </div>
+    )
+}
+const Workshop = () => {
+  const topics=[
+    { id:1,
+      name: "RED TEAM",
+      list:["Intro to EH & Kali Linux",
+      "OWSAP TOP 10",
+      "Network & Wireshark Basics",
+      "Vulnerable Assessment ( ctf )",
+      "Social Engerring Tacties"]
+    },
+    { id:2,
+      name: "BLUE TEAM",
+      list:["Digital Forencis & Incident Response",
+        "SIEN Tools & LOG ANALYSIS",
+        "Incider Threat Hunting",
+        "Malware Analysis",
+        "Defensive Strategies in SOC",
+        "Cyber Security in Cloud"
+        ]
+    },{ id:3,
+      name:"OTHER TOPICS",
+      list:["IoT Security",
+        "Blockchain",
+        "AI in Cyber Security"
+        ]
+    }
+]
+    return (
+        <div>
+            <CardStructure data={cardDetails[2]}/>
+                      <div className="investigation-cards" style={{gap:'30px', marginLeft:'2vw', marginRight:'2vw'}}>
+                       {topics.map((card) => (
+                           <div key={card.id} className="investigation-card" style={{ width:'auto',  alignItems:'center' }}>
+                               <h3 className="card-title">{card.name}</h3>
+                               <ul className="features-list">
+                                   {card.list.map((feature, index) => (
+                                       <li key={index} className="feature-item">
+                                           <Tick />
+                                           <span>{feature}</span>
+                                           
+                                       </li>
+                                   ))}
+                               </ul>
+                           </div>
+                       ))}
+                   </div>
+      </div>
+       
+    )
+}
 const ServicesPage = () => {
-  const [service ,setService]=useState('Workshop');
+  const [service ,setService]=useState('Webinars');
   // cards layout
   const Gridcards=({data})=>{
     console.log(data.title);
@@ -43,7 +154,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Services Overview Section */}
-      <section className="services-overview">
+      <section className="services-overview" >
           <h2 className="section-title">How We Protect Your Business</h2>
           <p className="section-subtitle">
             HackSecure provides tailored security solutions for businesses of all sizes, 
@@ -54,90 +165,21 @@ const ServicesPage = () => {
           {/* Services Grid */}
           <div className='services-grid'>
             <Gridcards data={cardDetails} />
-            <Gridcards data={[{ id:4, title: "Cyber Investigation" }]} />
+            <Gridcards data={[{ id:4, title: "Cyber Investigation", description: "", topics: [] }]} />
           </div>
         </div>
       </section>
+
+      <div style={{marginBottom:'40px'}}> 
 {service === 'Cyber Investigation' && <Investigation />}
-      <div> 
-        {service === 'Webinars' && <CardStructure data={cardDetails[0]}/>}
-        {service === 'Sessions' && <CardStructure data={cardDetails[1]}/>}
-        {service === 'Workshop' && <CardStructure data={cardDetails[2]}/>}
+        {service === 'Webinars' && <Webinars />}
+        {service === 'Sessions' && <Sessions />}
+        {service === 'Workshop' && <Workshop />}
         
       </div>
 
-      {/* Detaile Sections- have  all the details needed for each service */}
-
-      {/* <div> 
-          <div id="offensive" className="service-detail-section">
-            <div className="container">
-              <div className="service-detail">
-                <div className="service-detail-content">
-                  <h2>Workshop</h2>
-                  <p>Our offensive security services help you identify and address vulnerabilities before they can be exploited by malicious actors.</p>
-                  <p>Using state-of-the-art tools and techniques employed by real attackers, our expert team simulates cyber attacks to test your defenses and provide actionable recommendations.</p>
-                  <button className="service-detail-cta">Request Service</button>
-                </div>
-                <div className="service-detail-image offensive-image"></div>
-              </div>
-            </div>
-          </div>
-
-          <section id="defensive" className="service-detail-section alt-bg">
-            <div className="container">
-              <div className="service-detail reverse">
-                <div className="service-detail-content">
-                  <h2>Sessions</h2>
-                  <p>Build robust defenses against evolving cyber threats with our comprehensive defensive security services.</p>
-                  <p>From security architecture reviews to continuous monitoring, we help you implement proactive measures to detect, prevent, and respond to security incidents.</p>
-                  <button className="service-detail-cta">Request Service</button>
-                </div>
-                <div className="service-detail-image defensive-image"></div>
-              </div>
-            </div>
-          </section>
-
-          <section id="intelligence" className="service-detail-section">
-            <div className="container">
-              <div className="service-detail">
-                <div className="service-detail-content">
-                  <h2>Webinars</h2>
-                  <p>Stay ahead of emerging threats with our actionable threat intelligence services tailored to your business needs.</p>
-                  <p>Our analysts monitor the threat landscape, including the dark web, to provide timely intelligence about potential threats targeting your industry or organization.</p>
-                  <button className="service-detail-cta">Request Service</button>
-                </div>
-                <div className="service-detail-image intelligence-image"></div>
-              </div>
-            </div>
-          </section>
-
-          <section id="training" className="service-detail-section alt-bg">
-            <div className="container">
-              <div className="service-detail reverse">
-                <div className="service-detail-content">
-                  <h2>Solutions</h2>
-                  <p>Empower your staff with the knowledge and skills to recognize and respond to security threats effectively.</p>
-                  <p>Our comprehensive training programs range from basic security awareness for all employees to specialized technical training for security professionals.</p>
-                  <button className="service-detail-cta">Request Service</button>
-                  
-                </div>
-                <div className="service-detail-image training-image"></div>
-              </div>
-            </div>
-          </section>
-      </div> */}
-
       {/* CTA Section */}
-      <section className="services-cta">
-          <h2>Ready to secure your business?</h2>
-          <p>Contact our team of security experts for a personalized consultation.</p>
-        <div className="container">
-          <div className="cta-buttons">
-            <button className="cta-primary">Schedule a Call</button>
-            <button className="cta-secondary">View Case Studies</button>
-          </div>
-        </div>
-      </section>
+      <ServiceContactForm sessionTopics={SessionList} />
     </div>
   );
 };

@@ -90,11 +90,11 @@
 .services-grid {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr))
 }
 
 .service-card {
+  width: 80%;
   cursor: pointer;
   background-color: rgb(18 18 19 / 3%);
   border-radius: 12px;
@@ -313,11 +313,16 @@
 }
 
 .investigation-card {
-  background: #1a1a1a;
+
+  width: 100%;
+  cursor: pointer;
+  background-color: #1a1a1a;
   border-radius: 12px;
-  padding: 30px;
+  padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #2a2a2a;
+  display: flex;
+  flex-direction: column;
 }
 
 .investigation-card:hover {
@@ -340,7 +345,7 @@
   left: 0;
   width: 50px;
   height: 3px;
-  background: #4CAF50;
+  background-color: #055ba6;
   border-radius: 3px;
 }
 
@@ -350,13 +355,57 @@
   margin: 0;
 }
 
+.features-list h3 {
+  font-size: 1.25rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.features-list h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #4CAF50;
+  border-radius: 3px;
+}
+
+.features-list ul {
+  list-style: none;
+  padding-left: 5px;
+  margin: 0;
+}
+
 .feature-item {
   display: flex;
-  align-items: center;
-  margin-bottom: 12px;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #e0e0e0;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  transition: none;
+}
+
+.feature-item:hover {
+  background-color: transparent;
+  transform: none;
+}
+
+.feature-item::before {
+  /* content: '✓';
+  color: #055ba6; */
+  margin-right: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.6;
 }
 
 .feature-item svg {
@@ -477,7 +526,12 @@
     padding: 0 20px;
     height: 60vh;
   }
-  
+  .services-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .services-hero h1 {
     font-size: 2.5rem;
   }
@@ -513,7 +567,7 @@
   .service-card {
     padding: 20px;
   }
-  
+ 
   .service-detail-content h2 {
     font-size: 1.8rem;
   }

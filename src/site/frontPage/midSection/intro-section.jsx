@@ -41,7 +41,7 @@ const IntroSection=()=>{
     return<>
             <div className="intro-container">
       <main className="intro-main">
-        <h1 className="main-title">Build your career with us</h1>
+        <h1 className="main-title" style={{ fontWeight:'lighter'}}>Build your career with us</h1>
 
         {sectionList.map((item)=>{
             if (item.id%2!=0) {
@@ -55,19 +55,13 @@ const IntroSection=()=>{
                       <p key={index}>{description}</p>
                     )
                   })}
-                  
-                  <p>
-                    Join a dynamic, global, and interconnected team of top cyber experts.
-                  </p>
-                  <p>
-                    
-                  </p>
+    
                 </div>
       
                 <div className="section-right">
                   <img
                     src={item.image}
-                    alt="3D Cybersecurity Analyst"
+                  
                     className="cyber-illustration"
                   />
                 </div>
@@ -81,10 +75,12 @@ const IntroSection=()=>{
     <div className="image-container">
       <img
         src={item.image}
+      
+        className="cyber-img"
       />
     </div>
     <div className="content-container">
-        <h2>
+        <h2 style={{ fontWeight:'lighter'}}>
             {item.title}
         </h2>
 

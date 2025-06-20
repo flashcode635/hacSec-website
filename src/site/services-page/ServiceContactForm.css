@@ -1,0 +1,129 @@
+.service-contact-form-section {
+    background-color: #0f172a38; /* Dark blue-gray background */
+    padding: 50px 20px;
+    color: #e2e8f0; /* Light gray text */
+}
+
+.service-contact-form-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #17213191; /* Slightly lighter card background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.service-contact-form-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.service-contact-form-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #94a3b8; /* Muted text color */
+}
+
+.service-contact-form .form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.service-contact-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+#serviceType {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.form-fields input,
+.form-fields select,
+.form-fields textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-fields input:focus,
+.form-fields select:focus,
+.form-fields textarea:focus {
+    outline: none;
+    border-color: #38bdf8; /* Light blue focus */
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+}
+
+.form-fields input::placeholder,
+.form-fields textarea::placeholder {
+    color: #64748b;
+}
+
+.form-fields textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: auto;
+    height: 1.2em;
+    width: 1.2em;
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    margin-bottom: 0;
+    color: #cbd5e1;
+    font-weight: normal;
+}
+
+.cta-primary {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+}

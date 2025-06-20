@@ -7,68 +7,67 @@ const PartnersPage = () => {
   const partnerTiers = [
     {
       name: "International Partners",
-      description: "For organizations with advanced cybersecurity expertise seeking the highest level of partnership",
+      description: "We welcome global collaborations to share knowledge, conduct training, and extend our reach beyond regions",
       benefits: [
-        "Priority access to new threat intelligence",
-        "Dedicated technical account manager",
-        "Custom training programs",
-        "Co-marketing opportunities",
-        "Higher margins on all solutions"
+        "Co-hosted cross-border sessions, webinars, and research",
+        "Global visibility and presence",
+        "Shared campaigns across regions",
+        "Inclusion in Hack Secure’s Global Partner Network",
+        "Mutual support in awareness and skill programs"
       ]
     },
     {
       name: "Brand Ambassadors",
-      description: "For security professionals and influencers who want to promote HackSecure",
+      description: "Represent Hack Secure in your campus or network by promoting our initiatives and helping others grow in cybersecurity.",
       benefits: [
-        "Specialized product training",
-        "Regular threat intelligence updates",
-        "Technical support",
-        "Marketing resources",
-        "Competitive margins"
+        "Certificate and recommendation",
+        "Special sessions and rewards",
+        "Leadership and outreach experience",
+        "Priority access to opportunities",
+        "Featured as a verified ambassador"
       ]
     },
     {
       name: "Community Partners",
-      description: "Entry-level partnership for growing security providers",
+      description: "We collaborate with student communities, tech groups, and cybersecurity collectives to drive awareness, skill-building, and engagement at a grassroots level.",
       benefits: [
-        "Basic product training",
-        "Standard support",
-        "Partner portal access",
-        "Sales enablement tools",
-        "Standard margins"
+        "Co-branded webinars, workshops, and campaigns",
+        "Early access to Hack Secure events",
+        "Community exposure across our platforms",
+        "Skill development opportunities through CTFs and case-based tasks",
+        "Joint content and initiative recognition"
       ]
     },
     {
       name: "Academic Partners",
-      description: "Partnerships with educational institutions to enhance cybersecurity training and research.",
+      description: "We work with schools, colleges, and universities to strengthen cybersecurity education and bridge the gap between industry and academia.",
       benefits: [
-        "Access to exclusive training materials and resources",
-        "Collaboration on educational programs",
-        "Opportunities for student internships",
-        "Discounted services for educational purposes",
-        "Joint marketing initiatives"
+        "Internships and real-world project exposure",
+        "Guest sessions and workshops",
+        "Academic support materials",
+        "Campus-level collaboration opportunities",
+        "Featured as an Academic Partner"
       ]
     },
     {
       name: "Event Partners and Sponsors",
-      description: "For organizations looking to co-host cybersecurity events and workshops",
+      description: "collaborate with tech fests, college events, conferences, and cybersecurity summits to deliver high-value content, training, and engagement.",
       benefits: [
-        "Event sponsorship opportunities",
-        "Co-branded marketing materials",
-        "Access to HackSecure's network of experts",
-        "Joint webinars and training sessions",
-        "Lead generation support"
+        "Promotion across Hack Secure’s digital platforms",
+        "Certificates, swags, and recognition for top performers",
+        "Flexible collaboration models (virtual or on-site)",
+        "Featured in HackSecure’s official sponsor listings",
+        "Sponsored segment during events (talks, workshops, or giveaways)"
       ]
     },
     {
       name: "Corporate Partners",
-      description: "Partnerships with corporate entities to enhance cybersecurity offerings.",
+      description: "We collaborate with private sector companies to enhance their security posture, share intelligence, and jointly drive innovation in cybersecurity.",
       benefits: [
-        "Access to exclusive research and resources",
-        "Collaboration on training programs",
-        "Opportunities for employee internships",
-        "Discounted services for corporate purposes",
-        "Joint marketing initiatives"
+        "Talent access through our certified intern and expert pool",
+        "Brand visibility in educational and technical ecosystems",
+        "Sponsored programs, events, and co-branded content",
+        "Listed as an official Corporate Partner"
       ]
     }
   ];
@@ -82,7 +81,7 @@ const PartnersPage = () => {
             Join forces with HackSecure to build stronger security services and expand your business.
             Our partner program empowers MSSPs and MDR providers with cutting-edge technologies and comprehensive support.
           </p>
-          <GradientButton name="Become a Partner" />
+          <GradientButton name="Become a Partner" pathname={'#partners-program-tiers'}/>
         </div>
       </div>
 
@@ -113,7 +112,7 @@ const PartnersPage = () => {
         </div>
       </div>
 {/* Partner Program Tiers -different plans */}
-      <div className="partners-program-tiers">
+      <div className="partners-program-tiers" id="partners-program-tiers">
         <h2 className="section-title">Partner Program Tiers</h2>
         <p className="section-subtitle">
           Choose the partnership tier that best fits your organization's needs and goals.

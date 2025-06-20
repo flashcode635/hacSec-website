@@ -509,8 +509,7 @@
 }
 
 .cta-primary {
-  background-color: white;
-  color: #023b9d;
+  
   border: none;
   padding: 12px 30px;
   font-size: 1rem;
@@ -521,7 +520,7 @@
 }
 
 .cta-primary:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(227, 231, 247, 0.9);
   transform: translateY(-5px);
 }
 

@@ -7,7 +7,7 @@ const Footer= ()=>{
     return(
         <>
     <footer className="footer" >
-<div style={{display: "flex", gap: "20px", width: "100vw", alighnItems: "center", justifyContent: "space-between", padding: "20px 50px", color: "white"}} >
+<div className="footer-content"style={{display: "flex", gap: "20px", width: "100vw", alighnItems: "center", justifyContent: "space-between", padding: "20px 50px", color: "white"}} >
 
         <div className="hero" style={{marginLeft: "2px"}}> 
 
@@ -75,6 +75,7 @@ const Footer= ()=>{
                     
                 </ul> 
             </div> 
+            {/* support */}
             <div className="footer-links"> <p style={{color:"white",fontWeight:'lighter'}}>Support </p> 
                 <ul style={{listStyleType: "none", padding: 0,marginTop:'12px', fontFamily:'Sans-Serif', fontWeight:'lighter',fontSize:'0.8rem'}}>
                     <li>FAQ Section</li>
@@ -102,8 +103,8 @@ const Footer= ()=>{
             
     </footer> 
     {/* contact  */}
-    <div  style={{width:'100vw', paddingLeft:'45px',paddingTop:'14px'}}>
-        <div style={{fontFamily:'Sans-Serif',color:'white',paddingBottom:'17px'}}>Contact</div>
+    <div  style={{width:'100vw', paddingLeft:'45px',paddingTop:'14px',marginBottom:'9vh'}}>
+        <div style={{fontFamily:'Sans-Serif',color:'white'}}>Contact</div>
         <div > 
             <SocialLinks />
         </div>
