@@ -32,7 +32,7 @@ const sectionList=[
         title: "Hack Secure Global",
         description: [" Once the usage limit is reached, Cascade can continue to be used with the Cascade Base model. To continue using premium models, upgrade your plan.",
           "Whether stationed at our mission-critical Digital Crime Resistance Centers (DCRCs) or working remotely, we wholeheartedly support your career path with a range of opportunities on an international scale.",
-          "We’re a global company with the agipty and innovation potential of a startup backed by the vision and scale of an industry leader."],
+         ],
         image: logoImage
      
     
@@ -48,7 +48,7 @@ const IntroSection=()=>{
             if (item.id%2!=0) {
                 
                 return(
-                 
+                 <div style={{height:'70vh'}}>
                   <section className="main-section" key={item.id}  >
                 <div className="section-left">
                   <h2 className="section-heading">{item.title} </h2>
@@ -67,13 +67,14 @@ const IntroSection=()=>{
                     className="cyber-illustration"
                   />
                 </div>
-              </section>
+              </section>  
+              </div>
               
                 )
             }
             else{
                 return(
-                  <> 
+                  <div style={{height:'70vh'}}> 
                  
                      <section className="diverse-team-section" style={{backgroundColor:'transparent'}} >
     <div className="image-container">
@@ -105,7 +106,7 @@ const IntroSection=()=>{
     </div>
         </section>
        
-                  </>
+                  </div>
                     
                 )
             }

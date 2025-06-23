@@ -34,7 +34,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 48px;
-  min-height: 70vh;
+  height: 70vh;
   padding: 5vh 5vw;
   box-sizing: border-box;
   /* background: #4a49491a; */
@@ -104,7 +104,7 @@ p{
   align-items: center;
   justify-content: center;
   color: #fff;
-  min-height: 70vh;
+  height: 70vh;
   padding: 5vh 5vw;
   /* box-sizing: border-box; */
 }

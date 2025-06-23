@@ -93,23 +93,25 @@ const PartnersPage = () => {
         <div className="benefits-grid">
           <div className="benefit-item">
             <div className="benefit-icon">🔒</div>
-            <h3>Advanced Threat Detection</h3>
-            <p>Access to our proprietary threat intelligence and detection systems</p>
+            <h3>Academic Integration</h3>
+            {/* <p>Access to our proprietary threat intelligence and detection systems</p> */}
+            <p>Partner with us to bridge the gap between education and cybersecurity, through internships, workshops, and certifications.</p>
           </div>
           <div className="benefit-item">
             <div className="benefit-icon">📈</div>
             <h3>Business Growth</h3>
-            <p>Expand your service offerings and increase customer retention</p>
+            <p>Monetize your expertise by delivering joint services, training, and co-branded offerings with us.</p>
           </div>
           <div className="benefit-item">
             <div className="benefit-icon">🔍</div>
-            <h3>Deep Expertise</h3>
-            <p>Continuous training and knowledge transfer from our security experts</p>
+            <h3>Meaningful Collaboration</h3>
+            {/* <p>Continuous training and knowledge transfer from our security experts</p> */}
+            <p>Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals.</p>
           </div>
           <div className="benefit-item">
             <div className="benefit-icon">🌐</div>
-            <h3>Global Presence</h3>
-            <p>Join a network of partners across industries and regions</p>
+            <h3>Global Reach & Reputation</h3>
+            <p>Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries</p>
           </div>
         </div>
       </div>

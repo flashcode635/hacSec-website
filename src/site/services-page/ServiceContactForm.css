@@ -1,5 +1,5 @@
 .service-contact-form-section {
-    background-color: #0f172a38; /* Dark blue-gray background */
+    background-color: #00051233; /* Dark blue-gray background */
     padding: 50px 20px;
     color: #e2e8f0; /* Light gray text */
 }
@@ -110,7 +110,8 @@
 }
 
 .cta-primary {
-    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    /* background: linear-gradient(90deg, #ff416c, #ff4b2b); */
+    background: linear-gradient(90deg, #010448, #0442ed);
     color: white;
     padding: 15px 30px;
     border: none;
@@ -125,5 +126,5 @@
 
 .cta-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+    box-shadow: 0 5px 15px rgba(43, 138, 255, 0.4);
 }
