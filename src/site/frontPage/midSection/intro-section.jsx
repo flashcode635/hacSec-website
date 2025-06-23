@@ -75,7 +75,7 @@ const IntroSection=()=>{
                 return(
                   <> 
                  
-                     <section className="diverse-team-section"  >
+                     <section className="diverse-team-section" style={{backgroundColor:'transparent'}} >
     <div className="image-container">
       <img
         src={item.image}

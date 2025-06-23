@@ -103,11 +103,10 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #4a49491a;
   color: #fff;
   min-height: 70vh;
   padding: 5vh 5vw;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .image-container {
