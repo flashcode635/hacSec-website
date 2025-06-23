@@ -74,7 +74,7 @@ const IntroSection=()=>{
             }
             else{
                 return(
-                  <div style={{height:'70vh'}}> 
+                  <div style={{maxHeight:'70vh'}}> 
                  
                      <section className="diverse-team-section" style={{backgroundColor:'transparent'}} >
     <div className="image-container">
