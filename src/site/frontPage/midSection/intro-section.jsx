@@ -48,7 +48,8 @@ const IntroSection=()=>{
             if (item.id%2!=0) {
                 
                 return(
-                  <section className="main-section" key={item.id} >
+                 
+                  <section className="main-section" key={item.id}  >
                 <div className="section-left">
                   <h2 className="section-heading">{item.title} </h2>
                   {item.description.map((description,index)=>{
@@ -67,12 +68,14 @@ const IntroSection=()=>{
                   />
                 </div>
               </section>
+              
                 )
             }
             else{
                 return(
-                  <>
-                     <section className="diverse-team-section">
+                  <> 
+                 
+                     <section className="diverse-team-section"  >
     <div className="image-container">
       <img
         src={item.image}
@@ -101,7 +104,7 @@ const IntroSection=()=>{
         </div>
     </div>
         </section>
-
+       
                   </>
                     
                 )

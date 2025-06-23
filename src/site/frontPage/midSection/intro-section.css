@@ -16,7 +16,7 @@ body {
 .intro-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px 24px 0 24px;
+  padding: 0px 24px 0 24px;
 }
 
 .main-title {
@@ -28,11 +28,16 @@ body {
 
 .main-section {
   margin-bottom: 3%;
+  
   margin-top: 3%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 48px;
+  min-height: 80vh;
+  padding: 5vh 5vw;
+  box-sizing: border-box;
+  background: #4a49491a;
 }
 
 .section-left {
@@ -100,8 +105,8 @@ p{
   justify-content: center;
   background: #4a49491a;
   color: #fff;
-  min-height: 100vh;
-  padding: 0 5vw;
+  min-height: 80vh;
+  padding: 5vh 5vw;
   box-sizing: border-box;
 }
 
@@ -177,4 +182,3 @@ p{
     max-width: 360px;
   }
 }
-

@@ -140,14 +140,14 @@ const New = () => {
           maxWidth: '900px',
           margin: '0 auto',
         }}>
-          <h2 style={{
+          <h1 style={{
             ...headingStyle,
             fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
             marginBottom: '1.5rem',
             color: '#0955d9',
           }}>
             Hack Secure's Unified Training Platform
-          </h2>
+          </h1>
           <p style={{
             ...subHeadingStyle,
             margin: '0 auto 3rem',
