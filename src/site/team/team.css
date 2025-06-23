@@ -2,29 +2,94 @@
      background: linear-gradient(to right, rgba(2, 2, 2, 0.11),
       rgba(2, 2, 2, 0.6)), 
       url(https://www.group-ib.com/wp-content/uploads/1024-4.jpg);
+      height: 100vh;
 }
 
 .team-page{
     padding-left:30%;
-    padding-right:28%;
-    padding-top: 12%;
+    padding-right:24%;
+    padding-top: 3%;
     
 }
-.team-icon{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    padding-right: 10px;
-    background-color: rgba(52, 152, 219, 0.1);
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    left: 3%;
-    transition: all 0.3s ease;
+.team-card-position{
+  font-style: italic;
 }
-p{
-    padding-top: 3%;
-    color: grey;
-    font-size: medium;
+
+.team-card {
+  background: rgba(12, 28, 39, 0.1);
+  border-radius: 22px;
+  box-shadow: 0 4px 32px 0 #3498db22, 0 1.5px 8px 0 #00000011;
+  border: 2px solid #3498db33;
+  padding: 32px 24px 24px 24px;
+  margin-bottom: 32px;
+  transition: box-shadow 0.35s, border 0.35s, background 0.35s;
+  position: relative;
+  /* overflow: hidden; */
+  color: #222a36;
+  min-height: 180px;
+}
+.team-card:hover {
+  background: rgba(52, 152, 219, 0.10);
+  box-shadow: 0 8px 48px 4px #3460db55, 0 1.5px 16px 0 #00000022;
+  border: 2.5px solid #3498db;
+}
+.team-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.team-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-card h3 {
+  color: #3498db;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.team-card p {
+  color: #79808b;
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.team-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 0;
+  margin-right: 16px;
+  background: linear-gradient(135deg, #3498dbc4 60%, #eaf6fb 100%);
+  border: 2.5px solid #01010b;
+  box-shadow: 0 2px 12px 0 #3498db33;
+  object-fit: cover;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.team-card:hover .team-icon {
+  box-shadow: 0 4px 24px 4px #3498db77;
+  border: 2.5px solid #3498db;
+}
+.team-header{
+    padding-top: 8%;
+}
+@media (max-width: 768px) {
+  .team-page{
+    padding-left:20%;
+    padding-right:20%;
+    padding-top: 7%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5),
+      rgba(2, 2, 2, 0.261)), 
+      url(https://www.group-ib.com/wp-content/uploads/1024-4.jpg);
+  }
+  .team-intro-title{
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
 }

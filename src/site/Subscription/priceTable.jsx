@@ -74,9 +74,9 @@ const features = [
 ];
 
 const Tick = () => (
-  <span className="icon tick" title="Included">
+  <span  title="Included">
     {/* ✓ */}
-    <img src="https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/gradient-icons/checkmark.svg" alt="" srcset="" />
+    <img src="https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/gradient-icons/checkmark.svg" alt=""className="icon tick" />
   </span>
 );
 

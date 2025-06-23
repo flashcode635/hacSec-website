@@ -1,14 +1,15 @@
 .career-page{
      background: linear-gradient(to right, rgba(2, 2, 2, 0.11),
-      rgba(2, 2, 2, 0.6)), 
-      url(https://www.group-ib.com/wp-content/uploads/1024-4.jpg);
+      rgba(2, 2, 2, 0.143)), 
+      url(https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/bg-helpers-new/blue-landscape-1-bg-md.jpg);
       height: 100vh;
 }
 
 .career-page{
     padding-left:22%;
     padding-right:20%;
-    padding-top: 12%;
+    padding-top: 8%;
+    align-items: center;
     
 }
 

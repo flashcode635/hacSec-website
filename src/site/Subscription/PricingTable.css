@@ -53,9 +53,10 @@
 }
 
 .icon.tick {
-  color: #4caf50; /* Green color for included features */
   font-weight: bold;
   font-size: 1.2em;
+  padding-left: 43%;
+  /* align-content: center; */
 }
 
 .icon.dash {

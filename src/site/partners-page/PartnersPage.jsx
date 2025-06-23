@@ -31,7 +31,7 @@ const PartnersPage = () => {
     },
     {
       name: "Community Partners",
-      description: "Drive local cybersecurity initiatives, host events, and build awareness while growing together through shared resources and collaboration.",
+      description: "Lead local cybersecurity efforts, host events, and grow together through shared resources and collaboration.",
       benefits: [
         "Co-branded webinars, workshops, and campaigns",
         "Early access to Hack Secure events",
@@ -73,15 +73,19 @@ const PartnersPage = () => {
       ]
     }
   ];
-  const Benefits=[{ title:"Global Reach & Reputation",
-    description:"Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries"},
-  {title:"Meaningful Collaboration",
-    description:"Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals."},];
-    const Benefits2=[ {title:" Academic Integration",
-    description:"Partner with us to bridge the gap between education and cybersecurity, through internships, workshops, and certifications."},
-  {title:"Business Growth ",
-    description:"Monetize your expertise by delivering joint services, training, and co-branded offerings with us."},]
+  // const Benefits=[{ title:"Global Reach & Reputation",
+  //   description:"Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries"},
+  // {title:"Meaningful Collaboration",
+  //   description:"Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals."},]
 
+// Meaningful Collaboration
+
+// Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals.
+
+
+// Business Growth 
+
+// Monetize your expertise by delivering joint services, training, and co-branded offerings with us.
 
 
 // Academic Integration
@@ -103,93 +107,38 @@ const PartnersPage = () => {
 
 {/* Benefits of Partnering */}
       <div className="partners-benefits-section">
-        <h2 className="section-title">Why Partner With HackSecure</h2>
+        <h2 className="section-title" style={{marginBottom:'4%'}}>Why Partner With HackSecure</h2>
         <div className="benefits-grid">
-          <div> 
-          {Benefits.map((data, index) => (
-              <div className="container noselect " style={{width:'340px', textAlign:'center'}}>
-  <div className="canvas" key={index} style={{marginBottom:'30px'}} >
-    <div className="tracker tr-1"></div>
-    <div className="tracker tr-2"></div>
-    <div className="tracker tr-3"></div>
-    <div className="tracker tr-4"></div>
-    <div className="tracker tr-5"></div>
-    <div className="tracker tr-6"></div>
-    <div className="tracker tr-7"></div>
-    <div className="tracker tr-8"></div>
-    <div className="tracker tr-9"></div>
-    <div className="tracker tr-10"></div>
-    <div className="tracker tr-11"></div>
-    <div className="tracker tr-12"></div>
-    <div className="tracker tr-13"></div>
-    <div className="tracker tr-14"></div>
-    <div className="tracker tr-15"></div>
-    <div className="tracker tr-16"></div>
-    <div className="tracker tr-17"></div>
-    <div className="tracker tr-18"></div>
-    <div className="tracker tr-19"></div>
-    <div className="tracker tr-20"></div>
-    <div className="tracker tr-21"></div>
-    <div className="tracker tr-22"></div>
-    <div className="tracker tr-23"></div>
-    <div className="tracker tr-24"></div>
-    <div className="tracker tr-25"></div>
-    <div id="card">
-      <div className="title">    <h3>{data.title}</h3>
-            {/* <p>Access to our proprietary threat intelligence and detection systems</p> */}
-            <p> {data.description} </p></div>
-      {/* <div className="subtitle">
-        mouse hover tracker
-      </div> */}
-      
-    </div>
-  </div>
-</div>
-          ))} </div>
-    <div> 
-      {Benefits2.map((data, index) => (
-              <div className="container noselect " style={{width:'340px', textAlign:'center'}}>
-  <div className="canvas" key={index} style={{marginBottom:'30px'}} >
-    <div className="tracker tr-1"></div>
-    <div className="tracker tr-2"></div>
-    <div className="tracker tr-3"></div>
-    <div className="tracker tr-4"></div>
-    <div className="tracker tr-5"></div>
-    <div className="tracker tr-6"></div>
-    <div className="tracker tr-7"></div>
-    <div className="tracker tr-8"></div>
-    <div className="tracker tr-9"></div>
-    <div className="tracker tr-10"></div>
-    <div className="tracker tr-11"></div>
-    <div className="tracker tr-12"></div>
-    <div className="tracker tr-13"></div>
-    <div className="tracker tr-14"></div>
-    <div className="tracker tr-15"></div>
-    <div className="tracker tr-16"></div>
-    <div className="tracker tr-17"></div>
-    <div className="tracker tr-18"></div>
-    <div className="tracker tr-19"></div>
-    <div className="tracker tr-20"></div>
-    <div className="tracker tr-21"></div>
-    <div className="tracker tr-22"></div>
-    <div className="tracker tr-23"></div>
-    <div className="tracker tr-24"></div>
-    <div className="tracker tr-25"></div>
-    <div id="card">
-      <div className="title">    <h3>{data.title}</h3>
-            {/* <p>Access to our proprietary threat intelligence and detection systems</p> */}
-            <p> {data.description} </p></div>
-      {/* <div className="subtitle">
-        mouse hover tracker
-      </div> */}
-      
-    </div>
-  </div>
-</div>
-          ))}
-    </div>
 
-          
+          <div className="benefit-item">
+            <div>
+              <div className="benefit-icon">🔒</div>
+              <div>
+                <h3>Academic Integration</h3> 
+              </div>
+            </div>
+            
+            <p>Partner with us to bridge the gap between education and cybersecurity, through internships, workshops, and certifications.</p>
+          </div>
+
+          <div className="benefit-item">
+            <div className="benefit-icon">📈</div>
+            <h3>Business Growth</h3>
+            <p>Monetize your expertise by delivering joint services, training, and co-branded offerings with us.</p>
+          </div>
+
+          <div className="benefit-item">
+            <div className="benefit-icon">🔍</div>
+            <h3>Meaningful Collaboration</h3>
+            {/* <p>Continuous training and knowledge transfer from our security experts</p> */}
+            <p>Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals.</p>
+          </div>
+
+          <div className="benefit-item">
+            <div className="benefit-icon">🌐</div>
+            <h3>Global Reach & Reputation</h3>
+            <p>Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries</p>
+          </div>
         </div>
       </div>
 {/* contact section  */}

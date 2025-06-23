@@ -13,15 +13,6 @@
   clear: both;
 }
 
-/* logo+moto  - parent ; sub div- main */
-.hero {
-    font-size: 1.0rem; /* Reduced font size */
-    font-weight: bold;
-    /* Light color for contrast against dark background */
-    color: #e4e9ee;
-    text-decoration: none;
-  }
-
   /*  child - hacksec logo */
   .main{
     font-size: 2.3rem;
@@ -108,6 +99,18 @@ li{
 @media (max-width: 480px) {
   .footer {
     padding: 10px 0;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
   .footer-links {
     margin-top: 10px;
@@ -117,5 +120,9 @@ li{
   }
   .footer-links li {
     margin-bottom: 5px;
+  }
+  .footer-moto{
+    font-size: 2rem;
+    font-weight:bolder;
   }
 }

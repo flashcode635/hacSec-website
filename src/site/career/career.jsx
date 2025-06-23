@@ -18,12 +18,14 @@ const CareerPage = () => {
         <p>Stand at the front lines in the fight against cybercrime. Join our team and become a top-notch cybersecurity professional, dedicated to making the digital space a safer place.</p>
       </div>
       {/* <span style={{paddingLeft:"20px"}} /> */}
-      <div style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"row", gap:"20px",marginTop:"30px", height:"80px"}}>
+      <div style={{display:"flex", 
+        // justifyContent:"center", 
+        alignItems:"center", flexDirection:"row", gap:"20px",marginTop:"30px", height:"80px"}}>
          <button className="hero-cta-button">Join Now</button>  
           
         <div className="navbar-links">
             <ul> 
-                <li>  <Link to="/internship" target="_blank" className="resource-detail-cta" > Check Now </Link> </li>  
+                <li>  <Link to="/internship" className="resource-detail-cta" > Check Now </Link> </li>  
             </ul> 
         </div>
         </div>
@@ -34,7 +36,7 @@ const CareerPage = () => {
         <p>If you didn't find a suitable position, feel free to submit your resume for future opportunities</p>
         <div className="navbar-links" style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"row", gap:"20px"}}>
             <ul> 
-                <li>  <Link to="/contact" target="_blank" className="contact-buttons" > Contact Recruitment Team </Link> </li>  
+                <li>  <Link to="/contact" className="contact-buttons" > Contact Recruitment Team </Link> </li>  
             </ul> 
         </div>
       </div>

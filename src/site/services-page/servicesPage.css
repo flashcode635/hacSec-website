@@ -7,9 +7,9 @@
 }
 
 /* Container for sections */
-.container {
+.services-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 0 40px;
   padding: 0 20px;
 }
 

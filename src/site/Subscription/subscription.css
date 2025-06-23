@@ -4,24 +4,158 @@
   color: #e4e9ee;
   font-family: 'Poppins', sans-serif;
 }
-.tier-button{
-font-size: 17px;    
-padding: 8px 16px;
-border: 1px solid #2159d318;
-font-weight:bold;
-border-radius: 4px;
-cursor: pointer;
-font-family: Calibri;
+
+.subscription-tiers-hero {
+  padding: 50px 10%;
+  background-color: rgb(4 4 7);
+  border-top: 1px solid rgba(52, 152, 219, 0.1);
+  border-bottom: 1px solid rgba(52, 152, 219, 0.1);
 }
 
-.subscription-program-tiers {
+.subscription-hero-title {
+  font-size: 2.2rem;
+  background: linear-gradient(to top , rgb(125, 149, 244),rgb(59, 106, 238),rgb(1, 11, 105));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+}
+
+.subscription-hero-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 0.7rem;
+}
+
+.subscription-hero-description {
+  color: #adb5c3;
+  width: 50vw;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 1.15rem;
+}
+
+.subscription-hero-link {
+  color: #2563eb;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 2px solid rgb(55 121 243 / 86%);
+  transition: all 0.3s ease;
+  margin: 10px 0px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+}
+.subscription-hero-link:hover {
+  color: #3756f3;
+  background: rgba(37,99,235,0.09);
+  border-color: #163bf4;
+}
+
+.subscription-tier-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 5% 0;
+}
+
+.subscription-tier-btn {
+  font-size: 17px;
+  padding: 8px 16px;
+  border: 1px solid #2159d318;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Calibri, 'Poppins', sans-serif;
+  background: transparent;
+  color: #e4e9ee;
+  transition: background 0.2s, color 0.2s;
+}
+.subscription-tier-btn-selected,
+.subscription-tier-btn:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.subscription-tier-selected {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.subscription-tier-desc {
+  font-size: 18px;
+  font-weight: normal;
+  color: #b7c7e2;
+}
+
+.subscription-matrix-section {
   padding: 80px 10%;
   background-color: rgb(2, 2, 8);
   border-top: 1px solid rgba(52, 152, 219, 0.1);
   border-bottom: 1px solid rgba(52, 152, 219, 0.1);
 }
 
-.tiers-container {
+.subscription-matrix-header {
+  margin-bottom: 65px;
+}
+
+.subscription-matrix-title {
+  font-size: 2rem;
+  color: #8daded;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.subscription-custom-plan {
+  margin-top: 2.5rem;
+  text-align: center;
+  background: #040011e4;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 8px rgba(215, 212, 212, 0.06);
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription-custom-plan-title {
+  margin-bottom: 0.5rem;
+  color: #8daded;
+  font-size: 1.3rem;
+}
+
+.subscription-custom-plan-desc {
+  margin-bottom: 1.2rem;
+  color: #475f8d;
+  font-size: 1.05rem;
+}
+
+.subscription-custom-plan-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(37,99,235,0.08);
+  transition: background 0.2s ease;
+}
+.subscription-custom-plan-btn:hover {
+  background: #1e40af;
+}
+
+.subscription-tiers-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -29,7 +163,7 @@ font-family: Calibri;
   margin: 0 auto;
 }
 
-.tier-card {
+.subscription-tier-card {
   background-color: rgba(17, 17, 20, 0.8);
   border-radius: 12px;
   padding: 40px 30px;
@@ -41,7 +175,7 @@ font-family: Calibri;
   overflow: hidden;
 }
 
-.tier-card::before {
+.subscription-tier-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -54,18 +188,17 @@ font-family: Calibri;
   transition: transform 0.4s ease;
 }
 
-.tier-card:hover {
+.subscription-tier-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   border-color: rgba(52, 152, 219, 0.3);
 }
 
-.tier-card:hover::before {
+.subscription-tier-card:hover::before {
   transform: scaleX(1);
 }
 
-
-.tier-name {
+.subscription-tier-name {
   font-size: 24px;
   font-weight: 600;
   color: #ffffff;
@@ -73,7 +206,7 @@ font-family: Calibri;
   text-align: center;
 }
 
-.tier-description {
+.subscription-tier-description {
   font-size: 16px;
   color: #bab8b8;
   line-height: 1.6;
@@ -81,24 +214,24 @@ font-family: Calibri;
   text-align: center;
 }
 
-.tier-benefits {
+.subscription-tier-benefits {
   margin-bottom: 30px;
 }
 
-.tier-benefits h4 {
+.subscription-tier-benefits h4 {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 15px;
 }
 
-.tier-benefits ul {
+.subscription-tier-benefits ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.tier-benefits li {
+.subscription-tier-benefits li {
   font-size: 15px;
   color: #bab8b8;
   line-height: 1.5;
@@ -107,54 +240,9 @@ font-family: Calibri;
   padding-left: 25px;
 }
 
-.tier-benefits li::before {
+.subscription-tier-benefits li::before {
   content: '✓';
   position: absolute;
   left: 0;
   color: #3498db;
-}
-
-.hero-text{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-li{
-  color: #a4b7c0;
-  font-family: sans-serif;
-}
-.custom-plan-option {
-  margin-top: 2.5rem;
-  text-align: center;
-  background: #040011e4;
-  border-radius: 12px;
-  padding: 2rem 1rem;
-  box-shadow: 0 2px 8px rgba(215, 212, 212, 0.06);
-  max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.custom-plan-button {
-    background: #2563eb;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 0.7rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight: 600;
-    box-shadow: 0 1px 4px rgba(37,99,235,0.08);
-    transition: background 0.2s ease;
-}
-#paragraph{
-  margin-bottom: 1.2rem;
-  color: #475f8d;
-  font-size: 1.05rem;
-}
-
-#custom-plan-title{
-  margin-bottom: 0.5rem;
-  color: #8daded;
 }

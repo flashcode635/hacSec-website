@@ -38,84 +38,39 @@ const sectionList=[
     
     }
 ]
-const IntroSection=()=>{
-    return<>
-            <div className="intro-container">
+const IntroSection = () => {
+  return (
+    <div className="intro-container">
       <main className="intro-main">
-        <h1 className="main-title" style={{ fontWeight:'lighter'}}>Build your career with us</h1>
-
-        {sectionList.map((item)=>{
-            if (item.id%2!=0) {
-                
-                return(
-                 <div style={{height:'70vh'}}>
-                  <section className="main-section" key={item.id}  >
-                <div className="section-left">
-                  <h2 className="section-heading">{item.title} </h2>
-                  {item.description.map((description,index)=>{
-                    return(
-                      <p key={index}>{description}</p>
-                    )
-                  })}
-    
-                </div>
-      
-                <div className="section-right">
-                  <img
-                    src={item.image}
-                  
-                    className="cyber-illustration"
-                  />
-                </div>
-              </section>  
+        <h1 className="main-title">Build your career with us</h1>
+        {sectionList.map((item, idx) => {
+          const isEven = idx % 2 === 1;
+          return (
+            <section
+              className={`intro-card ${isEven ? "reverse" : ""}`}
+              key={item.id}
+            >
+              <div className="intro-card-image">
+                <img
+                  src={item.image}
+                  className="intro-card-img"
+                  alt={item.title}
+                />
               </div>
-              
-                )
-            }
-            else{
-                return(
-                  <div style={{maxHeight:'70vh'}}> 
-                 
-                     <section className="diverse-team-section" style={{backgroundColor:'transparent'}} >
-    <div className="image-container">
-      <img
-        src={item.image}
-      
-        className="cyber-img"
-      />
-    </div>
-    <div className="content-container">
-        <h2 style={{ fontWeight:'lighter'}}>
-            {item.title}
-        </h2>
-
-        <div style={{ color: "gray",fontSize: "1rem",marginBottom: "0px"}} > 
-                    {item.description.map((value,index)=>{
-                            return(
-                                <ul style={{ color: "gray",fontSize: "1rem",marginBottom: "0px",content: "✔",listStyle: "none",padding: 0}}>
-                                    <p style={{ color: "gray",fontSize: "1rem",marginBottom: "0px"}} key={index}>
-                                            {value}
-                                    </p> 
-                                </ul>
-                            )
-                        })
-                    }
-            
-            
-        </div>
-    </div>
-        </section>
-       
-                  </div>
-                    
-                )
-            }
+              <div className="intro-card-content">
+                <h2 className="intro-card-title">{item.title}</h2>
+                <ul className="feature-list">
+                  {item.description.map((desc, i) => (
+                    <li key={i}>{desc}</li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+          );
         })}
-
-    
       </main>
     </div>
-    </>
-}
+  );
+};
 
 export default IntroSection

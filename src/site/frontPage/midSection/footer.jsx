@@ -7,15 +7,15 @@ const Footer= ()=>{
     return(
         <>
     <footer className="footer" >
-<div className="footer-content"style={{display: "flex", gap: "20px", width: "100vw", alighnItems: "center", justifyContent: "space-between", padding: "20px 50px", color: "white"}} >
+<div  className='sm:flex sm:flex-row flex-col' style={{ gap: "20px", width: "100vw", alighnItems: "center", justifyContent: "space-between", padding: "20px 50px", color: "white"}} >
 
-        <div className="hero" style={{marginLeft: "2px"}}> 
+        <div className="footer-hero" style={{marginLeft: "2px"}}> 
 
             <p className="main"> Hack Secure 
 
             </p>
 
-            <p style={{fontSize: "1.2rem",fontWeight: "lighter", color: "white",marginBottom:'16px'}}>
+            <p className="footer-moto" style={{fontSize: "1.2rem",fontWeight: "lighter", color: "white",marginBottom:'16px'}}>
                 Learn Secure Lead
                 </p>
 

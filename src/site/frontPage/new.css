@@ -1,2 +1,122 @@
+.front-page-container {
+    
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.section {
+    width: 100%;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    background: rgba(2, 6, 23, 0.19);
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    background: rgba(2, 6, 23, 0.19);
+}
+
+.review-section {
+    background: rgb(2, 6, 23, 0.19);
+}
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    background: rgba(2, 6, 23, 0.19);
+    z-index: 1;
+    padding: 2rem 0;
+}
+
+.hero-heading {
+    font-size: clamp(1.5rem, 5vw, 2.7rem);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #fff;
+    width: 70%;
+}
+
+.hero-subheading {
+    font-size: clamp(1.3rem, 3vw, 2.0rem);
+    margin: 1rem 0 2rem;
+}
+
+.hero-text {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+}
+
+.sponsors-section {
+    background: rgba(2, 6, 23, 0.19);
+    padding: 2rem 1rem;
+}
+
+.sponsors-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sponsor-item {
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.training-section {
+    background: rgba(2, 6, 23, 0.19);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.training-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.training-heading {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 1.5rem;
+    color: #0955d9;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.training-text {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 auto 3rem;
+    max-width: 800px;
+}
+
 
 

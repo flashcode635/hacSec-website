@@ -161,7 +161,7 @@ const ServicesPage = () => {
             helping you identify threats, remediate vulnerabilities, and prevent attacks before they happen.
           </p>
         
-        <div className="container">
+        <div className="services-container">
           {/* Services Grid */}
           <div className='services-grid'>
             <Gridcards data={cardDetails} />

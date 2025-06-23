@@ -121,7 +121,7 @@ const LoadableLearnX = () => {
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
                 {/* <h2>Loading...</h2> */}
                 {/* leader screen  */}
-<div class="loader">
+<div className="loader">
   <div>
     <ul>
       <li>
@@ -244,7 +244,7 @@ export const ResourcePage = ({ imageUrl }) => {
                     <p style={{ width: '80%', margin: '0 auto', alignContent: 'center', textAlign: 'center', fontSize: '1.2rem', marginBottom: '3%' }}>
                         Choose your path:
                     </p>
-                    <div className="container">
+                    <div className="learnx-container">
                         <div className="resource-grid">
                             {resources.map((resource, index) => (
                                 <ResourceCard
@@ -263,7 +263,7 @@ export const ResourcePage = ({ imageUrl }) => {
                 </div>
 
                 <section className="resource-cta" style={{ marginTop: '7%' }}>
-                    <div className="container" style={containerStyle}>
+                    <div className="learnx-container" style={containerStyle}>
                         <h2>Like to Learn More?</h2>
                         <p>Contact our team of security experts for a personalized consultation.</p>
                         <div className="cta-buttons" style={ctaButtonsContainerStyle}>
