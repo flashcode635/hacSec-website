@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './partnersPage.css';
 import GradientButton from '../Components/resource-btn';
 
 const PartnersPage = () => {
+  const navigate = useNavigate();
   // Partner program tiers
   const partnerTiers = [
     {
@@ -130,7 +132,7 @@ const PartnersPage = () => {
                   ))}
                 </ul>
               </div>
-              <button className="tier-apply-button">Apply Now</button>
+              <button className="tier-apply-button" onClick={() => navigate(`/partner-form?tier=${encodeURIComponent(tier.name)}`)}>Apply Now</button>
             </div>
           ))}
         </div>

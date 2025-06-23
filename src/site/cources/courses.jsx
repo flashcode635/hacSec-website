@@ -28,9 +28,9 @@ const Courses = () => {
   return (
     <div className="courses-page">
       <div className="courses-hero">
-        <div className="courses-hero-content">
-          <h1>Cybersecurity Training Courses</h1>
-          <p>Master the skills needed to protect digital assets and combat cyber threats</p>
+        <div className="md:courses-hero-content courses-hero-content width-[10vw]">
+          <h1 >Hack Secure Micro Modules</h1>
+          <p >Master the skills needed to protect digital assets and combat cyber threats</p>
         </div>
       </div>
 
@@ -40,16 +40,22 @@ const Courses = () => {
           <p>Explore our comprehensive range of cybersecurity courses designed by industry experts</p>
         </div>
 
-        <div className="courses-grid">
+        <div className="lg:courses-grid courses-grid lg:grid-cols-3 
+        md:grid-cols-2">
+         
           {coursesList.map((course) => (
-            <div className="course-card" key={course.id}>
-              <div className="course-image-container">
+             <div className='lg:grid-col-1 lg:pr-[20px] lg:min-w-[320px] 
+            
+              lg:mr-4
+              md:grid-col-1'>  
+             <div className="lg:course-card course-card  w-full " key={course.id}>
+              <div className="course-image-container h-[200px] md:h-[400px]">
                 <div
-                  className="course-image"
+                  className="course-image h-full "
                   style={{ backgroundImage: `url(${course.image})` }}
                 ></div>
               </div>
-              <div className="course-content">
+              <div className="md:course-content course-content ">
                 <h3>{course.title}</h3>
                 <p>{course.description}</p>
                 <div className="course-meta">
@@ -92,7 +98,7 @@ const Courses = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </div>  </div>
           ))}
         </div>
       </div>

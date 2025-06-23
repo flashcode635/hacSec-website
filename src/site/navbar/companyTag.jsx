@@ -12,7 +12,7 @@ const CompanyMenu = () => {
         <Link to="/" className="dropdown-item">About Us </Link>
         <Link to="/team" className="dropdown-item">Team</Link>
         <Link to="/careers" className="dropdown-item">Careers</Link>
-        <Link  className="dropdown-item">Brand-kit</Link>
+        {/* <Link  className="dropdown-item">Brand-kit</Link> */}
         <Link to="/contact" className="dropdown-item">Contact</Link>
         {/* <details className="dropdown-item">
           <summary>Legal</summary>
@@ -22,7 +22,7 @@ const CompanyMenu = () => {
           <Link to="/organization" className="dropdown-item">Organization</Link>
           <Link to="/headquarters" className="dropdown-item">Headquarters & Branches</Link>
         </details> */}
-        <Link to="" className="dropdown-item">Legal</Link>
+        {/* <Link to="" className="dropdown-item">Legal</Link> */}
 
       </div>
     </div>

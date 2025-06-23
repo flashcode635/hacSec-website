@@ -56,7 +56,7 @@
 
 /* Courses container styles */
 .courses-container {
-  padding: 60px 5%;
+  padding: 60px 3%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -83,13 +83,13 @@
 /* Courses grid layout */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  grid-gap: 30px;
+  gap: 20px;
 }
 
 /* Course card styles */
 .course-card {
   background-color: #0a0a0a;
+  min-height: auto;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -104,13 +104,11 @@
 
 .course-image-container {
   position: relative;
-  height: 200px;
   overflow: hidden;
 }
 
 .course-image {
   width: 100%;
-  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,6 +237,10 @@
 @media (max-width: 768px) {
   .courses-hero-content h1 {
     font-size: 36px;
+    width: 80%;
+   align-items: center;
+   justify-content: center;
+   margin-left: 10%;
   }
   
   .courses-grid {

@@ -57,7 +57,7 @@ const resources = [
         link: "/cyber-laws"
     },
     {
-        title: "Trainings Programs",
+        title: "Training Program",
         imageUrl: "https://img.icons8.com/ios/50/3498db/training.png",
         link: "/trainings"
     },
@@ -167,7 +167,7 @@ const LoadableLearnX = () => {
     return <ResourcePage imageUrl={imageLoadable.contents} />;
 };
 
-const ResourcePage = ({ imageUrl }) => {
+export const ResourcePage = ({ imageUrl }) => {
     const [isPrimaryHovered, setPrimaryHovered] = useState(false);
 
     const containerStyle = {
@@ -203,7 +203,7 @@ const ResourcePage = ({ imageUrl }) => {
     };
 
     const primaryBtnHoverStyle = {
-        backgroundColor: 'rgba(227, 231, 247, 0.9)',
+        backgroundColor: 'rgba(201, 211, 250, 0.9)',
         transform: 'translateY(-5px)'
     };
 

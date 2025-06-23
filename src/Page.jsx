@@ -17,7 +17,7 @@ import ScrollTop from './scrolling';
 import Teams from './site/team/team';
 import Footer from './site/frontPage/midSection/footer';
 import Details from './site/cources/CourceDetails/Details'
-
+import PartnerForm from './site/partners-page/partnerForm';
 export default function Page() {
   const courseName= "Learning Process"; // Replace with the actual course name you want to enroll in
   console.log(`Enrolled in course: ${courseName}`);
@@ -30,6 +30,7 @@ export default function Page() {
               <Route path="/" element={<New />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/partners" element={<PartnersPage />} />
+              <Route path="/partner-form" element={<PartnerForm />} />
               <Route path="/Learn_X" element={<LoadableLearnX />} />
               <Route path="/subscription" element={<SubscriptionPage />} />
 
