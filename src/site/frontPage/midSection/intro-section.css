@@ -34,10 +34,10 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 48px;
-  min-height: 80vh;
+  min-height: 70vh;
   padding: 5vh 5vw;
   box-sizing: border-box;
-  background: #4a49491a;
+  /* background: #4a49491a; */
 }
 
 .section-left {
@@ -105,7 +105,7 @@ p{
   justify-content: center;
   background: #4a49491a;
   color: #fff;
-  min-height: 80vh;
+  min-height: 70vh;
   padding: 5vh 5vw;
   box-sizing: border-box;
 }
