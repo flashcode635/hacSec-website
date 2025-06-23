@@ -31,7 +31,7 @@ const New = () => {
 
   const headingStyle = {
     fontSize: 'clamp(1.5rem, 5vw, 2.7rem)',
-    fontWeight: 700,
+    fontWeight: 500,
     marginBottom: '1.5rem',
     lineHeight: '1.2',
     color: '#fff',

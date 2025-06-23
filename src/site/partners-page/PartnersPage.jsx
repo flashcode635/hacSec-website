@@ -9,7 +9,7 @@ const PartnersPage = () => {
   const partnerTiers = [
     {
       name: "International Partners",
-      description: "We welcome global collaborations to share knowledge, conduct training, and extend our reach beyond regions",
+      description: "Partner globally with Hack Secure to share knowledge, lead cross-border cybersecurity efforts, and amplify global impact.",
       benefits: [
         "Co-hosted cross-border sessions, webinars, and research",
         "Global visibility and presence",
@@ -20,7 +20,7 @@ const PartnersPage = () => {
     },
     {
       name: "Brand Ambassadors",
-      description: "Represent Hack Secure in your campus or network by promoting our initiatives and helping others grow in cybersecurity.",
+      description: "Promote our vision, represent us in your network, and inspire others to join the mission of cybersecurity awareness and innovation.",
       benefits: [
         "Certificate and recommendation",
         "Special sessions and rewards",
@@ -31,7 +31,7 @@ const PartnersPage = () => {
     },
     {
       name: "Community Partners",
-      description: "We collaborate with student communities, tech groups, and cybersecurity collectives to drive awareness, skill-building, and engagement at a grassroots level.",
+      description: "Drive local cybersecurity initiatives, host events, and build awareness while growing together through shared resources and collaboration.",
       benefits: [
         "Co-branded webinars, workshops, and campaigns",
         "Early access to Hack Secure events",
@@ -42,7 +42,7 @@ const PartnersPage = () => {
     },
     {
       name: "Academic Partners",
-      description: "We work with schools, colleges, and universities to strengthen cybersecurity education and bridge the gap between industry and academia.",
+      description: "Bring cybersecurity training, workshops, and career opportunities to your institution empowering students with real-world skills and industry exposure.",
       benefits: [
         "Internships and real-world project exposure",
         "Guest sessions and workshops",
@@ -53,7 +53,7 @@ const PartnersPage = () => {
     },
     {
       name: "Event Partners and Sponsors",
-      description: "collaborate with tech fests, college events, conferences, and cybersecurity summits to deliver high-value content, training, and engagement.",
+      description: "Collaborate to support cybersecurity events, gain brand visibility, and engage with a global audience driving real impact.",
       benefits: [
         "Promotion across Hack Secure’s digital platforms",
         "Certificates, swags, and recognition for top performers",
@@ -64,7 +64,7 @@ const PartnersPage = () => {
     },
     {
       name: "Corporate Partners",
-      description: "We collaborate with private sector companies to enhance their security posture, share intelligence, and jointly drive innovation in cybersecurity.",
+      description: "Enhance your organization’s cybersecurity strategy, access expert resources, and collaborate on innovative solutions that protect your business and clients.",
       benefits: [
         "Talent access through our certified intern and expert pool",
         "Brand visibility in educational and technical ecosystems",
@@ -73,6 +73,20 @@ const PartnersPage = () => {
       ]
     }
   ];
+  const Benefits=[{ title:"Global Reach & Reputation",
+    description:"Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries"},
+  {title:"Meaningful Collaboration",
+    description:"Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals."},];
+    const Benefits2=[ {title:" Academic Integration",
+    description:"Partner with us to bridge the gap between education and cybersecurity, through internships, workshops, and certifications."},
+  {title:"Business Growth ",
+    description:"Monetize your expertise by delivering joint services, training, and co-branded offerings with us."},]
+
+
+
+// Academic Integration
+
+// Partner with us to bridge the gap between education and cybersecurity, through internships, workshops, and certifications.
 
   return (
     <div className="partners-page">
@@ -91,41 +105,122 @@ const PartnersPage = () => {
       <div className="partners-benefits-section">
         <h2 className="section-title">Why Partner With HackSecure</h2>
         <div className="benefits-grid">
-          <div className="benefit-item">
-            <div className="benefit-icon">🔒</div>
-            <h3>Academic Integration</h3>
+          <div> 
+          {Benefits.map((data, index) => (
+              <div className="container noselect " style={{width:'340px', textAlign:'center'}}>
+  <div className="canvas" key={index} style={{marginBottom:'30px'}} >
+    <div className="tracker tr-1"></div>
+    <div className="tracker tr-2"></div>
+    <div className="tracker tr-3"></div>
+    <div className="tracker tr-4"></div>
+    <div className="tracker tr-5"></div>
+    <div className="tracker tr-6"></div>
+    <div className="tracker tr-7"></div>
+    <div className="tracker tr-8"></div>
+    <div className="tracker tr-9"></div>
+    <div className="tracker tr-10"></div>
+    <div className="tracker tr-11"></div>
+    <div className="tracker tr-12"></div>
+    <div className="tracker tr-13"></div>
+    <div className="tracker tr-14"></div>
+    <div className="tracker tr-15"></div>
+    <div className="tracker tr-16"></div>
+    <div className="tracker tr-17"></div>
+    <div className="tracker tr-18"></div>
+    <div className="tracker tr-19"></div>
+    <div className="tracker tr-20"></div>
+    <div className="tracker tr-21"></div>
+    <div className="tracker tr-22"></div>
+    <div className="tracker tr-23"></div>
+    <div className="tracker tr-24"></div>
+    <div className="tracker tr-25"></div>
+    <div id="card">
+      <div className="title">    <h3>{data.title}</h3>
             {/* <p>Access to our proprietary threat intelligence and detection systems</p> */}
-            <p>Partner with us to bridge the gap between education and cybersecurity, through internships, workshops, and certifications.</p>
-          </div>
-          <div className="benefit-item">
-            <div className="benefit-icon">📈</div>
-            <h3>Business Growth</h3>
-            <p>Monetize your expertise by delivering joint services, training, and co-branded offerings with us.</p>
-          </div>
-          <div className="benefit-item">
-            <div className="benefit-icon">🔍</div>
-            <h3>Meaningful Collaboration</h3>
-            {/* <p>Continuous training and knowledge transfer from our security experts</p> */}
-            <p>Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals.</p>
-          </div>
-          <div className="benefit-item">
-            <div className="benefit-icon">🌐</div>
-            <h3>Global Reach & Reputation</h3>
-            <p>Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries</p>
-          </div>
+            <p> {data.description} </p></div>
+      {/* <div className="subtitle">
+        mouse hover tracker
+      </div> */}
+      
+    </div>
+  </div>
+</div>
+          ))} </div>
+    <div> 
+      {Benefits2.map((data, index) => (
+              <div className="container noselect " style={{width:'340px', textAlign:'center'}}>
+  <div className="canvas" key={index} style={{marginBottom:'30px'}} >
+    <div className="tracker tr-1"></div>
+    <div className="tracker tr-2"></div>
+    <div className="tracker tr-3"></div>
+    <div className="tracker tr-4"></div>
+    <div className="tracker tr-5"></div>
+    <div className="tracker tr-6"></div>
+    <div className="tracker tr-7"></div>
+    <div className="tracker tr-8"></div>
+    <div className="tracker tr-9"></div>
+    <div className="tracker tr-10"></div>
+    <div className="tracker tr-11"></div>
+    <div className="tracker tr-12"></div>
+    <div className="tracker tr-13"></div>
+    <div className="tracker tr-14"></div>
+    <div className="tracker tr-15"></div>
+    <div className="tracker tr-16"></div>
+    <div className="tracker tr-17"></div>
+    <div className="tracker tr-18"></div>
+    <div className="tracker tr-19"></div>
+    <div className="tracker tr-20"></div>
+    <div className="tracker tr-21"></div>
+    <div className="tracker tr-22"></div>
+    <div className="tracker tr-23"></div>
+    <div className="tracker tr-24"></div>
+    <div className="tracker tr-25"></div>
+    <div id="card">
+      <div className="title">    <h3>{data.title}</h3>
+            {/* <p>Access to our proprietary threat intelligence and detection systems</p> */}
+            <p> {data.description} </p></div>
+      {/* <div className="subtitle">
+        mouse hover tracker
+      </div> */}
+      
+    </div>
+  </div>
+</div>
+          ))}
+    </div>
+
+          
         </div>
       </div>
+{/* contact section  */}
+    <div className="partners-contact">
+        <h2 className="section-title">Ready to Join?</h2>
+        <p className="contact-description">
+          Contact our partnership team today to learn more about how we can help 
+          your organization grow while providing enhanced security solutions.
+        </p>
+        <div className="contact-btns">
+          <button className="contact-button primary" onClick={() => {
+            const element = document.getElementById('partners-program-tiers');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}> Become a Partner </button>
+          <button className="contact-button secondary" onClick={() => navigate('/contact-us')}>Contact Us</button>
+        </div>
+      </div>
+
 {/* Partner Program Tiers -different plans */}
       <div className="partners-program-tiers" id="partners-program-tiers">
-        <h2 className="section-title">Partner Program Tiers</h2>
+        <h2 className="section-title" >Partner Program Tiers</h2>
         <p className="section-subtitle">
           Choose the partnership tier that best fits your organization's needs and goals.
         </p>
-        <div className="tiers-container">
+        <div className="tiers-container" id='options' >
           {partnerTiers.map((tier, index) => (
             <div key={index} className="tier-card">
-              <h3 className="tier-name">{tier.name}</h3>
-              <p className="tier-description">{tier.description}</p>
+              <h3 className="tier-name" style={{ textAlign: 'unset'}} >{tier.name}</h3>
+              <p className="tier-description" style={{ textAlign: 'unset', padding:'2px'}}>{tier.description}</p>
               <div className="tier-benefits">
                 <h4>Benefits</h4>
                 <ul>
@@ -155,17 +250,7 @@ const PartnersPage = () => {
         </div>
       </div>
 
-      <div className="partners-contact">
-        <h2 className="section-title">Ready to Join?</h2>
-        <p className="contact-description">
-          Contact our partnership team today to learn more about how we can help 
-          your organization grow while providing enhanced security solutions.
-        </p>
-        <div className="contact-btns">
-          <button className="contact-button primary">Become a Partner</button>
-          <button className="contact-button secondary">Contact Us</button>
-        </div>
-      </div>
+      
     </div>
   );
 };
