@@ -15,7 +15,7 @@ const CareerPage = () => {
     <div className="career-page">
       <div className="career-header">
         <h1>Be the Part of Our Mission</h1>
-        <p>Stand at the front lines in the fight against cybercrime. Join our team and become a top-notch cybersecurity professional, dedicated to making the digital space a safer place.</p>
+        <p style={{margin:'0'}}>Stand at the front lines in the fight against cybercrime. Join our team and become a top-notch cybersecurity professional, dedicated to making the digital space a safer place.</p>
       </div>
       {/* <span style={{paddingLeft:"20px"}} /> */}
       <div style={{display:"flex", 

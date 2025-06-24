@@ -163,9 +163,12 @@ const ServicesPage = () => {
         
         <div className="services-container">
           {/* Services Grid */}
-          <div className='services-grid'>
-            <Gridcards data={cardDetails} />
+          <div className='services-grid md:grid md:grid-cols-4'>
+            
+            <Gridcards data={cardDetails} /> 
+            <div className=''> 
             <Gridcards data={[{ id:4, title: "Cyber Investigation", description: "", topics: [] }]} />
+            </div>
           </div>
         </div>
       </section>
