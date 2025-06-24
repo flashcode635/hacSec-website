@@ -77,48 +77,36 @@ ul li{
     white-space: nowrap;
 }
 
-.contact-section {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: rgba(17, 17, 20, 0.7);
-  border-radius: 10px;
-  border: 1px solid rgba(52, 152, 219, 0.1);
-  margin-top: 60px;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.contact-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.contact-section h2 {
+ h2 {
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
   margin-bottom: 15px;
 }
-
-.contact-section p {
+.clickable-things {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #02719d;
+}
+.coloring{
+    background-color: #5f5d5d68;
+    color:aliceblue
+}
+ p {
   font-size: 16px;
-  color: #bab8b8;
+  color: #aba9a9;
   max-width: 600px;
   margin: 0 auto 20px;
 }
-.contact-buttons {
-  background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #3498db6c;
-  padding: 12px 25px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-.contact-button:hover {
-  background-color: #3498dbc0;
-  box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
-}
+
+
+@media (max-width: 480px) {
+  
+  .career-page{
+    padding-left:22%;
+    padding-right:20%;
+    padding-top: 18%;
+    align-items: center;
+    }
+
+  }

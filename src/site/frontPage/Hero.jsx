@@ -16,7 +16,7 @@ const Hero = () => {
         <h2 className="hero-heading hero-subheading">
           Learn Secure and Lead!
         </h2>
-        <p className="hero-text">
+        <p className="hero-text" style={{margin:'0'}}>
           Join a new era of cybersecurity learning, built for innovation and impact.
           Powered by HackSecure.
         </p>

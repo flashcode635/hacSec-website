@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import './internshipPage.css';
 import Benefit from '../../images/internship-page/benefits/benefits.jpg'
+
 function Card({review, name}){
   return(<div className="testimonial-card">
               <p>{review}</p>
@@ -70,7 +71,9 @@ const InternshipsPage = () => {
       <div className="benefits-container">
         <h2 className="benefits-title">Benefits of Our Internship Program</h2>
         
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px'}}>
+        <div  className='grid md:grid-cols-3 grid-cols-1' style={{ 
+          width:'100%',
+          gap: '20px'}}>
 
           {/* Hands-on Experience */}
 
@@ -92,9 +95,7 @@ const InternshipsPage = () => {
           image={Benefit} 
           heading ={"Skill Development"} 
           description={"Build technical and soft skills that will make you competitive in the job market"} />
-        </div>
-
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px'}}> 
+        
         {/* Network Building */}
           <BenefitCard 
           image={Benefit} 
@@ -112,9 +113,9 @@ const InternshipsPage = () => {
               image={Benefit} 
               heading ={"Career Opportunities"} 
               description={"Top-performing interns may receive job offers to join our team full-time"} />
+              </div>
 
         </div>
-      </div>
 
       {/* testimonials */}
       <div className="testimonials-container">

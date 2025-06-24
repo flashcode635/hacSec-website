@@ -14,7 +14,7 @@ const InternshipList = () => {
       duration: "3 months",
       type: "Full-time",
       location: "Remote / On-site",
-      description: "Join our front-end development team to help build and enhance user-facing features. Use modern frameworks, optimize user interfaces, and ensure a seamless and responsive user experience and collaborate with designers and back-end developers to deliver high-quality web applications.",
+      description: "Use modern frameworks, optimize user interfaces, and ensure a seamless and responsive UI and collaborate with designers and back-end developers to deliver high-quality web applications.",
       requirements: [
         "Currently pursuing a degree in Computer Science, Cybersecurity or related field",
         "Basic understanding of networking and security concepts",
@@ -34,6 +34,7 @@ const InternshipList = () => {
       requirements: [
         "Currently pursuing a degree in Computer Science, Cybersecurity or related field",
         "Knowledge of web applications and common security vulnerabilities",
+        "Problem-solving skills and attention to detail",
         "Familiarity with programming/scripting languages (Python, Bash)",
         "Understanding of network protocols and security concepts"
       ]
@@ -45,7 +46,7 @@ const InternshipList = () => {
       duration: "6 months",
       type: "Full-time",
       location: "Remote",
-      description: "Help build and secure cloud infrastructure. Learn about implementing security controls in CI/CD pipelines and cloud environments.",
+      description: "Help build and secure cloud infrastructure. Learn about implementing security controls in CI/CD pipelines and cloud environments.Can handle community as well ",
       requirements: [
         "Currently pursuing a degree in Computer Science or related field",
         "Basic understanding of cloud services (AWS, Azure, or GCP)",
@@ -113,7 +114,9 @@ const InternshipList = () => {
               <div className="internship-location">
                 <span>Location: {internship.location}</span>
               </div>
-              <p className="internship-description">{internship.description}</p>
+              <div className="internship-description" > 
+              <p>{internship.description}</p> 
+              </div>
               
               <div className="internship-requirements">
                 <h3>Requirements:</h3>

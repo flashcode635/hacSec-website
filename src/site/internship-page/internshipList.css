@@ -151,9 +151,9 @@
 
 .internship-description {
   font-size: 14px;
-  color: #bab8b8;
+  color: #dad8d8 !important;
   line-height: 1.6;
-  margin-bottom: 20px;
+  opacity: 1 !important;
 }
 
 .internship-requirements h3 {
