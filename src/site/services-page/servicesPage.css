@@ -90,7 +90,9 @@
 .services-grid {
   padding-top: 30px;
   display: grid;
-  padding-left: 2%;
+  padding-left: 7%;
+  padding-right: 5%;
+
   justify-content:center;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
 }
