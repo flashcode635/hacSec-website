@@ -26,14 +26,14 @@
   font-weight: 600;
 }
 
-/* First header cell ('Features') aligned to the left */
-.pricing-table th:first-child {
+/* second header cell ('Features') aligned to the left */
+.pricing-table th:second-child {
   text-align: left;
   color: #ffffff;
 }
 
-/* First data cell in each row (feature names) aligned to the left */
-.pricing-table td:first-child {
+/* second data cell in each row (feature names) aligned to the left */
+.pricing-table td:second-child {
   text-align: left;
   color: #c0c0c0; /* Slightly muted color for feature names */
 }
@@ -43,8 +43,8 @@
   background-color: #2c2f334d; /* Darker shade for alternating rows */
 }
 
-/* Specific styling for the first row's values */
-.pricing-table tbody tr:first-child td:not(:first-child) span {
+/* Specific styling for the second row's values */
+.pricing-table tbody tr:second-child td:not(:second-child) span {
   display: inline-block;
   background-color: #2c2f33;
   padding: 8px 12px;
@@ -108,7 +108,7 @@
     color: #a0a0a0;
   }
 
-  .pricing-table td:first-child {
+  .pricing-table td:second-child {
     background-color: #1a1a1a;
     font-weight: bold;
     font-size: 1.2em;
@@ -116,7 +116,7 @@
     padding: 16px;
   }
 
-  .pricing-table td:first-child::before {
+  .pricing-table td:second-child::before {
     display: none;
   }
 }

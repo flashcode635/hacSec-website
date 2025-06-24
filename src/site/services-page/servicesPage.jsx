@@ -147,18 +147,17 @@ const ServicesPage = () => {
       {/* Hero Section */}
       <section className="services-hero">
         <div className="services-hero-content">
-          <h1>Cybersecurity Services</h1>
-          <p>Comprehensive security solutions to protect your digital assets</p>
+          <h1> Services</h1>
+          <p style={{fontFamily:'system-ui'}}>HackSecure: Your First Line of Cyber</p>
           <GradientButton name="Request a Consultation" />
         </div>
       </section>
 
       {/* Services Overview Section */}
       <section className="services-overview" >
-          <h2 className="section-title">How We Protect Your Business</h2>
+          <h2 className="section-title">Your Shield in a Connected World</h2>
           <p className="section-subtitle">
-            HackSecure provides tailored security solutions for businesses of all sizes, 
-            helping you identify threats, remediate vulnerabilities, and prevent attacks before they happen.
+            From expert-led training to real-time investigations, everything we do is designed to make your digital environment smarter, safer, and stronger.
           </p>
         
         <div className="services-container">

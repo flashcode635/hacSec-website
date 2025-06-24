@@ -96,10 +96,9 @@ const PartnersPage = () => {
     <div className="partners-page">
       <div className="partners-hero">
         <div className="partners-hero-content">
-          <h1 className="partners-title">MSSP and MDR Partner Program</h1>
+          <h1 className="partners-title">Hack Secure Partner Program</h1>
           <p className="partners-subtitle">
-            Join forces with HackSecure to build stronger security services and expand your business.
-            Our partner program empowers MSSPs and MDR providers with cutting-edge technologies and comprehensive support.
+            Hack Secure’s Partner Program is designed to connect with institutions, communities, and global leaders to drive cybersecurity awareness, education, and innovation.
           </p>
           <GradientButton name="Become a Partner" pathname={'#partners-program-tiers'}/>
         </div>
@@ -145,8 +144,7 @@ const PartnersPage = () => {
     <div className="partners-contact">
         <h2 className="section-title">Ready to Join?</h2>
         <p className="contact-description">
-          Contact our partnership team today to learn more about how we can help 
-          your organization grow while providing enhanced security solutions.
+          Get in touch with our partnership team today to discover how we can help your organization.
         </p>
         <div className="contact-btns">
           <button className="contact-button primary" onClick={() => {

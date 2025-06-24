@@ -49,9 +49,7 @@ const InternshipsPage = () => {
           
           <div className="internship-description">
             <p>
-              Our internship program offers a unique opportunity to work with industry-leading 
-              cybersecurity professionals. Gain hands-on experience with cutting-edge technologies
-              and contribute to real-world security solutions that protect businesses and individuals.
+              Our structured internship is designed for ambitious individuals looking to develop technical expertise and real-world cybersecurity skills. You will work alongside experienced security professionals, contribute to cutting-edge security projects, and gain insights into industry best practices.
             </p>
           </div>
 

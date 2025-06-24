@@ -42,7 +42,7 @@ const Investigation = () => {
                 "Attacks on ATMs",
                 "Business Email Compromise",
                 "Attacks on Card Processing Systems",
-                "Attacks on SWIFT, payment gateways"
+                
             ]
         }
     ];

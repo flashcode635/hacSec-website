@@ -190,7 +190,7 @@ export const ResourcePage = ({ imageUrl }) => {
     };
 
     const primaryBtnBaseStyle = {
-        maxWidth: '200px',
+        maxWidth: '300px',
         padding: '12px 30px',
         fontSize: '1rem',
         backgroundColor: 'white',
@@ -230,7 +230,7 @@ export const ResourcePage = ({ imageUrl }) => {
                 <section className="resource-hero" style={{ background: `linear-gradient(to right, rgba(2, 2, 2, 0.9), rgba(2, 2, 2, 0.6)), url(${imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                     <div className="resource-hero-content">
                         <h1>Learn X </h1>
-                        <p>LearnX – The next generation cybersecurity e-learning platform. Built for learners, by Hack Secure</p>
+                        <p style={{fontFamily:'system-ui'}}>LearnX – The next generation cybersecurity e-learning platform. Built for learners, by Hack Secure</p>
                         <GradientButton name="Let's start" pathname="#resource" />
                     </div>
                 </section>
@@ -264,20 +264,20 @@ export const ResourcePage = ({ imageUrl }) => {
 
                 <section className="resource-cta" style={{ marginTop: '7%' }}>
                     <div className="learnx-container" style={containerStyle}>
-                        <h2>Like to Learn More?</h2>
-                        <p>Contact our team of security experts for a personalized consultation.</p>
+                        <h2>Contribute to LearnX?</h2>
+                        <p>LearnX to showcase your content, tools, or training programs to a global audience.</p>
                         <div className="cta-buttons" style={ctaButtonsContainerStyle}>
-                            <button
-                                style={primaryBtnStyle}
+                            <button 
+                                style={ {...primaryBtnStyle,width:''}}
                                 onMouseEnter={() => setPrimaryHovered(true)}
                                 onMouseLeave={() => setPrimaryHovered(false)}
                             >
-                                Schedule a Call
+                                Submit Your Proposal
                             </button>
                             <button
                                 style={secondaryBtnStyle}
                             >
-                                View Case Studies
+                               Contact Our Team
                             </button>
                         </div>
                     </div>

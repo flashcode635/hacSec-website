@@ -11,7 +11,7 @@ import BlogPage from './site/Blogs/blog';
 import Contact from './site/ContactUs/contact';
 import CertificationPage from './site/Certifications/components/cert';
 import SubscriptionPage from './site/Subscription/sub';
-import LoadableLearnX from './site/Resources/resource';
+import LoadableLearnX from './site/Resources/learnx';
 import CareerPage from './site/career/career';
 import ScrollTop from './scrolling';
 import Teams from './site/team/team';

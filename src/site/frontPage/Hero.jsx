@@ -1,7 +1,7 @@
 import React from 'react';
 import GradientButton from '../Components/resource-btn';
 import background from './front.jpg';
-
+import './new.css'
 const Hero = () => {
   const heroStyle = {
     background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${background})`,
@@ -16,7 +16,7 @@ const Hero = () => {
         <h2 className="hero-heading hero-subheading">
           Learn Secure and Lead!
         </h2>
-        <p className="hero-text" style={{margin:'0'}}>
+        <p className="hero-text" style={{paddingBottom:'20px'}}>
           Join a new era of cybersecurity learning, built for innovation and impact.
           Powered by HackSecure.
         </p>

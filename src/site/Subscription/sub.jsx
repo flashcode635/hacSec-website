@@ -4,11 +4,11 @@ import PricingTable from './priceTable'; // Adjust the import path as necessary
 
 const SubscriptionPage = () => {
   const [selected, setSelected] = useState('human');
-  const humanTier = "Enjoy essential features and reliable performance with our Normal plan. Perfect for everyday users who need core functionality and dependable support."
+  const humanTier = "Essential access to LearnX.Get core content, community access, and start exploring cybersecurity at your own pace."
 
-  const proTier = "Unlock advanced tools and priority support with the Pro plan. Designed for power users seeking enhanced capabilities, increased limits, and greater flexibility."
+  const proTier = "Full access to all modules, live sessions, and hands-on tasks.Designed for active learners who want depth, tools, and certifications."
   
-  const eliteTier = "Experience the highest level of service with the Elite plan. Gain exclusive access to premium features, personalized assistance, and maximum performance for your most demanding needs."
+  const eliteTier = "Premium access with everything in Pro.  with exclusive case studies, 1:1 mentorship, and priority support.Built for those who demand the best."
 
   return (
      <div className="subscription-page">
@@ -17,7 +17,8 @@ const SubscriptionPage = () => {
         <h2 className="subscription-hero-title"> Pricing Options </h2>
         <div className='subscription-hero-text'> 
           <span className='subscription-hero-description'>
-            Detect and Disrupt Cyberthreats with unprecedented speed and accuracy to reduce your cyber risk
+            Level up your cyber skills and outsmart threats with practical training, real-time tools, and expert-backed learning.
+All in one place
           </span>
         </div>
         <div className='subscription-hero-text'> 

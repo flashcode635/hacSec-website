@@ -39,7 +39,7 @@
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 20px;
-  background: linear-gradient(to right, #002aff, #00ccff);
+  background: linear-gradient(to right, #002aff, #ebeced);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -70,7 +70,7 @@
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #0066ff;
+  color: #0509ea;
 }
 
 .courses-header p {
@@ -217,7 +217,7 @@
 }
 
 .cta-button {
-  background-color: transparent;
+  background-color: #036ab0;
   color: white;
   border: 2px solid #0066ff;
   padding: 12px 25px;
