@@ -573,7 +573,11 @@ p{
   .resource-hero {
     height: 60vh;
   }
-  
+   .resource-card {
+    padding: 15px 0px 0px 14px;
+    margin-left: 15px;
+    width: 90vw;
+  }
   .resource-hero p {
     font-size: 1rem;
   }
@@ -610,6 +614,7 @@ p{
   
   .resource-card {
     padding: 15px 0px 0px 14px;
+    width: 90vw;
   }
   
   .resource-detail-content h2 {
