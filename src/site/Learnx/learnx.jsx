@@ -95,6 +95,8 @@ const imageLoaderSelector = selector({
     key: 'imageLoader',
     get: async () => {
         try {
+            await new Promise(resolve => setTimeout(resolve, 5000));
+
             return 'https://www.group-ib.com/wp-content/uploads/talktosales-header-1024-min.jpg';
         } catch (error) {
             console.error('Error loading image:', error);
@@ -111,6 +113,7 @@ const LoadableLearnX = () => {
     useEffect(() => {
         const img = new Image();
         if (imageLoadable.state === 'hasValue') {
+
             img.src = imageLoadable.contents;
             img.onload = () => setImgLoaded(true);
             img.onerror = () => setImgError(true);
