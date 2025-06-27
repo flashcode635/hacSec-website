@@ -65,6 +65,46 @@
   font-size: 1.2em;
 }
 
+/* Styles for current plan highlight */
+.pricing-table th.current-plan,
+.pricing-table td.current-plan {
+  background: linear-gradient(to bottom, rgba(0, 123, 255, 0.15), rgba(0, 86, 179, 0.25));
+  border-left: 2px solid #007bff;
+  border-right: 2px solid #007bff;
+  position: relative;
+}
+
+.pricing-table tr:last-child td.current-plan {
+    border-bottom: 2px solid #007bff;
+}
+
+.current-plan-badge {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  top: -15px; /* Adjust to position it above the cell */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Adjustments for header */
+.pricing-table th.current-plan {
+    overflow: visible; /* To make sure badge is visible */
+    border-top: 2px solid #007bff;
+}
+
+/* Ensure the highlight is visible on highlighted rows too */
+.highlight-row td.current-plan {
+    background: linear-gradient(to bottom, rgba(0, 123, 255, 0.2), rgba(0, 86, 179, 0.3));
+}
+
+
 @media screen and (max-width: 768px) {
   .pricing-table thead {
     display: none; /* Hide table header on mobile */
@@ -118,5 +158,16 @@
 
   .pricing-table td:second-child::before {
     display: none;
+  }
+
+  .current-plan-badge {
+      top: 5px;
+      left: auto;
+      right: 10px;
+      transform: translateX(0);
+  }
+
+  .pricing-table td.current-plan {
+      background: linear-gradient(to right, rgba(0, 123, 255, 0.15), rgba(0, 86, 179, 0.25)) !important;
   }
 }

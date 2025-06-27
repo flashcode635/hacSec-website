@@ -4,6 +4,10 @@ import PricingTable from './priceTable'; // Adjust the import path as necessary
 
 const SubscriptionPage = () => {
   const [selected, setSelected] = useState('human');
+  // shows selected plan of userr 
+  const plan = 'Human';
+  const[currentPlan, setCurrentPlan] = useState(plan);
+  //  currentPlan = Human || Pro || Elite   ( first capital letter necessary)
   const humanTier = "Essential access to LearnX.Get core content, community access, and start exploring cybersecurity at your own pace."
 
   const proTier = "Full access to all modules, live sessions, and hands-on tasks.Designed for active learners who want depth, tools, and certifications."
@@ -54,7 +58,7 @@ All in one place
           <h2 className="subscription-matrix-title">Subscription Matrix</h2>
         </div>
         <div>
-          <PricingTable />
+          <PricingTable currentPlan={currentPlan} />
         </div>
         {/* Custom Plan Option */}
         <div className="subscription-custom-plan">

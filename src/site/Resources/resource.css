@@ -461,6 +461,9 @@ p{
   background-size: cover;
   background-position: center;
 }
+.matrix-card-title{
+  font-size: 1.1rem;
+}
 
 /* Sample background images for resource details */
 .blog-image {
@@ -572,6 +575,9 @@ p{
 @media screen and (max-width: 768px) {
   .resource-hero {
     height: 60vh;
+  }
+  .matrix-card-title{
+    font: size 1.3rem;
   }
    .resource-card {
     padding: 15px 0px 0px 14px;

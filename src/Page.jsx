@@ -18,6 +18,8 @@ import Teams from './site/team/team';
 import Footer from './site/frontPage/midSection/footer';
 import Details from './site/cources/CourceDetails/Details'
 import PartnerForm from './site/partners-page/partnerForm';
+import { ReportPage } from "./site/Report-page/report";
+
 export default function Page() {
   const courseName= "Learning Process"; // Replace with the actual course name you want to enroll in
   console.log(`Enrolled in course: ${courseName}`);
@@ -33,7 +35,7 @@ export default function Page() {
               <Route path="/partner-form" element={<PartnerForm />} />
               <Route path="/Learn_X" element={<LoadableLearnX />} />
               <Route path="/subscription" element={<SubscriptionPage />} />
-
+              <Route path='/reports' element={<ReportPage/>}/>
               <Route path="/courses" element={<Courses />} />
               <Route path="/courses/:courseName" element={<Details />} />
               {/* Dynamic route for course details */}

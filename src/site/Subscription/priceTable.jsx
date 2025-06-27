@@ -114,14 +114,17 @@ function renderValue(value) {
   return <span>{value}</span>;
 }
 
-const PricingTable = () => (
+const PricingTable = ({ currentPlan }) => (
   <div className="pricing-table-container">
     <table className="pricing-table" >
       <thead>
         <tr>
           <th style={{ borderRight: '2px solid rgb(158 167 174)' }}><p className="section-title" style={{display:'flex',justifyContent:'start', fontSize:'1.5rem'}}>Features</p></th>
           {plans.map((plan) => (
-            <th key={plan}><p className="section-title" style={{display:'flex',justifyContent:'center', fontSize:'1.5rem'}} >{plan}</p></th>
+            <th key={plan} className={plan === currentPlan ? 'current-plan' : ''}>
+              {plan === currentPlan && <div className="current-plan-badge">Current Plan</div>}
+              <p className="section-title" style={{display:'flex',justifyContent:'center', fontSize:'1.5rem'}} >{plan}</p>
+            </th>
           ))}
         </tr>
       </thead>
@@ -131,7 +134,7 @@ const PricingTable = () => (
           <tr key={feature.name} className={index % 2 !== 0 ? 'highlight-row' : ''}>
             <td style={{ borderRight: '2px solid rgb(158 167 174)', justifyContent:'flex-start', alignItems:'flex-start', textAlign:'left'}}>{feature.name}</td>
             {feature.values.map((value, idx) => (
-              <td key={plans[idx]} data-label={plans[idx]}>{renderValue(value)}</td>
+              <td key={plans[idx]} data-label={plans[idx]} className={plans[idx] === currentPlan ? 'current-plan' : ''}>{renderValue(value)}</td>
             ))}
           </tr>
         ))}

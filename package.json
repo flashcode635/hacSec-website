@@ -21,7 +21,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.5.3",
     "recoil": "^0.7.7",
-    "styled-components": "^6.1.18",
+    "styled-components": "^6.1.19",
     "tailwind": "^2.3.1",
     "tailwindcss": "^4.1.10"
   },

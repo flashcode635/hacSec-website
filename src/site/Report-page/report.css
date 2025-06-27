@@ -1,0 +1,43 @@
+.report-page-hero-section{
+   background: linear-gradient(to left, rgba(7, 0, 22, 0.425), rgba(1, 1, 43, 0.258), rgb(0, 0, 0));
+}
+
+.image-report-hero{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.179), rgba(5, 4, 13, 0.235), rgba(255, 255, 255, 0.037) ), url('https://www.group-ib.com/wp-content/uploads/1440-1.jpg');
+     background-size: cover;
+    background-position: center;
+    
+}
+
+.collection{
+   background: linear-gradient(to left, rgba(7, 0, 22, 0.433), rgba(1, 1, 43, 0.258), rgb(0, 0, 0));
+    margin-left: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.title-of-card{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: large;
+}
+.report-date{
+    font-size: small;
+    color: gray;
+}
+.report-category{
+    color: rgb(0, 72, 255);
+    /* border: 1px solid skyblue; */
+    text-align: center;
+}
+.report-description{
+    color: rgb(147, 169, 190);
+    font-size:medium;
+    height: max-content;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .collection{
+        margin-left: 20px;
+    }
+}
