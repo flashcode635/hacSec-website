@@ -28,7 +28,8 @@
     "styled-components": "^6.1.19",
     "tailwind": "^2.3.1",
     "tailwindcss": "^4.1.10",
-    "zod": "^3.25.67"
+    "zod": "^3.25.67",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
