@@ -1,0 +1,104 @@
+/* Styles for AuthPage component */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #000000 100%);
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #111827;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.auth-card h2 {
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+.auth-field {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-field label {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.auth-field input {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #1e293b;
+  color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+.auth-field input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.auth-btn-primary {
+  width: 100%;
+  padding: 0.65rem;
+  margin-top: 0.2rem;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.auth-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.auth-message.success {
+  color: #28a745;
+}
+
+.auth-message.error {
+  color: #dc3545;
+}
+
+.auth-toggle {
+  display: block;
+  width: 100%;
+  margin-top: 0.9rem;
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.auth-toggle:hover {
+  text-decoration: underline;
+}

@@ -16,7 +16,7 @@ const features = [
   },
   {
     name: "Cources",
-    values: ["Human Cource", "Human Cource", "Human Cource"],
+    values: ["Human Cource", "Pro Cource", "Elite Cource"],
   },
   {
     name: "Micro Modules ",
