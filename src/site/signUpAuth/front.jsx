@@ -22,7 +22,8 @@ const AuthPage = () => {
         const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage('');
-        const url = isLogin ? 'http://localhost:3001/login' : 'http://localhost:3001/signup';
+        const url = isLogin ? 'https://hacksec-prv-ltd-backend123.onrender.com/login' : 
+        'https://hacksec-prv-ltd-backend123.onrender.com/signup';
 
         try {
             const response = await axios.post(url, formData);

@@ -234,7 +234,7 @@ export const ResourcePage = ({ imageUrl }) => {
                     <div className="resource-hero-content">
                         <h1>Learn X </h1>
                         <p style={{fontFamily:'system-ui'}}>LearnX – The next generation cybersecurity e-learning platform. Built for learners, by Hack Secure</p>
-                        <GradientButton name="Let's start" pathname="#resource" />
+                        {/* <GradientButton name="Let's start" pathname="#resource" /> */}
                     </div>
                 </section>
 
