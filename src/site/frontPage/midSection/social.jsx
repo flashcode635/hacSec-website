@@ -35,7 +35,8 @@ const SocialLinks = () => {
       <a href="https://chat.whatsapp.com/KBfLSuYb6xP3Ki5yXMe0N9">
         <i className="fab fa-whatsapp" style={iconStyleOthers}></i>
       </a>
-      <a href="mailto:hacksecure.info@gmail.com">
+      {/* gmail section */}
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hacksecure.info@gmail.com&su=Hello&body=Hi%20there!">
         <i className="fa fa-envelope" style={iconStyleOthers}></i>
       </a>
 
