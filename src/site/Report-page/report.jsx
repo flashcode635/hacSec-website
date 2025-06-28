@@ -74,7 +74,7 @@ export const ReportPage = () => {
       {/* hero-section */}
       <div className="report-page-hero-section w-full h-[80vh] ">
         <div className="image-report-hero md:h-[70vh] w-[100vw] flex justify-center items-center ">
-          <div className="md:w-[140px] md:text-5xl text-3xl w-fit pl-2 item-center " style={{ margin: '60px', fontWeight: 'bolder',  textAlign: 'center', placeSelf: 'center' }}>
+          <div className=" md:text-5xl text-3xl w-fit pl-2 item-center " style={{ margin: '60px', fontWeight: 'bolder',  textAlign: 'center', placeSelf: 'center' }}>
             <span>  Cyber Security Reports </span>
             <p className="text-lg" style={{color:'#808080',lineHeight:'1', fontFamily:'system-ui', fontWeight:'500'}}> Find detailed insights, data analyses, and summaries designed to inform decision-making and track progress across key areas. </p>
           </div>
