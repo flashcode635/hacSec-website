@@ -5,7 +5,7 @@ const CertificationCard = ({ certification }) => {
   const { title, level, description, duration, prerequisites, icon } = certification;
 
   return (
-    <div className="certification-card">
+    <div className="certification-card" style={{alignItems:'center'}}>
       <div className="certification-icon">
         <img src={icon} alt={title} />
       </div>

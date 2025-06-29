@@ -1,6 +1,6 @@
 import React from "react"
 import './team.css'
-// import '../frontPage/midSection/mid-section.css'
+// import '../services-page/servicesPage.css'
 
 function TeamCard({ photo, name, position, description }) {
   return (
@@ -83,20 +83,32 @@ function TeamList() {
 const Teams=()=>{
     return(
         <>
-                <div className="team-page" style={{zIndex:'2',}}>
-                    <div className="team-header">
-                        <h1>The Forces Behind the Resilience Against Cybercrime </h1>
-                        
-                        <p style={{paddingTop:'2%',color:'#b5b7ba',fontSize:'18px'}}>Hack Secure's decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack Secure
+        {/* section-1 : hero-section */}
+                <section className="teams-hero">
+                       <div className="teams-hero-content">
+                         <h1> The Forces Behind the Resilience Against Cybercrime</h1>
+                         <p className="details-teams" style={{fontFamily:'system-ui'}}>Hack Secure's decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack Secure</p>
+                         {/* <GradientButton name="Request a Consultation" /> */}
+                       </div>
+                </section>
+                
+        {/* section-2 */}
+                
+                <section style={{zIndex:2}}> 
+                    <div> 
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginTop: "40px",
+                            marginBottom: "20px"
+                        }}>
+                            <h1 className="team-intro-title" style={{textAlign: "center"}}>Meet Our Team</h1>
+                        </div>
+                        <TeamList/> 
+                        </div>
+                </section>
 
-                        </p>
-                    </div>
-                </div>
-
-                <div style={{paddingLeft:"35%",paddingRight:"20%", marginTop:"30px",zIndex:'2'}}> 
-                    <h1 className="team-intro-title">Meet Our Team </h1>
-                </div>
-                <TeamList/>
                 
 
         </>

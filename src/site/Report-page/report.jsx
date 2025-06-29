@@ -14,7 +14,7 @@ const reports = [
   },
   {
     id: 2,
-    title: 'Crane: The Rise of a New Ransomware-as-a-Service Family',
+    title: 'Crane: Ransomware-as-a-Service ',
     category: 'Ransomware',
     date: 'May 22, 2024',
     description: 'Discover the origins, tactics, and impact of the Crane ransomware family.',
@@ -22,7 +22,7 @@ const reports = [
   },
   {
     id: 3,
-    title: 'The Scammers\u2019 Playbook: Uncovering the Global Fraud-as-a-Service ',
+    title: "The Scammers’ Playbook: Inside Global Fraud-as-a-Service",
     category: 'Scam & Fraud',
     date: 'May 15, 2024',
     description: 'A deep dive into the sophisticated world of Fraud-as-a-Service (FaaS) operations.',
@@ -124,7 +124,7 @@ export const ReportPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[90vw]">
             {filteredReports.map((report) => (
               <div key={report.id} className=" rounded-lg overflow-hidden border border-gray-800 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-2xl hover:shadow-blue-500/20">
-                <img className="w-full h-56 object-cover" src={report.imageUrl} alt={report.title} />
+                <img className="w-full h-[60%] object-cover" src={report.imageUrl} alt={report.title} />
                 <div className="p-6 " style={{marginLeft:'14px', marginRight:'14px'}}>
                   <p className="report-category text-sm font-semibold tracking-wide">{report.category}</p>
                   <h3 className="title-of-card text-xl font-bold text-white mt-2 ">{report.title}</h3>

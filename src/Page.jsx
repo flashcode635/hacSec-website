@@ -20,7 +20,7 @@ import Details from './site/cources/CourceDetails/Details'
 import PartnerForm from './site/partners-page/partnerForm';
 import { ReportPage } from "./site/Report-page/report";
 import AuthPage from './site/signUpAuth/front';
-
+import TrainingPage from './site/TrainingProgram/file';
 export default function Page() {
   return (
     <div>
@@ -43,6 +43,7 @@ export default function Page() {
           <Route path="/certification" element={<CertificationPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Teams />} />
+          <Route path='/trainings' element={<TrainingPage/>}/>
           <Route path="/careers" element={<CareerPage />} />
           <Route path="*" element={<New />} />
         </Routes>

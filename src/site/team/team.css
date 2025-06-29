@@ -1,16 +1,39 @@
-.team-page{
+/* .team-page{
+  height: 100dvh;
      background: linear-gradient(to right, rgba(2, 2, 2, 0.11),
       rgba(2, 2, 2, 0.6)), 
       url(https://www.group-ib.com/wp-content/uploads/1024-4.jpg);
-      height: 100vh;
+      position: sticky;
+        background-size: cover;
+  background-position: center;
+   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 90px;
+} */
+
+.teams-hero {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  background: linear-gradient(to right, rgba(2, 2, 2, 0.9), rgba(2, 2, 2, 0.6)), 
+              url('https://www.group-ib.com/wp-content/uploads/1024-4.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 90px;
 }
 
-.team-page{
-    padding-left:30%;
-    padding-right:24%;
-    padding-top: 3%;
-    
+.teams-hero-content {
+  max-width: 600px;
 }
+.details-teams{
+  color: #acb3bd;
+}
+
 .team-card-position{
   font-style: italic;
 }
