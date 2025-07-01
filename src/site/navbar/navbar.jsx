@@ -8,6 +8,22 @@ import CompanyMenu from './companyTag';
  * The navbar collapses into a hamburger menu on screens smaller than 768px.
  */
 const Navbar = () => {
+
+// setInterval(() => { 
+//   fetch('https://hacksec-prv-ltd-backend123.onrender.com/login', {
+//     method:'GET'
+//   }).then(data => {
+//     console.log('Success');
+//   }).then()
+// }, 16000);
+
+// setInterval(() => { 
+//   fetch('https://hacksec-prv-ltd-backend123.onrender.com/signup', {
+//     method:'GET'
+//   })
+// }, 8000);
+        
+
   // State to manage the mobile menu's open/closed status
   const [isOpen, setIsOpen] = useState(false);
 

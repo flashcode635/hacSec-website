@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './partnersPage.css';
-import GradientButton from '../Components/resource-btn';
+import GradientButton from '../Components/buttonWithGradient/resource-btn';
 
 const PartnersPage = () => {
   const navigate = useNavigate();

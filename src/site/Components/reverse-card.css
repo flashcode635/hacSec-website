@@ -1,0 +1,82 @@
+.component-card-deatils {
+  padding: 5rem 0 4rem 0;
+}
+
+.alternate-bg {
+  background-color: rgba(17, 17, 20, 0);
+  margin-right: 50px;
+}
+
+.card-component {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.card-component.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-component-content {
+  flex: 1;
+}
+
+.card-component-content h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(#023b9d, #efeded);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-component-content p {
+  font-size: 1rem;
+  color: #bab8b8;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.card-component-cta {
+  background-color: transparent;
+  color: #3498db;
+  border: 1px solid #3498db;
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.card-component-cta:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.card-component-image {
+  flex: 1;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-component-container{
+  margin: 0 5rem 0 5rem ;
+}
+.card-image {
+  /* background-image: url('https://images.unsplash.com/photo-1711239226946-23ce021df899?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaCUyMG1lZXR1cHN8ZW58MHx8MHx8fDA%3D'); */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 880px) {
+  .card-component-container, .card-component {
+    display: grid; 
+   grid-auto-flow: column; 
+  }
+}

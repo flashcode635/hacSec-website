@@ -1,5 +1,5 @@
 import React from 'react';
-import GradientButton from '../Components/resource-btn';
+import GradientButton from '../Components/buttonWithGradient/resource-btn';
 import background from './front.jpg';
 import './new.css'
 const Hero = () => {

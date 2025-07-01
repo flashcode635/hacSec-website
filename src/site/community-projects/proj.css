@@ -1,0 +1,11 @@
+.hero-section-proj{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.937), rgba(22, 22, 22, 0.702), rgba(0, 2, 19, 0.054) ), url('https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?q=80&w=776&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 90vh;
+    padding-top:70px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

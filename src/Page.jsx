@@ -13,18 +13,19 @@ import CertificationPage from './site/Certifications/components/cert';
 import SubscriptionPage from './site/Subscription/sub';
 import LoadableLearnX from './site/Learnx/learnx';
 import CareerPage from './site/career/career';
-import ScrollTop from './scrolling';
 import Teams from './site/team/team';
 import Footer from './site/frontPage/midSection/footer';
 import Details from './site/cources/CourceDetails/Details'
 import PartnerForm from './site/partners-page/partnerForm';
 import { ReportPage } from "./site/Report-page/report";
-import AuthPage from './site/signUpAuth/front';
 import TrainingPage from './site/TrainingProgram/file';
+import TopListInvest from './site/TopInvestigations/inves';
+import EventPage from './site/Events/eventpage';
+import CommunityProject from './site/community-projects/comProj';
+import LawsAndPolicies from './site/LawsAndPolicies/lnp';
 export default function Page() {
   return (
     <div>
-      <ScrollTop />
       <div className="App">
         <Navbar />
         <Routes>
@@ -45,6 +46,12 @@ export default function Page() {
           <Route path="/team" element={<Teams />} />
           <Route path='/trainings' element={<TrainingPage/>}/>
           <Route path="/careers" element={<CareerPage />} />
+          <Route path='/events' element={<EventPage/>}/>
+          <Route path="/top-investigations" element={<TopListInvest/>} />
+          <Route path='/community-projects' element={<CommunityProject/>}/>
+          <Route path='/cyber-laws' element={<LawsAndPolicies/>}/>
+         
+
           <Route path="*" element={<New />} />
         </Routes>
       </div>

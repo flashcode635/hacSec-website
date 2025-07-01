@@ -16,7 +16,7 @@ import './screenLoading.css'
     <div className="loading-sections">
       <span className="loading-sections-list">Blogs</span>
       <span className="loading-sections-list">Tools</span>
-      <span className="loading-sections-list">Reports</span>
+      <span className="loading-sections-list">Events</span>
       <span className="loading-sections-list">Modules</span>
       {/* <span className="loading-sections-list">AudioBooks</span> */}
       <span className="loading-sections-list">Quiz</span>

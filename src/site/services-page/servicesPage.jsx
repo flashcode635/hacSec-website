@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './servicesPage.css';
-import GradientButton from '../Components/resource-btn';
+import GradientButton from '../Components/buttonWithGradient/resource-btn';
 import cardDetails from './cardDetails';
 import CardStructure from './card-structure';
 import Investigation from './Investigation';

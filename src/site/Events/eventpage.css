@@ -1,0 +1,16 @@
+
+.hero-section-events{
+    background-image: linear-gradient(to top , rgba(0, 0, 0, 0.388), rgba(10, 8, 8, 0.77) ,rgba(0, 0, 0, 0.369)) ,url("https://agcdn-1d97e.kxcdn.com/wp-content/uploads/2018/05/alphagamma-best-US-tech-events-you-cant-miss-in-2018-entrepreneurship-002.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position:center;
+    display: flex;
+}
+.container-cards-events{
+    /* padding-left:68px; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
