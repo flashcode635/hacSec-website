@@ -28,7 +28,7 @@
     margin: 24px 0;
     padding: 20px;
       overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  /* transition: max-height 0.5s ease, opacity 0.5s ease; */
   border-radius: 10px;
 }
 
@@ -36,17 +36,17 @@
     /* pointer-events: none; */
     cursor: default;
     font-family: 'Nunito', sans-serif;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 .policy-content{
     margin-bottom: 30px;
+     padding: 3px;
 }
 .policy-content:hover{
     border: 2px solid rgb(76, 75, 75);
     background-origin: padding-box;
     border-radius: 10px;
-    padding: 3px;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
