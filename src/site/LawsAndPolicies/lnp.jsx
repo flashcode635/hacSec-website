@@ -23,7 +23,7 @@ const lawscontent=[
 function LawsContent(){
     return(
         <>
-        {policycontent.map((data)=>(
+        {lawscontent.map((data)=>(
                  <div className='policy-content  w-[70vw]' style={{alignItems:'center'}} key={data.id}>
                 <h3 className='text-white' style={{fontSize:'18px'}}> {data.title} </h3>
                 <span className='text-gray-400' style={{fontSize:'15px'}}> {data.description} </span>
@@ -77,7 +77,8 @@ const LawsAndPolicies=()=>{
     return(
         <>
         {/* hero section */}
-            <section style={{width:'100vw', height:'90vh'}}>
+        <div> 
+            <section style={{width:'100vw', minHeight:'90vh'}}>
                 <div className="lnp-hero-section" style={{  }}>
                     <div  style={{color:'white', fontSize:'4.5rem',width: 'max-content', textAlign:'center', paddingLeft:'0'}}>Cyber Laws And Policies </div>
 
@@ -86,7 +87,9 @@ const LawsAndPolicies=()=>{
                      </span>
                 </div>
             </section>
+            </div>
 
+            <div> 
             {/* content section  */}
             <section>
                 <div className="lnp-intro-section">
@@ -114,6 +117,7 @@ const LawsAndPolicies=()=>{
                     
                 </div>
             </section>
+            </div>
         </>
     )
 }

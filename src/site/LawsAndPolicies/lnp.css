@@ -10,12 +10,14 @@
 
 }
 .lnp-intro-section{
-    min-height: 80vh;
+    min-height: 500px;
     height: max-content;
     padding: 5% 14% 12% 22%;
 }
 .line-intro-section{
     padding: 5% 0% 12% 0%;
+    height: max-content;
+    width: 100%;
 }
 .lnp-intro-section, .lnp-hero-section {
    padding-bottom: 50px;
