@@ -4,21 +4,21 @@ import background from './front.jpg';
 import './new.css'
 const Hero = () => {
   const heroStyle = {
-    background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${background})`,
-    width: '100vw',
-    minHeight:'100vh',
+    // background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${background})`,
   };
 
   return (
     <div className="hero" style={heroStyle}>
       <div className="hero-content">
-        <h1 className="hero-heading" style={{paddingTop: '4%'}}>
+        <h1 className="hero-heading" 
+        // style={{paddingTop: '4%'}}
+        >
           Welcome to the Hack Secure Ecosystem
         </h1>
         <h2 className="hero-heading hero-subheading">
           Learn Secure and Lead!
         </h2>
-        <p className="hero-text" style={{paddingBottom:'20px'}}>
+        <p className="hero-text" style={{paddingBottom:'20px', margin:'0',padding:'0 0 20px 0', width:'80%', fontSize:'1.2rem'}}>
           Join a new era of cybersecurity learning, built for innovation and impact.
           Powered by HackSecure.
         </p>

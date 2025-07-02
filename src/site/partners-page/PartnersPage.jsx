@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { data, useNavigate } from 'react-router-dom';
 import './partnersPage.css';
 import GradientButton from '../Components/buttonWithGradient/resource-btn';
 
@@ -73,10 +73,44 @@ const PartnersPage = () => {
       ]
     }
   ];
-  // const Benefits=[{ title:"Global Reach & Reputation",
-  //   description:"Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries"},
-  // {title:"Meaningful Collaboration",
-  //   description:"Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals."},]
+  const partnerBenefit=[
+    {
+      id:1,
+      icon:"https://www.group-ib.com/wp-content/uploads/deals_01.png.webp",
+      title:"Market recognition Experts",
+      description:"Receive a stable income by selling solutions that can boast at a remarkable renewal rate"
+    },
+    {
+      id:2,
+      icon:"https://www.group-ib.com/wp-content/uploads/sale_01.png.webp",
+      title:"Enablement and training",
+      description:"Close more deals by growing your expertise; provide sales and technical training and necessary materials"
+    },
+    {
+      id:3,
+      icon:"https://www.group-ib.com/wp-content/uploads/marketing_01.png.webp",
+      title:"Predictable revenue stream",
+      description:"Hack Secure provides comprehensive support throughout every stage of the sales process, including sales, pre-sales, and technical support levels"
+    },
+    {
+      id:4,
+      icon:"https://www.group-ib.com/wp-content/uploads/money_03.png.webp",
+      title:"Predictable revenue stream",
+      description:"Receive stable income by selling solutions that boast a remarkable renewal rate"
+    },
+    {
+      id:5,
+      icon:"https://www.group-ib.com/wp-content/uploads/support_07.png.webp",
+      title:"Progressive scale of discounts",
+      description:"Increase your sales and unlock higher discounts on Group-IB products and services"
+    },
+    {
+      id:1,
+      icon:"https://www.group-ib.com/wp-content/uploads/market-recognition_01.png.webp",
+      title:" Benefits of Marketing Tactics",
+      description:"Get assistance with marketing activities and receive progressive marketing rebates as sales ramp up"
+    }]
+
 
 // Meaningful Collaboration
 
@@ -112,8 +146,7 @@ partnership with cybersecurity expert</h1>
 {/* Benefits of Partnering */}
       <div className="partners-benefits-section" style={{fontFamily:'Nunito'}}>
         <h2 className="section-title" style={{marginBottom:'4%', fontWeight:'500', fontSize:'2.8rem'}}>
-          Unlock the benefits of joining the
-Group-IB Partner Program
+          Unlock the benefits of joining the Hack Secure Partner Program
 </h2>
         {/* <div className="benefits-grid">
 
@@ -147,26 +180,23 @@ Group-IB Partner Program
             <p>Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries</p>
           </div>
         </div> */}
-        <div>
-          <div>
-            <h1></h1>
-            <span></span><img src="" alt="" srcset="" /></div>
-          <div>
-            <h1></h1>
-            <span></span><img src="" alt="" srcset="" /></div>
-          <div>
-            <h1></h1>
-            <span></span><img src="" alt="" srcset="" /></div>
-          <div>
-            <h1></h1>
-            <span></span><img src="" alt="" srcset="" /></div>
-          <div>
-            <h1></h1>
-            <span></span><img src="" alt="" srcset="" /></div>
-          <div>
-            <h1></h1>
-            <span></span><img src="" alt="" srcset="" /></div>
+        <div className='grid grid-cols-1 md:grid-cols-3 h-[full] w-[full]'>
+          {partnerBenefit.map((data)=>{
+            return(
+
+               <div key={data.id} className=' text-center w-[90%] ' style={{padding:'20px'}}>
+                <div className='w-[full] flex justify-center' sty> 
+
+            <img src={data.icon} className='h-[120px] w-[120px]' />
+                </div>
+            <h1 style={{fontSize:'1.6rem', fontWeight:'670'}}> {data.title} </h1>
+            <span className='text-gray-500' style={{fontSize:'13px' }}> {data.description} </span>
+            </div>
+            )
+
+            })}
         </div>
+       
       </div>
 {/* contact section  */}
     <div className="partners-contact">
@@ -210,6 +240,7 @@ Group-IB Partner Program
         </div>
       </div>
 
+{/* testimonial section */}
       <div className="partners-testimonial-sections">
         <h2 className="section-title">Partner Success Stories</h2>
         <div className="testimonial-section-card" style={{fontFamily:'Nunito'}}>

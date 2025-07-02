@@ -136,7 +136,7 @@
 }
 
 .tier-card {
-  background-color: rgba(17, 17, 20, 0.8);
+  background-color: #11111480;
   border-radius: 12px;
   padding: 40px 26px;
   border: 1px solid rgba(52, 152, 219, 0.1);
@@ -292,11 +292,22 @@
 /* Contact Section */
 .partners-contact {
   padding: 80px 10%;
-  
+  background-image:  linear-gradient(to top,  rgba(5, 0, 0, 0.844), rgba(163, 161, 232, 0),transparent),url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/partner-program-page/partner-call-390.jpg');
+  background-size: cover;
+  background-position:center;
   text-align: center;
   border-top: 1px solid rgba(52, 152, 219, 0.1);
 }
-
+.form-page{
+  justify-content: center;
+  background: linear-gradient(to left,  rgba(81, 79, 79, 0.31) ,rgba(24, 23, 23, 0.483),rgba(151, 151, 151, 0.15)), url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/bg/black-rocks-bg-2560-min.jpg');
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
 .contact-description {
   font-size: 18px;
   color: #bab8b8;

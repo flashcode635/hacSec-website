@@ -154,49 +154,49 @@ const PartnerForm = () => {
   };
 
   return (
-    <div className="partners-page" style={{ minHeight: '100vh', paddingTop: 80, paddingBottom: 80 }}>
-      <div className="partners-hero" style={{ minHeight: 'auto', padding: '40px 20px', marginBottom: 40 }}>
-        <div className="partners-hero-content">
-          <h1 className="partners-title">Partner with HackSecure</h1>
-          <p className="partners-subtitle">
-            Select your partnership type and let's start a collaboration.
-          </p>
-        </div>
-      </div>
-      <div style={{ maxWidth: 700, margin: '0 auto', background: 'rgba(17,17,20,0.95)', borderRadius: 12, padding: '30px 40px', boxShadow: '0 8px 24px rgba(0,0,0,0.25)' }}>
-        {submitted ? (
-          <div style={{ textAlign: 'center', color: '#3498db', fontSize: 20, padding: '40px 0' }}>
-            <p>Thank you for your application!</p>
-            <p>Our team will review your submission and contact you soon.</p>
+    <div className='form-page'> 
+      <div className="partners-page" style={{ minHeight: '100vh', paddingTop:0, paddingBottom: 40, background:'none' }}>
+        <div className="" style={{ minHeight: 'auto', padding: '4px 20px', marginBottom: 40 }}>
+          <div className="partners-hero-content">
+            <h1 className="partners-title" style={{textAlign:'center', width:'90vw'}}>Partner with HackSecure</h1>
+           
           </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="partner-form">
-            <div style={{ marginBottom: 24 }}>
-              <label htmlFor="tier-select" className="section-title" style={{ fontSize: 18, marginBottom: 10, display: 'block', textAlign: 'left' }}>Select Partnership Type</label>
-              <select id="tier-select" value={selectedTier} onChange={handleTierChange} style={inputStyles}>
-                {Object.entries(partnerTierOptions).map(([value, label]) => (
-                  <option key={value} value={value}>{label}</option>
-                ))}
-              </select>
+        </div>
+        <div  style={{ maxWidth: 700, margin: '0 auto', background: 'rgba(17,17,20,0.95)', borderRadius: 12, backgroundColor: '#0c162700',   backdropFilter: 'blur(10px)', padding: '30px 40px', boxShadow: '0 8px 24px rgba(0,0,0,0.25)' }}>
+          {submitted ? (
+            <div style={{ textAlign: 'center', color: '#3498db', fontSize: 20, padding: '40px 0' }}>
+              <p>Thank you for your application!</p>
+              <p>Our team will review your submission and contact you soon.</p>
             </div>
-
-            {formConfig[selectedTier] && formConfig[selectedTier].map(field => (
-              <div key={field.name} style={{ marginBottom: 24 }}>
-                <label htmlFor={field.name} style={{ display: 'block', color: '#e4e9ee', marginBottom: 8, fontWeight: 500 }}>
-                  {field.label}{field.required && <span style={{ color: '#3498db' }}> *</span>}
-                </label>
-                {renderField(field)}
+          ) : (
+            <form onSubmit={handleSubmit} className="partner-form">
+              <div style={{ marginBottom: 24 }}>
+                <label htmlFor="tier-select" className="section-title" style={{ fontSize: 18, marginBottom: 10, display: 'block', textAlign: 'left' }}>Select Partnership Type</label>
+                <select id="tier-select" value={selectedTier} onChange={handleTierChange} style={inputStyles}>
+                  {Object.entries(partnerTierOptions).map(([value, label]) => (
+                    <option key={value} value={value}>{label}</option>
+                  ))}
+                </select>
               </div>
-            ))}
 
-            {selectedTier && formConfig[selectedTier] && (
-              <button type="submit" className="tier-apply-button" style={{ width: '100%', fontSize: 18, marginTop: 20 }}>
-                Submit Application
-              </button>
-            )}
-          </form>
-        )}
-      </div>
+              {formConfig[selectedTier] && formConfig[selectedTier].map(field => (
+                <div key={field.name} style={{ marginBottom: 24 }}>
+                  <label htmlFor={field.name} style={{ display: 'block', color: '#e4e9ee', marginBottom: 8, fontWeight: 500 }}>
+                    {field.label}{field.required && <span style={{ color: '#3498db' }}> *</span>}
+                  </label>
+                  {renderField(field)}
+                </div>
+              ))}
+
+              {selectedTier && formConfig[selectedTier] && (
+                <button type="submit" className="tier-apply-button" style={{ width: '100%', fontSize: 18, marginTop: 20 }}>
+                  Submit Application
+                </button>
+              )}
+            </form>
+          )}
+        </div>
+      </div> 
     </div>
   );
 };
