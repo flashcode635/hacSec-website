@@ -238,11 +238,17 @@
 /* Testimonials Section */
 .partners-testimonials {
   padding: 80px 10%;
-  background-color: #050208;
+    background: url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/gartner/gartner-bg-md.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .testimonial-card {
-  background-color: rgba(17, 17, 20, 0.8);
+  background-color: rgba(17, 17, 20, 0);
+  backdrop-filter:blur(9px);
   border-radius: 12px;
   padding: 40px;
   border: 1px solid rgba(52, 152, 219, 0.1);

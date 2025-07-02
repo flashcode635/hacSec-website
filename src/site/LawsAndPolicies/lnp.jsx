@@ -24,7 +24,7 @@ function LawsContent(){
     return(
         <>
         {lawscontent.map((data)=>(
-                 <div className='policy-content  w-[70vw]' style={{alignItems:'center'}} key={data.id}>
+                 <div className='policy-content ' style={{alignItems:'center'}} key={data.id}>
                 <h3 className='text-white' style={{fontSize:'18px'}}> {data.title} </h3>
                 <span className='text-gray-400' style={{fontSize:'15px'}}> {data.description} </span>
             </div>
@@ -61,7 +61,7 @@ function PoliciesContent(){
     return(
         <>
         {policycontent.map((data)=>(
-                 <div className='policy-content  w-[70vw]' style={{alignItems:'center'}} key={data.id}>
+                 <div className='policy-content' style={{alignItems:'center'}} key={data.id}>
                 <h3 className='text-white' style={{fontSize:'18px'}}> {data.title} </h3>
                 <span className='text-gray-400' style={{fontSize:'15px'}}> {data.description} </span>
             </div>

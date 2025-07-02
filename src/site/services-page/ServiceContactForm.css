@@ -1,16 +1,24 @@
 .service-contact-form-section {
-    background-color: #00051233; /* Dark blue-gray background */
+    background: url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/bg-helpers-new/blue-landscape-3-bg-xl.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: fit-content;
+     margin: 0 auto;
     padding: 50px 20px;
     color: #e2e8f0; /* Light gray text */
 }
-
+.container{
+    margin: 150px auto 0px auto;
+}
 .service-contact-form-section .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #17213191; /* Slightly lighter card background */
+    max-width: 800px;  
+    background-color: #0c162700; /* Slightly lighter card background */
+    backdrop-filter:blur(10px);
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    box-shadow: 0 10px 25px #46464628;
     text-align: center;
 }
 

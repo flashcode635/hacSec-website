@@ -1,6 +1,5 @@
 /* Services Page Styles */
 .services-page {
-  width: 100%;
   overflow-x: hidden;
   background-color: #020202;
   color: #fff;
@@ -15,27 +14,36 @@
 
 /* Hero Section */
 .services-hero {
-  position: relative;
-  height: 70vh;
-  min-height: 500px;
-  background: linear-gradient(to right, rgba(2, 2, 2, 0.9), rgba(2, 2, 2, 0.6)), 
-              url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  /* min-height: 100vh; */
+  /* height: 170vh; */
+  min-height: 1100px;
+  width: 100vw;
+  background: linear-gradient(to right, rgba(2, 2, 2, 0.004), rgba(2, 2, 2, 0)), 
+              url('https://www.group-ib.com/wp-content/uploads/bg-header-irra-md.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 90px;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 6.8rem 90px;
 }
 
 .services-hero-content {
-  max-width: 600px;
-}
+  min-width: 400px;
+  width: 70vw;
+  height: 100vh;
+  text-align: center;
 
+}
+.h1-tag{
+    background: linear-gradient(to right,#025cf8, #bfcdf8, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .services-hero h1 {
   font-size: 3.5rem;
   font-weight: 300;
-  margin-bottom: 20px;
   background: -webkit-linear-gradient(#023b9d, #efeded);
   background-clip: text;
   -webkit-background-clip: text;
@@ -69,10 +77,9 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   background: -webkit-linear-gradient(#023b9d, #efeded);
   background-clip: text;
   -webkit-background-clip: text;
@@ -86,7 +93,10 @@
   max-width: 800px;
   margin: 0 auto 60px;
 }
-
+.section-2{
+  margin: 20px 120px;
+  font-family: 'Nunito', sans-serif;
+}
 .services-grid {
   padding-top: 30px;
   display: grid;
@@ -320,7 +330,7 @@
 
   width: 100%;
   cursor: pointer;
-  background-color: #1a1a1a;
+  background-color: #1a1a1a57;
   border-radius: 12px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -517,7 +527,8 @@
   }
   
   .services-hero {
-    padding: 0 40px;
+     padding: 6.8rem 90px;
+
   }
   
   .services-hero h1 {
@@ -527,7 +538,7 @@
 
 @media screen and (max-width: 768px) {
   .services-hero {
-    padding: 0 20px;
+      padding: 6.8rem 90px;
     height: 60vh;
   }
   .services-grid{
@@ -566,6 +577,7 @@
 @media screen and (max-width: 480px) {
   .services-hero h1 {
     font-size: 2rem;
+  padding: 6.8rem 90px;
   }
   
   .service-card {

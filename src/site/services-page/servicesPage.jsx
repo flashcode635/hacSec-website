@@ -120,60 +120,114 @@ const ServicesPage = () => {
   const [service ,setService]=useState('Webinars');
   // cards layout
   const Gridcards=({data})=>{
-    console.log(data.title);
-    console.log(data.id);
+    // console.log(data.title);
+    // console.log(data.id);
   return(
     <>
     {data.map((data) => (
-      <div className="service-card" key={data.id}>
-        {/* <div className="service-icon">
-          <img src={data.icon} />
-        </div> */}
-         <button onClick={()=>setService(data.title)} style={{textDecoration: 'none', backgroundColor: 'transparent', color: 'white', border: 'none' ,cursor: 'pointer'}}> <h3> {data.title}</h3></button>
-        {/* <ul className="service-features">
-          {data.features.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul> */}
-        {/* <a href={data.link} className="service-link">Learn More →</a> */}
+      <div className="service-card w-[50%] h-[190px]" key={data.id} style={{ display:'flex', justifyContent:'center', alignItems:'center',margin:'20px 0'}}>
+         <button onClick={()=>setService(data.title)} className='' style={{textDecoration: 'none', backgroundColor: 'transparent', color: 'white', border: 'none' ,cursor: 'pointer', alignContent:'center'}}>
+          <div className='w-[70px]'> 
+          <img src={data.icon} className=' h-[170px]' style={{marginLeft:'14px', paddingBottom:'50px', justifyContent:'center'}}/> </div>
+           <h3> {data.title}</h3>
+           </button>
       </div>
     ))}
     </>
   )
 }
 
+const sectiontwo=[
+  {
+    id:1,
+    title:"Tailored security services",
+    description:'Experts understand the ins and outs of security challenges and offer bespoke cybersecurity services such as detailed guides, security roadmaps, and risk prioritization measures, each tailored to the organization’s specific needs and risk appetite',
+    image:'https://www.group-ib.com/wp-content/uploads/demo-1-2.png.webp'
+  },
+  {
+    id:2,
+    title:"Technology creators and enablers",
+    description:'As a trusted partner, organizations have access to a cohesive ecosystem of expertise, technologies, and services, which allows them to future-proof their operations and upgrade their cybersecurity posture',
+    image:'https://www.group-ib.com/wp-content/uploads/demo-2-2.png.webp'
+  },
+  {
+    title:"Globally distributed expertise",
+    id:3,
+    description:'Hack Secure works in synergy with innovative technologies to offer detection and response capabilities that eliminate cyber disruptions efficiently and effectively. We map and mitigate adversary tactics in each region through targeted intelligence and operations',
+    image:'https://www.group-ib.com/wp-content/uploads/demo-16.png.webp'
+  }]
   return (
     <div className="services-page">
       {/* Hero Section */}
       <section className="services-hero">
         <div className="services-hero-content">
-          <h1> Services</h1>
-          <p style={{fontFamily:'system-ui'}}>HackSecure: Your First Line of Cyber</p>
-          <GradientButton name="Request a Consultation" />
+          <h2 className='h1-tag' style={{fontSize:'1.0rem', marginBottom:'0'}}> Hack Secure Cybersecurity Services </h2>
+          <h1 style={{fontSize:'3.4rem'}}> Powerful symbiosis of technology
+and expertise for complete protection
+against cyber risks </h1>
+
+          <span style={{fontFamily:'system-ui',color:'gray'}} className='text-base'>Take off where Incident Response readiness starts and make sure your business is enabled to face the trickiest attacks and incidents</span>
+          <div style={{ display:'flex',justifyContent:'center', marginTop:'20px'}}> 
+            <GradientButton name="Request a Consultation" />
+          </div>
         </div>
       </section>
 
       {/* Services Overview Section */}
       <section className="services-overview" >
-          <h2 className="section-title">Your Shield in a Connected World</h2>
-          <p className="section-subtitle">
+        <div style={{ paddingLeft:'30px', width:'100vw',display:'flex',justifyContent:'center', textAlign:'center',}}> 
+          <h3 className="section-title" style={{fontSize:'2.4rem', width:'60%'}}>Gain a formidable partner to build exceptional defenses</h3>
+          </div>
+          <p className="section-subtitle" style={{paddingTop:'0'}}>
             From expert-led training to real-time investigations, everything we do is designed to make your digital environment smarter, safer, and stronger.
           </p>
+
         
         <div className="services-container">
+
+          {/* section2 */}
+          <section className='section-2'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+              {sectiontwo.map((data)=>(
+                 <div key={data.id}>
+                  <div className='flex justify-center w-full' style={{width:'100%'}}> 
+                <img className='w-[170px] h-[170px]' src={data.image} alt="" srcset="" /> </div>
+                <div> </div>
+                <h3 className='text-center h-[60px]'>{data.title}</h3>
+                <span className='text-gray-400 text-center  text-sm'> {data.description}</span>
+                </div>
+              ))}
+             
+              {/* <div><img className='w-[70px] h-[70px]' src="https://www.group-ib.com/wp-content/uploads/demo-1-2.png.webp" alt="" srcset="" />
+              <span> </span>
+              </div>
+              <div><img className='w-[70px] h-[70px]' src="https://www.group-ib.com/wp-content/uploads/demo-2-2.png.webp" alt="" srcset="" />
+              <span> </span>
+              </div> */}
+            </div>
+          </section>
+
+{/* section -3 */}
+                  <div style={{ padding:'70px 30px 0px 0', width:'90vw',display:'flex',justifyContent:'center', textAlign:'center',}}> 
+          <h3 className="section-title" style={{fontSize:'2.5rem', width:'60%'}}>Place comprehensive and continuous risk management at the core of your operations </h3>
+          </div>
+          <p className="section-subtitle text-sm" style={{paddingTop:'0'}}>
+            Discover how we seamlessly integrates cybersecurity into your organization's everyday operations while addressing various business challenges. By building airtight defenses, organizations can protect their business across these critical areas:
+          </p>
+
           {/* Services Grid */}
           <div className='services-grid md:grid md:grid-cols-4'>
             
             <Gridcards data={cardDetails} /> 
-            <div className=''> 
-            <Gridcards data={[{ id:4, title: "Cyber Investigation", description: "", topics: [] }]} />
-            </div>
+            
+            {/* <Gridcards data={[]} /> */}
+            
           </div>
         </div>
       </section>
 
       <div style={{marginBottom:'40px'}}> 
-{service === 'Cyber Investigation' && <Investigation />}
+{service === 'Investigation' && <Investigation />}
         {service === 'Webinars' && <Webinars />}
         {service === 'Sessions' && <Sessions />}
         {service === 'Workshop' && <Workshop />}
