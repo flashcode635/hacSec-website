@@ -2,8 +2,8 @@ import React from "react";
 import './review.css'
 
 function Cards({review, name}){
-    return(<div className="testimonial-card">
-                <p>{review}</p>
+    return(<div className="testimonial-card" style={{ fontSize: '16px', fontStyle:'normal'}}>
+                <p style={{fontSize: '16px', fontStyle:'normal', color:'white', fontFamily:'Nunito'}}>{review}</p>
                 <div className="testimonial-author">{name}</div>
               </div>
           )

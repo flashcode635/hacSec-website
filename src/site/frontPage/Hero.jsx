@@ -5,6 +5,8 @@ import './new.css'
 const Hero = () => {
   const heroStyle = {
     background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${background})`,
+    width: '100vw',
+    minHeight:'100vh',
   };
 
   return (

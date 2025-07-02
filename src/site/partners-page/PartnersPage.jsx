@@ -96,18 +96,26 @@ const PartnersPage = () => {
     <div className="partners-page">
       <div className="partners-hero">
         <div className="partners-hero-content">
-          <h1 className="partners-title">Hack Secure Partner Program</h1>
-          <p className="partners-subtitle">
-            Hack Secure’s Partner Program is designed to connect with institutions, communities, and global leaders to drive cybersecurity awareness, education, and innovation.
+          {/* <h1 style={{fontSize:'1.0rem',}}> Hack Secure Partner Program </h1> */}
+          <h1 className="partners-title">Fuel business growth through a
+partnership with cybersecurity expert</h1>
+          <p className="partners-subtitle" style={{padding:'0'}}>
+            Deliver personalized, exclusive, and comprehensive cyber protection to your customers
           </p>
+          <div className='flex justify-center' style={{width:'59vw',}}> 
+
           <GradientButton name="Become a Partner" pathname={'#partners-program-tiers'}/>
+          </div>
         </div>
       </div>
 
 {/* Benefits of Partnering */}
-      <div className="partners-benefits-section">
-        <h2 className="section-title" style={{marginBottom:'4%'}}>Why Partner With HackSecure</h2>
-        <div className="benefits-grid">
+      <div className="partners-benefits-section" style={{fontFamily:'Nunito'}}>
+        <h2 className="section-title" style={{marginBottom:'4%', fontWeight:'500', fontSize:'2.8rem'}}>
+          Unlock the benefits of joining the
+Group-IB Partner Program
+</h2>
+        {/* <div className="benefits-grid">
 
           <div className="benefit-item">
             <div>
@@ -129,7 +137,7 @@ const PartnersPage = () => {
           <div className="benefit-item">
             <div className="benefit-icon">🔍</div>
             <h3>Meaningful Collaboration</h3>
-            {/* <p>Continuous training and knowledge transfer from our security experts</p> */}
+        
             <p>Work closely with us on events, campaigns, research, or tech services - tailored to mutual goals.</p>
           </div>
 
@@ -138,6 +146,26 @@ const PartnersPage = () => {
             <h3>Global Reach & Reputation</h3>
             <p>Get instant credibility and visibility by aligning with a brand trusted across borders, institutions, and industries</p>
           </div>
+        </div> */}
+        <div>
+          <div>
+            <h1></h1>
+            <span></span><img src="" alt="" srcset="" /></div>
+          <div>
+            <h1></h1>
+            <span></span><img src="" alt="" srcset="" /></div>
+          <div>
+            <h1></h1>
+            <span></span><img src="" alt="" srcset="" /></div>
+          <div>
+            <h1></h1>
+            <span></span><img src="" alt="" srcset="" /></div>
+          <div>
+            <h1></h1>
+            <span></span><img src="" alt="" srcset="" /></div>
+          <div>
+            <h1></h1>
+            <span></span><img src="" alt="" srcset="" /></div>
         </div>
       </div>
 {/* contact section  */}
@@ -182,16 +210,16 @@ const PartnersPage = () => {
         </div>
       </div>
 
-      <div className="partners-testimonials">
+      <div className="partners-testimonial-sections">
         <h2 className="section-title">Partner Success Stories</h2>
-        <div className="testimonial-card">
-          <p className="testimonial-text">
+        <div className="testimonial-section-card" style={{fontFamily:'Nunito'}}>
+          <p className="testimonial-section-text" style={{fontStyle:'normal', }}>
             "Partnering with HackSecure has been transformative for our security offering. 
             Their threat intelligence platform and training resources have allowed us to 
             provide better protection to our clients while growing our business."
           </p>
-          <div className="testimonial-author">
-            <p><strong>John Smith</strong></p>
+          <div className="testimonial-section-author" style={{fontWeight:'800'}}>
+            <p>John Smith</p>
             <p>CEO, SecureNet Solutions</p>
           </div>
         </div>
