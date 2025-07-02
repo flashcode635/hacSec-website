@@ -44,7 +44,7 @@
      padding: 3px;
 }
 .policy-content:hover{
-    border: 2px solid rgb(76, 75, 75);
+    border: 2px solid rgb(68, 68, 68);
     background-origin: padding-box;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
