@@ -97,7 +97,7 @@ const imageLoaderSelector = selector({
         try {
             await new Promise(resolve => setTimeout(resolve, 4800));
 
-            return 'https://www.group-ib.com/wp-content/uploads/talktosales-header-1024-min.jpg';
+            return 'https://www.group-ib.com/wp-content/uploads/mssp-md.jpg';
         } catch (error) {
             console.error('Error loading image:', error);
             throw error;
@@ -193,10 +193,10 @@ export const ResourcePage = ({ imageUrl }) => {
     return (
         <>
             <div className="resource-page">
-                <section className="resource-hero" style={{ background: `linear-gradient(to right, rgba(2, 2, 2, 0.9), rgba(2, 2, 2, 0.6)), url(${imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}>
-                    <div className="resource-hero-content">
-                        <h1>Learn X </h1>
-                        <p style={{fontFamily:'system-ui'}}>LearnX – The next generation cybersecurity e-learning platform. Built for learners, by Hack Secure</p>
+                <section className="resource-hero" style={{ background: `linear-gradient(to right,  #02020200, #0202022b), url(${imageUrl})`, backgroundSize: "contain", backgroundPosition: "center", width:'100vw' }}>
+                    <div className="resource-hero-content" style={{textAlign:'center'}}>
+                        <h1> Welcome to Learn X </h1>
+                        <p style={{fontFamily:'system-ui', textAlign:'center'}}>The next generation cybersecurity e-learning platform. Built for learners, by Hack Secure</p>
                         {/* <GradientButton name="Let's start" pathname="#resource" /> */}
                     </div>
                 </section>

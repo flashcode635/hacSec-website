@@ -210,12 +210,13 @@
 /* Hero Section */
 .resource-hero {
   position: relative;
-  height: 70vh;
-  min-height: 500px;
+  /* height: 70vh; */
+  min-height: 700px;
+  width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 90px;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 110px 90px;
 }
 
 .resource-hero-content {

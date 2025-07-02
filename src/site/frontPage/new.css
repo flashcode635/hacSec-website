@@ -35,7 +35,7 @@
     overflow-x: hidden;
     position: relative;
     /* background-image: url('https://www.group-ib.com/wp-content/uploads/cert-img-1440.jpg'); */
-    background-image: linear-gradient(to top, rgba(16, 16, 16, 0.548), rgba(44, 43, 43, 0.285),transparent ), url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/page-partners/partners-header-md.jpg');
+    background-image: linear-gradient(to left, rgba(16, 16, 16, 0.185), rgba(44, 43, 43, 0.285),transparent ), url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/page-partners/partners-header-md.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
