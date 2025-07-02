@@ -23,6 +23,7 @@ import TopListInvest from './site/TopInvestigations/inves';
 import EventPage from './site/Events/eventpage';
 import CommunityProject from './site/community-projects/comProj';
 import LawsAndPolicies from './site/LawsAndPolicies/lnp';
+import PageEvents from './site/community-projects/projPage';
 export default function Page() {
   return (
     <div>
@@ -46,13 +47,16 @@ export default function Page() {
           <Route path="/team" element={<Teams />} />
           <Route path='/trainings' element={<TrainingPage/>}/>
           <Route path="/careers" element={<CareerPage />} />
-          <Route path='/events' element={<EventPage/>}/>
+          <Route path='/events' element={<PageEvents/>}/>
           <Route path="/top-investigations" element={<TopListInvest/>} />
           <Route path='/community-projects' element={<CommunityProject/>}/>
           <Route path='/cyber-laws' element={<LawsAndPolicies/>}/>
          
 
-          <Route path="*" element={<New />} />
+          <Route path="*" element={
+            // <New />
+            <EventPage></EventPage>
+            } />
         </Routes>
       </div>
       <Footer />

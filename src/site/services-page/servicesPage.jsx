@@ -178,14 +178,14 @@ against cyber risks </h1>
         <div style={{ paddingLeft:'30px', width:'100vw',display:'flex',justifyContent:'center', textAlign:'center',}}> 
           <h3 className="section-title" style={{fontSize:'2.4rem', width:'60%'}}>Gain a formidable partner to build exceptional defenses</h3>
           </div>
-          <p className="section-subtitle" style={{paddingTop:'0'}}>
+          <p className="section-subtitle" style={{paddingTop:'0',fontSize:'14px'}}>
             From expert-led training to real-time investigations, everything we do is designed to make your digital environment smarter, safer, and stronger.
           </p>
 
         
         <div className="services-container">
 
-          {/* section2 */}
+          {/* section2:- has some additional elements added */}
           <section className='section-2'>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
               {sectiontwo.map((data)=>(
@@ -211,13 +211,13 @@ against cyber risks </h1>
                   <div style={{ padding:'70px 30px 0px 0', width:'90vw',display:'flex',justifyContent:'center', textAlign:'center',}}> 
           <h3 className="section-title" style={{fontSize:'2.5rem', width:'60%'}}>Place comprehensive and continuous risk management at the core of your operations </h3>
           </div>
-          <p className="section-subtitle text-sm" style={{paddingTop:'0'}}>
+          <p className="section-subtitle " style={{paddingTop:'0', fontSize:'14px'}}>
             Discover how we seamlessly integrates cybersecurity into your organization's everyday operations while addressing various business challenges. By building airtight defenses, organizations can protect their business across these critical areas:
           </p>
 
           {/* Services Grid */}
           <div className='services-grid md:grid md:grid-cols-4'>
-            
+            {/* Gridcards is defined inside service-page component */}
             <Gridcards data={cardDetails} /> 
             
             {/* <Gridcards data={[]} /> */}
@@ -227,7 +227,8 @@ against cyber risks </h1>
       </section>
 
       <div style={{marginBottom:'40px'}}> 
-{service === 'Investigation' && <Investigation />}
+        {/* these components are made above in the page */}
+{service === 'Investigation' && <Investigation />}  
         {service === 'Webinars' && <Webinars />}
         {service === 'Sessions' && <Sessions />}
         {service === 'Workshop' && <Workshop />}
