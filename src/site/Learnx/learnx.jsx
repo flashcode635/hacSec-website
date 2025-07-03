@@ -9,62 +9,62 @@ import Loader from '../Components/screeLoading';
 const resources = [
     {
         title: "Blogs",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/security-checked.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/managed-xdr.png",
         link: "/blogs"
     },
     {
         title: " Micro Modules",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/book.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/incident-response-retainer.png",
         link: "/courses"
     },
     {
         title: " Internships",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/training.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/attack-surface-management.png",
         link: "/Internship"
     },
     {
         title: "Top Investigations",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/artificial-intelligence.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/managed-xdr.png",
         link: "/top-investigations"
     },
     {
         title: "Quiz",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/training.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/attack-surface-management.png",
         link: "/quiz"
     },
     {
         title: "Tools",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/screwdriver.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/threat-intelligence.png",
         link: "/tools"
     },
     {
         title: "Reports",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/artificial-intelligence.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/incident-response-retainer.png",
         link: "/reports"
     },
     {
         title: "Audio Books",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/podcast.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/threat-intelligence.png",
         link: "/audio-books"
     },
     {
         title: "Events",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/play.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/managed-xdr.png",
         link: "/events"
     },
     {
         title: "Cyber Laws and Policies",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/shield.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/attack-surface-management.png",
         link: "/cyber-laws"
     },
     {
         title: "Training Program",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/training.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/incident-response-retainer.png",
         link: "/trainings"
     },
     {
         title: "Community Projects",
-        imageUrl: "https://img.icons8.com/ios/50/3498db/project.png",
+        imageUrl: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/subscriptions/threat-intelligence.png",
         link: "/community-projects"
     }
 ];

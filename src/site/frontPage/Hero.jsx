@@ -10,11 +10,17 @@ const Hero = () => {
   return (
     <div className="hero" style={heroStyle}>
       <div className="hero-content">
-        <h1 className="hero-heading" 
+        <h2 className="hero-heading"  style={{fontSize:'3.4rem', fontWeight:'500', paddingTop:'4%', color:'white', marginBottom:'0', paddingBottom:'0'}}
         // style={{paddingTop: '4%'}}
         >
-          Welcome to the Hack Secure Ecosystem
-        </h1>
+          Welcome to the 
+        </h2>
+         <h2 className="hero-heading"  style={{fontSize:'3.4rem', fontWeight:'500',  color:'white'}}
+        // style={{paddingTop: '4%'}}
+        >
+            Hack Secure Ecosystem
+        </h2>
+      
         <h2 className="hero-heading hero-subheading">
           Learn Secure and Lead!
         </h2>
@@ -22,7 +28,7 @@ const Hero = () => {
           Join a new era of cybersecurity learning, built for innovation and impact.
           Powered by HackSecure.
         </p>
-        <GradientButton name="Get Started" pathname="#build-with-us" />
+        {/* <GradientButton name="Get Started" pathname="#build-with-us" /> */}
       </div>
     </div>
   );

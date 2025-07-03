@@ -299,7 +299,7 @@
 }
 .form-page{
   justify-content: center;
-  background: linear-gradient(to left,  rgba(81, 79, 79, 0.31) ,rgba(24, 23, 23, 0.483),rgba(151, 151, 151, 0.15)), url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/bg/black-rocks-bg-2560-min.jpg');
+  background: linear-gradient(to left, rgba(53, 52, 52, 0.659), rgba(3, 0, 14, 0.542), transparent), url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/bg/black-rocks-bg-2560-min.jpg');
   display: flex;
   justify-content: center;
   height: max-content;

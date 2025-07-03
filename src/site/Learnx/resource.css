@@ -291,7 +291,7 @@
 }
 
 .resource-card {
-    background-color: rgba(17, 17, 20, 0.8);
+    background-color: rgba(3, 0, 14, 0.35);
     border-radius: 12px;
     border: 2px solid rgba(35, 140, 210, 0.1);
     transition: all 0.3s ease;

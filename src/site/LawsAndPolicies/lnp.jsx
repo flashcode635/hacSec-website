@@ -80,7 +80,7 @@ const LawsAndPolicies=()=>{
         <div> 
             <section style={{width:'100vw', minHeight:'90vh'}}>
                 <div className="lnp-hero-section" style={{  }}>
-                    <div  style={{color:'white', fontSize:'4.5rem',width: 'max-content', textAlign:'center', paddingLeft:'0'}}>Cyber Laws And Policies </div>
+                    <div  style={{color:'white', fontSize:'4.5rem',width: '38vw',  paddingLeft:'0'}}>Cyber Laws And Policies </div>
 
                     <span className='w-[75vw]'> 
                 {/* write intro text here if needed */}

@@ -1,11 +1,11 @@
 .lnp-hero-section{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.634),rgba(2, 0, 13, 0.4),rgba(0, 0, 0, 0.437) ), url('https://www.group-ib.com/wp-content/uploads/press-release-banner-without-title.png.webp');
     background-size: cover;
-  min-height: 500px;
+    min-height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     color: rgb(172, 197, 208);
-    padding: 8% 14% 12% 22%;
+    padding: 8% 14% 12% 3%;
      height: 80vh;
 
 }
@@ -19,7 +19,8 @@
     height: max-content;
     width: 100%;
 }
-.lnp-intro-section, .lnp-hero-section {
+
+.lnp-intro-section {
    padding-bottom: 50px;
     width: 100vw;
     display: flex;

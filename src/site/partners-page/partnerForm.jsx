@@ -155,7 +155,7 @@ const PartnerForm = () => {
 
   return (
     <div className='form-page'> 
-      <div className="partners-page" style={{ minHeight: '100vh', paddingTop:0, paddingBottom: 40, background:'none' }}>
+      <div className="partners-page" style={{ minHeight: '100vh', paddingTop:70, paddingBottom: 40, background:'none' }}>
         <div className="" style={{ minHeight: 'auto', padding: '4px 20px', marginBottom: 40 }}>
           <div className="partners-hero-content">
             <h1 className="partners-title" style={{textAlign:'center', width:'90vw'}}>Partner with HackSecure</h1>

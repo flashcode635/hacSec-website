@@ -4,7 +4,7 @@
     text-align: center;
 }
 .payment-card{
-    border: 1px solid gray;
+    border: 1px solid rgb(100, 99, 99);
     border-radius: 20px;
     padding: 30px;
     width: 24vw;

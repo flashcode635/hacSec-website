@@ -133,9 +133,9 @@ const PartnersPage = () => {
           {/* <h1 style={{fontSize:'1.0rem',}}> Hack Secure Partner Program </h1> */}
           <h1 className="partners-title">Fuel business growth through a
 partnership with cybersecurity expert</h1>
-          <p className="partners-subtitle" style={{padding:'0'}}>
+          {/* <p className="partners-subtitle" style={{padding:'0'}}>
             Deliver personalized, exclusive, and comprehensive cyber protection to your customers
-          </p>
+          </p> */}
           <div className='flex justify-center' style={{width:'59vw',}}> 
 
           <GradientButton name="Become a Partner" pathname={'#partners-program-tiers'}/>
