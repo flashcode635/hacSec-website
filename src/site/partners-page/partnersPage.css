@@ -14,14 +14,13 @@
   border-bottom: 1px solid rgba(52, 152, 219, 0.1);
   display: flex;
   justify-content: center;
-  padding: 0 10%;
+  padding: 95px 20vw;
   background-image: url('https://www.group-ib.com/wp-content/uploads/1440-3.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .partners-hero-content {
-  padding-top: 85px;
   height: 100%;
   text-align: center;
   max-width: 800px;

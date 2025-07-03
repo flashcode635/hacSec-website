@@ -9,7 +9,7 @@
   padding: 50px 10%;
   background-color: rgb(4 4 7);
   border-top: 1px solid rgba(52, 152, 219, 0.1);
-  border-bottom: 1px solid rgba(52, 152, 219, 0.1);
+  /* border-bottom: 1px solid rgba(52, 152, 219, 0.1); */
 }
 
 .subscription-hero-title {

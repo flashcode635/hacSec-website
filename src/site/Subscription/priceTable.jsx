@@ -29,7 +29,7 @@ const features = [
  
     {
     name: "Investigations",
-    values: [false, true, false],
+    values: [false, true, true],
   },
   {
     name: "Sessions",

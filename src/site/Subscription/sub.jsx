@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './subscription.css';
 import PricingTable from './priceTable'; // Adjust the import path as necessary
+import PayCardsSection from './payment';
 
 const SubscriptionPage = () => {
   const [selected, setSelected] = useState('human');
@@ -52,6 +53,13 @@ All in one place
           {selected === 'elite' && <p className='subscription-tier-desc'>{eliteTier}</p>}
         </div>
       </div>
+
+{/* payment cards : payment gateway will be atached in this component  */}
+<div style={{ background:'rgb(4 4 7)', borderBottom:'none', borderTop:'none', paddingBottom:'40px'}}>
+  <PayCardsSection/> 
+</div>
+
+
       {/* subscription grid */}
       <div className="subscription-matrix-section">
         <div className="subscription-matrix-header" id='subscription-matrix'>  

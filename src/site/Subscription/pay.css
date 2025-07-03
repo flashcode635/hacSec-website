@@ -1,0 +1,17 @@
+.payment-cards-section{
+    /* background: black; */
+    margin:0 12vw;
+    text-align: center;
+}
+.payment-card{
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 30px;
+    width: 24vw;
+    height: auto;
+}
+.payment-card:hover{
+    box-shadow: 4px 4px 10px 2px rgba(1, 35, 120, 0.447);
+    transform: translateY(-9px) ;
+    transition: transform 0.2s ease 0.1s;
+}
