@@ -5,7 +5,7 @@ import './resource.css';
 import SubscriptionPage from '../Subscription/sub';
 import GradientButton from '../Components/buttonWithGradient/resource-btn';
 import Loader from '../Components/screeLoading';
-import NewSection from './newsection';
+import NewSection, { Belowhero } from './newsection';
 
 const resources = [
     {
@@ -202,9 +202,13 @@ export const ResourcePage = ({ imageUrl }) => {
                     </div>
                 </section>
 
-                
+                <section style={{ paddingTop: '5%' }}>
+                    <Belowhero/>
+
+                </section>
+
             {/* what we provide? section - blogs,trainings,article etc.  */}
-                <section style={{ paddingTop: '20px' }} id="resource">
+                <section style={{ paddingTop: '5%' }} id="resource">
                     <div style={{ textAlign: 'center' }}>
                         <div style={{ display: 'inline-block', width: '70%', height: '5px' }}>
                             <h1 style={{ fontSize: '3.4rem' }}>Platform Feature Matrix</h1>
@@ -227,7 +231,8 @@ export const ResourcePage = ({ imageUrl }) => {
                     </div>
                 </section>
 
-        <section style={{width:'100vw', height:'fit-content', marginTop:'7%'}}> 
+        <section style={{width:'100vw', height:'fit-content', paddingTop:'4%',
+        marginTop:'7%',borderTop:'1px solid rgba(52, 152, 219, 0.1)'}}> 
                     <NewSection/>
                 </section>
 
