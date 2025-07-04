@@ -26,7 +26,6 @@ const sectiontwocards=[
     head:'200+',
     details:'patents and applications',
     icon:'https://www.group-ib.com/wp-content/uploads/managed-xdr.png.webp'
-
   },
   {
     id:5,

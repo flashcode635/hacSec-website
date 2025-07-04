@@ -510,6 +510,18 @@
   background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-5px);
 }
+.cta-section-services{
+  background: linear-gradient(to right, rgba(2, 38, 97, 0.9), rgba(3, 59, 157, 0.8)), url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+}
+.service-cta-button{
+  padding: 8px;
+  border-radius: 10px;
+  width: 150px;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 992px) {

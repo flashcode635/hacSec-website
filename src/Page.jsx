@@ -5,7 +5,7 @@ import New from './site/frontPage/new';
 import Courses  from './site/cources/courses';
 import InternshipsPage from './site/internship-page/internshipPage';
 import InternshipList from './site/internship-page/internListCard';
-import ServicesPage from './site/services-page/servicesPage';
+import ServicesPage, { ServiceForm } from './site/services-page/servicesPage';
 import PartnersPage from './site/partners-page/PartnersPage';
 import BlogPage from './site/Blogs/blog';
 import Contact from './site/ContactUs/contact';
@@ -51,8 +51,7 @@ export default function Page() {
           <Route path="/top-investigations" element={<TopListInvest/>} />
           <Route path='/community-projects' element={<CommunityProject/>}/>
           <Route path='/cyber-laws' element={<LawsAndPolicies/>}/>
-         
-
+          <Route path="/services/service-form" element={<ServiceForm />} />
           <Route path="*" element={
             // <New />
             <EventPage></EventPage>

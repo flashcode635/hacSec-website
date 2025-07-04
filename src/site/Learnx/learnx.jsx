@@ -5,6 +5,7 @@ import './resource.css';
 import SubscriptionPage from '../Subscription/sub';
 import GradientButton from '../Components/buttonWithGradient/resource-btn';
 import Loader from '../Components/screeLoading';
+import NewSection from './newsection';
 
 const resources = [
     {
@@ -201,6 +202,8 @@ export const ResourcePage = ({ imageUrl }) => {
                     </div>
                 </section>
 
+                
+            {/* what we provide? section - blogs,trainings,article etc.  */}
                 <section style={{ paddingTop: '20px' }} id="resource">
                     <div style={{ textAlign: 'center' }}>
                         <div style={{ display: 'inline-block', width: '70%', height: '5px' }}>
@@ -224,11 +227,17 @@ export const ResourcePage = ({ imageUrl }) => {
                     </div>
                 </section>
 
+        <section style={{width:'100vw', height:'fit-content', marginTop:'7%'}}> 
+                    <NewSection/>
+                </section>
+
                 <div style={{ marginTop: '7%' }}>
                     <SubscriptionPage />
                 </div>
 
-                <section className="resource-cta" style={{ marginTop: '7%' }}>
+                <section className="resource-cta" 
+                // style={{ marginTop: '7%' }}
+                >
                     <div className="learnx-container" style={containerStyle}>
                         <h2>Contribute to LearnX?</h2>
                         <p>LearnX to showcase your content, tools, or training programs to a global audience.</p>

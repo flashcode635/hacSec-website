@@ -6,7 +6,9 @@ import CardStructure from './card-structure';
 import Investigation from './Investigation';
 import {Tick} from './Investigation';
 import ServiceContactForm from './ServiceContactForm';
-
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Webinars = () => {
   const List = [
@@ -36,15 +38,32 @@ const Webinars = () => {
     </div>
   );
 };
+export  const ServiceForm=()=>{
+  const location = useLocation();
 
-const SessionList=[
-    "Cyber Hygiene",
-    "Phishing Awareness",
-    "Get into Cyber Security",
-    "Safe Internet Usage",
-    "Cyber Security Career",
-    "Women in Cyber Security"
-];
+useEffect(() => {
+  if (location.hash) {
+    const el = document.getElementById(location.hash.replace('#', ''));
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}, [location]);
+  const SessionList=[
+      "Cyber Hygiene",
+      "Phishing Awareness",
+      "Get into Cyber Security",
+      "Safe Internet Usage",
+      "Cyber Security Career",
+      "Women in Cyber Security"
+  ];
+return(
+  <>
+     {/* CTA Section */}
+      <ServiceContactForm sessionTopics={SessionList} />
+  </>
+)
+}
 
 const Sessions = () => {
     return (
@@ -117,45 +136,47 @@ const Workshop = () => {
     )
 }
 const ServicesPage = () => {
+  const nevigate = useNavigate()
   const [service ,setService]=useState('Webinars');
   // cards layout
-  const Gridcards=({data})=>{
-    // console.log(data.title);
-    // console.log(data.id);
-  return(
-    <>
-    {data.map((data) => (
-      <div className="service-card w-[50%] h-[190px]" key={data.id} style={{ display:'flex', justifyContent:'center', alignItems:'center',margin:'20px 0'}}>
-         <button onClick={()=>setService(data.title)} className='' style={{textDecoration: 'none', backgroundColor: 'transparent', color: 'white', border: 'none' ,cursor: 'pointer', alignContent:'center'}}>
-          <div className='w-[70px]'> 
-          <img src={data.icon} className=' h-[170px]' style={{marginLeft:'14px', paddingBottom:'50px', justifyContent:'center'}}/> </div>
-           <h3> {data.title}</h3>
-           </button>
-      </div>
-    ))}
-    </>
-  )
-}
+    const Gridcards=({data})=>{
+      // console.log(data.title);
+      // console.log(data.id);
+    return(
+      <>
+      {data.map((data) => (
+        <div className="service-card w-[50%] h-[190px]" key={data.id} style={{ display:'flex', justifyContent:'center', alignItems:'center',margin:'20px 0'}}>
+          <button onClick={()=>setService(data.title)} className='' style={{textDecoration: 'none', backgroundColor: 'transparent', color: 'white', border: 'none' ,cursor: 'pointer', alignContent:'center'}}>
+            <div className='w-[70px]'> 
+            <img src={data.icon} className=' h-[170px]' style={{marginLeft:'14px', paddingBottom:'50px', justifyContent:'center'}}/> </div>
+            <h3> {data.title}</h3>
+            </button>
+        </div>
+      ))}
+      </>
+    )
+  }
 
-const sectiontwo=[
-  {
-    id:1,
-    title:"Tailored security services",
-    description:'Experts understand the ins and outs of security challenges and offer bespoke cybersecurity services such as detailed guides, security roadmaps, and risk prioritization measures, each tailored to the organization’s specific needs and risk appetite',
-    image:'https://www.group-ib.com/wp-content/uploads/demo-1-2.png.webp'
-  },
-  {
-    id:2,
-    title:"Technology creators and enablers",
-    description:'As a trusted partner, organizations have access to a cohesive ecosystem of expertise, technologies, and services, which allows them to future-proof their operations and upgrade their cybersecurity posture',
-    image:'https://www.group-ib.com/wp-content/uploads/demo-2-2.png.webp'
-  },
-  {
-    title:"Globally distributed expertise",
-    id:3,
-    description:'Hack Secure works in synergy with innovative technologies to offer detection and response capabilities that eliminate cyber disruptions efficiently and effectively. We map and mitigate adversary tactics in each region through targeted intelligence and operations',
-    image:'https://www.group-ib.com/wp-content/uploads/demo-16.png.webp'
-  }]
+    const sectiontwo=[
+      {
+        id:1,
+        title:"Tailored security services",
+        description:'Experts understand the ins and outs of security challenges and offer bespoke cybersecurity services such as detailed guides, security roadmaps, and risk prioritization measures, each tailored to the organization’s specific needs and risk appetite',
+        image:'https://www.group-ib.com/wp-content/uploads/demo-1-2.png.webp'
+      },
+      {
+        id:2,
+        title:"Technology creators and enablers",
+        description:'As a trusted partner, organizations have access to a cohesive ecosystem of expertise, technologies, and services, which allows them to future-proof their operations and upgrade their cybersecurity posture',
+        image:'https://www.group-ib.com/wp-content/uploads/demo-2-2.png.webp'
+      },
+      {
+        title:"Globally distributed expertise",
+        id:3,
+        description:'Hack Secure works in synergy with innovative technologies to offer detection and response capabilities that eliminate cyber disruptions efficiently and effectively. We map and mitigate adversary tactics in each region through targeted intelligence and operations',
+        image:'https://www.group-ib.com/wp-content/uploads/demo-16.png.webp'
+      }]
+  // return section of Service-page
   return (
     <div className="services-page">
       {/* Hero Section */}
@@ -235,8 +256,17 @@ against cyber risks </h1>
         
       </div>
 
-      {/* CTA Section */}
-      <ServiceContactForm sessionTopics={SessionList} />
+     {/* CTA Section  */}
+      <div className='cta-section-services flex flex-col items-center justify-center' >
+        <div className='w-[60vw]'> 
+        <h3 style={{color:'white', fontSize:'2.4rem', paddingBottom:'30px'}}>Obtain bulletproof evidence with Group-IB Digital Forensics Services </h3>
+        
+        <button type="button" className='service-cta-button bg-white text-blue-900 text-[16px]' onClick={()=>{
+          nevigate('/services/service-form#topsec')
+        }} > Book Now </button> 
+        </div>
+      </div>
+
     </div>
   );
 };
