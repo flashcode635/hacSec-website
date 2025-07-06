@@ -19,6 +19,11 @@ const philosophyData = [
     title: 'Career Advancement',
     desc: "Programs designed to equip you with skills demanded by today's job market.",
   },
+    {
+    icon: 'https://www.group-ib.com/wp-content/uploads/urp-side-card-1-min.jpg.webp' ,
+    title: 'Growth Scope',
+    desc: 'Focus on tasks and the practical teacing and experience for immediate application.',
+  },
 ];
 
 const coursesData = [
@@ -36,7 +41,11 @@ const coursesData = [
   },
   {
     img: 'https://www.group-ib.com/wp-content/uploads/demo-2.png.webp',
-    alt: '1 Program',
+    title: '1 live training',
+    desc: 'Become the lead of field.',
+  },
+  {
+    img: 'https://www.group-ib.com/wp-content/uploads/demo-2.png.webp',
     title: '1 Program',
     desc: 'Become ultimate SOC.',
   },
@@ -91,7 +100,7 @@ const tailwindConfigScript = `
 `;
 
 const TrainingPage = () => (
-  <div className="min-h-screen bg-dark-black-blue font-inter antialiased">
+  <div className="min-h-screen bg-black font-inter antialiased">
     {/* Fonts & Tailwind (for development preview purposes) */}
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -115,7 +124,7 @@ const TrainingPage = () => (
     <section id="overview-training" className="py-14 px-2 sm:px-4 bg-dark-black-blue">
       <div className="container-training mx-auto text-center">
         <span className="text-3xl sm:text-4xl font-bold text-blue-600 mb-10">Our Training Philosophy</span>
-        <div className="card-holder grid gap-6 sm:gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-[100%] mx-auto  ">
+        <div className="philosophy-grid max-w-[100%] mx-auto">
           {philosophyData.map((item, idx) => (
             <div
               key={idx}

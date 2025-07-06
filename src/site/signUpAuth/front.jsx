@@ -31,7 +31,7 @@ const AuthPage = () => {
             const response = await axios.post(url, formData);
             setMessage(response.data.message);
             if (response.status === 200 || response.status === 201) {
-                navigate('/Learn_X');
+                navigate('/dashboard');
             }
         } catch (error) {
             setMessage(error.response?.data?.message || 'An error occurred');

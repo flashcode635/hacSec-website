@@ -53,7 +53,7 @@ export default function NewSection() {
                             <>
                                 <div key={data.id} className="text-center items-center">
                                     <div className="flex justify-center"> 
-                                    <img className="w-[170px]" src={data.icon} alt="" srcset="" />
+                                    <img className="w-[170px]" src={data.icon} alt=""  />
                                     </div>
 
                                     <h2>{data.title}</h2>

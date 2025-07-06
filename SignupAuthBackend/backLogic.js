@@ -105,6 +105,11 @@ app.post('/login', (req, res) => {
 
     if (user) {
         res.status(200).json({ message: 'Login successful' });
+        res.json({
+        //    has list of variables required in the front emd side after auth is done to make front end more interactive and personalized.
+            plan:"human" ,  // plan of person
+            state:"true"
+        })
     } else {
         res.status(401).json({ message: 'Invalid credentials' });
     }

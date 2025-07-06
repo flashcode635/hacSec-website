@@ -54,7 +54,7 @@ const coursesList = [
   {
     id: 5,
     title: "Digital Forensics Investigation",
-    description: "Master the skills needed to investigate cybersecurity incidents and collect digital evidence.Learn how cyber laws and regulations impact digital forensics.",
+    description: "Master the skills needed to investigate cybersecurity incidents and collect digital evidence.Learn cyber laws and regulations .",
     duration: "9 weeks",
     level: "Intermediate",
     modules:12,

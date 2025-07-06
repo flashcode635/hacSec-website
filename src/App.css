@@ -87,6 +87,9 @@ p {
   margin-bottom: 1rem;
 }
 
+span{
+  font-family: Nunito;
+}
 /* Responsive breakpoints */
 @media (max-width: 768px) {
   html {

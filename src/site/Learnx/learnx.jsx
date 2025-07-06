@@ -207,8 +207,13 @@ export const ResourcePage = ({ imageUrl }) => {
 
                 </section>
 
-            {/* what we provide? section - blogs,trainings,article etc.  */}
-                <section style={{ paddingTop: '5%' }} id="resource">
+                 <section style={{width:'100vw', height:'fit-content', paddingTop:'4%',
+        marginTop:'7%',borderTop:'1px solid rgba(52, 152, 219, 0.1)', paddingBottom:'50px'}}> 
+                    <NewSection/>
+                </section>
+
+            {/* what learnX offers - blogs,trainings,article etc.  */}
+                <section style={{ paddingTop: '40px' }} id="resource">
                     <div style={{ textAlign: 'center' }}>
                         <div style={{ display: 'inline-block', width: '70%', height: '5px' }}>
                             <h1 style={{ fontSize: '3.4rem' }}>Platform Feature Matrix</h1>
@@ -231,10 +236,7 @@ export const ResourcePage = ({ imageUrl }) => {
                     </div>
                 </section>
 
-        <section style={{width:'100vw', height:'fit-content', paddingTop:'4%',
-        marginTop:'7%',borderTop:'1px solid rgba(52, 152, 219, 0.1)'}}> 
-                    <NewSection/>
-                </section>
+       
 
                 <div style={{ marginTop: '7%' }}>
                     <SubscriptionPage />

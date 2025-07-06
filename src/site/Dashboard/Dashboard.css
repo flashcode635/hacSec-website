@@ -1,0 +1,79 @@
+:root {
+    --sidebar-bg: #0d1117;
+    --sidebar-text: #c9d1d9;
+    --sidebar-hover-bg: #161b22;
+    --sidebar-active-bg: #21262d;
+    --content-bg: #010409;
+    --content-text: #f0f6fc;
+    --accent-color: #388bfd;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: var(--content-bg);
+    color: var(--content-text);
+}
+
+.dashboard__sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar__brand {
+    padding: 2rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--accent-color);
+    border-bottom: 1px solid #30363d;
+}
+
+.sidebar__nav {
+    flex-grow: 1;
+    padding: 1rem 0;
+}
+
+.sidebar__nav-item {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar__nav-item:hover {
+    background-color: var(--sidebar-hover-bg);
+}
+
+.sidebar__nav-item.active {
+    background-color: var(--sidebar-active-bg);
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.dashboard__content {
+    flex-grow: 1;
+    padding: 0rem 6px 0rem 0px;
+    overflow-y: auto;
+}
+
+/* Custom scrollbar for webkit browsers */
+.dashboard__sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dashboard__sidebar::-webkit-scrollbar-track {
+    background: var(--sidebar-bg);
+}
+
+.dashboard__sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: 2px solid var(--sidebar-bg);
+}

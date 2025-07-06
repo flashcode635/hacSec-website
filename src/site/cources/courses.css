@@ -83,6 +83,7 @@
 /* Courses grid layout */
 .courses-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
 
@@ -243,10 +244,6 @@
    margin-left: 10%;
   }
   
-  .courses-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  }
-  
   .courses-hero {
     height: 30vh;
   }
@@ -255,10 +252,6 @@
 @media (max-width: 480px) {
   .courses-hero-content h1 {
     font-size: 28px;
-  }
-  
-  .courses-grid {
-    grid-template-columns: 1fr;
   }
   
   .course-content h3 {
