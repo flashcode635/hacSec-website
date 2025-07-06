@@ -38,6 +38,34 @@ const Webinars = () => {
     </div>
   );
 };
+const SessionList=[
+    {
+      id:1,
+      
+      item: "Phishing Awareness",
+    },
+    {
+      id:2,
+      item: "Get into Cyber Security",
+    },
+    {
+      id:3,
+      item: "Women in Cyber Security"
+    },
+    {
+      id:4,
+      item:  "Cyber Security Career",
+    },
+    {
+      id:5,
+      item:  "Safe Internet Usage",
+    },
+    {
+      id:6,
+      item:"Cyber Hygiene",
+    },
+         
+  ];
 export  const ServiceForm=()=>{
   const location = useLocation();
 
@@ -49,14 +77,7 @@ useEffect(() => {
     }
   }
 }, [location]);
-  const SessionList=[
-      "Cyber Hygiene",
-      "Phishing Awareness",
-      "Get into Cyber Security",
-      "Safe Internet Usage",
-      "Cyber Security Career",
-      "Women in Cyber Security"
-  ];
+  
 return(
   <>
      {/* CTA Section */}
@@ -66,6 +87,34 @@ return(
 }
 
 const Sessions = () => {
+  const SessionLists=[
+    {
+      id:1,
+      
+      item: "Phishing Awareness",
+    },
+    {
+      id:2,
+      item: "Get into Cyber Security",
+    },
+    {
+      id:3,
+      item: "Women in Cyber Security"
+    },
+    {
+      id:4,
+      item:  "Cyber Security Career",
+    },
+    {
+      id:5,
+      item:  "Safe Internet Usage",
+    },
+    {
+      id:6,
+      item:"Cyber Hygiene",
+    },
+         
+  ];
     return (
         <div>
             <CardStructure data={cardDetails[1]}/>
@@ -73,10 +122,10 @@ const Sessions = () => {
         <div className="investigation-card">
           <h3 className="card-title">Check out our insightful sessions</h3>
           <ul className="features-list">
-            {SessionList.map((item, index) => (
-              <li key={index} className="feature-item">
+            {SessionLists.map((data) => (
+              <li key={data.id} className="feature-item">
                 <Tick />
-                <span>{item}</span>
+                <span>{data.item}</span>
               </li>
             ))}
           </ul>
@@ -96,7 +145,7 @@ const Workshop = () => {
       "Social Engerring Tacties"]
     },
     { id:2,
-      name: "BLUE TEAM",
+      name: "BLUE TEAM", 
       list:["Digital Forencis & Incident Response",
         "SIEN Tools & LOG ANALYSIS",
         "Incider Threat Hunting",
@@ -200,7 +249,7 @@ against cyber risks </h1>
           <h3 className="section-title" style={{fontSize:'2.4rem', width:'60%'}}>Gain a formidable partner to build exceptional defenses</h3>
           </div>
           <p className="section-subtitle" style={{paddingTop:'0',fontSize:'14px'}}>
-            From expert-led training to real-time investigations, everything we do is designed to make your digital environment smarter, safer, and stronger.
+            From expert-led training to real-time investigations, everything we do is designed to make your digital environment smarter, safer, and stronger prevent shrinking on medium screens and larger.
           </p>
 
         
@@ -208,14 +257,15 @@ against cyber risks </h1>
 
           {/* section2:- has some additional elements added */}
           <section className='section-2'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6'>
               {sectiontwo.map((data)=>(
                  <div key={data.id}>
                   <div className='flex justify-center w-full' style={{width:'100%'}}> 
-                <img className='w-[170px] h-[170px]' src={data.image} alt="" srcset="" /> </div>
-                <div> </div>
-                <h3 className='text-center h-[60px]'>{data.title}</h3>
-                <span className='text-gray-400 text-center  text-sm'> {data.description}</span>
+                <img className='w-[170px] h-[170px]' src={data.image}  /> 
+                </div>
+                {/* <div> </div> */}
+                <div className='text-center h-[60px] text-lg'>{data.title}</div>
+                <div className='text-gray-400 text-center  text-sm'> {data.description}</div>
                 </div>
               ))}
              
@@ -247,7 +297,7 @@ against cyber risks </h1>
         </div>
       </section>
 
-      <div style={{marginBottom:'40px'}}> 
+      <div className='service-provided-container' style={{marginBottom:'40px', width:'98vw'}}> 
         {/* these components are made above in the page */}
 {service === 'Investigation' && <Investigation />}  
         {service === 'Webinars' && <Webinars />}

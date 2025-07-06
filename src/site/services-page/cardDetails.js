@@ -20,7 +20,10 @@ const cardDetails=[{
   
   icon: "https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/service-icons/training-for-technical-specialists-icon.png",
 },
-{ id:4, title: "Investigation", description: "", icon:'https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/service-icons/incident-responce-retainer-icon.png' }
+{ id:4,
+   title: "Investigation", 
+   description: "", 
+   icon:'https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/service-icons/incident-responce-retainer-icon.png' }
 ]
 
 export  default cardDetails;

@@ -19,6 +19,7 @@ const AuthPage = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+
         const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage('');
@@ -34,7 +35,7 @@ const AuthPage = () => {
             }
         } catch (error) {
             setMessage(error.response?.data?.message || 'An error occurred');
-        }
+                       }
     };
 
     return (

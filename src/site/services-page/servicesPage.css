@@ -143,7 +143,26 @@
 .service-card:hover::before {
   transform: scaleX(1);
 }
+/* .service-provided-container{
+  box-shadow: 12px 20px 13px 0 rgba(43, 43, 43, 0.325);
+} */
 
+.service-provided-container {
+  background: linear-gradient(90deg, #0c0b0e9d 0%, #01000578 100%);
+  padding: 40px 3vw;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.041);
+  /* border: 2px solid #000708; */
+  margin-top: 40px;
+  transition: box-shadow 0.3s;
+}
+
+.service-provided-container:hover {
+  box-shadow: 0 12px 40px 0 rgba(24, 29, 104, 0.608);
+  transform: translateY(-4px);
+}
+
+/*  */
 .service-icon {
   width: 70px;
   height: 70px;
