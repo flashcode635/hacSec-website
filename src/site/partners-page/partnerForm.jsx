@@ -162,7 +162,7 @@ const PartnerForm = () => {
            
           </div>
         </div>
-        <div  style={{ maxWidth: 700, margin: '0 auto', background: 'rgba(17,17,20,0.95)', borderRadius: 12, backgroundColor: '#0c162700',   backdropFilter: 'blur(10px)', padding: '30px 40px', boxShadow: '0 8px 24px rgba(0,0,0,0.25)' }}>
+        <div  style={{ maxWidth: 700, margin: '0 auto', background: 'rgba(17,17,20,0.95)', borderRadius: 12, backgroundColor: '#0c162700',   backdropFilter: 'blur(10px)', padding: '10px 40px', boxShadow: '0 8px 24px rgba(0,0,0,0.25)' }}>
           {submitted ? (
             <div style={{ textAlign: 'center', color: '#3498db', fontSize: 20, padding: '40px 0' }}>
               <p>Thank you for your application!</p>
@@ -170,7 +170,7 @@ const PartnerForm = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="partner-form">
-              <div style={{ marginBottom: 24 }}>
+              <div style={{ marginBottom: 22 }}>
                 <label htmlFor="tier-select" className="section-title" style={{ fontSize: 18, marginBottom: 10, display: 'block', textAlign: 'left' }}>Select Partnership Type</label>
                 <select id="tier-select" value={selectedTier} onChange={handleTierChange} style={inputStyles}>
                   {Object.entries(partnerTierOptions).map(([value, label]) => (

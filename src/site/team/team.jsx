@@ -203,12 +203,10 @@ const Teams=()=>{
 
                                 <div style={{display:'flex', justifyContent:'center'}}>
                                     <div>
-
                                     <TeamList indexes={1} />
                                     </div>
                                 </div>
-                            <div className="teams-reveal">
-                                
+                            <div className="teams-reveal">                        
                             </div>
                         </div>
 
