@@ -4,7 +4,7 @@ export default function NewSection() {
         {
             id:1,
             title:"Comprehensible",
-            detail:'Intuitive and easy-to access dashboards, detailed reports and clear takedown processes.',
+            detail:'Intuitive and easy-to access dashboards, detailed reports and clear takedown processes of need.',
             icon:'https://www.group-ib.com/wp-content/uploads/drp-card-lg-1-min.jpg.webp'
         },
         {
@@ -45,7 +45,7 @@ export default function NewSection() {
                 <div className="flex flex-col items-center justify-center ">
                     <div className="md:w-[70vw] w-[100vw] text-center">
                         <h1 style={{fontSize:'2.8rem'}}> Multifaceted approach to creating innovative digital brand protection software </h1>
-                        <span className="text-gray-400"> We make cyber protection tailored, cohesive, and holistic.</span>
+                        <span className="text-gray-400"> We make cyber protection tailored, cohesive, and holistic.Supercharge your cyber security and defeat attacks before they begin with knowledge of how, when, where and why threat actors will strike.</span>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 w-[70vw]  gap-7" style={{marginTop:'40px'}} >

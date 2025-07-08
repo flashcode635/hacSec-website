@@ -54,11 +54,11 @@ const sectiontwocards=[
       </div>
 {/* section2 */}
 <div className='' style={{display:'flex', justifyContent:'center'}}> 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-4' style={{padding:'40px', width:'70vw', }}>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-4' style={{padding:'40px', width:'75vw', }}>
             {sectiontwocards.map((data)=>(
 
                 <div className='home-page-section2 ' key={data.id}>
-                  <div className='' style={{height:'80px', width:'100%', display:'flex', justifyContent:'center', marginBottom:'10%'}}> 
+                  <div className='' style={{height:'80px', width:'100%', display:'flex', justifyContent:'center', marginBottom:'7vh'}}> 
                     <img  src={data.icon} alt="" srcset="" />
                   </div>
 
@@ -66,9 +66,9 @@ const sectiontwocards=[
                   <span className='text-gray-400'> {data.details} </span>
 
                 </div>
-                ))}
-        
-        
+                ) )
+                }
+               
       </div>
       </div>
 
