@@ -2,14 +2,17 @@
      background: linear-gradient(to right, rgba(2, 2, 2, 0.11),
       rgba(2, 2, 2, 0.143)), 
       url(https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/bg-helpers-new/blue-landscape-1-bg-md.jpg);
-      height: 100vh;
-}
-
-.career-page{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 100vw;
+      min-height: 90vh;
     padding-left:22%;
     padding-right:20%;
     padding-top: 8%;
+    padding-bottom: 12%;
     align-items: center;
+    overflow-y: auto;
     
 }
 

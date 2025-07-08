@@ -6,18 +6,37 @@ const Middle = () => {
     <div className="careers-container">
       <main className="careers-main">
         <h1 className="main-title">Build your career with us</h1>
+        {/* section-right-image-1 */}
         <section className="main-section">
           <div className="section-left">
             <h2 className="section-heading">A global cybersecurity force</h2>
-            <p>
-              Our company has transformed modern cybersecurity with innovative technologies, designed to be the next generation of cyber defense.
-            </p>
-            <p>
-              Join a dynamic, global, and interconnected team of top cyber experts.
-            </p>
-            <p>
-              Whether stationed at our mission-critical Digital Crime Resistance Centers (DCRCs) or working remotely, we wholeheartedly support your career path with a range of opportunities on an international scale.
-            </p>
+            <div className="text-base" style={{color:'gray',marginBottom: "0px"}}>
+
+              <span>
+                Our company has transformed 
+                <span style={{color:'white'}}> <b> modern cybersecurity </b></span> with
+                <span style={{color:'white'}}> <b> innovative technologies </b></span>
+               <span>  <b>  </b> </span>
+                  , designed to be the next generation of cyber defense.
+              </span> 
+              <br/>
+              <span>
+                Join a 
+                <span style={{color:'white'}}> <b> dynamic </b> </span> ,
+                <span style={{color:'white'}}> <b>  global </b> </span> , and 
+                <span style={{color:'white'}}> <b>  interconnected </b> </span> team of top cyber experts.
+              </span>
+              <br/>
+
+              <span>
+                Whether stationed at our 
+                <span style={{color:'white'}}> <b> mission-critical Digital Crime Resistance Centers </b> </span> 
+                
+                 (DCRCs) or working remotely, we wholeheartedly support your career path with a 
+                <span style={{color:'white'}}> <b> range of opportunities </b> </span> on an international scale.
+              </span>
+            </div>
+
           </div>
 
           <div className="section-right">
@@ -28,7 +47,8 @@ const Middle = () => {
             />
           </div>
         </section>
-    {/* Section-Left 1 */}
+
+    {/* Section-Left-image- 1 */}
          <section className="diverse-team-section">
     <div className="image-container">
       <img
@@ -40,25 +60,44 @@ const Middle = () => {
       <h2>
         A diverse team, one vision - Combating cybercrime
       </h2>
-      <div style={{ color: "gray",fontSize: "1rem",marginBottom: "0px"}} > 
-      <p style={{ color: "gray",fontSize: "1rem",marginBottom: "0px"}}>
-        Our team of 400+ cybercrime fighters don’t have a 9 to 5 work approach, instead we work to make a real impact in fighting cybercrime.
-      </p>
-      <ul style={{ color: "gray",fontSize: "1rem",marginBottom: "0px",content: "✔",listStyle: "none",
-  padding: 0}}>
-        <li>
-          We’re a global company with the agility and innovation potential of a startup backed by the vision and scale of an industry leader.
-        </li>
-        <li>
-          We’re innovators with 120+ technology patents, and consistently research and produce unique cybersecurity insights to empower the broader community in investigating, preventing, and fighting cybercrime.
-        </li>
-        <li>
-          We have experts from 30+ countries, fluent in regional languages that offer on-the-go cyber support.
-        </li>
-        <li>
-          We actively partner with leading universities to mentor young talent on their journey to become the leaders of tomorrow.
-        </li>
-      </ul> </div>
+      <div style={{color:'gray',marginBottom: "0px"}} > 
+        <span className="text-base">
+          <span> Our team of
+            <span style={{color:'white'}}><b> 400+ </b></span>  cybercrime fighters don’t have a 9 to 5 work approach,instead we work to make a
+            <span style={{color:'white'}}><b> real impact </b></span>     in fighting cybercrime.
+          </span>
+<br/>
+          <span> 
+              We’re a global company with the 
+            <span style={{color:'white'}}><b> agility  </b></span>and 
+            <span style={{color:'white'}}><b> innovation potential </b></span> 
+             of a startup backed by the vision and scale of an industry leader.
+          </span>
+<br/>
+
+          <span>  We’re innovators with    
+            <span style={{color:'white'}}><b> 120+ </b></span> research and produce 
+            <span style={{color:'white'}}><b> unique </b></span> 
+             cybersecurity insights to empower the broader community.
+          </span>
+<br/>
+
+           
+          <span>  We have experts from 
+            <span style={{color:'white'}}><b> 30+ </b></span> countries, fluent in regional languages that offer 
+            <span style={{color:'white'}}><b> on-the-go  </b></span> 
+            cyber support.
+          </span>
+<br/>
+
+          <span> We actively partner with            
+            <span style={{color:'white'}}><b> leading universities </b></span> 
+             to mentor young talent on their journey to become the leaders of tomorrow.
+          </span>
+<br/>
+
+        </span>
+ </div>
     </div>
         </section>
 
@@ -66,12 +105,38 @@ const Middle = () => {
         <section className="main-section">
           <div className="section-left">
             <h2 className="section-heading">Make your presence known</h2>
-            <p style={{ color: "gray",fontSize: "1rem", marginBottom: "0px"}}>
-              What’s it like to work on an active cyber threat? With Group-IB, new joiners experience it first-hand. We stand out as a company immersing employees in real cases from day one. 
-            </p>
-            <p style={{ color: "gray",fontSize: "1rem",marginBottom: "0px"}}>
-              Embrace boldness, innovation, and passion to win and work in a dynamic environment. Start your journey with Hack Secure.
-            </p> 
+            <div style={{color:'gray',marginBottom: "0px"}} className="text-base">
+
+                
+                
+                <span>
+                  What’s it like to work on an 
+                   <span style={{color:'white'}}> <b> active </b> </span>
+                   cyber threat? 
+                </span>
+                <br/>
+                <span>
+                    With   
+                    <span style={{color:'white'}}> <b> Hack Secure </b> </span> , new joiners experience it
+                    <span style={{color:'white'}}> <b>  first-hand </b> </span> .We stand out as a company immersing employees in
+                    <span style={{color:'white'}}> <b> real cases </b> </span>from day one.Right from the start
+                  </span>
+                  <br/>
+                <span>
+                    Join a 
+                    <span style={{color:'white'}}> <b> dynamic </b> </span> ,
+                    <span style={{color:'white'}}> <b>  global </b> </span> , and 
+                    <span style={{color:'white'}}> <b>  interconnected </b> </span> team of top cyber experts and elevate yourself.
+                  </span>
+                  <br/>
+                <span>
+                  Embrace 
+                   <span style={{color:'white'}}> <b>  boldness </b> </span>,
+                   <span style={{color:'white'}}> <b>  innovation </b> </span>, and
+                   <span style={{color:'white'}}> <b>  passion </b> </span>
+                 to win and work in a dynamic environment. Start your journey with Hack Secure.
+                </span> 
+            </div>
           </div>
 
           <div className="section-right">

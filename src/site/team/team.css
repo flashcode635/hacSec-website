@@ -20,14 +20,14 @@
 
 }
 .teams-reveal{
-  background-color: green;
-  background-image: url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/team/arrows1-md.svg');
+  /* background-color: green; */
+  /* background-image: url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/team/arrows1-md.svg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 2000;
-  min-width: 983px;
-  min-height: 360px;
+  max-width: 983px;
+  min-height: 390px;
 }
 .team-section2-image{
   width: 140px;
@@ -44,10 +44,10 @@
 
 .team-card {
   background: rgb(0 4 7);
-  border-radius: 22px;
+  border-radius: 12px;
   box-shadow: 0 4px 32px 0 #3498db22, 0 1.5px 8px 0 #00000011;
   border: 2px solid #3498db33;
-  padding: 32px 24px 24px 24px;
+  padding: 27px 24px 24px 24px;
   margin-bottom: 32px;
   transition: box-shadow 0.35s, border 0.35s, background 0.35s;
   position: relative;
@@ -56,12 +56,13 @@
   min-height: 180px;
 }
 .team-card:hover {
-  background: rgba(52, 152, 219, 0.10);
+  /* background: rgba(52, 152, 219, 0.10); */
   box-shadow: 0 8px 48px 4px #3460db55, 0 1.5px 16px 0 #00000022;
   border: 2.5px solid #3498db;
 }
 .team-card-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -87,18 +88,18 @@
 }
 
 .team-icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin-bottom: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 9%;
+  margin-bottom: 20px;
   margin-right: 16px;
   background: linear-gradient(135deg, #3498dbc4 60%, #eaf6fb 100%);
-  border: 2.5px solid #01010b;
-  box-shadow: 0 2px 12px 0 #3498db33;
+  border: 1.5px solid #39393cca;
+  box-shadow: 0 2px 12px 0 #303f4a33;
   object-fit: cover;
   transition: box-shadow 0.3s, border 0.3s;
 }
-.team-card:hover .team-icon {
+.team-card:hover {
   box-shadow: 0 4px 24px 4px #3498db77;
   border: 2.5px solid #3498db;
 }

@@ -195,18 +195,22 @@ const Teams=()=>{
                             marginTop: "40px",
                             marginBottom: "20px"
                         }}>
-                            <h1 className="team-intro-title" style={{textAlign: "center"}}>Meet Our Team</h1>
+                            <h1 className="team-intro-title" style={{textAlign: "center"}}>The Leadership</h1>
                         </div>
                         {/* <TeamList/>  */}
-                        <div style={{display:'flex', alignItems:'center', flexDirection:'column', 
-                            justifyContent:'center', height:'100vh', width:'100vw'}}>
+                        <div style={{
+                            display:'flex', 
+                            alignItems:'center', 
+                            flexDirection:'column', 
+                            justifyContent:'center',
+                             height:'fit-content', width:'100vw'}}>
 
-                                <div style={{display:'flex', justifyContent:'center'}}>
+                              
+                            <div className="teams-reveal">                          <div style={{display:'flex', justifyContent:'center'}}>
                                     <div>
                                     <TeamList indexes={1} />
                                     </div>
                                 </div>
-                            <div className="teams-reveal">                        
                             </div>
                         </div>
 

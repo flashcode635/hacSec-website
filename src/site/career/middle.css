@@ -1,14 +1,11 @@
 /* CareersPage.css */
-body {
-  margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  background: #000;
-  color: #fff;
-}
 
 .careers-container {
-  background: #000;
-  min-height: 100vh;
+  background: #000000;
+  /* min-height: 100vh; */
+  width: auto;
+  padding: 4%;
+  margin: 2%;
   color: #fff;
 }
 
@@ -22,13 +19,14 @@ body {
   font-size: 2.8rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 }
 
 .main-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 20px 5vw;
   gap: 48px;
 }
 
@@ -93,8 +91,8 @@ p{
   justify-content: center;
   background: #0a0a0a;
   color: #fff;
-  min-height: 100vh;
-  padding: 0 5vw;
+  max-height: 1370px;
+  padding: 2rem 5vw;
   box-sizing: border-box;
 }
 

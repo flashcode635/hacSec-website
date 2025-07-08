@@ -105,7 +105,7 @@ const PartnersPage = () => {
       description:"Increase your sales and unlock higher discounts on Group-IB products and services"
     },
     {
-      id:1,
+      id:6,
       icon:"https://www.group-ib.com/wp-content/uploads/market-recognition_01.png.webp",
       title:" Benefits of Marketing Tactics",
       description:"Get assistance with marketing activities and receive progressive marketing rebates as sales ramp up"
