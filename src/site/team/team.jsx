@@ -12,73 +12,55 @@ function TeamCard({ photo, name, position, description }) {
           <p className="team-card-position" style={{padding:'0'}}>{position}</p>
         </div>
       </div>
-      <p className="align-left">{description}</p>
+      <span className="text-white text-sm text-center" style={{display:'flex',justifyContent:'center'}}>{description}</span>
     </div>
   );
 }
 
 
 // You can replace the placeholder URL with your actual image import if available
-const placeholderImg = "https://img.icons8.com/ios/50/3498db/training.png";
+// const placeholderImg = "https://img.icons8.com/ios/50/3498db/training.png";
 const teamMembersList = [
-        {   name:"Person-1",
+        {   
+            id:1,
+            name:"Person-1",
             position:"leader",
+            image:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww',
             description: 'Top 7 influencers in global cybersecurity by Business Insider, Member of Europol EC3 Advisory Group, Member of the UN Open-ended Intergovernmental Expert Group' 
             
 
         },
 
-        { name: 'Person-2',
+        { 
+            id:2,
+            name: 'Person-2',
             position:"CEO",
-
+            image:'https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             description:"The CEO defines strategy, leads company direction, drives growth, manages risk, and represents stakeholders’ interests."
          },
-        { name: 'Person-3',
+        { 
+            id:3,
+            name: 'Person-3',
             position:"manager",
+            image:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             description:"A manager plans, organizes, delegates tasks, monitors performance, solves problems, and ensures team productivity."
          },
-        {   name: 'Person-4',
+        {   
+            id:4,
+            name: 'Person-4',
             position:"Employee",
-            description:"An employee completes tasks, supports goals, follows instructions, learns continuously, and contributes to team success."
+            image:'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmVzc2lvbmFsfGVufDB8fDB8fHww',
+            description:"An employee completes tasks, supports goals, follows instructions, learns continuously, and contributes to team."
          },
-         {   name: 'Person-5',
+         {   
+            id:5,
+            name: 'Person-5',
+            image:'',
              position:"Employee",
-             description:" An employee completes tasks, supports goals, follows instructions, learns continuously, and contributes to team success."
+             description:" An employee completes tasks, supports goals, follows instructions, learns continuously, and contributes to team."
           }
     ];
-// function TeamList({indexes}) {
-    
 
-//     return(
-//         <div className="team-content" style={{paddingLeft:'20px',paddingRight:'20px'}}> 
-//             <div style={{
-//                 width:'100vw', 
-//                 backgroundColor: 'black', 
-//                 color: 'white', 
-//                 maxHeight:'30', 
-//                 paddingTop:'20px',
-//                 marginBottom:'40px'
-
-//             }} className="grid md:grid-cols-3 grid-cols-1">
-//                 {teamMembersList[indexes]
-//         .map((item, index) => (
-//                     <div key={index} style={{
-                       
-//                         marginTop:'10px', 
-//                         maxHeight:'30'
-//                     }} className="grid-col-1 md:w-[27vw] w-[90vw]">
-//                         <TeamCard 
-//                             photo={placeholderImg} 
-//                             name={item.name}
-//                             position={item.position}
-//                             description={item.description}
-//                         />
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     ) 
-// }
 function TeamList({indexes}) {
     const member = teamMembersList[indexes];
     if (!member) return null; // handle out-of-bounds index
@@ -91,14 +73,12 @@ function TeamList({indexes}) {
                 color: 'white', 
                 maxHeight:'30', 
                 paddingTop:'0px',
-                marginBottom:'40px'
-            }} className="grid ">
+                marginBottom:'40px'}} className="grid ">
                 <div style={{
                     marginTop:'10px', 
-                    maxHeight:'30', color:'black'
-                }} className="grid-col-1 md:w-[27vw] w-[90vw]">
+                    maxHeight:'30', color:'black'}} className="grid-col-1 md:w-[27vw] w-[90vw]">
                     <TeamCard 
-                        photo={placeholderImg} 
+                        photo={member.image} 
                         name={member.name}
                         position={member.position}
                         description={member.description}
@@ -206,12 +186,22 @@ const Teams=()=>{
                              height:'fit-content', width:'100vw'}}>
 
                               
-                            <div className="teams-reveal">                          <div style={{display:'flex', justifyContent:'center'}}>
+                            <div className="teams-reveal">                          
+                                <div style={{display:'flex', justifyContent:'center'}}>
                                     <div>
-                                    <TeamList indexes={1} />
+                                    <TeamList indexes={0} />
                                     </div>
                                 </div>
                             </div>
+                                <div style={{width:'100vw', display:'flex',justifyContent:'center', padding:'1% 3% 3% 2%'}} >
+                                    <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
+
+                                    <TeamList indexes={1} />
+                                    <TeamList indexes={2} />
+                                    <TeamList indexes={3} />
+                                    </div>
+
+                                    </div>
                         </div>
 
                         </div>

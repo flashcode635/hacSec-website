@@ -20,12 +20,10 @@
 
 }
 .teams-reveal{
-  /* background-color: green; */
-  /* background-image: url('https://www.group-ib.com/wp-content/themes/gib-theme/assets/images/team/arrows1-md.svg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 2000;
+  z-index: 20;
   max-width: 983px;
   min-height: 390px;
 }
@@ -48,7 +46,7 @@
   box-shadow: 0 4px 32px 0 #3498db22, 0 1.5px 8px 0 #00000011;
   border: 2px solid #3498db33;
   padding: 27px 24px 24px 24px;
-  margin-bottom: 32px;
+  margin-bottom: 2px;
   transition: box-shadow 0.35s, border 0.35s, background 0.35s;
   position: relative;
   /* overflow: hidden; */
