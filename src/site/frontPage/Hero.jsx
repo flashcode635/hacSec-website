@@ -18,7 +18,7 @@ const Hero = () => {
          <h2 className="hero-heading"  style={{fontSize:'3.4rem', fontWeight:'500',  color:'white'}}
         // style={{paddingTop: '4%'}}
         >
-            Hack Secure Ecosystem
+            Hack-Sec Ecosystem
         </h2>
       
         <h2 className="hero-heading hero-subheading">

@@ -65,13 +65,13 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin: 5% 0;
+  margin: 5% 0 2% 0;
 }
 
 .subscription-tier-btn {
   font-size: 17px;
   padding: 8px 16px;
-  border: 1px solid #2159d318;
+  border: 1px solid #2721d35e;
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
@@ -80,15 +80,21 @@
   color: #e4e9ee;
   transition: background 0.2s, color 0.2s;
 }
-.subscription-tier-btn-selected,
+
 .subscription-tier-btn:hover {
-  background: #2563eb;
+  background: #022b8454;
+  color: #fff;
+}
+.subscription-tier-btn-selected{
+  background: #044de9ee;
   color: #fff;
 }
 
 .subscription-tier-selected {
   text-align: center;
   margin: 20px 0;
+  font-family: 'Nunito', sans-serif;
+  
 }
 
 .subscription-tier-desc {

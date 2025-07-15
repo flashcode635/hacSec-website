@@ -24,19 +24,19 @@ const sectionList=[
                of our experts
           </span>
         ],
-        image: "https://www.group-ib.com/wp-content/uploads/342x286.png.webp"
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     
     {
         id:2,
         title: "Partners",
         description: [
-          // " Partner with Hack Secure to drive innovation, share knowledge, and make a global impact in cybersecurity. ",
+          // " Partner with Hack-Sec to drive innovation, share knowledge, and make a global impact in cybersecurity. ",
           // "From academic institutions and corporates to communities and international networks. We welcome partnerships that aim to build a safer digital world."
-          <span style={{color:'rgb(128, 128, 128)'}}>Partner with Hack Secure to drive
+          <span style={{color:'rgb(128, 128, 128)'}}>Partner with Hack-Sec to drive
             <span style={{color:'white'}}><b> innovation </b></span>,
             <span style={{color:'white'}}><b> share knowledge </b></span>,
-            make a global impact in cybersecurity.
+            make a global impact in cybersecurity , even if you are a beginner or a pro, there is always more to explore.
           </span>
              ,    // seperation between 2 spans
 
@@ -44,14 +44,14 @@ const sectionList=[
             <span style={{color:'white'}}><b> academic institutions </b></span> 
             and
             <span style={{color:'white'}}><b> corporates </b></span>
-            to
+            to vibing 
             <span style={{color:'white'}}><b> communities </b></span> and
             <span style={{color:'white'}}><b> international networks </b></span>.We welcome partnerships that aim to build a safer digital world.
           </span>
 
 ],
 
-        image: 'https://www.group-ib.com/wp-content/uploads/group-ib-joiners_01-1.png.webp'
+        image: 'https://plus.unsplash.com/premium_photo-1661329955912-ebc4279f3b21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29ycG9yYXRlJTIwcGFydG5lcnN8ZW58MHx8MHx8fDA%3D'
     },
     
     {
@@ -73,17 +73,20 @@ const sectionList=[
            
             your skills and fuel your growth. Whether you are a beginner or a pro, there is always more to explore.</span>
         ],
-        image: 'https://www.group-ib.com/wp-content/uploads/342x286.png.webp'
+        image: 'https://images.unsplash.com/photo-1732304719348-1fcdf2500966?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3liZXIlMjBzZWN1cml0eSUyMGxlYXJuaW5nfGVufDB8fDB8fHww'
     },
     
     {
         id:4,
-        title: "Hack Secure Global",
+        title: "Hack-Sec Global Association",
         description: [
         <span style={{color:'rgb(128, 128, 128)'}}>We offer a wide range of services from 
         <span style={{color:'white'}}> 
         <b> expert-led webinars </b> </span>
-        and interactive sessions to hands-on workshops and real-world cyber investigation support.</span>
+        and interactive sessions to 
+        <span style={{color: "white"}}> <b> hands-on </b> </span>
+        
+        workshops and real-world cyber investigation support.</span>
             ,    // seperation between 2 spans
 
         <span style={{color:'rgb(128, 128, 128)'}}>Whether you're looking to 
@@ -93,7 +96,7 @@ const sectionList=[
         
          and build resilience across every level.</span>
          ],
-        image: logoImage
+        image: 'https://images.unsplash.com/photo-1667372283496-893f0b1e7c16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGN5YmVyJTIwc2VjdXJpdHklMjBsb2dvfGVufDB8fDB8fHww'
      
     
     }
@@ -102,7 +105,7 @@ const IntroSection = () => {
   return (
     <div className="intro-container">
       <main className="intro-main">
-        <h1 className="main-title">Build your career with us</h1>
+        <h1 className="main-title">We believe in Delivering Value</h1>
         {sectionList.map((item, idx) => {
           const isEven = idx % 2 === 1;
           return (
@@ -110,8 +113,8 @@ const IntroSection = () => {
               className={`intro-card ${isEven ? "reverse" : ""}`}
               key={item.id}
             >
-              <div className="intro-card-image">
-                <img
+              <div className="intro-card-image" >
+                <img style={{borderRadius:'10px', backgroundColor:'green'}}
                   src={item.image}
                   className="intro-card-img"
                   alt={item.title}

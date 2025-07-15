@@ -30,21 +30,26 @@
     align-items: center;
 }
 .image-icon{
-    height: 40vh;
-    width: 20vw;
+    height: 30vh;
+    width: 15vw;
     margin-bottom: 20px;
     align-items: center;
 }
 .button-training{
-    border: 1px solid #0ccbe0;
+    /* border: 1px solid #0ccbe0; */
     padding: 3px;
 }
 .card-holder {
     margin: 40px;
 }
 .philosophy-card{
+    width:300px;
+    margin: 1.0rem 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 0.7rem;
-    border: 2px solid #0d4cf9;
+    /* border: 2px solid #0d4cf9; */
     border-radius: 1rem;
     transition: all 0.3s;
 }
@@ -57,8 +62,8 @@
     color: transparent;
 }
 .philosophy-card:hover , .training-section-cards:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 30px rgba(213, 210, 210, 0.265);
+    transform: translateY(-8px);
+    box-shadow: 0 4px 30px rgba(106, 113, 152, 0.265);
 }
 .training-section-cards{
     border:1px solid rgba(213, 210, 210, 0.265);
@@ -78,11 +83,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
-    margin: 40px;
+    margin: 20px 40px;
 }
 
 .why-us-info{
-    margin:0px 40px 0px 40px;
+    margin:7vh 50px 0px 50px;
 }
 @media screen and (max-width: 768px) {
     .hero-section-trainings{
@@ -95,16 +100,10 @@
 }
     .image-icon{
     height: 30vh;
-    width: 70vw;
+    width: 80vw;
     margin-bottom: 0px;
 }
-  .philosophy-card{
-    width: 310px;
-    margin: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } 
+   
 .card-holder {
     margin: 40px 0 40px 0;
 }

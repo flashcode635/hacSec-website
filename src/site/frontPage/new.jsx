@@ -5,6 +5,7 @@ import IntroSection from './midSection/intro-section';
 import Hero from './Hero';
 import Sponsors from './Sponsors';
 import UnifiedTrainingPlatform from './UnifiedTrainingPlatform';
+import MidSection from './midSection/mid-section';
 
 const New = () => {
   return (
@@ -14,6 +15,7 @@ const New = () => {
       <UnifiedTrainingPlatform />
 
       <div className="section" id="build-with-us">
+        <MidSection/>
         <div className="content-wrapper">
           <IntroSection />
         </div>

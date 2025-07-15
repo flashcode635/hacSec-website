@@ -38,9 +38,9 @@ export default function PayCardsSection() {
                     <button 
                     style={{padding:'3px', width:'90px', cursor:'pointer'}} 
                     className='bg-blue-500 text-white rounded'
-                    onClick={()=>{
-                        nevigate(card.pointsto)
-                    }}
+                    // onClick={()=>{
+                    //     nevigate(card.pointsto)
+                    // }}
                     >{card.cost}</button>
                     </div>
                 </div>

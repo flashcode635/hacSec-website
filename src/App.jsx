@@ -25,7 +25,6 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/auth" element={<AuthPage />} />
-          <Route path="/Learn_X" element={<LoadableLearnX />} />
           <Route path="/dashboard" element={<Dashboard />}>
             <Route index element={
               <div style={{ textAlign: 'center', paddingTop: '4rem' }}>

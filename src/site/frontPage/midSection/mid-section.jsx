@@ -15,8 +15,8 @@ function Products() {
     return(
         <div className="section-content solutions-section">
             <div className="solutions-header">
-                <h2 className="solutions-title">Our Products</h2>
-                <p className="solutions-subtitle">Advanced cybersecurity products for comprehensive protection</p>
+                <h2 className="solutions-title">Discover What We Build</h2>
+                <p className="solutions-subtitle" style={{paddingTop:'1%'}}>Advanced cybersecurity products for comprehensive protection</p>
             </div>
             
             <div className="solutions-grid">
@@ -61,8 +61,8 @@ function Services() {
     return(
         <div className="section-content solutions-section">
             <div className="solutions-header">
-                <h2 className="solutions-title">Our Services</h2>
-                <p className="solutions-subtitle">Advanced cybersecurity products for comprehensive protection</p>
+                <h2 className="solutions-title">Empowering Your Journey</h2>
+                <p className="solutions-subtitle" style={{paddingTop:'1%'}}>Advanced cybersecurity products for comprehensive protection</p>
             </div>
             
             <div className="solutions-grid">
@@ -107,8 +107,8 @@ function Solutions() {
     return(
         <div className="section-content solutions-section">
             <div className="solutions-header">
-                <h2 className="solutions-title">Our Solutions</h2>
-                <p className="solutions-subtitle">Advanced cybersecurity products for comprehensive protection</p>
+                <h2 className="solutions-title"> Tailored Solutions for You </h2>
+                <p className="solutions-subtitle"style={{paddingTop:'1%'}}>Advanced cybersecurity products for comprehensive protection</p>
             </div>
             
             <div className="solutions-grid">
@@ -139,7 +139,8 @@ export default function MidSection(){
                 marginLeft:'0px',
                 display: 'flex',
                 justifyContent: 'center', 
-                alignItems: 'center'
+                alignItems: 'center',
+                gap:'30px'
             }}>
                 <button className="mid" onClick={() => setSelect('Products')}>
                     <Button name="Products"></Button>
@@ -154,7 +155,12 @@ export default function MidSection(){
 
             <div className="mid-section-content-wrapper">
                 {/* Conditional rendering based on selected tab */}
-                {select === 'Products' && <Products />}
+                {select === 'Products' && 
+                
+
+                    <Products />
+              
+               }
                 {select === 'Services' && <Services />}
                 {select === 'Solutions' && <Solutions />} 
             </div>

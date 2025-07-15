@@ -23,7 +23,7 @@ function TeamCard({ photo, name, position, description }) {
 const teamMembersList = [
         {   
             id:1,
-            name:"Person-1",
+            name:"Sarina",
             position:"leader",
             image:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fHww',
             description: 'Top 7 influencers in global cybersecurity by Business Insider, Member of Europol EC3 Advisory Group, Member of the UN Open-ended Intergovernmental Expert Group' 
@@ -33,28 +33,28 @@ const teamMembersList = [
 
         { 
             id:2,
-            name: 'Person-2',
+            name: 'Riyan',
             position:"CEO",
             image:'https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             description:"The CEO defines strategy, leads company direction, drives growth, manages risk, and represents stakeholders’ interests."
          },
         { 
             id:3,
-            name: 'Person-3',
+            name: 'Samantha',
             position:"manager",
             image:"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             description:"A manager plans, organizes, delegates tasks, monitors performance, solves problems, and ensures team productivity."
          },
         {   
             id:4,
-            name: 'Person-4',
+            name: 'Andrew',
             position:"Employee",
             image:'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmVzc2lvbmFsfGVufDB8fDB8fHww',
             description:"An employee completes tasks, supports goals, follows instructions, learns continuously, and contributes to team."
          },
          {   
             id:5,
-            name: 'Person-5',
+            name: 'Kiayara',
             image:'',
              position:"Employee",
              description:" An employee completes tasks, supports goals, follows instructions, learns continuously, and contributes to team."
@@ -103,13 +103,13 @@ const Teams=()=>{
             id:2,
             image:"https://www.group-ib.com/wp-content/uploads/illustration-2-4.png.webp",
             heading:"Digital Crime Resistance Centers (DCRCs)",
-            details:"Group-IB's regional offices and mission-critical Digital Crime Resistance Centers (DCRCs) continually provide assistance and strategic knowledge about local threats, enabling immediate response"
+            details:"Hack-Sec's regional offices and mission-critical Digital Crime Resistance Centers (DCRCs) continually provide assistance and strategic knowledge about local threats, enabling immediate response"
         },
 
         {
             id:3,
             image:"https://www.group-ib.com/wp-content/uploads/illustration-1-4.png.webp",
-            heading:"Innovation as a core value of teams",
+            heading:"Innovation- a core value of our teams",
             details:" Our drive to ensure security pushes us to build technology capabilities that surpass the market standard twofold. This commitment keeps us well ahead of adversaries and helps us safeguard businesses and citizens"
         },
 
@@ -121,22 +121,22 @@ const Teams=()=>{
                 <section className="teams-hero">
                        <div className="teams-hero-content">
                          <h1 style={{fontSize:'2.9rem'}}> The Forces Behind the Resilience Against Cybercrime</h1>
-                         <p className="details-teams" style={{fontFamily:'system-ui'}}>Hack Secure's decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack Secure</p>
+                         <p className="details-teams" style={{fontFamily:'system-ui'}}>Hack-Sec's decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack-Sec</p>
                          {/* <GradientButton name="Request a Consultation" /> */}
                        </div>
                 </section>
                 
                 <section className="" style={{width:'100vw',display:'flex', alignItems:'center', marginTop:'4rem',justifyContent:'center', flexDirection:'column'}}>
-                    <div style={{width:'70vw',}}>
+                    <div style={{width:'80vw',}}>
                         <div className="text-center">
                             <h1 style={{marginBottom:'0',}}>Serving one joint mission - </h1>
                             <h1> Fight against cybercrime </h1>
                             <span className="text-gray-400 w-[70%]" >
-                                Decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Group-IB
+                                Decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack-Sec
                             </span>
                         </div>
 
-                        <div className=" grid md:grid-cols-3 grid-cols-1 gap-5"> 
+                        <div className=" grid md:grid-cols-3 grid-cols-1 gap-8" style={{margin:'18vh 0', width:'80vw', display:'flex', justifyContent:'center'}}> 
                             {extraList.map((data)=>(
 
                                 <div key={data.id} >

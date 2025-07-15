@@ -197,7 +197,7 @@ export const ResourcePage = ({ imageUrl }) => {
                 <section className="resource-hero" style={{ background: `linear-gradient(to right,  #02020200, #0202022b), url(${imageUrl})`, backgroundSize: "contain", backgroundPosition: "center", width:'100vw' }}>
                     <div className="resource-hero-content" style={{textAlign:'center'}}>
                         <h1 style={{}}> Welcome to Learn X </h1>
-                        <p style={{fontFamily:'system-ui', textAlign:'center'}}>The next generation cybersecurity e-learning platform. Built for learners, by Hack Secure</p>
+                        <p style={{fontFamily:'system-ui', textAlign:'center'}}>The next generation cybersecurity e-learning platform. Built for learners, by Hack-Sec</p>
                         {/* <GradientButton name="Let's start" pathname="#resource" /> */}
                     </div>
                 </section>

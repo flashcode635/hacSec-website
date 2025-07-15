@@ -124,7 +124,7 @@ export default function Details() {
           </div>
           <div className="lp-hero-buttons">
             <button className="lp-btn lp-btn-green">Start Module</button>
-            <button className="lp-btn lp-btn-dark">Hack Secure Business</button>
+            <button className="lp-btn lp-btn-dark">Hack-Sec Business</button>
           </div>
         </div>
         <div className="lp-hero-image">

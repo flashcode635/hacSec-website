@@ -210,7 +210,7 @@ const ServicesPage = () => {
       {
         id:1,
         title:"Tailored security services",
-        description:'Experts understand the ins and outs of security challenges and offer bespoke cybersecurity services such as detailed guides, security roadmaps, and risk prioritization measures, each tailored to the organization’s specific needs and risk appetite',
+        description:'Experts understand the ins and outs of security challenges and offer bespoke cybersecurity services such as detailed guides, security roadmaps, and risk prioritization measures, each tailored to the organization’s specific needs.',
         image:'https://www.group-ib.com/wp-content/uploads/demo-1-2.png.webp'
       },
       {
@@ -222,7 +222,7 @@ const ServicesPage = () => {
       {
         title:"Globally distributed expertise",
         id:3,
-        description:'Hack Secure works in synergy with innovative technologies to offer detection and response capabilities that eliminate cyber disruptions efficiently and effectively. We map and mitigate adversary tactics in each region through targeted intelligence and operations',
+        description:'Hack-Sec works in synergy with innovative technologies to offer detection and response capabilities that eliminate cyber disruptions efficiently and effectively. We map and mitigate adversary tactics in each region through targeted intelligence and operations',
         image:'https://www.group-ib.com/wp-content/uploads/demo-16.png.webp'
       }]
   // return section of Service-page
@@ -231,12 +231,12 @@ const ServicesPage = () => {
       {/* Hero Section */}
       <section className="services-hero">
         <div className="services-hero-content">
-          <h2 className='h1-tag' style={{fontSize:'1.0rem', marginBottom:'0'}}> Hack Secure Cybersecurity Services </h2>
+          <h2 className='h1-tag' style={{fontSize:'1.0rem', marginBottom:'0'}}> Hack-Sec Cybersecurity Services </h2>
           <h1 style={{fontSize:'3.4rem'}}> Powerful symbiosis of technology
 and expertise for complete protection
 against cyber risks </h1>
 
-          <span style={{fontFamily:'system-ui',color:'gray'}} className='text-base'>Take off where Incident Response readiness starts and make sure your business is enabled to face the trickiest attacks and incidents</span>
+          <span style={{fontFamily:'system-ui',color:'gray',}} className='text-base'>Take off where most of the Incident Response readiness starts and make sure your business is enabled to face the trickiest  of all the attacks and incidents</span>
           <div style={{ display:'flex',justifyContent:'center', marginTop:'20px'}}> 
             <GradientButton name="Request a Consultation" />
           </div>
@@ -246,9 +246,9 @@ against cyber risks </h1>
       {/* Services Overview Section */}
       <section className="services-overview" >
         <div style={{ paddingLeft:'30px', width:'100vw',display:'flex',justifyContent:'center', textAlign:'center',}}> 
-          <h3 className="section-title" style={{fontSize:'2.4rem', width:'60%'}}>Gain a formidable partner to build exceptional defenses</h3>
+          <h3 className="section-title" style={{fontSize:'2.6rem', width:'60%'}}>Gain a formidable partner to build exceptional defenses</h3>
           </div>
-          <p className="section-subtitle" style={{paddingTop:'0',fontSize:'14px'}}>
+          <p className="section-subtitle" style={{paddingTop:'0',fontSize:'16px'}}>
             From expert-led training to real-time investigations, everything we do is designed to make your digital environment smarter, safer, and stronger prevent shrinking on medium screens and larger.
           </p>
 
@@ -280,9 +280,9 @@ against cyber risks </h1>
 
 {/* section -3 */}
                   <div style={{ padding:'70px 30px 0px 0', width:'90vw',display:'flex',justifyContent:'center', textAlign:'center',}}> 
-          <h3 className="section-title" style={{fontSize:'2.5rem', width:'60%'}}>Place comprehensive and continuous risk management at the core of your operations </h3>
+          <h3 className="section-title" style={{fontSize:'2.6rem', width:'70%', textAlign:'center'}}>Place comprehensive and the risk management at the core of your operations </h3>
           </div>
-          <p className="section-subtitle " style={{paddingTop:'0', fontSize:'14px'}}>
+          <p className="section-subtitle " style={{paddingTop:'0', fontSize:'16px'}}>
             Discover how we seamlessly integrates cybersecurity into your organization's everyday operations while addressing various business challenges. By building airtight defenses, organizations can protect their business across these critical areas:
           </p>
 
@@ -309,7 +309,7 @@ against cyber risks </h1>
      {/* CTA Section  */}
       <div className='cta-section-services flex flex-col items-center justify-center' >
         <div className='w-[60vw]'> 
-        <h3 style={{color:'white', fontSize:'2.4rem', paddingBottom:'30px'}}>Obtain bulletproof evidence with Group-IB Digital Forensics Services </h3>
+        <h3 style={{color:'white', fontSize:'2.4rem', paddingBottom:'30px'}}>Obtain bulletproof evidence with Hack-Sec Digital Forensics Services </h3>
         
         <button type="button" className='service-cta-button bg-white text-blue-900 text-[16px]' onClick={()=>{
           nevigate('/services/service-form#topsec')

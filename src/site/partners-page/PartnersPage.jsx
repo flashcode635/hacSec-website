@@ -9,12 +9,12 @@ const PartnersPage = () => {
   const partnerTiers = [
     {
       name: "International Partners",
-      description: "Partner globally with Hack Secure to share knowledge, lead cross-border cybersecurity efforts, and amplify global impact.",
+      description: "Partner globally with Hack-Sec to share knowledge, lead cross-border cybersecurity efforts, and amplify global impact.",
       benefits: [
         "Co-hosted cross-border sessions, webinars, and research",
         "Global visibility and presence",
         "Shared campaigns across regions",
-        "Inclusion in Hack Secure’s Global Partner Network",
+        "Inclusion in Hack-Sec’s Global Partner Network",
         "Mutual support in awareness and skill programs"
       ]
     },
@@ -34,7 +34,7 @@ const PartnersPage = () => {
       description: "Lead local cybersecurity efforts, host events, and grow together through shared resources and collaboration.",
       benefits: [
         "Co-branded webinars, workshops, and campaigns",
-        "Early access to Hack Secure events",
+        "Early access to Hack-Sec events",
         "Community exposure across our platforms",
         "Skill development opportunities through CTFs and case-based tasks",
         "Joint content and initiative recognition"
@@ -55,7 +55,7 @@ const PartnersPage = () => {
       name: "Event Partners and Sponsors",
       description: "Collaborate to support cybersecurity events, gain brand visibility, and engage with a global audience driving real impact.",
       benefits: [
-        "Promotion across Hack Secure’s digital platforms",
+        "Promotion across Hack-Sec’s digital platforms",
         "Certificates, swags, and recognition for top performers",
         "Flexible collaboration models (virtual or on-site)",
         "Featured in HackSecure’s official sponsor listings",
@@ -90,7 +90,7 @@ const PartnersPage = () => {
       id:3,
       icon:"https://www.group-ib.com/wp-content/uploads/marketing_01.png.webp",
       title:"Predictable revenue stream",
-      description:"Hack Secure provides comprehensive support throughout every stage of the sales process, including sales, pre-sales, and technical support levels"
+      description:"Hack-Sec provides comprehensive support throughout every stage of the sales process, including sales, pre-sales, and technical support levels"
     },
     {
       id:4,
@@ -102,7 +102,7 @@ const PartnersPage = () => {
       id:5,
       icon:"https://www.group-ib.com/wp-content/uploads/support_07.png.webp",
       title:"Progressive scale of discounts",
-      description:"Increase your sales and unlock higher discounts on Group-IB products and services"
+      description:"Increase your sales and unlock higher discounts on Hack-Sec products and services"
     },
     {
       id:6,
@@ -130,7 +130,7 @@ const PartnersPage = () => {
     <div className="partners-page">
       <div className="partners-hero">
         <div className="partners-hero-content">
-          {/* <h1 style={{fontSize:'1.0rem',}}> Hack Secure Partner Program </h1> */}
+          {/* <h1 style={{fontSize:'1.0rem',}}> Hack-Sec Partner Program </h1> */}
           <h1 className="partners-title">Fuel business growth through a
 partnership with cybersecurity expert</h1>
           {/* <p className="partners-subtitle" style={{padding:'0'}}>
@@ -146,7 +146,7 @@ partnership with cybersecurity expert</h1>
 {/* Benefits of Partnering */}
       <div className="partners-benefits-section" style={{fontFamily:'Nunito'}}>
         <h2 className="section-title" style={{marginBottom:'4%', fontWeight:'500', fontSize:'2.8rem'}}>
-          Unlock the benefits of joining the Hack Secure Partner Program
+          Unlock the benefits of joining the Hack-Sec Partner Program
 </h2>
         {/* <div className="benefits-grid">
 
@@ -234,7 +234,7 @@ partnership with cybersecurity expert</h1>
                   ))}
                 </ul>
               </div>
-              <button className="tier-apply-button" onClick={() => navigate(`/partner-form?tier=${encodeURIComponent(tier.name)}`)}>Apply Now</button>
+              <button className="tier-apply-button" onClick={() => navigate(`/partner-form?tier=${encodeURIComponent(tier.name)}#partners`)}>Apply Now</button>
             </div>
           ))}
         </div>

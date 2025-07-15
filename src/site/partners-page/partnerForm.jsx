@@ -95,6 +95,19 @@ const inputStyles = {
 
 const PartnerForm = () => {
   const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1); // remove the '#' symbol
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.hash]);
+
+
+  // const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const initialTier = searchParams.get('tier') || Object.keys(partnerTierOptions)[0];
 
@@ -155,7 +168,7 @@ const PartnerForm = () => {
 
   return (
     <div className='form-page'> 
-      <div className="partners-page" style={{ minHeight: '100vh', paddingTop:70, paddingBottom: 40, background:'none' }}>
+      <div className="partners-page" id='partners' style={{ minHeight: '100vh', paddingTop:70, paddingBottom: 40, background:'none' }}>
         <div className="" style={{ minHeight: 'auto', padding: '4px 20px', marginBottom: 40 }}>
           <div className="partners-hero-content">
             <h1 className="partners-title" style={{textAlign:'center', width:'90vw'}}>Partner with HackSecure</h1>

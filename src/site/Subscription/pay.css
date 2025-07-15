@@ -13,5 +13,5 @@
 .payment-card:hover{
     box-shadow: 4px 4px 10px 2px rgba(1, 35, 120, 0.447);
     transform: translateY(-9px) ;
-    transition: transform 0.2s ease 0.1s;
+    transition: transform 0.3s ease 0.1s;
 }

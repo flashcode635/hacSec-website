@@ -35,7 +35,7 @@ export default function Page() {
           <Route path="/partners" element={<PartnersPage />} />
           <Route path="/partner-form" element={<PartnerForm />} />
 
-          {/* <Route path="/Learn_X" element={<LoadableLearnX />} /> */}
+          <Route path="/Learn_X" element={<LoadableLearnX />} />
           
           <Route path="/subscription" element={<SubscriptionPage />} />
           <Route path='/reports' element={<ReportPage />} />
@@ -49,14 +49,14 @@ export default function Page() {
           <Route path="/team" element={<Teams />} />
           <Route path='/trainings' element={<TrainingPage/>}/>
           <Route path="/careers" element={<CareerPage />} />
-          <Route path='/events' element={<PageEvents/>}/>
+          <Route path='/events' element={<EventPage></EventPage>}/>
           <Route path="/top-investigations" element={<TopListInvest/>} />
           <Route path='/community-projects' element={<CommunityProject/>}/>
           <Route path='/cyber-laws' element={<LawsAndPolicies/>}/>
           <Route path="/services/service-form" element={<ServiceForm />} />
           <Route path="*" element={
-            // <New />
-            <EventPage></EventPage>
+            <New />
+            
             } />
         </Routes>
       </div>

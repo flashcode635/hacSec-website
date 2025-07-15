@@ -9,7 +9,7 @@ import socAnalystImg from '../../images/cource-images/soc.png';
 const coursesList = [
   {
     id: 1,
-    title: "Ethical Hacking Fundamentals",
+    title: "Ethical Hacking Advance",
     description: "Learn the basics of ethical hacking and penetration testing methodologies.",
     duration: "8 weeks",
     level: "Beginner",
