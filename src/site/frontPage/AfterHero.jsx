@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const UnifiedTrainingPlatform = () => {
+const AfterHero = () => {
   const sectiontwocards = [
     { id: 1,
        head: '1900+',
@@ -18,6 +18,7 @@ const UnifiedTrainingPlatform = () => {
       },
     { id: 3,
        head: '700+', 
+    
        details: 'enterprise customers', 
        icon: 'https://www.group-ib.com/wp-content/uploads/asm-main-icon-min.png.webp' ,
     color:'rgba(13, 11, 139, 0.261)'
@@ -97,5 +98,5 @@ const UnifiedTrainingPlatform = () => {
   );
 };
 
-export default UnifiedTrainingPlatform;
+export default AfterHero;
 

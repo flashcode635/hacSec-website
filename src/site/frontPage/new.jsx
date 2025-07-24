@@ -4,7 +4,7 @@ import Review from './midSection/review';
 import IntroSection from './midSection/intro-section';
 import Hero from './Hero';
 import Sponsors from './Sponsors';
-import UnifiedTrainingPlatform from './UnifiedTrainingPlatform';
+import AfterHero from './AfterHero';
 import MidSection from './midSection/mid-section';
 
 const New = () => {
@@ -12,7 +12,7 @@ const New = () => {
     <div className="front-page-container">
       <Hero />
       <Sponsors />
-      <UnifiedTrainingPlatform />
+      <AfterHero />
 
       <div className="section" id="build-with-us">
         <MidSection/>
