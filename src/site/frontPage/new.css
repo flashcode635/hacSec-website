@@ -69,7 +69,7 @@
     padding: 2px 2px 6px 2px;
 }
 .home-page-section2:hover{
-        box-shadow: 1px 0px 13px 10px rgba(0, 140, 255, 0.13);
+        box-shadow: 1px 0px 13px 10px rgba(1, 51, 108, 0.261);
         transform: translateY(-8px); /* The initial state, or what it transforms to */
   transition: transform 0.3s ease; /* How the 'transform' property animates */
 }
@@ -117,10 +117,14 @@
 
 .sponsor-item {
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
+    background: rgba(19, 1, 59, 0.268);
+    border-radius: 10px;
     color: #94a3b8;
     font-weight: 500;
+    /* height: 50px;
+    width: 90px; */
+    /* background-repeat: no-repeat;
+    background-size:cover; */
 }
 
 .training-section {

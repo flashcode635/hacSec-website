@@ -103,8 +103,9 @@ const Footer= ()=>{
             
     </footer> 
     {/* contact  */}
-    <div  style={{width:'100vw', paddingLeft:'45px',paddingTop:'14px',marginBottom:'9vh'}}>
-        <div style={{fontFamily:'Sans-Serif',color:'white'}}>Contact</div>
+    <div  style={{width:'100vw',display:'flex', alignContent:'center', alignItems:'center',gap:'20px', paddingLeft:'45px',paddingTop:'14px',marginBottom:'3vh'}}>
+        <div style={{fontFamily:'Sans-Serif',color:'blue'}}>
+            <h1>Contact</h1></div>
         <div > 
             <SocialLinks />
         </div>
