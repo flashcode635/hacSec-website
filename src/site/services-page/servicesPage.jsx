@@ -222,7 +222,7 @@ const ServicesPage = () => {
       {
         title:"Globally distributed expertise",
         id:3,
-        description:'Hack-Sec works in synergy with innovative technologies to offer detection and response capabilities that eliminate cyber disruptions efficiently and effectively. We map and mitigate adversary tactics in each region through targeted intelligence and operations',
+        description:'Hack Secure works in synergy with innovative technologies to offer detection and response capabilities that eliminate cyber disruptions efficiently and effectively. We map and mitigate adversary tactics in each region through targeted intelligence and operations',
         image:'https://www.group-ib.com/wp-content/uploads/demo-16.png.webp'
       }]
   // return section of Service-page
@@ -231,7 +231,7 @@ const ServicesPage = () => {
       {/* Hero Section */}
       <section className="services-hero">
         <div className="services-hero-content">
-          <h2 className='h1-tag' style={{fontSize:'1.0rem', marginBottom:'0'}}> Hack-Sec Cybersecurity Services </h2>
+          <h2 className='h1-tag' style={{fontSize:'1.0rem', marginBottom:'0'}}> Hack Secure Cybersecurity Services </h2>
           <h1 style={{fontSize:'3.4rem'}}> Powerful symbiosis of technology
 and expertise for complete protection
 against cyber risks </h1>
@@ -309,7 +309,7 @@ against cyber risks </h1>
      {/* CTA Section  */}
       <div className='cta-section-services flex flex-col items-center justify-center' >
         <div className='w-[60vw]'> 
-        <h3 style={{color:'white', fontSize:'2.4rem', paddingBottom:'30px'}}>Obtain bulletproof evidence with Hack-Sec Digital Forensics Services </h3>
+        <h3 style={{color:'white', fontSize:'2.4rem', paddingBottom:'30px'}}>Obtain bulletproof evidence with Hack Secure Digital Forensics Services </h3>
         
         <button type="button" className='service-cta-button bg-white text-blue-900 text-[16px]' onClick={()=>{
           nevigate('/services/service-form#topsec')

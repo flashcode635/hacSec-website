@@ -29,7 +29,7 @@ const Courses = () => {
     <div className="courses-page">
       <div className="courses-hero">
         <div className="md:courses-hero-content courses-hero-content width-[10vw]">
-          <h1 >Hack-Sec Micro Modules</h1>
+          <h1 >Hack Secure Micro Modules</h1>
           <p >Master the skills needed to protect digital assets and combat cyber threats</p>
         </div>
       </div>

@@ -160,7 +160,7 @@ const TrainingPage = () => (
     {/* COURSES SECTION */}
     <section id="courses" className="py-14 px-2 sm:px-4" style={{marginBottom:'40px'}}>
       <div className="container-training mx-auto text-center">
-        <h1 className="heading-trainings-cards text-3xl sm:text-4xl font-bold ">Hack-Sec Training Program </h1>
+        <h1 className="heading-trainings-cards text-3xl sm:text-4xl font-bold ">Hack Secure Training Program </h1>
         <div className="train-card-div grid gap-9 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {coursesData.map((course, idx) => (
             <div
@@ -198,7 +198,7 @@ const TrainingPage = () => (
     {/* WHY US SECTION */}
     <section  className="py-14 px-2 sm:px-4 " style={{margin:'4.5rem 0'}}>
       <div className="container-training mx-auto text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold text-light-blue-text mb-10">Why Hack-Sec ?</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-light-blue-text mb-10">Why Hack Secure ?</h1>
         <div className="why-us-info grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3  mx-auto">
           {benefitsData.map((benefit, idx) => (
             <div

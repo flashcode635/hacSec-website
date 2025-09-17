@@ -117,7 +117,7 @@ const Middle = () => {
                 <br/>
                 <span>
                     With   
-                    <span style={{color:'white'}}> <b> Hack-Sec </b> </span> , new joiners experience it
+                    <span style={{color:'white'}}> <b> Hack Secure </b> </span> , new joiners experience it
                     <span style={{color:'white'}}> <b>  first-hand </b> </span> .We stand out as a company immersing employees in
                     <span style={{color:'white'}}> <b> real cases </b> </span>from day one.Right from the start
                   </span>
@@ -134,7 +134,7 @@ const Middle = () => {
                    <span style={{color:'white'}}> <b>  boldness </b> </span>,
                    <span style={{color:'white'}}> <b>  innovation </b> </span>, and
                    <span style={{color:'white'}}> <b>  passion </b> </span>
-                 to win and work in a dynamic environment. Start your journey with Hack-Sec.
+                 to win and work in a dynamic environment. Start your journey with Hack Secure.
                 </span> 
             </div>
           </div>

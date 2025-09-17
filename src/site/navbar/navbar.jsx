@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="navbar-brand">
         {/* Site logo/home link */}
         <Link to="/" className="navbar-logo">
-          Hack-Sec
+          Hack Secure
         </Link>
         {/* Hamburger menu button - only visible on mobile */}
         <button className="hamburger" onClick={toggleMenu}>

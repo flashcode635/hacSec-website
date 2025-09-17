@@ -23,12 +23,12 @@ export default function NewSection() {
           {
             id:4,
             title:"Teaching the cyber professionals ",
-            detail:'Hack-Sec proprietary training courses are designed to develop unique applied skills',
+            detail:'Hack Secure proprietary training courses are designed to develop unique applied skills',
             icon:'https://www.group-ib.com/wp-content/uploads/w3-1-150x150.png.webp'
         },
          {
             id:5,
-            title:"Hack-Sec unified ecosystem",
+            title:"Hack Secure unified ecosystem",
             detail:'Actor-centric approach to investigating, researching and predicting scammers behavior and tool development.',
             icon:'https://www.group-ib.com/wp-content/uploads/drp-card-lg-3-min-1.jpg.webp'
         },
@@ -90,10 +90,10 @@ export function Belowhero(){
         <>
             <div className="flex flex-col items-center justify-center ">
                 <div className="md:w-[70vw] w-[100vw] text-center">
-                    <h1 style={{fontSize:'2.8rem'}}> About Hack-Sec cyber education center</h1>
+                    <h1 style={{fontSize:'2.8rem'}}> About Hack Secure cyber education center</h1>
 
                     <span  className="text-gray-400" style={{fontSize:'14px'}}>
-                         Hack-Sec Cyber Education Center was established in 2018. Following the mission of fighting against cybercrime, our center is dedicated to training technical specialists in diverse areas of cybersecurity to facilitate the creation of an effective information security department in any company and enhancing the competencies of law enforcement specialists. 
+                         Hack Secure Cyber Education Center was established in 2018. Following the mission of fighting against cybercrime, our center is dedicated to training technical specialists in diverse areas of cybersecurity to facilitate the creation of an effective information security department in any company and enhancing the competencies of law enforcement specialists. 
                     </span>
                     <div className="grid grid-cols-1 md:grid-cols-3 w-[70vw]  gap-7" style={{marginTop:'40px'}} >
                         {Listcard.map((val)=>(

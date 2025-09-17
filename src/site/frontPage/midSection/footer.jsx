@@ -11,7 +11,7 @@ const Footer= ()=>{
 
         <div className="footer-hero" style={{marginLeft: "2px"}}> 
 
-            <p className="main"> Hack-Sec 
+            <p className="main"> Hack Secure 
 
             </p>
 

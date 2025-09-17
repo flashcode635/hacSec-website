@@ -103,7 +103,7 @@ const Teams=()=>{
             id:2,
             image:"https://www.group-ib.com/wp-content/uploads/illustration-2-4.png.webp",
             heading:"Digital Crime Resistance Centers (DCRCs)",
-            details:"Hack-Sec's regional offices and mission-critical Digital Crime Resistance Centers (DCRCs) continually provide assistance and strategic knowledge about local threats, enabling immediate response"
+            details:"Hack Secure's regional offices and mission-critical Digital Crime Resistance Centers (DCRCs) continually provide assistance and strategic knowledge about local threats, enabling immediate response"
         },
 
         {
@@ -121,7 +121,7 @@ const Teams=()=>{
                 <section className="teams-hero">
                        <div className="teams-hero-content">
                          <h1 style={{fontSize:'2.9rem'}}> The Forces Behind the Resilience Against Cybercrime</h1>
-                         <p className="details-teams" style={{fontFamily:'system-ui'}}>Hack-Sec's decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack-Sec</p>
+                         <p className="details-teams" style={{fontFamily:'system-ui'}}>Hack Secure's decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack Secure</p>
                          {/* <GradientButton name="Request a Consultation" /> */}
                        </div>
                 </section>
@@ -132,7 +132,7 @@ const Teams=()=>{
                             <h1 style={{marginBottom:'0',}}>Serving one joint mission - </h1>
                             <h1> Fight against cybercrime </h1>
                             <span className="text-gray-400 w-[70%]" >
-                                Decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack-Sec
+                                Decentralized yet tightly knit team works around the clock to protect and support businesses, customers, government, the larger community, and everything in between. Meet the individuals who form the unstoppable force that is Hack Secure
                             </span>
                         </div>
 

@@ -1,10 +1,15 @@
 import React from 'react';
 import GradientButton from '../Components/buttonWithGradient/resource-btn';
-import background from './front.jpg';
+import background from '../../assets/front.jpg';
 import './new.css'
 const Hero = () => {
   const heroStyle = {
-    // background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${background})`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${background})`,
+    width: '100vw',
+    height: '100vh',
+    // backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    // display: 'flex',
   };
 
   return (
@@ -18,7 +23,7 @@ const Hero = () => {
          <h2 className="hero-heading"  style={{fontSize:'3.4rem', fontWeight:'500',  color:'white'}}
         // style={{paddingTop: '4%'}}
         >
-            Hack-Sec Ecosystem
+            Hack Secure Ecosystem
         </h2>
       
         <h2 className="hero-heading hero-subheading">

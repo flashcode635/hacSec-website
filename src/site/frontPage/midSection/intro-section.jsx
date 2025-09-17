@@ -31,9 +31,9 @@ const sectionList=[
         id:2,
         title: "Partners",
         description: [
-          // " Partner with Hack-Sec to drive innovation, share knowledge, and make a global impact in cybersecurity. ",
+          // " Partner with Hack Secure to drive innovation, share knowledge, and make a global impact in cybersecurity. ",
           // "From academic institutions and corporates to communities and international networks. We welcome partnerships that aim to build a safer digital world."
-          <span style={{color:'rgb(128, 128, 128)'}}>Partner with Hack-Sec to drive
+          <span style={{color:'rgb(128, 128, 128)'}}>Partner with Hack Secure to drive
             <span style={{color:'white'}}><b> innovation </b></span>,
             <span style={{color:'white'}}><b> share knowledge </b></span>,
             make a global impact in cybersecurity , even if you are a beginner or a pro, there is always more to explore.
@@ -78,7 +78,7 @@ const sectionList=[
     
     {
         id:4,
-        title: "Hack-Sec Global Association",
+        title: "Hack Secure Global Association",
         description: [
         <span style={{color:'rgb(128, 128, 128)'}}>We offer a wide range of services from 
         <span style={{color:'white'}}> 

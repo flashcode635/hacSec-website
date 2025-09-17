@@ -58,7 +58,7 @@ const AfterHero = () => {
           Build for next-gen learners
         </h1>
         <span className="training-text">
-          Hack-Sec where global learners come to learn, secure and lead the digital era.
+          Hack Secure where global learners come to learn, secure and lead the digital era.
           <span> All in one place</span>
         </span>
       </div>
