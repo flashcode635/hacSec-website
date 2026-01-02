@@ -1,6 +1,6 @@
 # HackSecure Web Platform
 
-A modern cybersecurity education and services platform built with **React** and **Vite**. This project provides resources, courses, certifications, internships, and more to empower learners and professionals in the cybersecurity domain.
+A modern cybersecurity education and services platform built with **React** and **Vite**. This project provides resources, courses, certifications, internships, and more to empower learners and professionals in the cybersecurity domain. Check the [url](https://democonfig.netlify.app/) for vising the site.
 
 ---
 
@@ -119,4 +119,4 @@ cursor-hacksec-prv-ltd/
 - **package.json** — Project metadata and scripts.
 - **vite.config.js** — Vite configuration.
 - **LICENSE** — Project license.
-- **README.md** — Project documentation.
+
