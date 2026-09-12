@@ -26,14 +26,14 @@ const Courses = () => {
       <div className="courses-hero">
         <div className="courses-hero-content">
           <h1>Hack Secure Micro Modules</h1>
-          <p>Master the skills needed to protect digital assets and combat cyber threats</p>
+          <p className='text-center w-screen p-0! '>Master the skills needed to protect digital assets and combat cyber threats</p>
         </div>
       </div>
 
       <div className="courses-container">
         <div className="courses-header">
           <h2>Available Courses</h2>
-          <p>Explore our comprehensive range of cybersecurity courses designed by industry experts</p>
+          <p className=''>Explore our comprehensive range of cybersecurity courses designed by industry experts</p>
         </div>
 
         <div className="courses-grid">

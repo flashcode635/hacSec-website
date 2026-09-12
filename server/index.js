@@ -138,8 +138,10 @@ app.get('/me', (req, res) => {
 });
 
 // Always export app
-export default app;
-
+// export default app;
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
+  });
 // Only listen if executed directly
 if (import.meta.url === `file://${process.argv[1]}`) {
   app.listen(port, () => {

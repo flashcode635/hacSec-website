@@ -1,6 +1,6 @@
 /* Courses Page Styles */
 .courses-page {
-  background-color: #020617;
+  background-color: #000002;
   color: #f8fafc;
   min-height: 100vh;
   padding-top: 60px;
@@ -8,14 +8,15 @@
 
 /* Hero section styles */
 .courses-hero {
+  /* min-height: 260px; */
   position: relative;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e1b4b 100%);
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #03070ba7 0%, #0b16228d 100%);
+  border-bottom: 2px solid #075bd5;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-bottom: 1px solid #1e293b;
 }
 
 .courses-hero-content {
@@ -26,20 +27,28 @@
 }
 
 .courses-hero-content h1 {
-  font-size: 2.75rem;
+  margin: 0 0 44px;
+  font-size: clamp(2.5rem, 5vw, 3.1rem);
   font-weight: 800;
-  margin-bottom: 16px;
-  background: linear-gradient(to right, #60a5fa, #38bdf8, #818cf8);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    #1749ff 0%,
+    #4b6cff 45%,
+    #d8e2ff 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -0.025em;
 }
 
 .courses-hero-content p {
+  margin: 0;
+  max-width: 800px;
+  color: #a8a8a8;
   font-size: 1.125rem;
-  color: #94a3b8;
-  line-height: 1.6;
 }
 
 /* Courses container styles */
@@ -57,13 +66,20 @@
 .courses-header h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 10px;
   color: #38bdf8;
+}
+h2{
+  margin-bottom: 10px;
+
+}
+.courses-header{
+  margin-bottom: 45px;
+
 }
 
 .courses-header p {
   font-size: 1rem;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   color: #94a3b8;
 }
@@ -81,7 +97,7 @@
 
 /* Course card styles */
 .course-card {
-  background-color: #0f172a;
+  background-color: #0b0c0c;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
