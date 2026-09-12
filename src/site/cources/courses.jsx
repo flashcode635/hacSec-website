@@ -2,12 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './courses.css';
 import './preview.css';
-import coursesList from './courseList'; // your course data
+import coursesList from './courseList';
 
-
-
-// Moved to a separate utility exportable function
- const enroll = (course) => {
+const enroll = (course) => {
   const name = course.title;
   console.log(`Enrolled in ${name}`);
 };
@@ -22,83 +19,54 @@ const Courses = () => {
     console.log(`Enrolled in ${course.title}`);
     enroll(course);
     navigate(`/courses/${toUrlCourseName(course.title)}`);
-    
   };
 
   return (
     <div className="courses-page">
       <div className="courses-hero">
-        <div className="md:courses-hero-content courses-hero-content width-[10vw]">
-          <h1 >Hack Secure Micro Modules</h1>
-          <p >Master the skills needed to protect digital assets and combat cyber threats</p>
+        <div className="courses-hero-content">
+          <h1>Hack Secure Micro Modules</h1>
+          <p className='text-center w-screen p-0! '>Master the skills needed to protect digital assets and combat cyber threats</p>
         </div>
       </div>
 
       <div className="courses-container">
         <div className="courses-header">
           <h2>Available Courses</h2>
-          <p>Explore our comprehensive range of cybersecurity courses designed by industry experts</p>
+          <p className=''>Explore our comprehensive range of cybersecurity courses designed by industry experts</p>
         </div>
 
-        <div className="lg:courses-grid courses-grid lg:grid-cols-3 
-        md:grid-cols-2">
-         
+        <div className="courses-grid">
           {coursesList.map((course) => (
-             <div className='lg:grid-col-1 lg:pr-[20px] lg:min-w-[320px] 
-            
-              lg:mr-4
-              md:grid-col-1'>  
-             <div className="lg:course-card course-card  w-full " key={course.id}>
-              <div className="course-image-container h-[200px] md:h-[400px]">
-                <div
-                  className="course-image h-full "
-                  style={{ backgroundImage: `url(${course.image})` }}
-                ></div>
-              </div>
-              <div className="md:course-content course-content ">
-                <h3>{course.title}</h3>
-                <p>{course.description}</p>
-                <div className="course-meta">
-                  <span className="duration">Duration: {course.duration}</span>
-                </div>
-                <div style={{ display: 'flex' }}>
+            <div className="course-card-wrapper" key={course.id}>
+              <div className="course-card">
+                <div className="course-image-container">
                   <div
-                    className="course-level-badge"
-                    style={{
-                      background: 'rgba(0, 128, 0, 0.2)',
-                      color: '#006400',
-                      padding: '6px 14px',
-                      borderRadius: '8px',
-                      fontWeight: 'bold',
-                      fontSize: '1rem',
-                      margin: '8px 0',
-                    }}
-                  >
+                    className="course-image"
+                    style={{ backgroundImage: `url(${course.image})` }}
+                  ></div>
+                  <div className="course-level-tag">
                     {course.level}
                   </div>
-                  <div
-                    style={{ display: 'flex', alignItems: 'center', marginLeft: '10px' }}
-                  >
-                    <div
-                      style={{
-                        background:
-                          'url(https://academy.hackthebox.com/images/pages/front/ic-sections.png) no-repeat center center',
-                        backgroundSize: 'contain',
-                        width: '20px',
-                        height: '20px',
-                        marginRight: '5px',
-                      }}
-                    />
-                    <div>{course.modules} Modules</div>
+                </div>
+
+                <div className="course-content">
+                  <h3>{course.title}</h3>
+                  <p>{course.description}</p>
+
+                  <div className="course-info-row">
+                    <span className="duration">⏱ {course.duration}</span>
+                    <span className="modules">📚 {course.modules} Modules</span>
+                  </div>
+
+                  <div className="course-actions">
+                    <button className="enroll-button" onClick={() => handleEnroll(course)}>
+                      Enroll Now
+                    </button>
                   </div>
                 </div>
-                <div style={{ marginTop: '10px' }}>
-                  <button className="enroll-button" onClick={() => handleEnroll(course)}>
-                    Enroll Now
-                  </button>
-                </div>
               </div>
-            </div>  </div>
+            </div>
           ))}
         </div>
       </div>
@@ -110,7 +78,7 @@ const Courses = () => {
             Join thousands of security professionals who have transformed their careers
             with our training programs
           </p>
-          <button className="cta-button">View All Courses</button>
+          <button className="bg-transparent text-[#38bdf8] border-2 border-[#38bdf8] md:px-6! md:py-2.5! rounded-lg cursor-pointer font-semibold text-base transition-all duration-200 ease-in-out hover:bg-[#38bdf8] hover:text-[#020617] hover:shadow-[0_0_13px_rgba(49,159,206,0.4)]">View All Courses</button>
         </div>
       </div>
     </div>
@@ -118,4 +86,3 @@ const Courses = () => {
 };
 
 export default Courses;
-

@@ -22,13 +22,13 @@ export default function NewSection() {
         },
           {
             id:4,
-            title:"Teaching the cyber professionals ",
+            title:"Teaching professionals ",
             detail:'Hack Secure proprietary training courses are designed to develop unique applied skills',
             icon:'https://www.group-ib.com/wp-content/uploads/w3-1-150x150.png.webp'
         },
          {
             id:5,
-            title:"Hack Secure unified ecosystem",
+            title:"Unified Ecosystem",
             detail:'Actor-centric approach to investigating, researching and predicting scammers behavior and tool development.',
             icon:'https://www.group-ib.com/wp-content/uploads/drp-card-lg-3-min-1.jpg.webp'
         },
