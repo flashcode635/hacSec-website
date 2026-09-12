@@ -13,15 +13,16 @@
 }
 
 .auth-modal-content {
-  background: #0f172a;
-  border: 1px solid #1e293b;
-  border-radius: 12px;
-  padding: 30px;
-  width: 90%;
-  max-width: 420px;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  color: #f8fafc;
+    background: linear-gradient(12deg, #e6eaf024, #07090b);
+    border: 2px solid #010325;
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 32px 48px;
+    width: 90%;
+    max-width: 560px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    color: #f8fafcf7;
 }
 
 .auth-modal-close {
@@ -54,6 +55,52 @@
   margin-bottom: 20px;
 }
 
+.auth-modal-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.auth-modal-step {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #7187a1;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.auth-modal-step b {
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  border: 1px solid #29415e;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.auth-modal-step.active, .auth-modal-step.complete { color: #4db5ff; }
+.auth-modal-step.active b, .auth-modal-step.complete b { border-color: #1595ff; background: #087ff0; color: #fff; }
+
+.auth-modal-progress-line {
+  width: 100%;
+  height: 2px;
+  margin: 0 10px;
+  background: #1a3049;
+}
+
+.auth-modal-progress-line span { display: block; width: 0; height: 100%; background: #1595ff; }
+.auth-modal-progress-line span.filled { width: 100%; }
+
+.auth-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 12px;
+}
+
+.auth-modal-grid .auth-input-group:last-child { grid-column: 1 / -1; }
+
 .tier-badge {
   color: #38bdf8;
   font-weight: 600;
@@ -69,6 +116,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-bottom: 16px;
   text-align: left;
 }
 
@@ -81,7 +129,7 @@
   padding: 10px 12px;
   border-radius: 6px;
   border: 1px solid #334155;
-  background-color: #1e293b;
+  background-color: #0204084d;
   color: #ffffff;
   font-size: 0.95rem;
 }
@@ -140,4 +188,20 @@
   cursor: pointer;
   font-size: 0.85rem;
   text-decoration: underline;
+}
+
+.auth-modal-back {
+  display: block;
+  margin: 14px auto 0;
+  background: none;
+  border: 0;
+  color: #7ca7d3;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .auth-modal-content { padding: 24px 20px; }
+  .auth-modal-step span { display: none; }
+  .auth-modal-grid { grid-template-columns: 1fr; }
+  .auth-modal-grid .auth-input-group:last-child { grid-column: auto; }
 }

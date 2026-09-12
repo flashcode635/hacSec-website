@@ -78,7 +78,7 @@ const Courses = () => {
             Join thousands of security professionals who have transformed their careers
             with our training programs
           </p>
-          <button className="cta-button">View All Courses</button>
+          <button className="bg-transparent text-[#38bdf8] border-2 border-[#38bdf8] md:px-6! md:py-2.5! rounded-lg cursor-pointer font-semibold text-base transition-all duration-200 ease-in-out hover:bg-[#38bdf8] hover:text-[#020617] hover:shadow-[0_0_13px_rgba(49,159,206,0.4)]">View All Courses</button>
         </div>
       </div>
     </div>

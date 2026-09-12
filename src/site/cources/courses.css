@@ -149,7 +149,7 @@ h2{
 }
 
 .course-content {
-  padding: 20px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -203,14 +203,14 @@ h2{
 
 /* Call-to-action section */
 .courses-cta {
-  background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+  background: linear-gradient(200deg, #0f3daa3b 0%, #000103ab 100%);
   padding: 60px 20px;
   text-align: center;
   border-top: 1px solid #1e293b;
 }
 
 .cta-content {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -227,23 +227,6 @@ h2{
   margin-bottom: 24px;
 }
 
-.cta-button {
-  background-color: transparent;
-  color: #38bdf8;
-  border: 2px solid #38bdf8;
-  padding: 10px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-
-.cta-button:hover {
-  background-color: #38bdf8;
-  color: #020617;
-  box-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
-}
 
 @media (max-width: 640px) {
   .courses-hero-content h1 {
