@@ -2,6 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import { z } from 'zod';
+import dotenv from 'dotenv';
+import { eq, or } from 'drizzle-orm';
+import { db, schema } from './db/index.js';
+
+dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -9,18 +14,6 @@ const JWT_SECRET = process.env.JWT_SECRET || 'learn_x_jwt_secret_key_2025';
 
 app.use(cors());
 app.use(express.json());
-
-// In-memory users array
-let users = [
-  {
-    firstName: "Test",
-    lastName: "User",
-    username: "testuser",
-    email: "test@gmail.com",
-    password: "test@123",
-    plan: "Human"
-  }
-];
 
 const signupSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -35,7 +28,7 @@ const loginSchema = z.object({
   password: z.string().min(1, "Password is required")
 });
 
-app.post('/signup', (req, res) => {
+app.post('/signup', async (req, res) => {
   const validation = signupSchema.safeParse(req.body);
   if (!validation.success) {
     return res.status(400).json({ message: validation.error.errors.map(e => e.message).join(', ') });
@@ -43,47 +36,65 @@ app.post('/signup', (req, res) => {
 
   const { firstName, lastName, username, password, email } = validation.data;
 
-  const userExists = users.some(u => u.username === username || u.email === email);
-  if (userExists) {
-    return res.status(409).json({ message: 'Username or email already exists' });
-  }
+  try {
+    if (db) {
+      const existingUser = await db
+        .select()
+        .from(schema.users)
+        .where(or(eq(schema.users.username, username), eq(schema.users.email, email)))
+        .limit(1);
 
-  const newUser = {
-    firstName,
-    lastName,
-    username,
-    password,
-    email,
-    plan: 'Human' // Default tier for all users
-  };
-  users.push(newUser);
+      if (existingUser.length > 0) {
+        return res.status(409).json({ message: 'Username or email already exists' });
+      }
 
-  const token = jwt.sign(
-    {
-      username: newUser.username,
-      firstName: newUser.firstName,
-      lastName: newUser.lastName,
-      email: newUser.email,
-      plan: newUser.plan
-    },
-    JWT_SECRET,
-    { expiresIn: '1d' }
-  );
+      const [newUser] = await db
+        .insert(schema.users)
+        .values({
+          firstName,
+          lastName,
+          username,
+          password,
+          email,
+          plan: 'Human'
+        })
+        .returning();
 
-  return res.status(201).json({
-    message: 'User created successfully',
-    token,
-    user: {
-      firstName: newUser.firstName,
-      lastName: newUser.lastName,
-      username: newUser.username,
-      email: newUser.email,
-      plan: newUser.plan
+      const token = jwt.sign(
+        {
+          id: newUser.id,
+          username: newUser.username,
+          firstName: newUser.firstName,
+          lastName: newUser.lastName,
+          email: newUser.email,
+          plan: newUser.plan
+        },
+        JWT_SECRET,
+        { expiresIn: '1d' }
+      );
+
+      return res.status(201).json({
+        message: 'User created successfully',
+        token,
+        user: {
+          id: newUser.id,
+          firstName: newUser.firstName,
+          lastName: newUser.lastName,
+          username: newUser.username,
+          email: newUser.email,
+          plan: newUser.plan
+        }
+      });
+    } else {
+      return res.status(500).json({ message: 'Database connection not initialized' });
     }
-  });
+  } catch (error) {
+    console.error('Error during signup:', error);
+    return res.status(500).json({ message: 'Internal server error' });
+  }
 });
 
-app.post('/login', (req, res) => {
+app.post('/login', async (req, res) => {
   const validation = loginSchema.safeParse(req.body);
   if (!validation.success) {
     return res.status(400).json({ message: validation.error.errors.map(e => e.message).join(', ') });
@@ -91,35 +102,52 @@ app.post('/login', (req, res) => {
 
   const { username, password } = validation.data;
 
-  const user = users.find(u => (u.username === username || u.email === username) && u.password === password);
+  try {
+    if (db) {
+      const existingUsers = await db
+        .select()
+        .from(schema.users)
+        .where(or(eq(schema.users.username, username), eq(schema.users.email, username)))
+        .limit(1);
 
-  if (!user) {
-    return res.status(401).json({ message: 'Invalid credentials' });
-  }
+      const user = existingUsers[0];
 
-  const token = jwt.sign(
-    {
-      username: user.username,
-      firstName: user.firstName,
-      lastName: user.lastName,
-      email: user.email,
-      plan: user.plan || 'Human'
-    },
-    JWT_SECRET,
-    { expiresIn: '1d' }
-  );
+      if (!user || user.password !== password) {
+        return res.status(401).json({ message: 'Invalid credentials' });
+      }
 
-  return res.status(200).json({
-    message: 'Login successful',
-    token,
-    user: {
-      firstName: user.firstName,
-      lastName: user.lastName,
-      username: user.username,
-      email: user.email,
-      plan: user.plan || 'Human'
+      const token = jwt.sign(
+        {
+          id: user.id,
+          username: user.username,
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          plan: user.plan || 'Human'
+        },
+        JWT_SECRET,
+        { expiresIn: '1d' }
+      );
+
+      return res.status(200).json({
+        message: 'Login successful',
+        token,
+        user: {
+          id: user.id,
+          firstName: user.firstName,
+          lastName: user.lastName,
+          username: user.username,
+          email: user.email,
+          plan: user.plan || 'Human'
+        }
+      });
+    } else {
+      return res.status(500).json({ message: 'Database connection not initialized' });
     }
-  });
+  } catch (error) {
+    console.error('Error during login:', error);
+    return res.status(500).json({ message: 'Internal server error' });
+  }
 });
 
 app.get('/me', (req, res) => {
@@ -137,12 +165,8 @@ app.get('/me', (req, res) => {
   }
 });
 
-// Always export app
-// export default app;
-app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
-  });
-// Only listen if executed directly
+export default app;
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
