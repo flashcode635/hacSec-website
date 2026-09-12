@@ -1,4 +1,4 @@
-import { db, schema, pool } from '../server/db/index.js';
+import { db, schema, pool } from '../server/db/db.js';
 import { eq } from 'drizzle-orm';
 
 async function runDbTests() {

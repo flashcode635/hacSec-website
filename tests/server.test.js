@@ -1,5 +1,5 @@
 import app from '../server/index.js';
-import { pool } from '../server/db/index.js';
+import { pool } from '../server/db/db.js';
 
 async function runTests() {
   console.log('--- Running Server Integration Tests ---');

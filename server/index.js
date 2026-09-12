@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 import { z } from 'zod';
 import dotenv from 'dotenv';
 import { eq, or } from 'drizzle-orm';
-import { db, schema } from './db/index.js';
+import { db, schema } from './db/db.js';
 
 dotenv.config();
 
