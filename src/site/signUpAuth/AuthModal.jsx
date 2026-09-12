@@ -6,6 +6,7 @@ import './authModal.css';
 
 const AuthModal = ({ isOpen, onClose, defaultMode = 'login', selectedTier = 'Human' }) => {
   const [isLogin, setIsLogin] = useState(defaultMode === 'login');
+  const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -21,6 +22,12 @@ const AuthModal = ({ isOpen, onClose, defaultMode = 'login', selectedTier = 'Hum
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const goToNextStep = (e) => {
+    e.preventDefault();
+    setMessage('');
+    setStep(2);
   };
 
   const handleSubmit = async (e) => {
@@ -60,14 +67,22 @@ const AuthModal = ({ isOpen, onClose, defaultMode = 'login', selectedTier = 'Hum
       <div className="auth-modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="auth-modal-close" onClick={onClose}>&times;</button>
 
-        <h2 className="auth-modal-title">{isLogin ? 'Sign In' : 'Sign Up'}</h2>
+        {!isLogin && (
+          <div className="auth-modal-progress" aria-label={`Signup progress: step ${step} of 2`}>
+            <div className={`auth-modal-step ${step === 1 ? 'active' : 'complete'}`}><b>1</b><span>Basic Information</span></div>
+            <div className="auth-modal-progress-line"><span className={step === 2 ? 'filled' : ''} /></div>
+            <div className={`auth-modal-step ${step === 2 ? 'active' : ''}`}><b>2</b><span>Account Setup</span></div>
+          </div>
+        )}
+
+        <h2 className="auth-modal-title">{isLogin ? 'Sign In' : step === 1 ? "Let's get started" : 'Finish setting up'}</h2>
         <p className="auth-modal-subtitle">
-          Accessing Learn_X Plan: <span className="tier-badge">{selectedTier}</span>
+          {isLogin ? 'Sign in to continue learning.' : <>Accessing Learn_X Plan: <span className="tier-badge">{selectedTier}</span></>}
         </p>
 
-        <form onSubmit={handleSubmit} className="auth-modal-form">
-          {!isLogin && (
-            <>
+        <form onSubmit={isLogin || step === 2 ? handleSubmit : goToNextStep} className="auth-modal-form">
+          {!isLogin && step === 1 && (
+            <div className="auth-modal-grid">
               <div className="auth-input-group">
                 <label>First Name</label>
                 <input
@@ -101,35 +116,24 @@ const AuthModal = ({ isOpen, onClose, defaultMode = 'login', selectedTier = 'Hum
                   placeholder="Enter email address"
                 />
               </div>
+            </div>
+          )}
+
+          {(isLogin || step === 2) && (
+            <>
+              <div className="auth-input-group">
+                <label>Username</label>
+                <input type="text" name="username" value={formData.username} onChange={handleChange} required placeholder="Choose a username" />
+              </div>
+              <div className="auth-input-group">
+                <label>Password</label>
+                <input type="password" name="password" value={formData.password} onChange={handleChange} required placeholder="Create a password" />
+              </div>
             </>
           )}
 
-          <div className="auth-input-group">
-            <label>Username</label>
-            <input
-              type="text"
-              name="username"
-              value={formData.username}
-              onChange={handleChange}
-              required
-              placeholder="Enter username"
-            />
-          </div>
-
-          <div className="auth-input-group">
-            <label>Password</label>
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              required
-              placeholder="Enter password"
-            />
-          </div>
-
           <button type="submit" className="auth-submit-btn" disabled={loading}>
-            {loading ? 'Processing...' : (isLogin ? 'Sign In' : 'Sign Up')}
+            {loading ? 'Processing...' : (isLogin ? 'Sign In' : step === 1 ? 'Continue  →' : 'Create Account  →')}
           </button>
         </form>
 
@@ -139,8 +143,10 @@ const AuthModal = ({ isOpen, onClose, defaultMode = 'login', selectedTier = 'Hum
           </p>
         )}
 
+        {!isLogin && step === 2 && <button type="button" onClick={() => setStep(1)} className="auth-modal-back">Back to basic information</button>}
+
         <div className="auth-modal-toggle">
-          <button onClick={() => { setIsLogin(!isLogin); setMessage(''); }}>
+          <button onClick={() => { setIsLogin(!isLogin); setStep(1); setMessage(''); }}>
             {isLogin ? "Don't have an account? Sign Up" : 'Already have an account? Sign In'}
           </button>
         </div>
