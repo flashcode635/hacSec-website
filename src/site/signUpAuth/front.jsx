@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './authPage.css';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from '../../config/api';
 
 const AuthPage = () => {
     const [isLogin, setIsLogin] = useState(false);
@@ -30,12 +30,9 @@ const AuthPage = () => {
         const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage('');
-        const url = isLogin ? 'https://hacksec-prv-ltd-backend123.onrender.com/login' : 
-        'https://hacksec-prv-ltd-backend123.onrender.com/signup';
-        // const url = isLogin ? 'http://localhost:3001/login' : 
-        // 'http://localhost:3001/signup';
+        const url = isLogin ? '/login' : '/signup';
         try {
-            const response = await axios.post(url, formData);
+            const response = await api.post(url, formData);
             setMessage(response.data.message);
             if (response.status === 200 || response.status === 201) {
                 navigate('/dashboard');

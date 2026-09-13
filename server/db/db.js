@@ -15,11 +15,14 @@ let db = null;
 if (connectionString) {
   pool = new Pool({
     connectionString,
+    family: 4,
     ssl: connectionString.includes('sslmode=require') || process.env.NODE_ENV === 'production'
       ? { rejectUnauthorized: false }
       : false,
   });
   db = drizzle(pool, { schema });
+}else{
+  console.error("Connection not found")
 }
 
 export { db, pool, schema };

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { userState } from '../../state/authState';
-import axios from 'axios';
+import api from '../../config/api';
 import './navbar.css';
 import CompanyMenu from './companyTag';
 
@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      axios.get('http://localhost:3001/me', {
+      api.get('/me', {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(res => {
