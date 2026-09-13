@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { userState } from '../../state/authState';
-import axios from 'axios';
+import api from '../../config/api';
 import './navbar.css';
 import CompanyMenu from './companyTag';
 
@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      axios.get('http://localhost:3001/me', {
+      api.get('/me', {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(res => {
@@ -77,7 +77,7 @@ const Navbar = () => {
       </ul>
 
       <div className="right-buttons" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-        <Link to="/contact" className="contact-btn" style={{ marginRight: '2%', width: '10vw' }}>Contact Us</Link>
+        <Link to="/contact" className="contact-btn" style={{ marginRight: '2%', width: '8vw' }}>Contact Us</Link>
 
         {auth.isAuthenticated && auth.user ? (
           <div className="profile-container" style={{ position: 'relative' }}>
@@ -160,7 +160,12 @@ const Navbar = () => {
               </div>
             )}
           </div>
-        ) : null}
+        ) : 
+        (
+          <>
+            <Link to="/signup" className="contact-btn" style={{ marginRight: '0', width:'6vw' }}>Sign up</Link>
+          </>
+        )}
       </div>
     </nav>
   );

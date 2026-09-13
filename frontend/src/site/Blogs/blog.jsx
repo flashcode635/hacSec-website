@@ -5,7 +5,7 @@ import img2 from './img2.webp';
 import img3 from './img3.webp';
 import img4 from './img4.webp';
 import img5 from './img5.webp';
-
+import img from './image.jpg';
 
 const BlogPage = () => {
   // State for search functionality
@@ -90,8 +90,9 @@ const BlogPage = () => {
     <div className="blog-page">
       {/* Hero section with Title and Description */}
       <div className="blog-hero">
+        <img className="blog-hero-image"  src={`https://images.unsplash.com/photo-1510906594845-bc082582c8cc?q=80&w=844&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`} alt="" aria-hidden="true" />
         <div className="blog-hero-content">
-          <p style={{color:'white',fontSize:'4rem'}}>HackSecure Blog</p>
+          <h1>HackSecure Blog</h1>
           <p className="blog-subtitle">
             Insights, research, and expertise from our cybersecurity professionals
           </p>
@@ -102,15 +103,26 @@ const BlogPage = () => {
       {/* Search and Filter section */}
       <div className="blog-controls">
         <div className="blog-search">
-          <input 
-            type="text"
-            placeholder="Search articles..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <button className="search-button">
-            <span className="search-icon">🔍</span>
-          </button>
+          <div className="blog-search-box">
+            {/* <svg className="search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="11" cy="11" r="6.5" />
+              <path d="m16 16 4.5 4.5" />
+            </svg> */}
+            <input
+              type="text"
+              placeholder="Search articles..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <button
+              className="search-button"
+              type="button"
+              aria-label="Clear search"
+              onClick={() => setSearchQuery('')}
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
         </div>
 
 
@@ -129,7 +141,7 @@ const BlogPage = () => {
       </div>
       
       {/* Featured Post */}
-      <div className="featured-post">
+      <div className="max-w-[1200px] mx-[30px]! mb-[40px]! flex flex-col min-[993px]:flex-row gap-[30px] bg-[rgba(17,17,20,0.5)] rounded-[10px] overflow-hidden border border-[#3498db]/20 pr-5!">
         <div className="featured-post-image">
           <img src={featuredPost.image} alt="Featured post" />
           <div className="featured-post-category">{featuredPost.category}</div>
