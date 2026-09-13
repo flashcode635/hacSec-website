@@ -37,21 +37,28 @@ const AuthModal = ({ isOpen, onClose, defaultMode = 'login', selectedTier = 'Hum
 
     const url = isLogin ? '/login' : '/signup';
 
-    try {
+        try {
       const response = await api.post(url, formData);
       const data = response.data;
 
-      if (data.token && data.user) {
-        localStorage.setItem('token', data.token);
-        setAuth({
-          isAuthenticated: true,
-          user: data.user,
-          token: data.token
-        });
-        setMessage('Authentication successful!');
-        setTimeout(() => {
-          onClose();
-        }, 500);
+      if (isLogin) {
+        if (data.token && data.user) {
+          localStorage.setItem('token', data.token);
+          setAuth({
+            isAuthenticated: true,
+            user: data.user,
+            token: data.token
+          });
+          setMessage('Authentication successful!');
+          setTimeout(() => {
+            onClose();
+          }, 500);
+        }
+      } else {
+        setMessage('Account created! Please sign in.');
+        setFormData((prev) => ({ ...prev, password: '' }));
+        setIsLogin(true);
+        setStep(1);
       }
     } catch (error) {
       setMessage(error.response?.data?.message || 'An error occurred during authentication.');

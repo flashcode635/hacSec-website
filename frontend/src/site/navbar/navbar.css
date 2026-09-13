@@ -110,6 +110,7 @@
 .contact-btn {
   color: #bfc2c4;
   text-decoration: none;
+  text-align: center;
   font-weight: 550;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem; /* Reduced font size */

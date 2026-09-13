@@ -7,7 +7,7 @@ import axios from 'axios';
 // This replaces the hardcoded "http://localhost:3001" / onrender.com
 // URLs that used to be duplicated across AuthModal.jsx, front.jsx and
 // navbar.jsx.
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
 export const api = axios.create({
   baseURL: API_BASE_URL,

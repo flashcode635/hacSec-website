@@ -30,12 +30,21 @@ const AuthPage = () => {
         const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage('');
-        const url = isLogin ? '/login' : '/signup';
+                const url = isLogin ? '/login' : '/signup';
         try {
             const response = await api.post(url, formData);
-            setMessage(response.data.message);
-            if (response.status === 200 || response.status === 201) {
-                navigate('/dashboard');
+            const data = response.data;
+            setMessage(data.message);
+
+            if (isLogin) {
+                if (data.token) {
+                    localStorage.setItem('token', data.token);
+                    navigate('/dashboard');
+                }
+            } else {
+                setFormData((prev) => ({ ...prev, password: '' }));
+                setIsLogin(true);
+                setStep(1);
             }
         } catch (error) {
             setMessage(error.response?.data?.message || 'An error occurred');
@@ -46,7 +55,8 @@ const AuthPage = () => {
         <div className="auth-page">
             <div className="auth-card">
                 <section className="auth-intro">
-                    <span className="auth-eyebrow">Learn Without Limits</span>
+                    <span className="auth-eyebrow">Learn Without Limits
+                    </span>
                     <h1>Build a <strong>Smarter</strong> You.</h1>
                     <p>Personalized learning paths, real progress, and a community that grows with you.</p>
                     <div className="auth-benefits">

@@ -54,7 +54,6 @@ export default function Page() {
           <Route path='/community-projects' element={<CommunityProject/>}/>
           <Route path='/cyber-laws' element={<LawsAndPolicies/>}/>
           <Route path="/services/service-form" element={<ServiceForm />} />
-          <Route path="/signup" element={<AuthPage />} />
           <Route path="*" element={
             <New />
             
