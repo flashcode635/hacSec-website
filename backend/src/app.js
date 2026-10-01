@@ -265,4 +265,4 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // ✅ Ye Netlify ke liye zaroori hai
-module.exports = app;
+export default app;

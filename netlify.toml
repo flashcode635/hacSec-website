@@ -1,0 +1,18 @@
+[build]
+  command = "cd frontend && npm ci && npm run build && cd ../backend && npx pnpm@12.4.1 install --frozen-lockfile"
+  publish = "frontend/dist"
+
+[functions]
+  directory = "backend/src/netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/server/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
