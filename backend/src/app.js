@@ -257,6 +257,12 @@ app.get('/me', (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Backend running on http://localhost:${port}`);
-})
+// app.listen() ko sirf local development ke liye conditionally bana
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(3000, () => {
+    console.log('Server running locally on port 3000');
+  });
+}
+
+// ✅ Ye Netlify ke liye zaroori hai
+module.exports = app;
