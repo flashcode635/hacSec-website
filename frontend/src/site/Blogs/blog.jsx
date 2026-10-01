@@ -27,6 +27,7 @@ const BlogPage = () => {
     category: 'Social Engineering',
     readTime: '8 min read',
     image: img1,
+
     link: 'https://medium.com/@hacksecure.official/how-hackers-trick-you-without-you-even-knowing-707095c30db5'
   };
   
@@ -141,7 +142,7 @@ const BlogPage = () => {
       </div>
       
       {/* Featured Post */}
-      <div className="max-w-[1200px] mx-[30px]! mb-[40px]! flex flex-col min-[993px]:flex-row gap-[30px] bg-[rgba(17,17,20,0.5)] rounded-[10px] overflow-hidden border border-[#3498db]/20 pr-5!">
+      <div className="max-w-300 mx-7.5! mb-10! flex flex-col min-[993px]:flex-row gap-7.5 bg-[rgba(17,17,20,0.5)] rounded-[10px] overflow-hidden border border-[#3498db]/20 pr-5!">
         <div className="featured-post-image">
           <img src={featuredPost.image} alt="Featured post" />
           <div className="featured-post-category">{featuredPost.category}</div>
