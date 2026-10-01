@@ -264,5 +264,5 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-// ✅ Ye Netlify ke liye zaroori hai
-export default app;
+// Ye Netlify ke liye zaroori hai
+export default app

@@ -6,6 +6,7 @@ export async function findUserByUsernameOrEmail(username, email) {
     `SELECT * FROM users WHERE username = $1 OR email = $2 LIMIT 1`,
     [username, email]
   );
+  
   return result.rows[0]; // undefined if no match
 }
 
